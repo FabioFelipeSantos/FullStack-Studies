@@ -7,9 +7,9 @@ name_id_class_or_element:action {
 	propertyName: propertyValue;
 }
 ```
-When the action specified happens the change will occur in the elment.
+When the action specified happens, the change will occur in the element.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDM5MTAyNywtMTg3ODAyMDc1NCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODM0MTQ0OTA4LC0xODc4MDIwNzU0LDczMD
+k5ODExNl19
 -->
