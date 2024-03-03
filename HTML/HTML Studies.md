@@ -1,5 +1,5 @@
-# Begin of this journey!
-First test from DILLINGER!
+# Begin this journey!
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MzQ4OTgyMV19
+eyJoaXN0b3J5IjpbLTU2MjEyMzMyMV19
 -->
