@@ -1,6 +1,8 @@
-# 01 - Intro and Basics of <font color="red">CSS<font>
+# 1 - Intro and Basics of <font color="red">CSS<font>
 
-
+## 1.1 - _Pseudo-Selector_
+The pseudo-selector (read "sudo-selector") is a specific 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzgwMjA3NTQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTMxNjA4NDcxMywtMTg3ODAyMDc1NCw3Mz
+A5OTgxMTZdfQ==
 -->
