@@ -22,9 +22,9 @@ The World Wide Web (W3) is a collection of interlinked websites and other web re
 
 **The browser** is an app that is capable of managing request and receive information between the **_Client_** (user) and the **_Server_**.
 
-
+The request is sent from your device to a server across the internet. First the browser takes the address you provided and sends a request to a server
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDQxMjg0NCwxNzIyNjE1NjA2LDM3Mj
+eyJoaXN0b3J5IjpbLTM0MjExMzcyOCwxNzIyNjE1NjA2LDM3Mj
 E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
 ODldfQ==
 -->
