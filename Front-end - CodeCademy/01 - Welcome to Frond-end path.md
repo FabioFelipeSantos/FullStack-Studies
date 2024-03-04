@@ -75,8 +75,5 @@ The internet follows *protocols* or *rules* that govern the format of data sent 
 
 *[HTTP]: HyperText Transfer Protocol
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjgwNTgyNjYsMjExMDQ3MjU0LDgzND
-U0MDczNywtMTQ0NzY0MTI3MSwxNzIyNjE1NjA2LDM3MjE1MjQy
-MywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1ODldfQ
-==
+eyJoaXN0b3J5IjpbLTE4NjgwNTgyNjZdfQ==
 -->
