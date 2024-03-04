@@ -14,15 +14,17 @@ Deploy on Netlify.
 1. How is data sent from one computer to another?
 2. What's the relationship between a browser and a server?
 3. How is code turned into the experience that users see in their browsers?
-4. How has the web and web development changed from their invention to today?
+4. How have the web and web development changed from their invention to today?
 
 The Internet refers to the actual network of connected computing devices.
 
 The World Wide Web (W3) is a collection of interlinked websites and other web resources. The W3, in combination with the rise of web browsers in the 1990s, introduced a user-friendly interface that enabled users to browse multimedia content and interact with other users.
 
-**The browser** is an app that is capable of managing 
+**The browser** is an app that is capable of managing request and receive information between the **_Client_** (user) and the **_Server_**.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI3MTg5NzAsMTcyMjYxNTYwNiwzNz
-IxNTI0MjMsLTQyMzkxOTg1MSwtMTQ0NDczMjU3NCwxMDMyMzI2
-NTg5XX0=
+eyJoaXN0b3J5IjpbMTY3MDQxMjg0NCwxNzIyNjE1NjA2LDM3Mj
+E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
+ODldfQ==
 -->
