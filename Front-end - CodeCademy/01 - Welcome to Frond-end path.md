@@ -20,9 +20,9 @@
 
 **The World Wide Web (W3)** is a collection of interlinked websites and other web resources. The W3, in combination with the rise of web browsers in the 1990s, introduced a user-friendly interface that enable users to browse multimedia content and interact with other users.
 
-***
+**The browser** is an app that is capable of manage 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzY2NTM2OCwxNzIyNjE1NjA2LDM3Mj
+eyJoaXN0b3J5IjpbMTE3MTM0MDE0MCwxNzIyNjE1NjA2LDM3Mj
 E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
 ODldfQ==
 -->
