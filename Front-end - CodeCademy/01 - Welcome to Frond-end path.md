@@ -19,7 +19,10 @@
 **The Internet** refers to the actual network of connected computing devices.
 
 **The World Wide Web (W3)** is a collection of interlinked websites and other web resources. The W3, in combination with the rise of web browsers in the 1990s, introduced a user-friendly interface that enable users to browse multimedia content and interact with other users.
+
+***
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyMjYxNTYwNiwzNzIxNTI0MjMsLTQyMz
-kxOTg1MSwtMTQ0NDczMjU3NCwxMDMyMzI2NTg5XX0=
+eyJoaXN0b3J5IjpbMTQyMzY2NTM2OCwxNzIyNjE1NjA2LDM3Mj
+E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
+ODldfQ==
 -->
