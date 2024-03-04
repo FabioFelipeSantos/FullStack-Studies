@@ -2,27 +2,27 @@
 
 ## 1.1 - Main learned skills
 
-- Build web pages with HTML, style them with CSS and make them interactive with JavaScript.
+- Build web pages with HTML, style them with CSS, and make them interactive with JavaScript.
 - Manage versions with Git and work with GitHub.
-- Use React and Redux.
-- Deploy on Netlify.
+Use React and Redux.
+Deploy on Netlify.
 
-## 1.2 - Introduction: Overview of Web Development
+## 1.2: Introduction: Overview of Web Development
 
 ### Questions to answer
 
 1. How is data sent from one computer to another?
 2. What's the relationship between a browser and a server?
 3. How is code turned into the experience that users see in their browsers?
-4. How has the web and web development changed from its invention to today?
+4. How has the web and web development changed from their invention to today?
 
-**The Internet** refers to the actual network of connected computing devices.
+The Internet refers to the actual network of connected computing devices.
 
-**The World Wide Web (W3)** is a collection of interlinked websites and other web resources. The W3, in combination with the rise of web browsers in the 1990s, introduced a user-friendly interface that enable users to browse multimedia content and interact with other users.
+The World Wide Web (W3) is a collection of interlinked websites and other web resources. The W3, in combination with the rise of web browsers in the 1990s, introduced a user-friendly interface that enabled users to browse multimedia content and interact with other users.
 
-**The browser** is an app that is capable of manage 
+**The browser** is an app that is capable of managing 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTM0MDE0MCwxNzIyNjE1NjA2LDM3Mj
-E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
-ODldfQ==
+eyJoaXN0b3J5IjpbLTEwMDI3MTg5NzAsMTcyMjYxNTYwNiwzNz
+IxNTI0MjMsLTQyMzkxOTg1MSwtMTQ0NDczMjU3NCwxMDMyMzI2
+NTg5XX0=
 -->
