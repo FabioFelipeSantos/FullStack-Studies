@@ -7,7 +7,8 @@
 - Use React and Redux.
 - Deploy on Netlify.
 
-
+#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDQ3MzI1NzQsMTAzMjMyNjU4OV19
+eyJoaXN0b3J5IjpbLTEyMjcyOTU1MDUsLTE0NDQ3MzI1NzQsMT
+AzMjMyNjU4OV19
 -->
