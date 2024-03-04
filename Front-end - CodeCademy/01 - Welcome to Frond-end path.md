@@ -10,8 +10,14 @@
 ## 1.2 - Introduction: Overview of Web Development
 
 ### Questions to answer
-#### 1. 
+
+1. How is data sent from one computer to another?
+2. What's the relationship -   between a browser and a server?
+-   How is code turned into the experience that users see in their browsers?
+-   How has the web and web development changed from its invention to today?
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTIzNzI3NywtMTQ0NDczMjU3NCwxMD
-MyMzI2NTg5XX0=
+eyJoaXN0b3J5IjpbOTY5OTY0MzQ5LC0xNDQ0NzMyNTc0LDEwMz
+IzMjY1ODldfQ==
 -->
