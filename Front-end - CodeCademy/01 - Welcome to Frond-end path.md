@@ -16,8 +16,10 @@
 3. How is code turned into the experience that users see in their browsers?
 4. How has the web and web development changed from its invention to today?
 
+**The Internet** refers to the actual network of connected computing devices.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDc1Mzk5LC00MjM5MTk4NTEsLTE0ND
+eyJoaXN0b3J5IjpbMzcyMTUyNDIzLC00MjM5MTk4NTEsLTE0ND
 Q3MzI1NzQsMTAzMjMyNjU4OV19
 -->
