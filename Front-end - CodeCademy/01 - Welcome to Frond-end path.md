@@ -28,8 +28,21 @@ The request is sent from your device to a server across the internet. First, the
 
 The internet follows *protocols* or *rules* that govern the format of data sent over the internet. The browser and server communicate with one another using the Internet Protocol known as HTTP
 
+
+
+
+
+
+
+
+
+
+
+
+
+*[]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTExMDA2NSw4MzQ1NDA3MzcsLTE0ND
-c2NDEyNzEsMTcyMjYxNTYwNiwzNzIxNTI0MjMsLTQyMzkxOTg1
-MSwtMTQ0NDczMjU3NCwxMDMyMzI2NTg5XX0=
+eyJoaXN0b3J5IjpbLTE1MzQxNjA0NzksODM0NTQwNzM3LC0xND
+Q3NjQxMjcxLDE3MjI2MTU2MDYsMzcyMTUyNDIzLC00MjM5MTk4
+NTEsLTE0NDQ3MzI1NzQsMTAzMjMyNjU4OV19
 -->
