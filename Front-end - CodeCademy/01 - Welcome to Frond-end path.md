@@ -26,10 +26,10 @@ The request is sent from your device to a server across the internet. First, the
 
 **The server** is a specialized computer connected to a network which provides, or "serves up", resources or services. It has the logic to receive and to send back the data needed by the browser.
 
-The internet follows *protocols* or *rules* that govern the format of data sent over the internet
+The internet follows *protocols* or *rules* that govern the format of data sent over the internet. The browser and server communicate with one another using the Internet Protocol known as HTTP
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzU1NjExNywxNzIyNjE1NjA2LDM3Mj
-E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
-ODldfQ==
+eyJoaXN0b3J5IjpbLTE0NDc2NDEyNzEsMTcyMjYxNTYwNiwzNz
+IxNTI0MjMsLTQyMzkxOTg1MSwtMTQ0NDczMjU3NCwxMDMyMzI2
+NTg5XX0=
 -->
