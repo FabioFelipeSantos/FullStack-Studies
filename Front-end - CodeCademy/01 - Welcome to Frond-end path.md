@@ -7,8 +7,11 @@
 - Use React and Redux.
 - Deploy on Netlify.
 
-#
+## 1.2 - Introduction: Overview of Web Development
+
+### Questions to answer
+#### 1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjcyOTU1MDUsLTE0NDQ3MzI1NzQsMT
-AzMjMyNjU4OV19
+eyJoaXN0b3J5IjpbMTM0OTIzNzI3NywtMTQ0NDczMjU3NCwxMD
+MyMzI2NTg5XX0=
 -->
