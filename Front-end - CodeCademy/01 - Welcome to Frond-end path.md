@@ -1,8 +1,4 @@
-# 
-
- 1. List item
-
-Welcome to Front-end engineer career path
+# 1 - Welcome to Front-end engineer career path
 
 ## 1.1 - Main learned skills
 
@@ -13,5 +9,5 @@ Welcome to Front-end engineer career path
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzM0MTYxMjAsMTAzMjMyNjU4OV19
+eyJoaXN0b3J5IjpbLTE0NDQ3MzI1NzQsMTAzMjMyNjU4OV19
 -->
