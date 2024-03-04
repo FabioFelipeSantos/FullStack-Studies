@@ -11,10 +11,10 @@ Deploy on Netlify.
 
 ### Questions to answer
 
-1. How is data sent from one computer to another?
-2. What's the relationship between a browser and a server?
-3. How is code turned into the experience that users see in their browsers?
-4. How have the web and web development changed from their invention to today?
+ - [ ] How is data sent from one computer to another?
+ - [ ] What's the relationship between a browser and a server?
+ - [ ] How is code turned into the experience that users see in their browsers?
+ - [ ] How have the web and web development changed from their invention to today?
 
 The Internet refers to the actual network of connected computing devices.
 
@@ -26,9 +26,10 @@ The request is sent from your device to a server across the internet. First, the
 
 **The server** is a specialized computer connected to a network which provides, or "serves up", resources or services. It has the logic to receive and to send back the data needed by the browser.
 
-The internet follows *protocols* or *rules* 
+The internet follows *protocols* or *rules* that govern the format of data sent over the internet
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTIyODM2OCwxNzIyNjE1NjA2LDM3Mj
+eyJoaXN0b3J5IjpbLTQwNzU1NjExNywxNzIyNjE1NjA2LDM3Mj
 E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
 ODldfQ==
 -->
