@@ -24,9 +24,11 @@ The World Wide Web (W3) is a collection of interlinked websites and other web re
 
 The request is sent from your device to a server across the internet. First, the browser takes the address you provided and sends a request to a server across the internet for the files that make up the website. The contacted server is responsible for holding the website's files. Once that server receives the order, he contains logic for processing the request and identifying the files and data that the client has specified. It responds the browser with the necessary files. This is the process that allow us see the website that had been requested.
 
-**The server** is a specialized computer connected to a network which provides, or "serves up", resources or services. It has the logic to receive and to send back the data needed by the browser
+**The server** is a specialized computer connected to a network which provides, or "serves up", resources or services. It has the logic to receive and to send back the data needed by the browser.
+
+The internet follows *protocols* or *rules* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzNDUwNjYzLDE3MjI2MTU2MDYsMzcyMT
-UyNDIzLC00MjM5MTk4NTEsLTE0NDQ3MzI1NzQsMTAzMjMyNjU4
-OV19
+eyJoaXN0b3J5IjpbLTEyOTIyODM2OCwxNzIyNjE1NjA2LDM3Mj
+E1MjQyMywtNDIzOTE5ODUxLC0xNDQ0NzMyNTc0LDEwMzIzMjY1
+ODldfQ==
 -->
