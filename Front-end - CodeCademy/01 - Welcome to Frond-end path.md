@@ -1,3 +1,4 @@
+<!-- markdownlint-disable-file -->
 #  1. Welcome to Front-end engineer career path
 
 ## 1.1. Main learned skills
@@ -98,4 +99,50 @@ The four main languages that are used to build an website are:
 
 - The image shows a *paragraph element*. It are made by an opening tab `<p>` (name of the element), the content text "Hello World!", and a closing tag `</p>`.
 
+#### 1.3.1.2. Hyperlinks - How *Attributes* Work
 
+- An attribute in HTML provides additional information about an HTML element;
+- Your declaration is given by **`name = "value"`**. For example **`width = "500px"`** will make the width of the element be 500px;
+- Links are created using the `href` attribute, which stands for ***h**yperlink **ref**erence*. This attribute allows us to specify the URL or address on the web.
+- When we set the `href` attribute on an ***Anchor*** tag `<a>` we can specify both the text that should be displayed for the user, and the URL  that the browser should navigate to;
+```html
+<!--When a user clicks on the text with the link, they will be redirected to the site specified-->
+<a href="www.codecademy.com">
+  Learn to code!
+</a>
+```
+
+### 1.3.2. What's CSS?
+
+- *CSS* is the language that provides style to the content of an HTML page, like colors, fonts, positioning, layout, and more.
+- CSS contains ***selectors*** that specify the HTML elements to which the style should be applied as well as visual rules that specify how that content should be displayed.
+
+### 1.3.3. What's JavaScript?
+
+- JavaScript is responsible for the user interactivity with the elements of the web page.
+- One of your features is the ability to respond to browser events triggered by some user interaction, including:
+  - the user click on a button;
+  - the user pressing enter on their keyboard;
+  - a video file finishing loading;
+  - the user re-sizing their window;
+  - the user hovering over text on the webpage.
+- For exemple, when a user puts the mouse near an HTML element, the event `onmouseover` is fired. Then, JS uses ***Functions*** to handle the behavior of the HTML element near the pointer of the mouse.
+- Functions are reusable blocks of code designed to perform a specific task.
+- The JS code need to be between the `<script>` tags. Not necessarily the Js code need to be inside the HTML file. It can be on a separate file that will be imported by the script tag.
+- HTML attributes can set events that trigger one JS function, where the **name** of the attribute is the event and the **value** of the attribute is the JS function that we want to execute. For example: the `onclick="functionName()"` event is triggered by the click of a link or button, in this way, after the click the function `functionName` will be called.
+
+### 1.3.4. What's SQL?
+
+- The features of store, retrieve, and modify *data* like usernames, shipping address, payment information, and others, are implemented with the ***SQL*** language.
+- SQL stands for ***S**tructured **Q**uery **L**anguage*.
+- SQL stores information in tables, which is simply a collection of information organized into rows and columns.
+- To get the information, you would write a ***Query***, or a program that would retrieve data from the table. An example of a query is `SELECT * FROM page_views`. The keyword `*` is a shorthand for "all", so, this query has requested all the data in the page_views columns.
+
+## 1.4. What is Front-End Development
+
+- ***Programming*** is the mental process of thinking up instructions to give to a machine (like a computer).
+- ***Coding*** is the process of transforming those ideas into a written language that a computer can understand.
+- An ***Front-End Developer*** is responsible for programming and implementing a web site. In summary, these developers will work with the logic behind of how a user can see and interact with a web page, the position of the elements, the styles of these elements, and finally with the interactivity between these elements.
+- The usual tasks are: to make some page updates; to program and to code new layouts (from 0); to create HTML for email campaigns; to work with mobile design and implementation; to assure that the performance of the website is always optimized; to make the website accessible to everyone with accessibility tools.
+- The technologies that must be dominated by an front-end developer are HTML, CSS, and JavaScript.
+- Some ***Frameworks*** should be learned too, like React, Angular, and Vue. The aim of a framework is to make the job of front-end more quicker to write, easier to update and faster for users.
