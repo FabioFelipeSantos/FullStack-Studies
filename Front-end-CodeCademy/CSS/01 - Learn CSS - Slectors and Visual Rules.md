@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="C:\Users\fabio\Documents\FullStack-Studies\Front-end-CodeCademy\styles.css">
+<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 
 # 1. Learn CSS - Selectors and Visual Rules
 
