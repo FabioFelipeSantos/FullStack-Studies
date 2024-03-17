@@ -1,4 +1,8 @@
-<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+---
+id: "my-id"
+---
+
+@import "styles.less"
 
 # 1. Learn CSS - Selectors and Visual Rules
 
@@ -236,21 +240,24 @@ p:hover {
 - IDs are the most specific selector in CSS, followed by classes, and finally, type.
 - For the selector that combines `type` and an `attribute` we have that will be superior at the `class` selector but inferior to the `id` selector.
 
-```html
-<h1 class="headline">Breaking News</h1>
-```
+!!! example
 
-```css
-h1 {
-  color: red;
-}
+    ```html
+    <h1 class="headline">Breaking News</h1>
+    ```
 
-.headline {
-  color: firebrick;
-}
-```
+    ```css
+    h1 {
+      color: red;
+    }
 
-- In the example code above, the `color` of the heading would be set to `firebrick`, as the class selector is more specific than the type selector.
+    .headline {
+      color: firebrick;
+    }
+    ```
+
+    - In the example code above, the `color` of the heading would be set to `firebrick`, as the class selector is more specific than the type selector.
+
 - If an ID attribute (and selector) were added to the code above, the styles within the ID selector’s body would override all other styles for the heading.
 - To make styles easy to edit, it’s best to style with a type selector, if possible. If not, add a class selector. If that is not specific enough, then consider using an ID selector.
 
@@ -317,9 +324,75 @@ h1,
 
 ## 1.3. Values and Syntax
 
-- Before entering the specific properties that we have, it's important to understand how the values in CSS are computed and how value definition syntax is used, for example, in the suggestions on an IDE. Let's begin with how the values are specified and computed.
+- Before entering the specific properties that we have, it's important to understand what's a CSS value, how the values in CSS are computed, and how value definition syntax is used, for example, in the suggestions on an IDE.
+- First, let's begin with the definition of a CSS value and your data types.
+- Secondly, we'll see how the values are specified and computed. We have a distinction between five different ways to calculate a value of a property. They are:
+  - [Initial Value](#131-initial-value);
+  - [Specified Value](#132-specified-value);
+  - [Computed Value](#133-computed-value);
+  - [Used Value](#134-used-value);
+  - [Actual Value](#135-actual-value).
+- Lastly, we will define the common syntax in guides, references, editors and IDEs for CSS values.
 
-### 1.3.1. Initial value
+### 1.3.1. What's a CSS Value?
+
+- In CSS specifications and on the property pages in web, you will be able to spot value types as they will be surrounded by angle brackets, such as `<color>` or `<length>`. When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the `<color>` reference page.
+- A _value type_ in CSS is a way to define a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use any available `<color>` values, assuming they are supported by your browser.
+
+#### 1.3.1.1. Numbers, Lengths, and Percentages
+
+- There are various numeric value types that you might find yourself using in CSS. The following are all classed as numeric:
+
+| Data type | Description |
+| :-: | --- |
+| `<integer>` | An `<integer>` is a whole number such as 1024 or -55. |
+| `<number>` | A `<number>` represents a decimal number — it may or may not have a decimal point with a fractional component. For example, 0.255, 128, or -1.2. |
+| `<dimension>` | A `<dimension>` is a `<number>` with a unit attached to it. For example, `45deg`, `5s`, or `10px`. `<dimension>` is an umbrella category that includes the `<length>`, `<angle>`, `<time>`, and `<resolution>` types. |
+| `<percentage>` | A `<percentage>` represents a fraction of some other value. For example, `50%`. Percentage values are always relative to another quantity. For example, an element's length is relative to its parent element's length. |
+
+#### 1.3.1.2. Lengths
+
+- The numeric type you will come across most frequently is `<length>`.
+- For example, `10px` (pixels) or `30em`. There are two types of lengths used in CSS — _**relative and absolute**_. It's important to know the difference in order to understand how big things will become.
+
+##### 1.3.1.2.1. Absolute Length Units
+
+- The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
+
+| Unit |        Name         | Equivalent to            |
+| :--: | :-----------------: | ------------------------ |
+|  cm  |     Centimeters     | 1cm = 37.8px = 25.2/64in |
+|  mm  |     Millimeters     | 1mm = 1/10th of 1cm      |
+|  Q   | Quarter-millimeters | 1Q = 1/40th of 1cm       |
+|  in  |       Inches        | 1in = 2.54cm = 96px      |
+|  pc  |        Picas        | 1pc = 1/6th of 1in       |
+|  pt  |       Points        | 1pt = 1/72nd of 1in      |
+|  px  |       Pixels        | 1px = 1/96th of 1in      |
+
+Most of these units are more useful when used for print, rather than screen output. For example, we don't typically use cm (centimeters) on screen. The only value that you will commonly use is px (pixels).
+
+##### Relative length units
+
+Relative length units are relative to something else, perhaps the size of the parent element's font, or the size of the viewport. The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. Some of the most useful units for web development are listed in the table below.
+
+<!-- Unit	Relative to
+em	Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
+ex	x-height of the element's font.
+ch	The advance measure (width) of the glyph "0" of the element's font.
+rem	Font size of the root element.
+lh	Line height of the element.
+rlh	Line height of the root element. When used on the font-size or line-height properties of the root element, it refers to the properties' initial value.
+vw	1% of the viewport's width.
+vh	1% of the viewport's height.
+vmin	1% of the viewport's smaller dimension.
+vmax	1% of the viewport's larger dimension.
+vb	1% of the size of the initial containing block in the direction of the root element's block axis.
+vi	1% of the size of the initial containing block in the direction of the root element's inline axis.
+svw, svh	1% of the small viewport's width and height, respectively.
+lvw, lvh	1% of the large viewport's width and height, respectively.
+dvw, dvh	1% of the dynamic viewport's width and height, respectively. -->
+
+### 1.3.2. Initial value
 
 - The _**Initial Value**_ of a CSS property is its _default value_, as listed in its definition table in the specification. The usage of the initial value depends on whether a property is inherited or not:
 
@@ -327,31 +400,33 @@ h1,
   - For [non-inherited properties](#142-non-inherited-properties), the initial value is used on _all elements_, as long as no specified value is supplied.
   - You can explicitly specify the initial value by using the `initial` keyword.
 
-  ```css
-  div {
-    color: blue;
-  }
+!!! example
 
-  .initial {
-    color: initial;
-  }
-  ```
+    ```css
+    div {
+      color: blue;
+    }
 
-  ```html
-  <p>I have a black text as default. This is my initial value</p>
-  <div>
-    <p>
-      For me, my text is blue because color is an inherited value, so I inherit the color from my parent div.
-      But I don't have border because of the non-inheritance of border.
-    </p>
-    <p class="initial">
-      Now, for me, I'm a paragraph nested in the div with blue color text, but even that, I have black text.
-      Why? Because I was specified in the CSS as the value initial.
-    </p>
-  </div>
-  ```
+    .initial {
+      color: initial;
+    }
+    ```
 
-### 1.3.2. Specified Value
+    ```html
+    <p>I have a black text as default. This is my initial value</p>
+    <div>
+      <p>
+        For me, my text is blue because color is an inherited value, so I inherit   the color from my parent div.
+        But I don't have border because of the non-inheritance of border.
+      </p>
+      <p class="initial">
+        Now, for me, I'm a paragraph nested in the div with blue color text, but  even that, I have black text.
+        Why? Because I was specified in the CSS as the value initial.
+      </p>
+    </div>
+    ```
+
+### 1.3.3. Specified Value
 
 - Maybe the mainly used value in CSS. The **_Specified Value_** of a CSS property is the value it receives from the document's style sheet. The specified value for a given property is determined according to the following rules:
 
@@ -359,84 +434,178 @@ h1,
   - If the document's style sheet doesn't specify a value but it is an _**[inherited property](#141-inherited-properties)**_, the value will be taken from the parent element.
   - If none of the above pertain, the element's _initial value_ will be used.
 
-  ```css
-  .fun {
-    border: 1px dotted pink;
-    font-family: fantasy;
-  }
+!!! example
 
-  p {
-    color: green;
-  }
-  ```
+    ```css
+    .fun {
+      border: 1px dotted pink;
+      font-family: fantasy;
+    }
 
-  ```html
-  <p>My color is green as given explicitly in the CSS.</p>
-  <div>
-    The specified values of all my properties default to their initial values or inheritance, because none of
-    them are given in the CSS.
-  </div>
-  <div class="fun">
-    <p>
-      The specified value of my font family is not given explicitly in the CSS, so it is inherited from my
-      parent (fantasy). However, the border is not an inheriting property, so I don't have a border.
-    </p>
-  </div>
-  ```
+    p {
+      color: green;
+    }
+    ```
 
-### 1.3.3. Computed Value
+    ```html
+    <p>My color is green as given explicitly in the CSS.</p>
+    <div>
+      The specified values of all my properties default to their initial values or  inheritance, because none of
+      them are given in the CSS.
+    </div>
+    <div class="fun">
+      <p>
+        The specified value of my font family is not given explicitly in the CSS, so  it is inherited from my
+        parent (fantasy). However, the border is not an inheriting property, so I   don't have a border.
+      </p>
+    </div>
+    ```
+
+### 1.3.4. Computed Value
 
 - The _**computed value**_ of a CSS property is the value that is transferred from parent to child during _inheritance_. It is calculated from the [specified value](#132-specified-value) by:
   - Handling the special values `inherit`, `initial`, `revert`, `revert-layer`, and `unset`.
   - Doing the computation needed to reach the value described in the "Computed value" line in the property's definition table.
 - The computation needed to reach a property's computed value typically involves converting relative values (such as those in `em` units or percentages) to absolute values. For example, if an element has specified values `font-size: 16px` and `padding-top: 2em`, then the computed value of `padding-top` is `32px` (double the font size).
-- However, for some properties (those where percentages are relative to something that may require layout to determine, such as `width`, `margin-right`, `text-indent`, and `top`), **percentage-specified values turn into percentage-computed values**. Additionally, unitless numbers specified on the `line-height` property become the computed value, as specified. The relative values that remain in the computed value become absolute when the [used value](#134-used-value) is determined.
+- However, for some properties (those where percentages are relative to something that may require layout to determine, such as `FontSize`, `margin-right`, `text-indent`, and `top`), **percentage-specified values turn into percentage-computed values**. Additionally, unitless numbers specified on the `line-height` property become the computed value, as specified. The relative values that remain in the computed value become absolute when the [used value](#134-used-value) is determined.
 
-```css
-div {
-  font-size: 16px;
-  line-height: 1.5;
-  padding-top: 2em;
-}
+!!! example
 
-p {
-  font-size: 12px;
-  line-height: 1.2;
-}
-```
+    ```css
+    div {
+      font-size: 16px;
+      line-height: 1.5;
+      padding-top: 2em;
+    }
 
-```html
-<div>
-  <p>
-    The computed value of my font-size and line-height is the same as the specified value, because they are
-    absolute values.
-  </p>
-  <p>
-    The computed value of my padding-top is 32px, because it is a relative value that is calculated from the
-    font-size of my parent.
-  </p>
-  <p>
-    The used value of my font-size is 16px, because it is the computed value of my parent. The used value of
-    my line-height is 24px, because it is the computed value of my parent. The used value of my padding-top is
-    32px, because it is the computed value of my parent.
-  </p>
-</div>
-```
+    p {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+    ```
 
-### 1.3.4. Used Value
+    ```html
+    <div>
+      <p>
+        The computed value of my font-size and line-height is the same as the     specified value, because they are
+        absolute values.
+      </p>
+      <p>
+        The computed value of my padding-top is 32px, because it is a relative value    that is calculated from the
+        font-size of my parent.
+      </p>
+      <p>
+        The used value of my font-size is 16px, because it is the computed value of my    parent. The used value of
+        my line-height is 24px, because it is the computed value of my parent. The    used value of my padding-top is
+        32px, because it is the computed value of my parent.
+      </p>
+    </div>
+    ```
 
--
+### 1.3.5. Used Value
 
-### 1.3.5. Value Definition Syntax
+- The _**used value**_ of a CSS property is its value _after all calculations have been performed on the computed value_.
+- After the [used agent](#21-user-agent) has finished its calculations, every CSS property has a used value. The **used values of dimensions** (e.g., FontSize, line-height) **are in pixels**. The used values of shorthand properties (e.g., background) are consistent with those of their component properties (e.g., background-color or background-size) and with position and float.
+
+!!! info
+
+    The `getComputedStyle()` DOM API returns the resolved value, which may either be the computed value or the used value, depending on the property.
+
+!!! example
+
+    ```css
+    /* CSS */
+    .div-1 {
+      font-size: 16px;
+      padding: 12px;
+    }
+
+    p, span {
+      margin: 0;
+      font-size: 85%;
+      line-height: 2;
+    }
+
+    .div-2 {
+      font-size: 1.5em;
+      padding-top: 1.2em;
+    }
+    ```
+
+    ```html
+    <!-- HTML -->
+    <div class="div-1">
+      <p id="first-p">
+        I'm the first paragraph. How my specified font-size is 85%, I'm defining
+        85%  from my parent font-size, who is 16px from the "div-1".
+        My line-height  is two  times my font-size, as specified.
+        <span class="show-used-font-size"> </span>
+      </p>
+      <div class="div-2">
+        <p id="second-p">
+          For me, I have 85% for div-2 that has 1.5em specified. First
+          1.5em = 1.5 * 16px = 24px (since div-2 is a children of div-1 and
+          inherits its font-   size), then 85% from 24px is 20.4px. With this
+          font-size, my line-height   is   2em or 40.8px. For my padding-top,
+          it will be 1.2em = 1.2 * 1.5em =  1.2 *   1.5 * 16px = 28.8px.
+          <span class="show-used-font-size"></span>
+        </p>
+      </div>
+    </div>
+    ```
+
+    ```javascript
+    // JS
+    function updateUsedFontSize(id) {
+      const paragraph = document.getElementById(id);
+      const span = paragraph.querySelector(".show-used-font-size");
+      const fontSizeParagraph = window.getComputedStyle(paragraph)["font-size"];
+      span.textContent = `Used font-size for this element: ${fontSizeParagraph}.
+      My line-height is ${window.getComputedStyle(paragraph)["line-height"]}`;
+      span.style.fontSize = "15px";
+      span.style.color = 'red';
+    }
+
+    function updateFontSize(className) {
+      const secondDiv = document.querySelector(className);
+      const fontSizeDiv = window.getComputedStyle(secondDiv)["font-size"];
+      const span = secondDiv.querySelector(".show-used-font-size");
+      const divPaddingTop = window.getComputedStyle(secondDiv)["padding-top"];
+      const newSpan = `${span.textContent}. My padding-top is ${divPaddingTop}.`;
+      span.textContent = newSpan;
+    }
+
+    updateUsedFontSize("first-p");
+    updateUsedFontSize("second-p");
+    updateFontSize(".div-2");
+    ```
+
+    With this code, we'll obtain this output:
+    ![alt text](image-1.png)
+
+### 1.3.6. Actual Value
+
+- The actual value of a CSS property is the [used value](#134-used-value) of that property after any necessary approximations have been applied. For example, a [user agent](#21-user-agent) that can only render borders with a whole-number pixel width may round the thickness of the border to the nearest integer.
+- The user agent performs four steps to calculate a property's actual (final) value:
+  1. First, the [specified value](#132-specified-value) is determined based on the result of cascading, [inheritance](#14-inheritance), or using the [initial value](#131-initial-value).
+  2. Next, the [computed value](#133-computed-value) is calculated according to the specification (for example, a `span` with `position: absolute` will have its computed `display` changed to `block`).
+  3. Then, layout is calculated, resulting in the [used value](#134-used-value).
+  4. Finally, the used value is transformed according to the limitations of the local environment, resulting in the _**actual value**_.
+
+### 1.3.7. Value Definition Syntax
+
+- **CSS value definition syntax**, a formal grammar, is used for defining the set of
+
+### 1.3.8. Value Definition Syntax
 
 - **CSS value definition syntax**, a formal grammar, is used for defining the set of valid values for a CSS property or function. In addition to this syntax, the set of valid values can be further restricted by semantic constraints (for example, for a number to be strictly positive).
 - The definition syntax describes which values are allowed and the interactions between them.
 - A component can be a keyword, some characters considered as a **_literal_**, or a value of a given CSS data type or of another CSS property.
 - In the value definition syntax, we have three different component value to adjust as value for a given property. They are: Types, Combinators, Multipliers.
 
-#### 1.3.5.1. Component Value Types
+#### 1.3.8.1. Component Value Types
 
-##### 1.3.5.1.1. Keywords
+##### 1.3.8.1.1. Keywords
 
 - A keyword with a predefined meaning appears literally, without quotation marks. For example: `auto`, `smaller` or `ease-in`.
 - _**All CSS properties**_ accept the keywords `inherit` (Herança), `initial` (Inicial) and `unset` (Desarmar, retirar), that are defined throughout CSS. They are not shown in the value definition, and are implicitly defined.
@@ -536,17 +705,42 @@ p {
 ## 1.4. Inheritance
 
 - In CSS, _**inheritance**_ controls what happens when no value is specified for a property on an element. CSS properties can be categorized in two types:
-  - _**inherited properties**_, which by default are set to the computed value of the parent element;
-  - _**non-inherited properties**_, which by default are set to initial value of the property;
+  - [inherited properties](#141-inherited-properties), which by default are set to the computed value of the parent element;
+  - [non-inherited properties](#142-non-inherited-properties), which by default are set to initial value of the property;
 
 ### 1.4.1. Inherited Properties
 
 - When no value for an **inherited property** has been specified on an element, the element gets the _**computed value**_ of that property on its parent element. Only the root element of the document gets the initial value given in the property's summary.
-  - The
+- A typical example of an inherited property is the `color` property.
+
+!!! example
+
+    ```css
+    p {
+      color: green;
+    }
+    ```
+    ```html
+    <p>This paragraph has <em>emphasized text</em> in it.</p>
+    ```
+    The words _"emphasized text"_ will appear green, since the `em` element has inherited the value of the `color` property from the `p` element.
 
 ### 1.4.2. Non-Inherited Properties
 
--
+- When no value for a **non-inherited property** has been specified on an element, the element gets the initial value of that property (as specified in the property's summary).
+- A typical example of a non-inherited property is the `border` property since his initial value of `border-style` is `none`.
+
+!!! example
+
+    ```css
+    p {
+      border: medium solid;
+    }
+    ```
+    ```html
+    <p>This paragraph has <em>emphasized text</em> in it.</p>
+    ```
+    The paragraph will have a border medium black border, but the words "emphasized text" will not have another border.
 
 ## 1.5. Visual Rules
 
@@ -614,3 +808,10 @@ p {
 - In the example above, all paragraphs on the web page would appear bolded.
 - The `font-weight` property has another value: `normal`. Why does it exist?
 - If we wanted all text on a web page to appear bolded, we could select all text elements and change their font weight to `bold`. If a certain section of text was required to appear normal, however, we could set the font weight of that particular element to `normal`, essentially shutting off `bold` for that element.
+
+# 2. Other Definitions
+
+## 2.1. User Agent
+
+- A user agent is a **computer program representing a person**, for example, a browser in a Web context.
+- Besides a browser, a user agent could be a bot scraping webpages, a download manager, or _another app accessing the Web_.
