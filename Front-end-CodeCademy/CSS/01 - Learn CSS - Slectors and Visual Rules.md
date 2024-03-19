@@ -327,11 +327,11 @@ h1,
 - Before entering the specific properties that we have, it's important to understand what's a CSS value, how the values in CSS are computed, and how value definition syntax is used, for example, in the suggestions on an IDE.
 - First, let's begin with the definition of a CSS value and your data types.
 - Secondly, we'll see how the values are specified and computed. We have a distinction between five different ways to calculate a value of a property. They are:
-  - [Initial Value](#131-initial-value);
-  - [Specified Value](#132-specified-value);
-  - [Computed Value](#133-computed-value);
-  - [Used Value](#134-used-value);
-  - [Actual Value](#135-actual-value).
+  - [Initial Value](#132-initial-value);
+  - [Specified Value](#133-specified-value);
+  - [Computed Value](#134-computed-value)
+  - [Used Value](#135-used-value);
+  - [Actual Value](#136-actual-value).
 - Lastly, we will define the common syntax in guides, references, editors and IDEs for CSS values.
 
 ### 1.3.1. What's a CSS Value?
@@ -357,7 +357,7 @@ h1,
 
 ##### 1.3.1.2.1. Absolute Length Units
 
-- The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
+- The following are all absolute length units — they are not relative to anything else, and are generally considered to **always be the same size**.
 
 | Unit |        Name         | Equivalent to            |
 | :--: | :-----------------: | ------------------------ |
@@ -367,30 +367,96 @@ h1,
 |  in  |       Inches        | 1in = 2.54cm = 96px      |
 |  pc  |        Picas        | 1pc = 1/6th of 1in       |
 |  pt  |       Points        | 1pt = 1/72nd of 1in      |
-|  px  |       Pixels        | 1px = 1/96th of 1in      |
+| `px` |       Pixels        | 1px = 1/96th of 1in      |
 
-Most of these units are more useful when used for print, rather than screen output. For example, we don't typically use cm (centimeters) on screen. The only value that you will commonly use is px (pixels).
+- Most of these units are more useful when used for print, rather than screen output. For example, we don't typically use cm (centimeters) on screen. _The only value that you will commonly use is px (pixels)_.
 
-##### Relative length units
+##### 1.3.1.2.2. Relative length units
 
-Relative length units are relative to something else, perhaps the size of the parent element's font, or the size of the viewport. The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. Some of the most useful units for web development are listed in the table below.
+- Relative length units are **relative to something else**, perhaps the _size of the parent element's font_, or the _size of the viewport_.
+- The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. Some of the most useful units for web development are listed in the table below.
 
-<!-- Unit	Relative to
-em	Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.
-ex	x-height of the element's font.
-ch	The advance measure (width) of the glyph "0" of the element's font.
-rem	Font size of the root element.
-lh	Line height of the element.
-rlh	Line height of the root element. When used on the font-size or line-height properties of the root element, it refers to the properties' initial value.
-vw	1% of the viewport's width.
-vh	1% of the viewport's height.
-vmin	1% of the viewport's smaller dimension.
-vmax	1% of the viewport's larger dimension.
-vb	1% of the size of the initial containing block in the direction of the root element's block axis.
-vi	1% of the size of the initial containing block in the direction of the root element's inline axis.
-svw, svh	1% of the small viewport's width and height, respectively.
-lvw, lvh	1% of the large viewport's width and height, respectively.
-dvw, dvh	1% of the dynamic viewport's width and height, respectively. -->
+| Unit | Relative to |
+| :-: | --- |
+| `em` | Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width. |
+| ex | x-height of the element's font. |
+| ch | The advance measure (width) of the glyph "`0`" of the element's font. |
+| `rem` | Font size of the root element. |
+| lh | Line height of the element. |
+| rlh | Line height of the root element. When used on the font-size or line-height properties of the root element, it refers to the properties' initial value. |
+| `vw` | 1% of the viewport's width. |
+| `vh` | 1% of the viewport's height. |
+| `vmin` | 1% of the viewport's smaller dimension. |
+| `vmax` | 1% of the viewport's larger dimension. |
+| vb | 1% of the size of the initial containing block in the direction of the root element's block axis. |
+| vi | 1% of the size of the initial containing block in the direction of the root element's inline axis. |
+| svw, svh | 1% of the small viewport's width and height, respectively. |
+| lvw, lvh | 1% of the large viewport's width and height, respectively. |
+| dvw, dvh | 1% of the dynamic viewport's width and height, respectively. |
+
+!!! example
+
+    ```css
+    .wrapper {
+      font-size: 1.5em;
+    }
+    div {
+      color: darkred;
+      font-weight: 800;
+    }
+    .box {
+      border: 4px solid darkorchid;
+      background-color: lightgreen;
+      margin-top: 15px;
+    }
+    .px {
+      width: 320px;
+    }
+    .vw {
+      width: 85vw;
+    }
+    .em {
+      width: 18em;
+    }
+    ```
+
+    ```html
+    <div class="wrapper">
+      <p class="fontSize-div"></p>
+      <div class="box px"></div>
+      <div class="box vw"></div>
+      <div class="box em"></div>
+    </div>
+    ```
+
+    ```javascript
+    function showFontSize(className) {
+      if (className === ".fontSize-div") {
+        const paragraph = document.querySelector(className);
+        const fontSizeParagraph = window.getComputedStyle(paragraph)["font-size"];
+        const paragraphWidth = window.getComputedStyle(paragraph)["width"];
+        console.log(paragraphWidth);
+        paragraph.textContent = `My font-size is ${fontSizeParagraph} because of my     parent that has 1.5em = 1.5 * 16px = 24px as font-size. The parent font-size    is based on the initial font-size of the document. My width is equal a    ${Math.round(parseFloat(paragraphWidth))}px.`;
+      } else {
+        const boxesDiv = document.getElementsByClassName(className);
+
+        for (let i = 0; i < boxesDiv.length; i++) {
+          const box = boxesDiv[i];
+          const widthBox = window.getComputedStyle(box)["width"];
+          box.textContent = `My width is ${Math.round(parseFloat(widthBox))}px.`;
+        }
+      }
+    }
+
+    showFontSize(".fontSize-div");
+    showFontSize("box");
+    ```
+    ![alt text](image-2.png)
+    Here the `font-size` of the external `div` is set as `1.5em` while the `font-size` of the document is `16px`, so the `font-size` of the external `div` will be `24px`. In the first internal `div`, the `width` is specified as `320px`, so is an absolute value. For the second internal `div`, the `width` is specified as `85vw`, i.e., `85%` from the width of the viewport. How the viewport has `695px` as width, the `div` will be `0.85 * 695px = 590.75px` (at the output the approximate value is shown). For the third internal `div`, your `width` is specified as `18em`, which will be 18 times the `font-size` of this `div` that's `24px`, so, the calculated value will be `18 * 24px = 432px`.
+
+#### Percentages
+
+-
 
 ### 1.3.2. Initial value
 
@@ -808,6 +874,22 @@ p {
 - In the example above, all paragraphs on the web page would appear bolded.
 - The `font-weight` property has another value: `normal`. Why does it exist?
 - If we wanted all text on a web page to appear bolded, we could select all text elements and change their font weight to `bold`. If a certain section of text was required to appear normal, however, we could set the font weight of that particular element to `normal`, essentially shutting off `bold` for that element.
+
+### 1.5.4. Text Align
+
+- To align text we can use the `text-align` property. The `text-align` property will **align text to the element that holds it**, otherwise known as its parent.
+
+```css
+h1 {
+  text-align: right;
+}
+```
+
+- The `text-align` property can be set to one of the following commonly used values:
+  - `left` — aligns text to the left side of its parent element, which in this case is the browser.
+  - `center` — centers text inside of its parent element.
+  - `right` — aligns text to the right side of its parent element.
+  - `justify` — spaces out text in order to align with the right and left side of the parent element.
 
 # 2. Other Definitions
 
