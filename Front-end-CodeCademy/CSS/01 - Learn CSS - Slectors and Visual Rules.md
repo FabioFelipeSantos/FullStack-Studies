@@ -454,9 +454,96 @@ h1,
     ![alt text](image-2.png)
     Here the `font-size` of the external `div` is set as `1.5em` while the `font-size` of the document is `16px`, so the `font-size` of the external `div` will be `24px`. In the first internal `div`, the `width` is specified as `320px`, so is an absolute value. For the second internal `div`, the `width` is specified as `85vw`, i.e., `85%` from the width of the viewport. How the viewport has `695px` as width, the `div` will be `0.85 * 695px = 590.75px` (at the output the approximate value is shown). For the third internal `div`, your `width` is specified as `18em`, which will be 18 times the `font-size` of this `div` that's `24px`, so, the calculated value will be `18 * 24px = 432px`.
 
-#### Percentages
+#### 1.3.1.3. Percentages
 
--
+- In a lot of cases, a percentage is treated in the same way as a length. The thing with percentages is that they are _**always set relative to some other value**_.
+- For example, if you set an element's `font-size` as a percentage, it will be a percentage of the `font-size` of the element's parent. If you use a percentage for a `width` value, it will be a percentage of the `width` of the parent.
+
+!!! example
+
+    ```css
+    .wrapper {
+      width: 400px;
+      border: 5px solid deeppink;
+    }
+    .box {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border: 5px solid rebeccapurple;
+      background-color: rgb(60 20 30);
+    }
+    .px {
+      width: 300px;
+    }
+    .percent {
+      width: 65%;''
+    }
+    ```
+
+    ```html
+    <div class="box txt widthHTML"></div>
+    <div class="box px txt"></div>
+    <div class="box percent txt"></div>
+    <div class="wrapper">
+      <div class="box txt widthHTML"></div>
+      <div class="box px txt"></div>
+      <div class="box percent txt"></div>
+    </div>
+    ```
+
+    ```javascript
+    function usedWidth(className) {
+      if (className === "widthHTML") {
+        const divUsed = document.getElementsByClassName(className);
+
+        for (let i = 0; i < divUsed.length; i++) {
+          const div = divUsed[i];
+          const width = window.getComputedStyle(div)["width"];
+          div.textContent = `My internal width is ${parseInt(width)}px.`;
+        }
+      } else {
+        const divUsed = document.getElementsByClassName(className);
+
+        for (let i = 0; i < divUsed.length; i++) {
+          const div = divUsed[i];
+          const width = window.getComputedStyle(div)["width"];
+          div.textContent = `My width is ${parseInt(width)}px.`;
+        }
+      }
+    }
+
+    usedWidth("widthHTML");
+    usedWidth("px");
+    usedWidth("percent");
+    ```
+    ![alt text](image-3.png)
+    The `width` of the second and fourth `div`s are specified as `300px`, so its an absolute value. For the third and fifth `div`s, the `width` is specified as `65%`, so it'll be calculated from the `width` of your respective parent. For the third `div`, how the width of the `body` is `694px`, your width will be `65% * 694px ≊ 451px`. For the fifth `div`, its parent has `390px` as `width`. So, the `div` will have `65% * 390px ≊ 254px`.
+
+#### 1.3.1.4. Numbers
+
+- Some value types accept numbers, _without any unit_ added to them.
+- An example of a property which accepts a unitless number is the `opacity` property, which controls the opacity of an element (how transparent it is). This property accepts a number between `0` (fully transparent) and `1` (fully opaque).
+
+#### 1.3.1.5. Color
+
+- Color values can be used in many places in CSS, whether you are specifying the color of text, backgrounds, borders, and lots more.
+- There are some different ways to specify color properties: using keywords, hexadecimal, and rgb() values, are the most usual.
+- Despite the aforementioned ways, there are other ways of applying color, mainly guided by the use of functions.
+- Let's see these methods:
+  - `keywords` --- Also known as _named colors_. Defined by `<named-color>` date type, contains a name of color, as `red`, `green`, `blue`, `black`, `white`, etc.; [color list](https://www.w3schools.com/colors/colors_names.asp)
+  - `hexadecimal` --- uses 16 characters from `0-9` and `a-f`, each hex color consisting of a hash (`#`) followed by three or six hexadecimal characters (`#fcc` or `#ffc0cb`), plus an optional one or two hexadecimal to represent the alpha-transparency;
+    - Each pair of hex characters is a decimal number representing one of the channels --- red, green, and blue --- and allows to specify any of the 256 available values for each (`16 x 16 = 256`);
+    - For example, the color `#02798b` is equal to `rgb(2, 121, 139)`;
+  - `rgb()` --- takes three parameters representing red, green, and blue channel values of the colors, as `rgb(64, 167, 114)`
+    - For the transparency, we can pass a fourth value between 0 and 1 (inclusive) to represent the opacity (0 is without color and 1 is the fully color), as `rgb(64, 167, 114, .3)` or as `rgb(64, 167, 114, .7)`;
+    - For older browsers, a `rgba()` function could be used instead for ends of compatibility. So, `rgb(64, 167, 114, .3) = rgba(64, 167, 114, .3)`;
+  - `sRGB` --- or Standard Red Green Blue, is a color space used by computing devices to display colors. Created cooperatively by HP and Microsoft in 1996 to use on monitors, printers, and the World Wide Web.
+  - `hsl()` --- uses Hue (the property that allows us to tell the difference or similarity between colors like red, orange, yellow, green, blue, etc.), in addition to Saturation and Lightness:
+    - Hue --- The base shade of the color. This takes a `<hue>` value between 0 and 360, representing the angles around a color wheel.
+    - Saturation: How saturated is the color? This takes a value from 0–100%, where 0 is no color (it will appear as a shade of grey), and 100% is full color saturation.
+    - Lightness: How light or bright is the color? This takes a value from 0–100%, where 0 is no light (it will appear completely black) and 100% is full light (it will appear completely white). The hsl() color value also has an optional fourth value, separated from the color with a slash (/), representing the alpha transparency.
+    - `hsl(321 47% 57%) = rgb(197, 94, 161)`. [Conversion](https://www.rapidtables.com/convert/color/hsl-to-rgb.html);
+  - [Other colors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#color)
 
 ### 1.3.2. Initial value
 
