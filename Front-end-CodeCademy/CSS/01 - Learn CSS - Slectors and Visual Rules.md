@@ -545,6 +545,81 @@ h1,
     - `hsl(321 47% 57%) = rgb(197, 94, 161)`. [Conversion](https://www.rapidtables.com/convert/color/hsl-to-rgb.html);
   - [Other colors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#color)
 
+#### 1.3.1.6. Position
+
+- The `<position>` value type represents a set of _2D coordinates_, used to position an item such as a background image (via background-position).
+- It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, along with lengths, which **represent offsets from the top and left-hand edges of the box**.
+- A typical position value consists of two values: **the first sets the position horizontally**; **the second vertically**.
+- If you only specify values for one axis the other will default to `center`.
+
+!!! example
+
+    ```html
+    <div class="box">
+      <div class="object"></div>
+    </div>
+    ```
+    ```css
+    .box {
+      position: relative;
+      box-sizing: border-box;
+      width: 500px;
+      height: 350px;
+      background-color: hsl(321 47% 77%);
+      margin: 20px auto;
+      border: 5px solid darkblue;
+    }
+
+    .object {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: hsl(150 50% 20%);
+      top: 100px;
+      left: 350px;
+      transform: translate(-50%, -50%);
+    }
+    ```
+    ![alt text](image-4.png)
+    In this case, the `position` is a `keyword` property, `absolute`, that makes the `div`, which represents the inner rectangle, capable of being positioned in the external `div` by the `top` and `left` properties, which are the positions relative to the up corner on the left.
+
+#### 1.3.1.7. Functions
+
+- CSS also has functions, which work in a similar way to functions in other languages. In fact, we've already seen CSS functions in the [Color section](#1315-color) above with `rgb()` and `hsl()` functions.
+- Aside from applying colors, you can use functions in CSS to do a lot of other things. For example _**Transform functions**_ are a common way to move, rotate, and scale elements on a page. You might see `translate()` for moving something horizontally or vertically, `rotate()` to rotate something, or `scale()` to make something bigger or smaller.
+- These functions can be passed as usual values to a property.
+
+#### 1.3.1.8. Math functions
+
+- CSS has support for **Math functions**, which allow us to perform calculations instead of relying on static values or doing the math in JavaScript. One of the most common math functions is `calc()` which lets you do operations like addition, subtraction, multiplication, and division.
+- For example, let's say we want to set the `width` of an element to be `20%` of its parent container plus `100px`. We can't specify this width with a static value — if the parent uses a percentage `width` (or a relative unit like em or rem) then it will vary depending on the context it is used in, and other factors such as the user's device or browser window `width`.
+- However, we can use `calc()` to set the `width` of the element to be `20%` of its parent container plus `100px`. The `20%` is based on the width of the parent container and if that `width` changes, the calculation will change too.
+
+!!! example
+
+    ```html
+    <p class="html"></p>
+    <div class="box">
+      <div class="txt"></div>
+    </div>
+    ```
+    ```css
+    .box {
+      padding: 20px;
+      width: 500px;
+      background-color: hsl(321 27% 55%);
+      margin: 20px auto;
+      border: 5px solid darkblue;
+    }
+    .txt {
+      width: calc(30% + 120px);
+      background-color: hsl(105 67% 85%);
+      border: 2px solid hsl(175 20% 20%);
+    }
+    ```
+    ![alt text](image-5.png)
+    In this case, the `width` of the HTML is `694px`. The `.box` div has width specified as `500px` as the paragraph shows. The `.txt` div has width specified as `30%` of the width of your parent plus 120px. So, its width will be `30% * 500px + 120px = 150px + 120px = 270px`.
+
 ### 1.3.2. Initial value
 
 - The _**Initial Value**_ of a CSS property is its _default value_, as listed in its definition table in the specification. The usage of the initial value depends on whether a property is inherited or not:
