@@ -1,0 +1,11 @@
+{
+  "floating-toc-styles@@floating-toc-response-time": 0.2,
+  "floating-toc-styles@@floating-toc-font-size": 0.9,
+  "floating-toc-styles@@floating-toc-line-height": 1.5,
+  "floating-toc-styles@@floating-toc-position": 5,
+  "floating-toc-styles@@floating-toc-background-color@@dark": "#202020A3",
+  "floating-toc-styles@@floating-toc-hover-color@@dark": "#F130CF",
+  "floating-toc-styles@@enable-bar-heading-text": false,
+  "floating-toc-styles@@enable-bar-icon": false,
+  "obsidian-execute-code@@use-custom-output-color": false
+}

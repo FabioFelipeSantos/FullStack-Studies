@@ -1,0 +1,9 @@
+{
+  "strictLineBreaks": false,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "showInlineTitle": true,
+  "propertiesInDocument": "visible",
+  "rightToLeft": false,
+  "tabSize": 2
+}

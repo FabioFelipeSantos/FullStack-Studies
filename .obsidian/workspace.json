@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "2700fab4371fbb0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac5d1b07ea0275b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d8989b1512b2f3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "91228bb0d3b42b0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6591e451f6b82ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43ac3bb2aed85bc9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "373323c272b3a97a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ba23edb5da525ee6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "884773fdbe0fa664",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a4ffc95aea9a60c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "375fa7aab3bdd9c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0f6cd7bd877704bb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1c0c0c2290646ce3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c007e65959a8b1ec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md"
+              }
+            }
+          },
+          {
+            "id": "6e77f4b878872996",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ddea1cd145a9e3b5",
+            "type": "leaf",
+            "state": {
+              "type": "stats-tracker",
+              "state": {}
+            }
+          },
+          {
+            "id": "aee730a724ecfc24",
+            "type": "leaf",
+            "state": {
+              "type": "daily-note-outline",
+              "state": {
+                "activeSet": 0,
+                "activeGranularity": 0
+              }
+            }
+          },
+          {
+            "id": "eba5bc09e6c31894",
+            "type": "leaf",
+            "state": {
+              "type": "mathpad-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "copilot:Copilot Chat": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "mathpad:Open Mathpad": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6d8989b1512b2f3e",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+    "Front-end-CodeCademy/CSS/image-5.png",
+    "Front-end-CodeCademy/CSS/styles.css.md"
+  ]
+}

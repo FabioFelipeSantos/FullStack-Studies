@@ -1,0 +1,21 @@
+body {
+  --background-primary: rgb(17, 4, 10);
+  --line-height-normal: 2;
+  --h1-color: rgb(216, 150, 255);
+  --h2-color: rgb(216, 150, 255);
+  --h3-color: rgb(216, 150, 255);
+  --h4-color: rgb(216, 150, 255);
+  --h5-color: rgb(216, 150, 255);
+  --h6-color: rgb(216, 150, 255);
+  --link-color: lightblue;
+  --italic-color: rgb(231, 231, 0);
+  --bold-color: lightgreen;
+  --code-background: rgb(11, 45, 98);
+  --code-size: 1.1em;
+  --code-normal: rgb(235, 235, 235);
+}
+
+h1,h2,h3,h4,h5,h6 {
+
+    padding-top: 25px;
+  }
