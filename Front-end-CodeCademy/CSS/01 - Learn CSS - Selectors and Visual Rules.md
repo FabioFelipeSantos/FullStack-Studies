@@ -1025,57 +1025,47 @@ bold [ thin && <length> ]
 	- `bold thin 2vh`
 	- `bold 0 thin`
 	- `bold thin 3.5em`
-	but not:
+  but not:
 	- `thin bold 3em`, as `bold` is juxtaposed with the component defined by the brackets, it must appear before it.
 
 ##### 1.4.1.4.2 Juxtaposition
 
 - Placing several keywords, literals or data types, next to one another, only separated by one or several spaces, is called _juxtaposition_. All juxtaposed components are <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">mandatory and should appear in the exact order</strong></span>.
-
-CSSCopy to Clipboard
-
-```
+```css
 bold <length>, thin
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold 1em, thin`
+	- `bold 0, thin`
+	- `bold 2.5cm, thin`
+	- `bold 3vh, thin`
+	But not:
+	- `thin 1em, bold`, as the entities must be in the expressed order
+	- `bold 1em thin`, as the entities are mandatory; the comma, a literal, must be present
+	- `bold 0.5ms, thin`, as the `ms` values are not `<length>`.
 
-- `bold 1em, thin`
-- `bold 0, thin`
-- `bold 2.5cm, thin`
-- `bold 3vh, thin`
+##### 1.4.1.4.3 Double ampersand ( "&" "&" )
 
-But not:
-
-- `thin 1em, bold`, as the entities must be in the expressed order
-- `bold 1em thin`, as the entities are mandatory; the comma, a literal, must be present
-- `bold 0.5ms, thin`, as the `ms` values are not [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
-
-### 1.4.2 [Double ampersand](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_ampersand)
-
-Separating two or more components, by a _double ampersand_, `&&`, means that all these entities are **mandatory but may appear in any order**.
-
-CSSCopy to Clipboard
-
+- Separating two or more components, by a _double ampersand_, `&&`, means that all these entities are **mandatory but may appear in any order**.
 ```
 bold && <length>
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold 1em`
+	- `bold 0`
+	- `2.5cm bold`
+	- `3vh bold`
+	But not:
+	- `bold`, as both components must appear in the value.
+	- `bold 1em bold`, as both components must appear only one time.
 
-- `bold 1em`
-- `bold 0`
-- `2.5cm bold`
-- `3vh bold`
+```ad-note
+Juxtaposition has precedence over the double ampersand, meaning that `bold thin && <length>` is equivalent to `[ bold thin ] && <length>`. It describes `bold thin <length>` or `<length> bold thin` but not `bold <length> thin`.
+```
 
-But not:
-
-- `bold`, as both components must appear in the value.
-- `bold 1em bold`, as both components must appear only one time.
-
-**Note:** juxtaposition has precedence over the double ampersand, meaning that `bold thin && <length>` is equivalent to `[ bold thin ] && <length>`. It describes `bold thin <length>` or `<length> bold thin` but not `bold <length> thin`.
-
-### 1.4.3 [Double bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_bar)
+### 1.4.2 [Double bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_bar)
 
 Separating two or more components by a _double bar_, `||`, means that all entities are options: **at least one of them must be present, and they may appear in any order**. Typically this is used to define the different values of a [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
 
@@ -1098,7 +1088,7 @@ But not:
 
 **Note:** the double ampersand has precedence over the double bar, meaning that `bold || thin && <length>` is equivalent to `bold || [ thin && <length> ]`. It describes `bold`, `thin <length>`, `bold thin <length>`, or `thin <length> bold` but not `<length> bold thin` as bold, if not omitted, must be placed before or after the whole `thin && <length>` component.
 
-### 1.4.4 [Single bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar)
+### 1.4.3 [Single bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar)
 
 Separating two or more entities by a _single bar_, `|`, means that all entities are exclusive options: **exactly one of these options must be present**. This is typically used to separate a list of possible keywords.
 
