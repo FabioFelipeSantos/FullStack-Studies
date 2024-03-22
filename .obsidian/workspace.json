@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ac5d1b07ea0275b8",
+        "id": "a61985ab18422ec0",
         "type": "tabs",
         "children": [
           {
-            "id": "6d8989b1512b2f3e",
+            "id": "bc1ded3f3913dc32",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -163,9 +163,17 @@
               "type": "mathpad-view",
               "state": {}
             }
+          },
+          {
+            "id": "c88dd18ccda05ad3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -186,8 +194,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d8989b1512b2f3e",
+  "active": "c88dd18ccda05ad3",
   "lastOpenFiles": [
+    "2024-03-22.md",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "README.md",
     "Untitled.canvas",

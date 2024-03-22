@@ -19,7 +19,7 @@
     },
     "otherRepo": [],
     "verifiedRepo": false,
-    "rateLimit": 0
+    "rateLimit": 60
   },
   "upload": {
     "behavior": "fixed",

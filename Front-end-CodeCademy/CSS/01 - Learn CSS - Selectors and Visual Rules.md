@@ -1,7 +1,8 @@
 ---
 id: my-id
+number headings: auto, first-level 1, max 6, 1.1
 ---
-# 1. Learn CSS - Selectors and Visual Rules
+# 1 Learn CSS - Selectors and Visual Rules
 - [[#1.1. Setup and Syntax|1.1. Setup and Syntax]]
 	- [[#1.1. Setup and Syntax#1.1.1. Ruleset Terms|1.1.1. Ruleset Terms]]
 	- [[#1.1. Setup and Syntax#1.1.2. Inline Style Terms|1.1.2. Inline Style Terms]]
@@ -49,7 +50,7 @@ id: my-id
 	- [[#1.5. Visual Rules#1.5.3. Font Weight|1.5.3. Font Weight]]
 	- [[#1.5. Visual Rules#1.5.4. Text Align|1.5.4. Text Align]]
 
-## 1.1. Setup and Syntax
+## 1.1 Setup and Syntax
 
 - _**Cascading Style Sheets**_ or **CSS** is a language web developers use to style the HTML content on a web page.
 - The CSS has two different syntaxes rules. The first is known as _Ruleset_, that is commonly used as a separate file, or inside a style tag. The second is known as _Inline Style_, that is a use in the HTML tag itself.
@@ -70,7 +71,7 @@ selector {
 
 - Both methods contain common features in their _{++anatomy++}_. Notice how both syntaxes contain a declaration. Declarations are the core of CSS. They apply a style to the selected element.
 
-### 1.1.1. Ruleset Terms
+### 1.1.1 Ruleset Terms
 
 - **_Selector_** — The beginning of the ruleset used to target the element that will be styled.
 - **_Declaration Block_** — The code in-between (and including) the curly braces ({ }) that contains the CSS declaration(s).
@@ -78,7 +79,7 @@ selector {
 - **_Property_** — The first part of the declaration that signifies what visual characteristic of the element is to be modified.
 - **_Value_** — The second part of the declaration that signifies the value of the property.
 
-### 1.1.2. Inline Style Terms
+### 1.1.2 Inline Style Terms
 
 - _**Opening Tag**_ — The start of an HTML element. This is the element that will be styled.
 - **_Attribute_** — The style attribute is used to add CSS inline styles to an HTML element.
@@ -86,7 +87,7 @@ selector {
 - **_Property_** — The first part of the declaration that signifies what visual characteristic of the element is to be modified.
 - **_Value_** — The second part of the declaration that signifies the value of the property.
 
-### 1.1.3. Inline Styles
+### 1.1.3 Inline Styles
 
 - Add the style attribute directly to the opening tag. After you add the attribute, you can set it equal to the CSS style(s) you'd like applied to that element.
 
@@ -94,7 +95,7 @@ selector {
 <p style="color:red;">I'm learning to code!</p>
 ```
 
-### 1.1.4. Internal Stylesheet
+### 1.1.4 Internal Stylesheet
 
 - HTML allows you to write CSS code in its own dedicated section with a `<style>` element **nested inside** of the `<head>` element. The CSS code inside the `<style>` element is often referred to as an _internal stylesheet_.
 
@@ -111,7 +112,7 @@ selector {
 
 - The CSS code in the example above changes the color of all paragraph text to red (`color: red;`) and also changes the size of the text to 20 pixels (`font-size: 20px;`).
 
-### 1.1.5. External Stylesheet and How to Link the CSS Files
+### 1.1.5 External Stylesheet and How to Link the CSS Files
 
 - Developers avoid mixing code by storing HTML and CSS code in separate files (HTML files contain only HTML code, and CSS files contain only CSS code).
 - You can create an external stylesheet by using the `.css` file name extension, like so: `style.css`
@@ -130,7 +131,7 @@ selector {
 <link href="./style.css" rel="stylesheet" />
 ```
 
-## 1.2. Selectors
+## 1.2 Selectors
 
 - Remember that _declarations_ are a fundamental part of CSS because they apply a style to a selected element. But how do you decide which elements will get the style? With a selector.
 - A _**selector**_ is used to target the specific HTML element(s) to be styled by the declaration.
@@ -139,7 +140,7 @@ selector {
   - The type selector does not include the angle brackets.
   - Since element types are often referred to by their opening tag name, the type selector is sometimes referred to as the tag name or element selector.
 
-### 1.2.1. Universal Selector
+### 1.2.1 Universal Selector
 
 - The universal selector selects all elements of any type.
 - Targeting all of the elements on the page has a few specific use cases, such as resetting default browser styling, or selecting all _**CHILDREN**_ of a _**PARENT**_ element.
@@ -166,7 +167,7 @@ selector {
 
 - In this last case, the font type Verdana was specified for all text elements in the document.
 
-### 1.2.2. :warning: CLASS :warning:
+### 1.2.2 :warning: CLASS :warning:
 
 - When working with HTML and CSS a class attribute is one of the most common ways to select an element.
 - For example, consider the following HTML:
@@ -193,7 +194,7 @@ window.onload = function () {
 
 - The code above is assigning an event handler to the `onload` property of the global `window` object in the browser. When the `window` as loaded, the elements with `class=sub-heading` are collected in `subheadings`. They are then looped over, their `innerText` property being changed each iteration.
 
-### 1.2.3. ID
+### 1.2.3 ID
 
 - Oftentimes it’s important to select a single element with CSS to give it its own unique style. If an HTML element needs to be styled uniquely, we can give it an _**ID**_ using the `id` attribute.
 
@@ -204,7 +205,7 @@ window.onload = function () {
 - In contrast to class which accepts multiple values, and can be used broadly throughout an HTML document, **{++an element’s id can only have a single value++}**, and only be used once per page.
 - To select an element’s ID with CSS, we prepend the id name with a number sign (#). In the preceding example, we can use `#large-title` to select the `<h1>` element with the same ID.
 
-### 1.2.4. ATTRIBUTE
+### 1.2.4 ATTRIBUTE
 
 - The attribute selector can be used to target HTML elements that already contain attributes. Elements of the same type can be targeted differently by their attribute or attribute value. This alleviates the need to add new code, like the class or id attributes.
 - Attributes can be selected similarly to types, classes, and IDs.
@@ -237,7 +238,7 @@ img[src*="summer"] {
 
 - Now take a look at the above CSS code. The attribute selector is used to target each image individually. The first ruleset looks for an `img` element with an attribute of `src` that contains the string `'winter'`, and sets the `height` to `50px`. The second ruleset looks for an `img` element with an attribute of `src` that contains the string `'summer'`, and sets the `height` to `100px`.
 
-### 1.2.5. Pseudo-Class (sudo-class)
+### 1.2.5 Pseudo-Class (sudo-class)
 
 - You may have observed how the appearance of certain elements can change, or be in a different state, after certain user interactions. For instance:
   - When you click on an `<input>` element, and a blue border is added showing that it is in focus.
@@ -260,7 +261,7 @@ p:hover {
 }
 ```
 
-### 1.2.6. CLASSES and IDs
+### 1.2.6 CLASSES and IDs
 
 - CSS classes and IDs have different purposes, which can affect which one you use to style HTML elements.
 - CSS classes are meant to be _**reused over many elements**_. By writing CSS classes, you can style elements in a variety of ways by mixing classes.
@@ -270,7 +271,7 @@ p:hover {
 
 - While classes are meant to be used many times, an ID is meant to style only one element. IDs override the styles of types and classes. Since IDs override these styles, they should be used sparingly and only on elements that need to always appear the same.
 
-### 1.2.7. Specificity
+### 1.2.7 Specificity
 
 - Specificity is the order by which the browser decides which CSS styles will be displayed.
 - A best practice in CSS is to style elements while using the lowest degree of specificity so that if an element needs a new style, it is easy to override.
@@ -300,7 +301,7 @@ In the example code above, the `color` of the heading would be set to `firebrick
 - If an ID attribute (and selector) were added to the code above, the styles within the ID selector’s body would override all other styles for the heading.
 - To make styles easy to edit, it’s best to style with a type selector, if possible. If not, add a class selector. If that is not specific enough, then consider using an ID selector.
 
-### 1.2.8. Chaining
+### 1.2.8 Chaining
 
 - When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
 - This is done by combining multiple selectors, which we will refer to as chaining. For instance, if there was a `special` class for `<h1>` elements, the CSS would look like below:
@@ -313,7 +314,7 @@ h1.special {
 - The code above would select only the `<h1>` elements with a class of `special`. If a `<p>` element also had a class of `special`, the rule in the example would not style the paragraph.
 - This combined selector will have the same position that the `type[attribute=value]` selector.
 
-### 1.2.9. Descendant Combinator
+### 1.2.9 Descendant Combinator
 
 - CSS also supports selecting elements that are nested within other HTML elements, also known as _**descendants**_. For instance, consider the following HTML:
 
@@ -335,7 +336,7 @@ h1.special {
 - In the example above, `.main-list` selects the element with the`.main-list` class (the `<ul>` element). The descendant `<li>`‘s are selected by adding li to the selector, separated by a space. This results in .main-list li as the final selector.
 - Selecting elements in this way can make our selectors even more specific by making sure they appear in the context we expect.
 
-### 1.2.10. Multiple Selectors
+### 1.2.10 Multiple Selectors
 
 - In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. This prevents writing repetitive code.
 - For instance, the following code has repetitive style attributes:
@@ -361,7 +362,7 @@ h1,
 
 - By separating the CSS selectors with a comma, both the `<h1>` elements and the elements with the menu class will receive the `font-family: Georgia` styling.
 
-## 1.3. Values and Syntax
+## 1.3 Values and Syntax
 
 - Before entering the specific properties that we have, it's important to understand what's a CSS value, how the values in CSS are computed, and how value definition syntax is used, for example, in the suggestions on an IDE.
 - First, let's begin with the definition of a CSS value and your data types.
@@ -373,12 +374,12 @@ h1,
   - [[#1.3.6. Actual Value|Actual Value]].
 - Lastly, we will define the common syntax in guides, references, editors and IDEs for CSS values.
 
-### 1.3.1. What's a CSS Value?
+### 1.3.1 What's a CSS Value?
 
 - In CSS specifications and on the property pages in web, you will be able to spot value types as they will be surrounded by angle brackets, such as `<color>` or `<length>`. When you see the value type `<color>` as valid for a particular property, that means you can use any valid color as a value for that property, as listed on the `<color>` reference page.
 - A _value type_ in CSS is a way to define a collection of allowable values. This means that if you see `<color>` as valid you don't need to wonder which of the different types of color value can be used — keywords, hex values, `rgb()` functions, etc. You can use any available `<color>` values, assuming they are supported by your browser.
 
-#### 1.3.1.1. Numbers, Lengths, and Percentages
+#### 1.3.1.1 Numbers, Lengths, and Percentages
 
 - There are various numeric value types that you might find yourself using in CSS. The following are all classed as numeric:
 
@@ -389,12 +390,12 @@ h1,
 | `<dimension>` | A `<dimension>` is a `<number>` with a unit attached to it. For example, `45deg`, `5s`, or `10px`. `<dimension>` is an umbrella category that includes the `<length>`, `<angle>`, `<time>`, and `<resolution>` types. |
 | `<percentage>` | A `<percentage>` represents a fraction of some other value. For example, `50%`. Percentage values are always relative to another quantity. For example, an element's length is relative to its parent element's length. |
 
-#### 1.3.1.2. Lengths
+#### 1.3.1.2 Lengths
 
 - The numeric type you will come across most frequently is `<length>`.
 - For example, `10px` (pixels) or `30em`. There are two types of lengths used in CSS — _**relative and absolute**_. It's important to know the difference in order to understand how big things will become.
 
-##### 1.3.1.2.1. Absolute Length Units
+##### 1.3.1.2.1 Absolute Length Units
 
 - The following are all absolute length units — they are not relative to **anything** else, and are generally considered to **always be the same size**.
 
@@ -410,7 +411,7 @@ h1,
 
 - Most of these units are more useful when used for print, rather than screen output. For example, we don't typically use cm (centimeters) on screen. _The only value that you will commonly use is px (pixels)_.
 
-##### 1.3.1.2.2. Relative length units
+##### 1.3.1.2.2 Relative length units
 
 - Relative length units are **relative to something else**, perhaps the _size of the parent element's font_, or the _size of the viewport_.
 - The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. Some of the most useful units for web development are listed in the table below.
@@ -497,7 +498,7 @@ showFontSize("box");
 Here the `font-size` of the external `div` is set as `1.5em` while the `font-size` of the document is `16px`, so the `font-size` of the external `div` will be `24px`. In the first internal `div`, the `width` is specified as `320px`, so is an absolute value. For the second internal `div`, the `width` is specified as `85vw`, i.e., `85%` from the width of the viewport. How the viewport has `695px` as width, the `div` will be `0.85 * 695px = 590.75px` (at the output the approximate value is shown). For the third internal `div`, your `width` is specified as `18em`, which will be 18 times the `font-size` of this `div` that's `24px`, so, the calculated value will be `18 * 24px = 432px`.
 ````
 
-#### 1.3.1.3. Percentages
+#### 1.3.1.3 Percentages
 
 - In a lot of cases, a percentage is treated in the same way as a length. The thing with percentages is that they are _**always set relative to some other value**_.
 - For example, if you set an element's `font-size` as a percentage, it will be a percentage of the `font-size` of the element's parent. If you use a percentage for a `width` value, it will be a percentage of the `width` of the parent.
@@ -566,12 +567,12 @@ usedWidth("percent");
 The `width` of the second and fourth `div`s are specified as `300px`, so its an absolute value. For the third and fifth `div`s, the `width` is specified as `65%`, so it'll be calculated from the `width` of your respective parent. For the third `div`, how the width of the `body` is `694px`, your width will be `65% * 694px ≊ 451px`. For the fifth `div`, its parent has `390px` as `width`. So, the `div` will have `65% * 390px ≊ 254px`.
 ````
 
-#### 1.3.1.4. Numbers
+#### 1.3.1.4 Numbers
 
 - Some value types accept numbers, _without any unit_ added to them.
 - An example of a property which accepts a unitless number is the `opacity` property, which controls the opacity of an element (how transparent it is). This property accepts a number between `0` (fully transparent) and `1` (fully opaque).
 
-#### 1.3.1.5. Color
+#### 1.3.1.5 Color
 
 - Color values can be used in many places in CSS, whether you are specifying the color of text, backgrounds, borders, and lots more.
 - There are some different ways to specify color properties: using keywords, hexadecimal, and rgb() values, are the most usual.
@@ -592,7 +593,7 @@ The `width` of the second and fourth `div`s are specified as `300px`, so its an 
     - `hsl(321 47% 57%) = rgb(197, 94, 161)`. [Conversion](https://www.rapidtables.com/convert/color/hsl-to-rgb.html);
   - [Other colors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#color)
 
-#### 1.3.1.6. Position
+#### 1.3.1.6 Position
 
 - The `<position>` value type represents a set of _2D coordinates_, used to position an item such as a background image (via background-position).
 - It can take keywords such as `top`, `left`, `bottom`, `right`, and `center` to align items with specific bounds of a 2D box, along with lengths, which **represent offsets from the top and left-hand edges of the box**.
@@ -635,13 +636,13 @@ The `width` of the second and fourth `div`s are specified as `300px`, so its an 
 In this case, the `position` is a `keyword` property, `absolute`, that makes the `div`, which represents the inner rectangle, capable of being positioned in the external `div` by the `top` and `left` properties, which are the positions relative to the up corner on the left.
 ````
 
-#### 1.3.1.7. Functions
+#### 1.3.1.7 Functions
 
 - CSS also has functions, which work in a similar way to functions in other languages. In fact, we've already seen CSS functions in the [[#1.3.1.5. Color|Color section]] above with `rgb()` and `hsl()` functions.
 - Aside from applying colors, you can use functions in CSS to do a lot of other things. For example _**Transform functions**_ are a common way to move, rotate, and scale elements on a page. You might see `translate()` for moving something horizontally or vertically, `rotate()` to rotate something, or `scale()` to make something bigger or smaller.
 - These functions can be passed as usual values to a property.
 
-#### 1.3.1.8. Math functions
+#### 1.3.1.8 Math functions
 
 - CSS has support for **Math functions**, which allow us to perform calculations instead of relying on static values or doing the math in JavaScript. One of the most common math functions is `calc()` which lets you do operations like addition, subtraction, multiplication, and division.
 - For example, let's say we want to set the `width` of an element to be `20%` of its parent container plus `100px`. We can't specify this width with a static value — if the parent uses a percentage `width` (or a relative unit like em or rem) then it will vary depending on the context it is used in, and other factors such as the user's device or browser window `width`.
@@ -678,7 +679,7 @@ In this case, the `position` is a `keyword` property, `absolute`, that makes the
 In this case, the `width` of the HTML is `694px`. The `.box` div has width specified as `500px` as the paragraph shows. The `.txt` div has width specified as `30%` of the width of your parent plus 120px. So, its width will be `30% * 500px + 120px = 150px + 120px = 270px`.
 ````
 
-### 1.3.2. Initial value
+### 1.3.2 Initial value
 
 - The _**Initial Value**_ of a CSS property is its _default value_, as listed in its definition table in the specification. The usage of the initial value depends on whether a property is inherited or not:
 
@@ -716,7 +717,7 @@ div {
 ```
 ````
 
-### 1.3.3. Specified Value
+### 1.3.3 Specified Value
 
 - Maybe the mainly used value in CSS. The **_Specified Value_** of a CSS property is the value it receives from the document's style sheet. The specified value for a given property is determined according to the following rules:
 
@@ -755,7 +756,7 @@ p {
 ```
 ````
 
-### 1.3.4. Computed Value
+### 1.3.4 Computed Value
 
 - The _**computed value**_ of a CSS property is the value that is transferred from parent to child during _inheritance_. It is calculated from the [[#1.3.3. Specified Value|specified value]] by:
   - Handling the special values `inherit`, `initial`, `revert`, `revert-layer`, and `unset`.
@@ -800,7 +801,7 @@ p {
 ```
 ````
 
-### 1.3.5. Used Value
+### 1.3.5 Used Value
 
 - The _**used value**_ of a CSS property is its value _after all calculations have been performed on the computed value_.
 - After the [[#2.1. User Agent|user agent]] has finished its calculations, every CSS property has a [[#1.3.5. Used Value|used value]]. The **used values of dimensions** (e.g., FontSize, line-height) **are in pixels**. The used values of shorthand properties (e.g., background) are consistent with those of their component properties (e.g., background-color or background-size) and with position and float.
@@ -883,7 +884,7 @@ With this code, we'll obtain this output:
 ![alt text](image-1.png)
 ````
 
-### 1.3.6. Actual Value
+### 1.3.6 Actual Value
 
 - The actual value of a CSS property is the [[#1.3.5. Used Value|used value]] of that property after any necessary approximations have been applied. For example, a [[#2.1. User Agent|user agent]] that can only render borders with a whole-number pixel width may round the thickness of the border to the nearest integer.
 - The user agent performs four steps to calculate a property's actual (final) value:
@@ -892,23 +893,19 @@ With this code, we'll obtain this output:
   3. Then, layout is calculated, resulting in the [[#1.3.5. Used Value|used value]].
   4. Finally, the used value is transformed according to the limitations of the local environment, resulting in the _**actual value**_.
 
-### 1.3.7. Value Definition Syntax
-
-- **CSS value definition syntax**, a formal grammar, is used for defining the set of
-
-### 1.3.8. Value Definition Syntax
+## 1.4 Value Definition Syntax
 
 - **CSS value definition syntax**, a formal grammar, is used for defining the set of valid values for a CSS property or function. In addition to this syntax, the set of valid values can be further restricted by semantic constraints (for example, for a number to be strictly positive).
 - The definition syntax describes which values are allowed and the interactions between them.
-- A component can be a keyword, some characters considered as a **_literal_**, or a value of a given CSS data type or of another CSS property.
+- A component can be a _keyword_, some characters considered as a _literal_, or a value of a given CSS data type or of another CSS property.
 - In the value definition syntax, we have three different component value to adjust as value for a given property. They are: Types, Combinators, Multipliers.
 
-#### 1.3.8.1. Component Value Types
+### 1.4.1 Component Value Types
 
-##### 1.3.8.1.1. Keywords
+#### 1.4.1.1 Keywords
 
 - A keyword with a predefined meaning appears literally, without quotation marks. For example: `auto`, `smaller` or `ease-in`.
-- _**All CSS properties**_ accept the keywords `inherit` (Herança), `initial` (Inicial) and `unset` (Desarmar, retirar), that are defined throughout CSS. They are not shown in the value definition, and are implicitly defined.
+- **All CSS properties** accept the keywords `inherit` (Herança), `initial` (Inicial) and `unset` (Desarmar, retirar), that are defined throughout CSS. They are not shown in the value definition, and are implicitly defined.
 
 ````ad-note
 `inherit`
@@ -991,13 +988,150 @@ p {
 All paragraphs are set to have the `red` color, and because of that, the class `.foo` will be override, so the `<p>` inside the first `<div>` will have the color as `red`. But, for the `<p>` inside the second `<div>` with the class `.bar`, we defined the `color` property to `unset`, so, how `color` is a inherited property, this paragraph will have the same color that your parent, in this case `green`, because of the previous definition of the `.bar` class element `color` to `green`.
 ````
 
-## 1.4. Inheritance
+#### 1.4.1.2 Literals
+
+- In CSS, a few characters can appear on their own, like the slash ('`/`') or the comma ('`,`'), and are used in a property definition to *separate its parts*.
+	- The *comma* is often used to separate values in *enumerations*, or *parameters* in mathematical-like functions;
+	- The **slash** often **separates parts of the value that are semantically different**, but have a common syntax.
+- Typically, the *slash* is used in *shorthand properties*; *to separate components that are of the same type*, but belong to different properties.
+- Both symbols appear literally in a value definition.
+
+#### 1.4.1.3 Data Types
+
+- The *data types* values are divided in two different branches: the **Basic Data Types** and **Non-Terminal Data Types**.
+
+##### 1.4.1.3.1 Basic data types
+
+- Some kind of data are used throughout CSS, and are defined once for all values in the specification. Called _basic data types_, they are represented with their name surrounded by the symbol '`<`' and '`>`': [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle), [`<string>`](https://developer.mozilla.org/en-US/docs/Web/CSS/string).
+- For example: `font-size: <length>`.
+
+##### 1.4.1.3.2 Non-terminal data types
+
+- Less common data types, called _non-terminal data types_, are also surrounded by '`<`' and '`>`'.
+- Non-terminal data types are of two kinds:
+	- data types _sharing the same name of a property_, put between quotes. In this case, the data type shares the same set of values as the property. They are often used in the definition of shorthand properties. For example: `border: <"border-width"> || <"border-style"> || <"border-color">`.
+	- data type _not sharing the same name of a property_. These data types are very close to the basic data types. They only differ from the basic data types in the physical location of their definition. In this case, the definition is usually physically very close to the definition of the property using them.
+		- For example: `font-size: <length>` or `margin: <length>`. In these cases, the `<length>` data type isn't sharing the name of the properties, but we can see that these properties must have a value that specifies some kind of "distance" (with a number and a unit). So, `<length>` can be used since it's has the `<dimension>` type.
+
+#### 1.4.1.4 Component value combinators
+
+##### 1.4.1.4.1 Brackets ("\[" "\]")
+
+- _Brackets_ enclose several entities, combinators, and multipliers, then *transform them as a single component*. They are used to <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">group components to bypass the precedence rules</strong></span>.
+```css
+bold [ thin && <length> ]
+```
+- This example matches the following values:
+	- `bold thin 2vh`
+	- `bold 0 thin`
+	- `bold thin 3.5em`
+	but not:
+	- `thin bold 3em`, as `bold` is juxtaposed with the component defined by the brackets, it must appear before it.
+
+##### 1.4.1.4.2 Juxtaposition
+
+- Placing several keywords, literals or data types, next to one another, only separated by one or several spaces, is called _juxtaposition_. All juxtaposed components are <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">mandatory and should appear in the exact order</strong></span>.
+
+CSSCopy to Clipboard
+
+```
+bold <length>, thin
+```
+
+This example matches the following values:
+
+- `bold 1em, thin`
+- `bold 0, thin`
+- `bold 2.5cm, thin`
+- `bold 3vh, thin`
+
+But not:
+
+- `thin 1em, bold`, as the entities must be in the expressed order
+- `bold 1em thin`, as the entities are mandatory; the comma, a literal, must be present
+- `bold 0.5ms, thin`, as the `ms` values are not [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+
+### 1.4.2 [Double ampersand](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_ampersand)
+
+Separating two or more components, by a _double ampersand_, `&&`, means that all these entities are **mandatory but may appear in any order**.
+
+CSSCopy to Clipboard
+
+```
+bold && <length>
+```
+
+This example matches the following values:
+
+- `bold 1em`
+- `bold 0`
+- `2.5cm bold`
+- `3vh bold`
+
+But not:
+
+- `bold`, as both components must appear in the value.
+- `bold 1em bold`, as both components must appear only one time.
+
+**Note:** juxtaposition has precedence over the double ampersand, meaning that `bold thin && <length>` is equivalent to `[ bold thin ] && <length>`. It describes `bold thin <length>` or `<length> bold thin` but not `bold <length> thin`.
+
+### 1.4.3 [Double bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_bar)
+
+Separating two or more components by a _double bar_, `||`, means that all entities are options: **at least one of them must be present, and they may appear in any order**. Typically this is used to define the different values of a [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+
+CSSCopy to Clipboard
+
+```
+<'border-width'> || <'border-style'> || <'border-color'>
+```
+
+This example matches the following values:
+
+- `1em solid blue`
+- `blue 1em`
+- `solid 1px yellow`
+
+But not:
+
+- `blue yellow`, as a component must appear at most one single time.
+- `bold`, as it isn't a keyword allowed as value of any of the entity.
+
+**Note:** the double ampersand has precedence over the double bar, meaning that `bold || thin && <length>` is equivalent to `bold || [ thin && <length> ]`. It describes `bold`, `thin <length>`, `bold thin <length>`, or `thin <length> bold` but not `<length> bold thin` as bold, if not omitted, must be placed before or after the whole `thin && <length>` component.
+
+### 1.4.4 [Single bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar)
+
+Separating two or more entities by a _single bar_, `|`, means that all entities are exclusive options: **exactly one of these options must be present**. This is typically used to separate a list of possible keywords.
+
+CSSCopy to Clipboard
+
+```
+<percentage> | <length> | left | center | right | top | bottom
+```
+
+This example matches the following values:
+
+- `3%`
+- `0`
+- `3.5em`
+- `left`
+- `center`
+- `right`
+- `top`
+- `bottom`
+
+But not:
+
+- `center 3%`, as only one of the components must be present.
+- `3em 4.5em`, as a component must be present at most one time.
+
+**Note:** the double bar has precedence over the single bar, meaning that `bold | thin || <length>` is equivalent to `bold | [ thin || <length> ]`. It describes `bold`, `thin`, `<length>`, `<length> thin`, or `thin <length>` but not `bold <length>` as only one entity from each side of the `|` combinator can be present.
+## 1.5 Inheritance
 
 - In CSS, _**inheritance**_ controls what happens when no value is specified for a property on an element. CSS properties can be categorized in two types:
   - [[#1.4.1. Inherited Properties|inherited properties]], which by default are set to the computed value of the parent element;
   - [[#1.4.2. Non-Inherited Properties|non-inherited properties]], which by default are set to initial value of the property;
 
-### 1.4.1. Inherited Properties
+### 1.5.1 Inherited Properties
 
 - When no value for an **inherited property** has been specified on an element, the element gets the _**computed value**_ of that property on its parent element. Only the root element of the document gets the initial value given in the property's summary.
 - A typical example of an inherited property is the `color` property.
@@ -1020,7 +1154,7 @@ p {
 The words _"emphasized text"_ will appear green, since the `em` element has inherited the value of the `color` property from the `p` element.
 ````
 
-### 1.4.2. Non-Inherited Properties
+### 1.5.2 Non-Inherited Properties
 
 - When no value for a **non-inherited property** has been specified on an element, the element gets the initial value of that property (as specified in the property's summary).
 - A typical example of a non-inherited property is the `border` property since his initial value of `border-style` is `none`.
@@ -1043,9 +1177,9 @@ p {
 The paragraph will have a border medium black border, but the words "emphasized text" will not have another border.
 ````
 
-## 1.5. Visual Rules
+## 1.6 Visual Rules
 
-### 1.5.1. Font Family
+### 1.6.1 Font Family
 
 - Font refers to the technical term typeface, or font family.
 - To change the typeface of text on your web page, you can use the font-family property.
@@ -1070,7 +1204,7 @@ h1 {
   }
   ```
 
-### 1.5.2. Font Size
+### 1.6.2 Font Size
 
 - To change the size of text on your web page, you can use the `font-size` property.
 
@@ -1095,7 +1229,7 @@ p {
 - On the other hand, `rem`s are determined based on the `font-size` of the html element. If `font-size` is not defined on the html element, the browser’s default `font-size` is used instead (usually `16px`).
 - There are pros and cons of each unit but one major advantage of using relative units is that they lend themselves more naturally to responsive design. Relative units like `em`s and `rem`s are flexible and scalable whereas pixels are not.
 
-### 1.5.3. Font Weight
+### 1.6.3 Font Weight
 
 - In CSS, the `font-weight` property controls how bold or thin text appears.
 
@@ -1109,7 +1243,7 @@ p {
 - The `font-weight` property has another value: `normal`. Why does it exist?
 - If we wanted all text on a web page to appear bolded, we could select all text elements and change their font weight to `bold`. If a certain section of text was required to appear normal, however, we could set the font weight of that particular element to `normal`, essentially shutting off `bold` for that element.
 
-### 1.5.4. Text Align
+### 1.6.4 Text Align
 
 - To align text we can use the `text-align` property. The `text-align` property will **align text to the element that holds it**, otherwise known as its parent.
 
@@ -1125,11 +1259,9 @@ h1 {
   - `right` — aligns text to the right side of its parent element.
   - `justify` — spaces out text in order to align with the right and left side of the parent element.
 
-# 2. Other Definitions
+# 2 Other Definitions
 
-## 2.1. User Agent
+## 2.1 User Agent
 
 - A user agent is a **computer program representing a person**, for example, a browser in a Web context.
 - Besides a browser, a user agent could be a bot scraping webpages, a download manager, or _another app accessing the Web_.
-
-Fábio is the best!

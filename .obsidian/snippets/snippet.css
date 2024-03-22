@@ -13,9 +13,20 @@ body {
   --code-background: rgb(11, 45, 98);
   --code-size: 1.1em;
   --code-normal: rgb(235, 235, 235);
+  --list-spacing: 8px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+/* reading mode */
+.markdown-preview-view p {
+	text-align: justify;
+	text-justify: inter-word;
+	letter-spacing: 2.3px;	
+}
 
-    padding-top: 25px;
-  }
+/* source view and live preview */
+.markdown-source-view.mod-cm6 .cm-line {
+	text-align: justify;
+	text-justify: inter-word;	
+	letter-spacing: 2.3px;
+}
+
