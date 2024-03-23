@@ -1313,10 +1313,33 @@ The paragraph will have a border medium black border, but the words "emphasized 
 ### 1.6.1 Font Family
 
 ```ad-important
-font-family: [<family-name> | <generic-family>]#
+font-family: [ \<family-name\> | \<generic-family\> ]#
 
+<span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Some Possibilities:</strong></span>
 
+- font-family: \<family-name\>;
+- font-family: \<generic-family\>;
+- font-family: \<family-name\>, \<generic-family\>;
+
+\<family-name\> = \<string\> | \<custom-ident\>+
+
+\<generic-family\> = generic( \<custom-ident\>+ ) | \<string\> | \<custom-ident\>+
 ```
+
+````ad-example
+```css
+/* A font <family-name> name only */
+font-family: "Times New Roman";
+
+/* A font <family-name> and a <generic-family> name */
+font-family: "Gill Sans Extrabold", sans-serif;
+
+/* A <generic-family> name only */
+font-family: serif;
+```
+````
+
+#### 1.6.1.1 Syntax
 
 
 - Font refers to the technical term typeface, or font family.
