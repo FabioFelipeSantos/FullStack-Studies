@@ -30,3 +30,24 @@ body {
 	letter-spacing: 2.3px;
 }
 
+.markdown-source-view.mod-cm6 .math {
+	font-size: 1.5em;
+}
+
+/* LEVEL 2 */
+.markdown-reading-view ul > li > ul > li > .list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
+/* Dash */
+    height: 1px;
+    width: 7px;
+    border-radius: 0%;
+    background-color: /* LEVEL 2 */
+.markdown-reading-view ul > li > ul > li > .list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
+/* Dash */
+    height: 1px;
+    width: 7px;
+    border-radius: 0%;
+    background-color: var(--bullet-new-color);
+};
+}

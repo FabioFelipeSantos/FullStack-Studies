@@ -1047,7 +1047,7 @@ bold <length>, thin
 
 ##### 1.4.1.4.3 Double ampersand ( "&" "&" )
 
-- Separating two or more components, by a _double ampersand_, `&&`, means that all these entities are **mandatory but may appear in any order**.
+- Separating two or more components, by a _double ampersand_, `&&`, means that all these entities are <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">mandatory but may appear in any order</strong></span>.
 ```
 bold && <length>
 ```
@@ -1065,54 +1065,48 @@ bold && <length>
 Juxtaposition has precedence over the double ampersand, meaning that `bold thin && <length>` is equivalent to `[ bold thin ] && <length>`. It describes `bold thin <length>` or `<length> bold thin` but not `bold <length> thin`.
 ```
 
-### 1.4.2 [Double bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#double_bar)
+##### 1.4.1.4.4 Double bar
 
-Separating two or more components by a _double bar_, `||`, means that all entities are options: **at least one of them must be present, and they may appear in any order**. Typically this is used to define the different values of a [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
-
-CSSCopy to Clipboard
-
-```
+- Separating two or more components by a _double bar_, `||`, means that all entities are options: <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">at least one of them must be present, and they may appear in any order</strong></span>. Typically this is used to define the different values of a [shorthand property](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties).
+```css
 <'border-width'> || <'border-style'> || <'border-color'>
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `1em solid blue`
+	- `blue 1em`
+	- `solid 1px yellow`
+	But not:
+	- `blue yellow`, as a component must appear at most one single time.
+	- `bold`, as it isn't a keyword allowed as value of any of the entity.
 
-- `1em solid blue`
-- `blue 1em`
-- `solid 1px yellow`
+```ad-note
+The double ampersand (&&) has precedence over the double bar, meaning that `bold || thin && <length>` is equivalent to `bold || [ thin && <length> ]`.
 
-But not:
+It describes `bold`, `thin <length>`, `bold thin <length>`, or `thin <length> bold`.
 
-- `blue yellow`, as a component must appear at most one single time.
-- `bold`, as it isn't a keyword allowed as value of any of the entity.
-
-**Note:** the double ampersand has precedence over the double bar, meaning that `bold || thin && <length>` is equivalent to `bold || [ thin && <length> ]`. It describes `bold`, `thin <length>`, `bold thin <length>`, or `thin <length> bold` but not `<length> bold thin` as bold, if not omitted, must be placed before or after the whole `thin && <length>` component.
-
-### 1.4.3 [Single bar](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#single_bar)
-
-Separating two or more entities by a _single bar_, `|`, means that all entities are exclusive options: **exactly one of these options must be present**. This is typically used to separate a list of possible keywords.
-
-CSSCopy to Clipboard
-
+But not `<length> bold thin` as bold, if not omitted, must be placed before or after the whole `thin && <length>` component.
 ```
+
+##### 1.4.1.4.5 Single bar
+
+- Separating two or more entities by a _single bar_, `|`, means that all entities are exclusive options: <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">exactly one of these options must be present</strong></span>. This is typically used to separate a list of possible keywords.
+```css
 <percentage> | <length> | left | center | right | top | bottom
 ```
 
-This example matches the following values:
-
-- `3%`
-- `0`
-- `3.5em`
-- `left`
-- `center`
-- `right`
-- `top`
-- `bottom`
-
-But not:
-
-- `center 3%`, as only one of the components must be present.
-- `3em 4.5em`, as a component must be present at most one time.
+- This example matches the following values:
+	- `3%`
+	- `0`
+	- `3.5em`
+	- `left`
+	- `center`
+	- `right`
+	- `top`
+	- `bottom`
+	But not:
+	- `center 3%`, as only one of the components must be present.
+	- `3em 4.5em`, as a component must be present at most one time.
 
 **Note:** the double bar has precedence over the single bar, meaning that `bold | thin || <length>` is equivalent to `bold | [ thin || <length> ]`. It describes `bold`, `thin`, `<length>`, `<length> thin`, or `thin <length>` but not `bold <length>` as only one entity from each side of the `|` combinator can be present.
 ## 1.5 Inheritance
