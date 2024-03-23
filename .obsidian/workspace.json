@@ -173,7 +173,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -194,7 +194,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "c88dd18ccda05ad3",
   "lastOpenFiles": [
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "2024-03-22.md",

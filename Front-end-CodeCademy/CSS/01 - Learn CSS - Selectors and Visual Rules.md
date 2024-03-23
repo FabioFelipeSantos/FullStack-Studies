@@ -1114,7 +1114,7 @@ The double bar has precedence over the single bar, meaning that `bold | thin ||
 It describes `bold`, `thin`, `<length>`, `<length> thin`, or `thin <length>` but not `bold <length>` as only one entity from each side of the `|` combinator can be present.
 ```
 
-#### 1.4.1.5 [Component value multipliers](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#component_value_multipliers)
+#### 1.4.1.5 Component value multipliers
 
 - A multiplier is a sign that indicates how many times a preceding entity can be repeated. <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Without a multiplier, an entity must appear exactly one time</strong></span>.
 - Note that multipliers cannot be added and have precedence over all combinators.
@@ -1233,6 +1233,29 @@ bold smaller#{2}
 	- `smaller bold`, as `bold` is juxtaposed and must appear before the `smaller` keyword.
 	- `bold smaller bold`, as `bold` and `smaller` may only appear once.
 
+### 1.4.2 Summary of Value Definition Syntax
+
+#### 1.4.2.1 Combinators
+
+| Sign  | Name             | Description                                                                       | Example                                             |
+| ----- | ---------------- | --------------------------------------------------------------------------------- | --------------------------------------------------- |
+|       | Juxtaposition    | Components are mandatory and should appear in that order                          | `solid <length>`                                    |
+| &&    | Double ampersand | Components are mandatory but may appear in any order                              | `<length> && <string>`                              |
+| \|\|  | Double bar       | At least one of the components must be present, and they may appear in any order. | `<'border-image-outset'> \| <'border-image-slice'>` |
+| \|    | Single bar       | Exactly one of the components must be present                                     | `smaller \| small \| normal \| big \| bigger`       |
+| \[ \] | Brackets         | Group components to bypass precedence rules                                       | `bold [ thin && <length> ]`                         |
+
+#### 1.4.2.2 Multipliers
+
+|  Sign   | Name              | Description                                                       | Example               |
+| :-----: | ----------------- | ----------------------------------------------------------------- | --------------------- |
+|         | No multiplier     | Exactly 1 time                                                    | `solid`               |
+|   `*`   | Asterisk          | 0 or more times                                                   | `bold smaller*`       |
+|   `+`   | Plus sign         | 1 or more times                                                   | `bold smaller+`       |
+|   `?`   | Question mark     | 0 or 1 time (that is _optional)_                                  | `bold smaller?`       |
+| `{A,B}` | Curly braces      | At least `A` times, at most `B` times                             | `bold smaller{1,3}`   |
+|   `#`   | Hash mark         | 1 or more times, but each occurrence separated by a comma ('`,`') | `bold smaller#`       |
+|   `!`   | Exclamation point | Group must produce at least 1 value                               | `[ bold? smaller? ]!` |
 ## 1.5 Inheritance
 
 - In CSS, _**inheritance**_ controls what happens when no value is specified for a property on an element. CSS properties can be categorized in two types:
@@ -1288,6 +1311,13 @@ The paragraph will have a border medium black border, but the words "emphasized 
 ## 1.6 Visual Rules
 
 ### 1.6.1 Font Family
+
+```ad-important
+font-family: [<family-name> | <generic-family>]#
+
+
+```
+
 
 - Font refers to the technical term typeface, or font family.
 - To change the typeface of text on your web page, you can use the font-family property.
