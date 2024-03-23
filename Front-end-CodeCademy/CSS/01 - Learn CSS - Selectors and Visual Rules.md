@@ -1127,153 +1127,111 @@ bold smaller*
 ```
 
 - This example matches the following values:
-- `bold`
-- `bold smaller`
-- `bold smaller smaller`
-- `bold smaller smaller smaller`, and so on.
+	- `bold`
+	- `bold smaller`
+	- `bold smaller smaller`
+	- `bold smaller smaller smaller`, and so on.
+	But not:
+	- `smaller`, as `bold` is juxtaposed, and must appear before any `smaller` keyword.
 
-But not:
+##### 1.4.1.5.2 Plus (`+`)
 
-- `smaller`, as `bold` is juxtaposed, and must appear before any `smaller` keyword.
-
-### 1.4.2 [Plus (`+`)](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#plus)
-
-The _plus multiplier_ indicates that the entity may appear **one or several times**.
-
-CSSCopy to Clipboard
-
+- The _plus multiplier_ indicates that the entity <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">may appear one or several times</strong></span>.
 ```
 bold smaller+
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold smaller`
+	- `bold smaller smaller`
+	- `bold smaller smaller smaller`, and so on.
+	But not:
+	- `bold`, as `smaller` must appear at least one time.
+	- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
 
-- `bold smaller`
-- `bold smaller smaller`
-- `bold smaller smaller smaller`, and so on.
+##### 1.4.1.5.3 Question mark (`?`)
 
-But not:
-
-- `bold`, as `smaller` must appear at least one time.
-- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
-
-### 1.4.3 [Question mark (`?`)](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#question_mark)
-
-The _question mark multiplier_ indicates that the entity is optional, and **must appear zero or one time**.
-
-CSSCopy to Clipboard
-
+- The _question mark multiplier_ indicates that the entity is <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">optional, and must appear zero or one time</strong></span>.
 ```
 bold smaller?
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold`
+	- `bold smaller`
+	But not:
+	- `bold smaller smaller`, as `smaller` must appear at most one time.
+	- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
 
-- `bold`
-- `bold smaller`
+##### 1.4.1.5.4 Curly braces (`{ }`)
 
-But not:
-
-- `bold smaller smaller`, as `smaller` must appear at most one time.
-- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
-
-### 1.4.4 [Curly braces (`{ }`)](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#curly_braces)
-
-The _curly braces multiplier_, enclosing two integers separated by a comma, A and B, indicates that the entity **must appear at least A times and at most B times**.
-
-CSSCopy to Clipboard
-
+- The _curly braces multiplier_, **enclosing two integers separated by a comma, A and B** ( `{A, B}` ), indicates that the entity <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">must appear at least A times and at most B times</strong></span>.
 ```
 bold smaller{1,3}
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold smaller`
+	- `bold smaller smaller`
+	- `bold smaller smaller smaller`
+	But not:
+	- `bold`, as `smaller` must appear at least one time.
+	- `bold smaller smaller smaller smaller`, as `smaller` must appear at most three times.
+	- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword
 
-- `bold smaller`
-- `bold smaller smaller`
-- `bold smaller smaller smaller`
+##### 1.4.1.5.5 Hash mark (`#`)
 
-But not:
-
-- `bold`, as `smaller` must appear at least one time.
-- `bold smaller smaller smaller smaller`, as `smaller` must appear at most three times.
-- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword
-
-### 1.4.5 [Hash mark (`#`)](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#hash_mark)
-
-The _hash mark multiplier_ indicates that the entity may be repeated one or more times (for example, the plus multiplier), but each occurrence is separated by a comma (',').
-
-CSSCopy to Clipboard
-
+- The _hash mark multiplier_ indicates that the entity <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">may be repeated one or more times</strong></span> (for example, the plus multiplier), <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">but each occurrence is separated by a comma (',')</strong></span>.
 ```
 bold smaller#
 ```
 
-This example matches the following values:
+- This example matches the following values:
+	- `bold smaller`
+	- `bold smaller, smaller`
+	- `bold smaller, smaller, smaller`, and so on.
+	But not:
+	- `bold`, as `smaller` must appear at least one time.
+	- `bold smaller smaller smaller`, as the different occurrences of `smaller` must be separated by commas.
+	- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
 
-- `bold smaller`
-- `bold smaller, smaller`
-- `bold smaller, smaller, smaller`, and so on.
-
-But not:
-
-- `bold`, as `smaller` must appear at least one time.
-- `bold smaller smaller smaller`, as the different occurrences of `smaller` must be separated by commas.
-- `smaller`, as `bold` is juxtaposed and must appear before any `smaller` keyword.
-
-The hash mark may optionally be followed by curly braces to indicate precisely how many times the repetition occurs.
-
-CSSCopy to Clipboard
-
+- The hash mark may optionally be followed by curly braces to indicate precisely how many times the repetition occurs.
 ```
 bold smaller#{1,3}
 ```
 
-This example matches the following values:
-
-- `bold smaller`
-- `bold smaller, smaller`
-- `bold smaller, smaller, smaller`
-
-But not:
-
-- `bold smaller, smaller, smaller, smaller`, as `smaller` must appear at most three times.
-
-CSSCopy to Clipboard
-
+- his example matches the following values:
+	- `bold smaller`
+	- `bold smaller, smaller`
+	- `bold smaller, smaller, smaller`
+	But not:
+	- `bold smaller, smaller, smaller, smaller`, as `smaller` must appear at most three times.
+	
 ```
 bold smaller#{2}
 ```
 
-This example matches the following value:
+- This example matches the following value:
+	- `bold smaller, smaller`
+	But not:
+	- `bold smaller`, as `smaller` must appear exactly two times.
 
-- `bold smaller, smaller`
+##### 1.4.1.5.6 Exclamation point (`!`)
 
-But not:
-
-- `bold smaller`, as `smaller` must appear exactly two times.
-
-### 1.4.6 [Exclamation point (`!`)](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax#exclamation_point_!)
-
-The _exclamation point multiplier_ after a group indicates that the group is required, and must produce at least one value; even if the grammar of the items within the group would otherwise allow the entire contents to be omitted, at least one component value must not be omitted.
-
-CSSCopy to Clipboard
-
+- The _exclamation point multiplier_ after a group <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">indicates that the group is required, and must produce at least one value</strong></span>.
+- If the grammar of the items within the group would otherwise allow the entire contents to be omitted, at least one component value must not be omitted.
 ```
 [ bold? smaller? ]!
 ```
 
-This example matches the following values:
-
-- `bold`
-- `smaller`
-- `bold smaller`
-
-But not:
-
-- neither `bold` nor `smaller`, as one of them must appear.
-- `smaller bold`, as `bold` is juxtaposed and must appear before the `smaller` keyword.
-- `bold smaller bold`, as `bold` and `smaller` may only appear once.
+- This example matches the following values:
+	- `bold`
+	- `smaller`
+	- `bold smaller`
+	But not:
+	- neither `bold` nor `smaller`, as one of them must appear.
+	- `smaller bold`, as `bold` is juxtaposed and must appear before the `smaller` keyword.
+	- `bold smaller bold`, as `bold` and `smaller` may only appear once.
 
 ## 1.5 Inheritance
 
