@@ -1425,17 +1425,14 @@ font-size: calc(20% + 5px); min(350px, 10em);
 /* Global values */
 font-size: inherit | initial | revert | revert-layer | unset;
 ```
+
+![[Pasted image 20240324130956.png]]
 ````
 
 #### 1.6.2.1 Values of Font-Size
 
-[`xx-small`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#xx-small), `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`, `xxx-large`
-
-Absolute-size keywords, based on the user's default font size (which is `medium`).
-
-[`larger`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#larger), `smaller`
-
-Relative-size keywords. The font will be larger or smaller relative to the parent element's font size, roughly by the ratio used to separate the absolute-size keywords above.
+- `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`, `xxx-large` : Absolute-size keywords, based on the user's default font size (which is `medium`).
+- `larger`, `smaller` : Relative-size keywords. The font will be larger or smaller relative to the parent element's font size, roughly by the ratio used to separate the absolute-size keywords above.
 
 [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 

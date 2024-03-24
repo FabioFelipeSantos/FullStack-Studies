@@ -1,6 +1,10 @@
-function spanWithFontSize(element, fontSize) {
+function spanWithFontSize(element, fontSize, fzHTML = false) {
   const span = document.createElement('span');
-  span.textContent = `${fontSize}`;
+  span.textContent = ` ${fontSize}`;
+
+  if (fzHTML) {
+    span.textContent += ` (${100 * parseFloat(fontSize) / parseFloat(fzHTML)}%)`;
+  }
 
   const styles = {
     "color": "rgb(80,30,255)",
@@ -12,19 +16,21 @@ function spanWithFontSize(element, fontSize) {
   element.appendChild(span);
 }
 
-function fontSizeCalculator(className) {
+function fontSizeCalculator(className, fzHTML = false) {
   const pElement = document.querySelector(className);
   const fontSize = window.getComputedStyle(pElement).fontSize;
 
-  spanWithFontSize(pElement, fontSize);
+  fzHTML ? spanWithFontSize(pElement, fontSize, fzHTML) : spanWithFontSize(pElement, fontSize);
+
+  if (className === '.fz-txt') {
+    return fontSize
+  }
 }
 
-
 let classesNames = '.fz-txt';
-fontSizeCalculator(classesNames);
+const fzHTML = fontSizeCalculator(classesNames);
 
 for (let i = 1; i <= 8; i++) {
   classesNames = `.fz-${i}`;
-  console.log(classesNames)
-  fontSizeCalculator(classesNames);
+  fontSizeCalculator(classesNames, fzHTML);
 }
