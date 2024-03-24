@@ -1394,10 +1394,64 @@ font-size: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | ma
 ```
 
 <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Some Possibilities:</strong></span>
+
+```css
+font-size: <absolute-size>;
+font-size: <relative-size>;
+font-size: <length-percentage [0, ∞]>
+font-size: math
+```
+
+\<length-percentage\> = \<length\> | \<percentage\>
 ````
 
+````ad-example
+```css
+/* <absolute-size> values */
+font-size: xx-small | x-small | small | medium | large | x-large | xx-large | xxx-large;
 
+/* <relative-size> values */
+font-size: smaller | larger;
 
+/* <length> values */
+font-size: 12px /* absolute value */; 0.8em /* relative value */;
+
+/* <percentage> values */
+font-size: 80%;
+
+/* math value */
+font-size: calc(20% + 5px); min(350px, 10em);
+
+/* Global values */
+font-size: inherit | initial | revert | revert-layer | unset;
+```
+````
+
+#### 1.6.2.1 Values of Font-Size
+
+[`xx-small`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#xx-small), `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`, `xxx-large`
+
+Absolute-size keywords, based on the user's default font size (which is `medium`).
+
+[`larger`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#larger), `smaller`
+
+Relative-size keywords. The font will be larger or smaller relative to the parent element's font size, roughly by the ratio used to separate the absolute-size keywords above.
+
+[`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+
+A positive [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length) value. For most font-relative units (such as `em` and `ex`), the font size is relative to the parent element's font size.
+
+For font-relative units that are root-based (such as `rem`), the font size is relative to the size of the font used by the [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) (root) element.
+
+[`<percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
+
+A positive [`<percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) value, relative to the parent element's font size.
+
+**Note:** To maximize accessibility, it is generally best to use values that are relative to the user's default font size.
+
+[`math`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#math)
+
+[Scaling rules](https://w3c.github.io/mathml-core/#the-math-script-level-property) are applied when determining the computed value of the `font-size` property for math elements relative to the `font-size` of the containing parent. See the [math-depth](https://developer.mozilla.org/en-US/docs/Web/CSS/math-depth) property for more information.
 - To change the size of text on your web page, you can use the `font-size` property.
 
 ```css
