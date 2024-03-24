@@ -1586,6 +1586,67 @@ color: inherit | initial | revert | revert-layer | unset;
 ```
 ````
 
+#### 1.6.5.2 Background Syntax
+
+````ad-important
+```css
+background-color = <color>
+```
+````
+
+````ad-example
+```css
+/* Keyword values */
+background-color: red | indigo;
+
+/* Hexadecimal value */
+background-color: #bbff00 | #bf0 | #11ffee00 | #1fe0 | #11ffeeff | #1fef;
+
+/* RGB value */
+background-color: rgb(255 255 128) | rgb(117 190 218 / 50%);
+
+/* HSL value */
+background-color: hsl(50 33% 25%) | hsl(50 33% 25% / 75%);
+
+/* Special keyword values */
+background-color: currentcolor | transparent;
+
+/* Global values */
+background-color: inherit | initial | revert | revert-layer | unset;
+```
+````
+
+### 1.6.6 Opacity
+
+- Opacity is the measure of *how transparent an element is*. It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+- Opacity applies to the element as a whole, **including its contents**, even though the value is not inherited by child elements. Thus, the element and its children all have the same opacity relative to the element's background, even if they have different opacities relative to one another.
+- Opacity can be used to make elements fade into others for a nice overlay effect. To adjust the opacity of an element, the syntax looks like this:
+```css
+.overlay {
+	opacity: 0.5;
+}
+```
+- In the example above, the `.overlay` element would be 50% visible, letting whatever is positioned behind it show through.
+
+#### 1.6.6.1 Opacity Formal syntax
+
+````ad-important
+```css
+opacity = <opacity-value>;
+  
+<opacity-value> = <number> | <percentage>;
+```
+````
+
+````ad-example
+```css
+opacity: 0.9 | 90%;
+
+/* Global values */
+opacity: inherit | initial | revert | revert-layer | unset;
+```
+```` 
+
 # 2 Other Definitions
 
 ## 2.1 User Agent

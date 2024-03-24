@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "50029dbb350a5f0d",
+        "id": "367a71029eb4813e",
         "type": "tabs",
         "children": [
           {
-            "id": "5f7fb93b943a1723",
+            "id": "e41a27336558641f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -202,14 +202,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5f7fb93b943a1723",
+  "active": "e41a27336558641f",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "Pasted image 20240324130956.png",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_JS.js",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_index.html",
     "Front-end-CodeCademy/Examples/OtherThings",
-    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "2024-03-22.md",
     "README.md",
     "Untitled.canvas",
