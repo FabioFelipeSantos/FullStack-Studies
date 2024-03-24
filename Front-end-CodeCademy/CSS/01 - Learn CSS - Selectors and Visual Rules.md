@@ -1339,33 +1339,64 @@ font-family: serif;
 ```
 ````
 
-#### 1.6.1.1 Syntax
+#### 1.6.1.1 Values
 
+- `<family-name>` : The name of a font family. For example, *"Times"* and *"Helvetica"* are font families. Font family names containing whitespace should be quoted. For example: "Comic Sans MS".
+- `<generic-name>` : Generic font families are a fallback mechanism, a means of preserving some of the style sheet author's intent when none of the specified fonts are available. Generic family names are keywords and must not be quoted. A generic font family should be the last item in the list of font family names. The following keywords are defined:
+	- `serif` : Glyphs have finishing strokes, flared or tapering ends, or have actual serifed endings. For example: Lucida Bright, Lucida Fax, Palatino, Palatino Linotype, Palladio, URW Palladio, serif.
+		- <span style="font-family: 'Palatino Linotype'; font-size: 1.4em">Palatino Linotype</span>, <span style="font-family: serif; font-size: 1.4em">Just serif</span>;
+	- `sans-serif` : Glyphs have stroke endings that are plain. For example: Open Sans, Fira Sans, Lucida Sans, Lucida Sans Unicode, Trebuchet MS, Liberation Sans, Nimbus Sans L, sans-serif.
+		- <span style="font-family: 'Trebuchet MS'; font-size: 1.4em">Trebuchet MS</span>, <span style="font-family: sans-serif; font-size: 1.4em">Just sans-serif</span>;
+	- `monospace` : All glyphs have the same fixed width. For example: Fira Mono, DejaVu Sans Mono, Menlo, Consolas, Liberation Mono, Monaco, Lucida Console, monospace.
+		- <span style="font-family: 'DejaVu Sans Mono'; font-size: 1.4em">DejaVu Sans Mono</span>, <span style="font-family: monospace; font-size: 1.4em">Just monospace</span>;
+	- `cursive` : Glyphs in cursive fonts generally have either joining strokes or other cursive characteristics beyond those of italic typefaces. The glyphs are partially or completely connected, and the result looks more like handwritten pen or brush writing than printed letter work. For example: Brush Script MT, Brush Script Std, Lucida Calligraphy, Lucida Handwriting, Apple Chancery, cursive.
+		-  <span style="font-family: 'Brush Script MT'; font-size: 1.4em">Brush Script MT</span>, <span style="font-family: cursive; font-size: 1.4em">Just cursive</span>;	
+	- `fantasy` : Fantasy fonts are primarily decorative fonts that contain playful representations of characters. For example: Papyrus, Herculanum, Party LET, Curlz MT, Harrington, fantasy.
+		- <span style="font-family: 'Papyrus'; font-size: 1.4em">Papyrus</span>, <span style="font-family: fantasy; font-size: 1.4em">Just fantasy</span>;	
+	- `system-ui` : Glyphs are taken from the default user interface font on a given platform. Because typographic traditions vary widely across the world, this generic is provided for typefaces that don't map cleanly into the other generics.
+		- <span style="font-family: system-ui; font-size: 1.4em">System-UI</span>;	
+	- `ui-serif` : The default user interface serif font.
+		- <span style="font-family: ui-serif; font-size: 1.4em">UI-Serif</span>;	
+	- `ui-sans-serif` : The default user interface sans-serif font.
+	- `ui-monospace` : The default user interface monospace font.
+	- `ui-rounded` : The default user interface font that has rounded features.
+	- `math` : This is for the particular stylistic concerns of representing mathematics: superscript and subscript, brackets that cross several lines, nesting expressions, and double struck glyphs with distinct meanings.	
+	- `emoji` : Fonts that are specifically designed to render emoji.
+		- <span style="font-family: emoji; font-size: 1.4em">🤔</span>;	
+	- `fangsong` : A particular style of Chinese characters that are between serif-style Song and cursive-style Kai forms. This style is often used for government documents.	
+
+#### 1.6.1.2 Description
 
 - Font refers to the technical term typeface, or font family.
 - To change the typeface of text on your web page, you can use the font-family property.
-
 ```css
 h1 {
   font-family: Garamond;
 }
 ```
-
-- In the example above, the font family for all main heading elements has been set to `Garamond`.
+- <span style="font-family: Garmond; font-size: 1.2em">In the example above, the font family for all main heading elements has been set to <code>'Garamond'</code> and this paragraph is written in this font too</span>.
 - When setting typefaces on a web page, keep the following points in mind:
-
   - The font specified must be installed on the user’s computer or downloaded with the site.
   - Web safe fonts are a group of fonts supported across most browsers and operating systems.
   - Unless you are using web safe fonts, the font you choose may not appear the same between all browsers and operating systems.
   - When the name of a typeface consists of more than one word, it’s a best practice to enclose the typeface’s name in quotes, like so:
-
   ```css
   h1 {
     font-family: "Courier New";
   }
   ```
-
+	- <span style="font-family: 'Courier New'; font-size: 1.2em">This is an example in Courier New</span>.
 ### 1.6.2 Font Size
+
+````ad-important
+```css
+font-size: <absolute-size> | <relative-size> | <length-percentage [0, ∞]> | math
+```
+
+<span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Some Possibilities:</strong></span>
+````
+
+
 
 - To change the size of text on your web page, you can use the `font-size` property.
 

@@ -28,6 +28,7 @@ body {
 	text-align: justify;
 	text-justify: inter-word;	
 	letter-spacing: 2.3px;
+	font-size: 1.3em;
 }
 
 .markdown-source-view.mod-cm6 .math {
