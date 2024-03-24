@@ -1433,74 +1433,158 @@ font-size: inherit | initial | revert | revert-layer | unset;
 
 - `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`, `xxx-large` : Absolute-size keywords, based on the user's default font size (which is `medium`).
 - `larger`, `smaller` : Relative-size keywords. The font will be larger or smaller relative to the parent element's font size, roughly by the ratio used to separate the absolute-size keywords above.
+- `<length>` : A positive `<length>` value. For most font-relative units (such as `em` and `ex`), the font size is relative to the parent element's font size. For font-relative units that are root-based (such as `rem`), the font size is relative to the size of the font used by the `<html>` (root) element.
+- `<percentage>` : A positive `<percentage>` value, relative to the parent element's font size.
+- `math` : Scaling rules are applied when determining the computed value of the `font-size` property for math elements relative to the `font-size` of the containing parent. See the [math-depth](https://developer.mozilla.org/en-US/docs/Web/CSS/math-depth) property for more information.
 
-[`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+#### 1.6.2.2 Description of `font-size`
 
-A positive [`<length>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length) value. For most font-relative units (such as `em` and `ex`), the font size is relative to the parent element's font size.
-
-For font-relative units that are root-based (such as `rem`), the font size is relative to the size of the font used by the [`<html>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) (root) element.
-
-[`<percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
-
-A positive [`<percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) value, relative to the parent element's font size.
-
-**Note:** To maximize accessibility, it is generally best to use values that are relative to the user's default font size.
-
-[`math`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#math)
-
-[Scaling rules](https://w3c.github.io/mathml-core/#the-math-script-level-property) are applied when determining the computed value of the `font-size` property for math elements relative to the `font-size` of the containing parent. See the [math-depth](https://developer.mozilla.org/en-US/docs/Web/CSS/math-depth) property for more information.
 - To change the size of text on your web page, you can use the `font-size` property.
-
 ```css
 p {
   font-size: 18px;
 }
 ```
-
 - In the example above, the font-size of all paragraphs was set to 18px. `px` means pixels, which is one way to measure font size. 
 - A pixel is one of several units of measure in web development. It is an absolute unit equal to 1/96 of an inch.
 - Another units that can be used are `rem` and `em`. `rem`'s and `em`'s are scalable typographic units which are commonly used with the `font-size` property. As opposed to pixels, both of these units are _**relative**_.
 - An `em` is measured relative to the `font-size` of an element. When dealing with `em`s it is important to realize that the `font-size` of an element is often _**inherited**_ from an **ancestor element**. For example:
-
-  ```html
+```html
   <div style="font-size: 24px">
     <p>This text will be 24px, as inherited from the parent element.</p>
     <p style="font-size: 0.75em">This text will be 75% of the parent size (the div), i.e., 18px.</p>
   </div>
-  ```
-
+```
 - On the other hand, `rem`s are determined based on the `font-size` of the html element. If `font-size` is not defined on the html element, the browser’s default `font-size` is used instead (usually `16px`).
 - There are pros and cons of each unit but one major advantage of using relative units is that they lend themselves more naturally to responsive design. Relative units like `em`s and `rem`s are flexible and scalable whereas pixels are not.
 
 ### 1.6.3 Font Weight
 
-- In CSS, the `font-weight` property controls how bold or thin text appears.
+````ad-important
+```css
+font-weight = <font-weight-absolute> | bolder | lighter
+```
 
+<span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Some Possibilities:</strong></span>
+
+```css
+font-weight: <font-weight-absolute>;
+font-weight: bolder;
+font-weight: lighter;
+```
+
+\<font-weight-absolute\> = normal | bold | \<number [1,1000]\>
+````
+
+````ad-example
+```css
+/* <font-weight-absolute> keyword values */
+font-weight: normal | bold; /* normal = 400 and bold = 700 in font-weight */
+
+/* <font-weight-absolute> numeric values [1,1000] */
+font-weight: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+
+/* Keyword values relative to the parent */
+font-weight: lighter | bolder;
+
+/* Global values */
+font-weight: inherit | initial | revert | revert-layer | unset;
+```
+````
+
+#### 1.6.3.1 Description of `font-weight`
+
+- In CSS, the `font-weight` property controls how bold or thin text appears.
 ```css
 p {
   font-weight: bold;
 }
 ```
-
 - In the example above, all paragraphs on the web page would appear bolded.
 - The `font-weight` property has another value: `normal`. Why does it exist?
 - If we wanted all text on a web page to appear bolded, we could select all text elements and change their font weight to `bold`. If a certain section of text was required to appear normal, however, we could set the font weight of that particular element to `normal`, essentially shutting off `bold` for that element.
 
 ### 1.6.4 Text Align
 
-- To align text we can use the `text-align` property. The `text-align` property will **align text to the element that holds it**, otherwise known as its parent.
+````ad-important
+```css
+text-align = start | end | left | right | center | justify | match-parent | justify-all;
+```
 
+<span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Some Possibilities:</strong></span>
+
+```css
+text-align: center;
+text-align: justify;
+```
+````
+
+#### 1.6.4.1 Description of `text-align`
+
+- To align text we can use the `text-align` property. The `text-align` property will **align text to the element that holds it**, otherwise known as its parent.
 ```css
 h1 {
   text-align: right;
 }
 ```
-
 - The `text-align` property can be set to one of the following commonly used values:
   - `left` — aligns text to the left side of its parent element, which in this case is the browser.
   - `center` — centers text inside of its parent element.
   - `right` — aligns text to the right side of its parent element.
   - `justify` — spaces out text in order to align with the right and left side of the parent element.
+
+### 1.6.5 Color and Background Color
+
+- Before discussing the specifics of color, it’s important to make two distinctions about color. Color can affect the following design aspects:
+	- Foreground color
+	- Background color
+- Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the _foreground color_ of the heading has been styled. 
+- Conversely, when a heading is styled so that its background appears yellow, the _background color_ of the heading has been styled.
+- For example: <span style="color: blue">My color is blue and this is the foreground color. <span style="background-color: rgb(255, 0, 0, .5)">For me, my background color is red with a half-opacity and the foreground is still blue.</span></span>.
+- In CSS, these two design aspects can be styled with the following two properties:
+	- `color` : this property styles an element’s foreground color
+	- `background-color` : this property styles an element’s background color
+```css
+h1 {
+	color: red;
+	background-color: blue;
+}
+```
+- In the example above, the text of the heading will appear in red, and the background of the heading will appear blue.
+
+#### 1.6.5.1 Color Syntax
+
+````ad-important
+```css
+color = <color>
+```
+
+````
+
+````ad-example
+```css
+/* Keyword values */
+color: currentcolor;
+
+/* <named-color> values */
+color: red | orange | tan | rebeccapurple;
+
+/* <hex-color> values */
+color: #090 | #009900 | #090a | #009900aa;
+
+/* <rgb()> values and legacy <rgba()> values*/
+color: rgb(34, 12, 64, 0.6) | rgb(34 12 64 / 0.6) | rgb(34.6 12 64 / 60%);
+
+/* <hsl()> values and legacy <hsla()> values */
+color: hsl(30, 100%, 50%, 0.6) | hsl(30 100% 50% / 0.6) | hsl(30.2 100% 50% / 60%);
+
+/* <hwb()> values */
+color: hwb(90 10% 10%) | hwb(90 10% 10% / 0.5) | hwb(90deg 10% 10%) | hwb(1.5708rad 60% 0%) | hwb(0.25turn 0% 40% / 50%);
+
+/* Global values */
+color: inherit | initial | revert | revert-layer | unset;
+```
+````
 
 # 2 Other Definitions
 
