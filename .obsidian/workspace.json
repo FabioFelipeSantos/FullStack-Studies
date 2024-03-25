@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cb5e29e76a5a28ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md"
+                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md"
               }
             }
           },
@@ -202,10 +216,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a989ba19d88d339",
+  "active": "cb5e29e76a5a28ea",
   "lastOpenFiles": [
-    "`color`.md",
+    "Front-end-CodeCademy/CSS/box-model.png",
+    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+    "Front-end-CodeCademy/CSS/image-1.png",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+    "`color`.md",
     "Pasted image 20240324130956.png",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_JS.js",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_styles.css",

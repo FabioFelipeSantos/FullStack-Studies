@@ -35,6 +35,12 @@ body {
 	font-size: 1.5em;
 }
 
+.markdown-source-view.mod-cm6 .internal-embed {
+	width: 70%;
+    	background-color: rgb(220, 10, 220, .4);
+	text-align: center;
+}
+
 /* LEVEL 1 */
 .markdown-reading-view ul > li > .list-bullet:after,
 .markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after {
