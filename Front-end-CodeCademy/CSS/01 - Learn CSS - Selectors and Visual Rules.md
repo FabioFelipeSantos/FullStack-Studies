@@ -1647,6 +1647,67 @@ opacity: inherit | initial | revert | revert-layer | unset;
 ```
 ```` 
 
+### 1.6.7 Background Image
+
+- CSS has the ability to change the background of an element. One option is to make the background of an element an image. This is done through the CSS property `background-image`. Its syntax looks like this:
+```css
+.main-banner {
+	background-image: url('https://www.example.com/image.jpg');
+}
+```
+
+1. The `background-image` property will set the element’s background to display an image.
+2. The value provided to `background-image` is a `url`. The `url` should be a URL to an image. The `url` can be a file within your project, or it can be a link to an external site. To link to an image inside an existing project, you must provide a relative file path. If there was an image folder in the project, with an image named `mountains.jpg`, the relative file path would look like below:
+```css
+.main-banner {
+	background-image: url('images/mountains.jpg');
+}
+```
+
+#### 1.6.7.1 `background-image` Syntax
+
+````ad-important
+```css
+background-image =  <bg-image>#    
+  
+<bg-image> = <image> | none;
+  
+<image> = <url> | <gradient>;
+
+<url> = <url()> | <src()>;
+  
+<url()> = url( <string> <url-modifier>* ) | <url-token>];
+
+<src()> = src( <string> <url-modifier>* );
+```
+
+The <bg-image> can appear one or more times always separeted by a comma. If a \<url()\> or a \<src()\> are passed as \<url-modifier\>, this value can appear zero, one or more times.
+````
+
+````ad-example
+background-image: linear-gradient(to bottom, rgb(255 255 0 / 50%), rgb(0 0 255 / 50%)), url("catfront.png");
+
+```html
+<p style="width: 100%; height: 150px; background-image: linear-gradient(to right, rgb(255 0 255), rgb(0 0 255), rgb(0, 255, 255))"></p>
+```
+
+<p style="width: 100%; height: 50px; background-image: linear-gradient(to right, rgb(255 0 255), rgb(0 0 255), rgb(0, 255, 255))"></p>
+
+/* Global values */
+background-image: inherit | initial | revert | revert-layer | unset;
+````
+
+### 1.6.8 Important ( `!important` )
+
+- `!important` can be applied to specific declarations, instead of full rules. **It will override any style** no matter how specific it is. As a result, it should almost never be used. Once `!important` is used, it is very hard to override.
+- The syntax of `!important` in CSS looks like this:
+```css
+p {  color: blue !important;}.main p {  color: red;}
+```
+
+- Since `!important` is used on the `p` selector’s `color` attribute, all `p` elements will appear `blue`, even though there is a more specific `.main p` selector that sets the `color` attribute to `red`.
+- One justification for using `!important` is when working with multiple stylesheets. For example, if we are using the [Bootstrap](https://getbootstrap.com/) CSS framework and want to override the styles for one specific HTML element, we can use the `!important` property.
+
 # 2 Other Definitions
 
 ## 2.1 User Agent

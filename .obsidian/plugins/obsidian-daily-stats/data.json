@@ -3,12 +3,13 @@
     "2024/2/21": 88,
     "2024/2/22": 1012,
     "2024/2/23": 1073,
-    "2024/2/24": 1633
+    "2024/2/24": 1633,
+    "2024/2/25": 446
   },
   "todaysWordCount": {
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md": {
-      "initial": 10896,
-      "current": 12529
+      "initial": 12529,
+      "current": 12975
     }
   }
 }
