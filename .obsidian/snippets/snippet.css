@@ -35,11 +35,38 @@ body {
 	font-size: 1.5em;
 }
 
-.markdown-source-view.mod-cm6 .internal-embed {
-	width: 70%;
-    	background-color: rgb(220, 10, 220, .4);
-	text-align: center;
+/* reading mode */
+.image-embed[alt]:after {
+    content: attr(alt);
+    display: block;
+    margin: 0.2rem 1rem 1rem 1rem;
+    font-size: 90%;
+    line-height: 1.4;
+    color: var(--text-faint);
+    text-align: center;
+
 }
+/* source view and live preview */
+.image-embed[alt]:after {
+    content: attr(alt);
+    display: block;
+    margin: 0.2rem 1rem 1rem 1rem;
+    font-size: 90%;
+    line-height: 1.4;
+    color: var(--text-faint);
+    text-align: center;
+}
+
+img {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+}
+    
+ .markdown-source-view.mod-cm6 .cm-content > * {
+        margin: auto auto !important;
+}
+
 
 /* LEVEL 1 */
 .markdown-reading-view ul > li > .list-bullet:after,

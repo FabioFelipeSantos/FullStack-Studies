@@ -16,9 +16,12 @@
 	- `padding`: The amount of space between the content area and the border.
 	- `border`: The thickness and style of the border surrounding the content area and padding.
 	- `margin`: The amount of space between the border and the outside edge of the element.
-![[box-model.png]]
+
+![[box-model.png||1000]]
 
 - **Content Area**: This area contains the actual content of an element, including text and images. It also sometimes has a `background-color` or `background-image`.
+
+![[contentAreaBoxModel.png||600]]
 - **Padding Area**: This area is located between the content and border areas. It can be changed on the top, right, bottom and left sides.
 - **Border Area**: This area is located between the margin and padding areas. Their thickness and style can be changed.
 - **Margin Area**: This is the outermost area in the Box Model. It borders with the margin areas of neighboring elements. It can be changed on the top, right, bottom and left sides.
