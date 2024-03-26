@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -216,7 +215,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb5e29e76a5a28ea",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/CSS/box-model.png",
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
