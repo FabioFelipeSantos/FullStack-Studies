@@ -4,16 +4,13 @@
     "2024/2/22": 1012,
     "2024/2/23": 1073,
     "2024/2/24": 1633,
-    "2024/2/25": 446
+    "2024/2/25": 446,
+    "2024/2/26": 195
   },
   "todaysWordCount": {
-    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md": {
-      "initial": 12529,
-      "current": 12259
-    },
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md": {
-      "initial": 0,
-      "current": 446
+      "initial": 426,
+      "current": 621
     }
   }
 }

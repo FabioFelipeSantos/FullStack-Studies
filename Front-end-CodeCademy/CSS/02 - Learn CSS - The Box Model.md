@@ -3,6 +3,14 @@
 - Browsers load HTML elements with default position values. This often leads to an unexpected and unwanted user experience while limiting the views you can create. In this lesson, you will learn about the _box model_, an important concept to understand how elements are positioned and displayed on a website.
 - If you have used HTML and CSS, you have unknowingly seen aspects of the <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Box Model</strong></span>. For example, if you have set the background color of an element, you may have noticed that the color was applied not only to the area directly behind the element but also to the area to the right of the element. Also, if you have aligned text, you know it is aligned relative to something. What is that something?
 - All elements on a web page are interpreted by the browser as *“living” inside of a box*. This is what is meant by the box model.
+- - Now, we’ll learn about the following aspects of the box model:
+	1. The dimensions of an element’s box.
+	2. The borders of an element’s box.
+	3. The paddings of an element’s box.
+	4. The margins of an element’s box.
+
+# 2 The Box Model
+
 - The <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Box Model</strong></span> is a CSS layout mechanism that the web browser uses to render content organized by box-shaped elements. Each element is made of four specific areas:
 	- `width` and `height`: The width and height of the content area.
 	- `padding`: The amount of space between the content area and the border.
@@ -14,10 +22,17 @@
 - **Padding Area**: This area is located between the content and border areas. It can be changed on the top, right, bottom and left sides.
 - **Border Area**: This area is located between the margin and padding areas. Their thickness and style can be changed.
 - **Margin Area**: This is the outermost area in the Box Model. It borders with the margin areas of neighboring elements. It can be changed on the top, right, bottom and left sides.
-- For example, when you change the background color of an element, you change the background color of its entire box.
-- Now, we’ll learn about the following aspects of the box model:
-	1. The dimensions of an element’s box.
-	2. The borders of an element’s box.
-	3. The paddings of an element’s box.
-	4. The margins of an element’s box.
 
+# 3 Height and Width
+
+- An element’s content has two dimensions: a *Height* and a *Width*. By default, the dimensions of an HTML box are set to hold the raw contents (conteúdo bruto) of the box.
+- The CSS `height` and `width` properties can be used to modify these default dimensions.
+```css
+p {
+	height: 80px;
+	width: 240px;
+}
+```
+- In this example, the `height` and `width` of paragraph elements are set to 80 pixels and 240 pixels, respectively — the `px` in the code above stands for _pixels_.
+- Pixels allow you to set the exact size of an element’s box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices — an element that fills a laptop screen will <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">overflow</strong></span> a mobile screen.
+	- An *Overflow* defines how a block level element should handle content that goes beyond its boundaries. Often, the overflow will be set up to `scroll`. This value will create a scrollbar in the box of the content.

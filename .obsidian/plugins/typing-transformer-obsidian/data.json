@@ -1,0 +1,13 @@
+{
+  "debug": false,
+  "convertRules": "\n# Line head conversion\n# Note: this rule can't apply to the very first line of the document\n'\\n》|' -> '\\n>|'\n'\\n、|' -> '\\n/|'\n\n# Auto-pair, Input Conversion, and Deletion\n'[|' -> '[|]'\n'{|' -> '{|}'\n'（|' -> '（|）'\n\n# Auto code block\n'\\.|'  -> '`|`' # inline block\n'\\b.|' -> '```\\n|\\n```'\n'\\c.|' -> '```css\\n|\\n```'\n'\\h.|' -> '```html\\n|\\n```'\n'\\j.|' -> '```js\\n|\\n```'\n'`ad|' -> '```ad-|\\n\\n```'\n'``ad|' -> '````ad-|\\n\\n````'\n\n# have fun converting!\n'\\sp|' -> '<span style=\"color: fuchsia\"><strong style=\"color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%\">|</strong></span>'\n\n# Selection Insert Rules\n'`'  -> '`' + '`'\n'$'  -> '$' + '$'\n'<'  -> '<' + '>'\n'>' -> '</' + '>'",
+  "zoneIndicatorOn": false,
+  "autoFormatOn": true,
+  "profiles": [
+    {
+      "title": "global",
+      "content": "\n# Line head conversion\n# Note: this rule can't apply to the very first line of the document\n'\\n》|' -> '\\n>|'\n'\\n、|' -> '\\n/|'\n\n# Auto-pair, Input Conversion, and Deletion\n'[|' -> '[|]'\n'{|' -> '{|}'\n'（|' -> '（|）'\n\n# Auto code block\n'\\.|'  -> '`|`' # inline block\n'\\b.|' -> '```\\n|\\n```'\n'\\c.|' -> '```css\\n|\\n```'\n'\\h.|' -> '```html\\n|\\n```'\n'\\j.|' -> '```js\\n|\\n```'\n'`ad|' -> '```ad-|\\n\\n```'\n'``ad|' -> '````ad-|\\n\\n````'\n\n# have fun converting!\n'\\sp|' -> '<span style=\"color: fuchsia\"><strong style=\"color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%\">|</strong></span>'\n\n# Selection Insert Rules\n'`'  -> '`' + '`'\n'$'  -> '$' + '$'\n'<'  -> '<' + '>'\n'>' -> '</' + '>'"
+    }
+  ],
+  "activeProfile": "global"
+}
