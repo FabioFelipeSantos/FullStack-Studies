@@ -5,8 +5,9 @@ body {
 
 .container {
   margin: 3% auto 0;
-  width: 900px;
-  height: 150px;
-  background-image: linear-gradient(to left, rgba(228, 50, 217, 0.638), rgb(0 0 255 / 50%));
-  border: solid red;
+  width: 600px;
+  height: 300px;
+  background-image: linear-gradient(to left, rgba(228, 50, 216, 0.819), rgba(0, 0, 255, 0.77));
+  border: 3px solid red;
+  border-radius: 9999px;
 }

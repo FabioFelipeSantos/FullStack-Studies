@@ -62,3 +62,89 @@ p.content-header {
 }
 ```
 - In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`. `medium` is a computed value of `3px`.
+
+# 5 Border Radius
+
+- Ever since we revealed the borders of boxes, you may have noticed that the borders highlight the true shape of an element’s box: <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Square</em></strong></span>. Thanks to CSS, a border doesn’t have to be square.
+- You can modify the corners of an element’s border box with the `border-radius` property.
+```css
+div.container {
+	border: 3px solid blue;
+	border-radius: 5px;
+}
+```
+- The code in the example above will set _all four corners_ of the border to a radius of 5 pixels (i.e. the same curvature that a circle with a radius of 5 pixels would have).
+- You can create a border that is a perfect circle by first <span style="color: aqua; font-size: 1.2em;"><em style="color: inherit;">creating an element with the same width and height</em></span>, and then <span style="color: lawngreen; font-size: 1.2em;"><em style="color: inherit;">setting the radius equal to half the width of the box, which is 50%</em></span>.
+```css
+div.container {
+	height: 60px;
+	width: 60px;
+	border: 3px solid blue;
+	border-radius: 50%;
+}
+```
+- The code in the example above creates a `<div>` that is a perfect circle.
+- If we want to create a "**pill**" shape on a rectangular HTML element, we can use a specific trick. We can provide a sufficiently <span style="color: tomato; font-size: 1.2em;"><em style="color: inherit;">huge absolute value</em></span> as a unit for the property. If this value exceeds half of the shortest side's length, the browser will use the minimum as its `border-radius` in both directions, producing a perfect pill shape on rectangular elements. One way to achieve this effect is by setting `border-radius: 9999px`. 😉
+
+# 6 Padding
+
+- The space between the contents of a box and the borders of a box is known as <span style="color: aqua; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Padding</em></strong></span>. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the `padding` property.
+```css
+p.content-header {
+	border: 3px solid coral;
+	padding: 10px;
+}
+```
+- The code in this example puts 10 pixels of space between the content of the paragraph (the text) and the borders, on all four sides.
+- The `padding` property is often used to expand the background color and make the content look less cramped (apertado). 
+- If you want to be more specific about the amount of padding on each side of a box’s content, you can use the following properties:
+	- `padding-top`
+	- `padding-right`
+	- `padding-bottom`
+	- `padding-left`
+- Each property affects the padding on only one side of the box’s content, giving you more flexibility in customization.
+```css
+p.content-header {
+	border: 3px solid fuchsia;
+	padding-bottom: 10px;
+}
+```
+- In the example above, only the bottom side of the paragraph’s content will have a `padding` of 10 pixels.
+- Other specifics stylization for one side of the box is also achieved for the following properties: `border-width`, `border-style`, or `border-color`. We just need to add one of the words top, right, bottom, or left between the words border, width, or color. For example: `border-top-width: 25px`.
+
+# 7 Padding Shorthand
+
+- Another implementation of the `padding` property lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a _shorthand property_.
+
+Padding shorthand lets you specify all of the `padding` properties as values on a single line:
+
+- [`padding-top`](https://www.codecademy.com/resources/docs/css/padding/padding-top)
+- [`padding-right`](https://www.codecademy.com/resources/docs/css/padding/padding-right)
+- [`padding-bottom`](https://www.codecademy.com/resources/docs/css/padding/padding-bottom)
+- [`padding-left`](https://www.codecademy.com/resources/docs/css/padding/padding-left)
+
+You can specify these properties in a few different ways:
+
+###### 7.1.1.1.1.1 Values
+
+```
+p.content-header {  padding: 6px 11px 4px 9px;}
+```
+
+In the example above, the four values `6px 11px 4px 9px` correspond to the amount of padding on each side, in a clockwise rotation. In order, it specifies the padding-top value (`6px`), the padding-right value (`11px`), the padding-bottom value (`4px`), and the padding-left value (`9px`) of the content.
+
+###### 7.1.1.1.1.2 Values
+
+```
+p.content-header {  padding: 5px 10px 20px;}
+```
+
+If the left and right sides of the content can be equal, the padding shorthand property allows for 3 values to be specified. The first value sets the padding-top value (`5px`), the second value sets the padding-left and padding-right values (`10px`), and the third value sets the padding-bottom value (`20px`).
+
+###### 7.1.1.1.1.3 Values
+
+```
+p.content-header {  padding: 5px 10px;}
+```
+
+And finally, if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the padding-top and padding-bottom values (`5px`), and the second value sets the padding-left and padding-right values (`10px`).
