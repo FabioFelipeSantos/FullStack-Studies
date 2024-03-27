@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -203,11 +202,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "43ac3bb2aed85bc9",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/border-styles.png",
+    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "2024-03-26.md",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
-    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/CSS/box-model.png",
     "Front-end-CodeCademy/CSS/box-model.png",
     "Pasted image 20240324130956.png",
