@@ -112,11 +112,7 @@
       "dark": "#5E5E5E"
     }
   },
-  "fileFlag": {
-    "2024-03-22.md": {
-      "fold": true
-    }
-  },
+  "fileFlag": {},
   "taskIcon": {
     "incomplete": {
       "symbol": "/",

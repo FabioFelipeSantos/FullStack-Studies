@@ -5,11 +5,12 @@
     "2024/2/23": 1073,
     "2024/2/24": 1633,
     "2024/2/25": 446,
-    "2024/2/26": 199
+    "2024/2/26": 199,
+    "2024/2/27": 0
   },
   "todaysWordCount": {
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md": {
-      "initial": 426,
+      "initial": 625,
       "current": 625
     }
   }
