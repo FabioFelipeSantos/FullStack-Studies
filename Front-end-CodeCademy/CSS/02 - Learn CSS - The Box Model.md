@@ -53,11 +53,12 @@ p {
 }
 ```
 - In the example above, the border has a `border-width` property with the value of `3px`, a `border-style` of `solid`, and a `border-color` of `coral`. All three properties are set in one line of code. But, even the specification in one line, all these properties are shorthands also. For example, the `border-width` style is a shorthand that comprises the four widths of the border, the `border-top-width`, `border-left-width`, `border-bottom-width`, `border-right-width`.
-
-The default border is `medium none color`, where `color` is the current color of the element. If `width`, `style`, or `color` are not set in the CSS file, the web browser assigns the default value for that property.
-
+- The default `border` is `medium none color`, where `color` is the current color of the element. If `width`, `style`, or `color` are not set in the CSS file, the web browser assigns the default value for that property.
+```css
+p.content-header {
+	height: 80px;
+	width: 240px;
+	border: solid coral;
+}
 ```
-p.content-header {  height: 80px;  width: 240px;  border: solid coral;}
-```
-
-In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`.
+- In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`.
