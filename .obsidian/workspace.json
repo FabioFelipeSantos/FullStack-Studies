@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e6efc4b83473d28a",
+        "id": "fe9564670f20556f",
         "type": "tabs",
         "children": [
           {
-            "id": "1a989ba19d88d339",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb5e29e76a5a28ea",
+            "id": "e8e05d246109c011",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,8 +185,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -215,14 +201,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cb5e29e76a5a28ea",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
-    "Front-end-CodeCademy/CSS/box-model.png",
-    "Front-end-CodeCademy/CSS/box-model.png",
+    "2024-03-26.md",
+    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+    "Front-end-CodeCademy/CSS/box-model.png",
+    "Front-end-CodeCademy/CSS/box-model.png",
     "Pasted image 20240324130956.png",
     "Front-end-CodeCademy/CSS/contentAreaBoxModel.png",
-    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "Front-end-CodeCademy/CSS/image-1.png",
     "`color`.md",
     "Front-end-CodeCademy/Examples/OtherThings/fontSizeAbsoluteValues_JS.js",
