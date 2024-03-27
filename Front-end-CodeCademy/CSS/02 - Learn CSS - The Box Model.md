@@ -61,4 +61,4 @@ p.content-header {
 	border: solid coral;
 }
 ```
-- In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`.
+- In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`. `medium` is a computed value of `3px`.
