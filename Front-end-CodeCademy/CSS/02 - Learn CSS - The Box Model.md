@@ -132,8 +132,7 @@ padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-perce
 padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-percentage [0, ∞]>
 ```
 ````
-
-- You can specify these properties in a few different ways:
+- You can specify these properties in a few different ways, with the property values ranging from one to four.
 
 ### 6.1.1 Four Values
 
@@ -182,17 +181,48 @@ p {
 }
 ```
 - The example above will place `20px` of space on the outside of the paragraph’s box on all four sides. So, other HTML elements cannot come within 20 pixels of the paragraph's border.
-- If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
-
-- [`margin-top`](https://www.codecademy.com/resources/docs/css/margins/margin-top)
-- [`margin-right`](https://www.codecademy.com/resources/docs/css/margins/margin-right)
-- [`margin-bottom`](https://www.codecademy.com/resources/docs/css/margins/margin-bottom)
-- [`margin-left`](https://www.codecademy.com/resources/docs/css/margins/margin-left)
-
-Each property affects the margin on only one side of the box, providing more flexibility in customization.
-
+- If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`.
+```css
+p {
+	border: 3px solid DarkSlateGrey;
+	margin-right: 15px;
+}
 ```
-p {  border: 3px solid DarkSlateGrey;  margin-right: 15px;}
-```
+- Only the right side of the paragraph’s box will have a margin of 15 pixels.
 
-In the example above, only the right side of the paragraph’s box will have a margin of 15 pixels. It’s common to see margin values used for a specific side of an element.
+## 7.1 Margin Shorthand
+
+- The shorthand syntax for margins is the same as padding.
+- <span style="color: cyan; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin Shorthand</em></strong></span> lets you specify all of the `margin` properties as values on a single line in this sequence: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`. We can adjust the `margin` property with a range from one to four values, like `padding`.
+````ad-check
+```css
+p.margin-4 {
+margin: 6px 10px 5px 12px; /* To each side of the box */
+}
+
+p.margin-3 {
+margin: 6px 10px 5px; /* Top, right = left, bottom */
+}
+
+p.margin-2 {
+margin: 6px 10px; /* Top = bottom, right = left */
+}
+
+p.margin-1 {
+margin: 6px; /* Top = right = left = bottom */
+}
+```
+````
+
+# 8 Auto
+
+- The `margin` property also lets you center content. However, you must follow a few syntax requirements. 
+```css
+div.headline {
+	width: 400px;
+	margin: 0 auto;
+}
+```
+- Here, `margin: 0 auto;` will center the `div`s in their containing elements. The `auto` value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+- A `width` must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the `<body>`, for example.
+- It’s not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.

@@ -31,6 +31,10 @@ body {
 	font-size: 1.3em;
 }
 
+.markdown-source-view.mod-cm6 .callout-title {
+	margin-bottom: 16px;
+}
+
 .markdown-source-view.mod-cm6 .math {
 	font-size: 1.5em;
 }
