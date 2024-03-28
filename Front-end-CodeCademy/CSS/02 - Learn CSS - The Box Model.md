@@ -226,3 +226,32 @@ div.headline {
 - Here, `margin: 0 auto;` will center the `div`s in their containing elements. The `auto` value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
 - A `width` must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the `<body>`, for example.
 - It’s not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.
+
+# 9 Margin Collapse
+
+- Top and bottom [margins](https://www.codecademy.com/resources/docs/css/margins), also called vertical margins, _collapse_, while top and bottom padding does not.
+- Horizontal margins (left and right), like `padding`, are *always displayed and added together*. For example, if two `div`s with ids `#div-one` and `#div-two`, are next to each other, they will be as far apart as the sum of their adjacent margins.
+```css
+#img-one {
+	margin-right: 20px;
+}
+
+#img-two {
+	margin-left: 20px;
+}
+```
+- In this example, the space between the `#img-one` and `#img-two` borders is 40 pixels.
+---
+- Unlike horizontal margins, <span style="color: crimson; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">vertical margins do not add</em></strong></span>. Instead, the <span style="color: chartreuse; font-size: 1.2em;"><strong style="color: inherit;">larger of the two vertical margins</strong></span> sets the distance between adjacent elements.
+```css
+#img-one {
+	margin-bottom: 30px;
+}
+
+#img-two {
+	margin-top: 20px;
+}
+```
+- In this example, the vertical margin between the `#img-one` and `#img-two` elements is 30 pixels. Although the sum of the margins is 50 pixels, the margin collapses so the spacing is only dependent on the `#img-one` bottom margin.
+
+It may be helpful to think of collapsing vertical margins as a short person trying to push a taller person. The tall person has longer arms and can easily push the short person, while the person with short arms cannot reach the person with long arms.

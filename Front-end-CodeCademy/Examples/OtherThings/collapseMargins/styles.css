@@ -1,0 +1,18 @@
+body {
+  margin: 40px;
+  padding: 50px 0 0;
+}
+
+.box-1 {
+  display: inline;
+  border: 3px dotted crimson;
+  background-color: brown;
+  padding: 50px;
+}
+
+.box-2 {
+  display: inline;
+  border: 3px dotted crimson;
+  background-color: rgb(55, 58, 216);
+  padding: 50px;
+}
