@@ -5,14 +5,12 @@
 
 .container-1 {
   position: relative;
-  border: 3px dotted rgb(16, 141, 141);
-  height: 200px;
+  height: 120px;
 }
 
 .container-2 {
   position: relative;
-  border: 3px dotted rgb(16, 141, 141);
-  height: 400px;
+  height: 300px;
 }
 
 .box-1 {
@@ -36,6 +34,7 @@
 }
 
 .box-3 {
+  margin-top: 10px;
   box-sizing: border-box;
   width: 100px;
   height: 100px;
@@ -50,21 +49,4 @@
   border: 3px dotted crimson;
   background-color: rgb(55, 58, 216);
   margin-top: 75px;
-}
-
-.p-1 {
-  border: 1px solid blueviolet;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  transform: translate(-50%, -50%);
-}
-
-.p-2 {
-  border: 1px solid blueviolet;
-  position: absolute;
-  top: 50px;
-  left: calc(104px + 93px + 50px + 4px);
-  /* transform: translateX(100%); */
-  transform: translate(-50%, -50%);
 }

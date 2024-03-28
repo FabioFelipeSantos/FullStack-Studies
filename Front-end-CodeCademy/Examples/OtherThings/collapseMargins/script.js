@@ -70,7 +70,7 @@ const lineVerStyles = {
   backgroundColor: '#006400',
   height: `${bordersDistanceVertical}px`,
   width: '2px',
-  top: `${box3Positions.height}px`,
+  top: `${box3Positions.height - 20}px`,
   left: `${box3Positions.width / 2}px`,
 }
 Object.assign(lineVer.style, lineVerStyles);
