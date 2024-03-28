@@ -173,17 +173,16 @@ p.content-header {
 - 
 # 7 Margin
 
-- The fourth and final component of the box model is <span style="color: ; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;"></em></strong></span>.
-
-Margin refers to the space directly outside of the box. The `margin` property is used to specify the size of this space.
-
+- The fourth and final component of the box model is <span style="color: palegoldenrod; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin</em></strong></span>.
+- Margin refers to the **space directly outside of the box**. The `margin` property is used to specify the size of this space.
+```css
+p {
+	border: 1px solid aquamarine;
+	margin: 20px;
+}
 ```
-p {  border: 1px solid aquamarine;  margin: 20px;}
-```
-
-The code in the example above will place 20 pixels of space on the outside of the paragraph’s box on all four sides. This means that other HTML elements on the page cannot come within 20 pixels of the paragraph’s [border](https://www.codecademy.com/resources/docs/css/borders/border).
-
-If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+- The example above will place `20px` of space on the outside of the paragraph’s box on all four sides. So, other HTML elements cannot come within 20 pixels of the paragraph's border.
+- If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
 
 - [`margin-top`](https://www.codecademy.com/resources/docs/css/margins/margin-top)
 - [`margin-right`](https://www.codecademy.com/resources/docs/css/margins/margin-right)
