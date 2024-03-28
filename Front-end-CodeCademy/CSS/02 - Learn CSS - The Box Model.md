@@ -308,16 +308,15 @@ p {
 
 # 11 Overflow
 
-- All of the components of the [box model](https://www.codecademy.com/resources/docs/css/box-model) comprise an element’s size. For example, an image that has the following dimensions is 364 pixels wide and 244 pixels tall.
-
-- 300 pixels wide
-- 200 pixels tall
-- 10 pixels [padding](https://www.codecademy.com/resources/docs/css/padding/padding) on the left and right
-- 10 pixels padding on the top and bottom
-- 2 pixels [border](https://www.codecademy.com/resources/docs/css/borders/border) on the left and right
-- 2 pixels border on the top and bottom
-- 20 pixels [margin](https://www.codecademy.com/resources/docs/css/margins/margin) on the left and right
-- 10 pixels margin on the top and bottom
+- All the components of the box model comprise an element’s size. For example, if an image has 364 pixels for width and 244 pixels for height, how will it occupy the following box?
+	- 300 pixels wide
+	- 200 pixels tall
+	- 10 pixels padding on the left and right
+	- 10 pixels padding on the top and bottom
+	- 2 pixels border on the left and right
+	- 2 pixels border on the top and bottom
+	- 20 pixels margin on the left and right
+	- 10 pixels margin on the top and bottom
 
 The total dimensions (364px by 244px) are calculated by adding all of the vertical dimensions together and all of the horizontal dimensions together. Sometimes, these components result in an element that is larger than the parent’s containing area.
 
