@@ -112,39 +112,88 @@ p.content-header {
 - In the example above, only the bottom side of the paragraph’s content will have a `padding` of 10 pixels.
 - Other specifics stylization for one side of the box is also achieved for the following properties: `border-width`, `border-style`, or `border-color`. We just need to add one of the words top, right, bottom, or left between the words border, width, or color. For example: `border-top-width: 25px`.
 
-# 7 Padding Shorthand
+## 6.1 Padding Shorthand
 
-- Another implementation of the `padding` property lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a _shorthand property_.
+- It's a way to specify all of the `padding` properties **by a single declaration**, known as a _shorthand property_.
+	- `padding-top`
+	- `padding-right`
+	- `padding-bottom`
+	- `padding-left`
+````ad-important
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.4 Curly braces (`{ }`)|Curly Braces]]
+```css
+padding: <length-percentage [0, ∞]>{1,4}
+```
+<span style="color: orangered; font-size: 1.2em;"><em style="color: inherit;">Possibilities</em></span>
+```css
+padding: <length-percentage [0, ∞]>
+padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]>
+padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-percentage [0, ∞]>
+padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-percentage [0, ∞]>
+```
+````
 
-Padding shorthand lets you specify all of the `padding` properties as values on a single line:
+- You can specify these properties in a few different ways:
 
-- [`padding-top`](https://www.codecademy.com/resources/docs/css/padding/padding-top)
-- [`padding-right`](https://www.codecademy.com/resources/docs/css/padding/padding-right)
-- [`padding-bottom`](https://www.codecademy.com/resources/docs/css/padding/padding-bottom)
-- [`padding-left`](https://www.codecademy.com/resources/docs/css/padding/padding-left)
+### 6.1.1 Four Values
 
-You can specify these properties in a few different ways:
+```css
+p.content-header {
+	padding: 6px 11px 4px 9px;
+}
+```
+- The four values correspond to the amount of padding on each side, <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">in a clockwise rotation</em></strong></span>. In order, `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
 
-###### 7.1.1.1.1.1 Values
+### 6.1.2 Three Values
+
+```css
+p.content-header {
+	padding: 5px 10px 20px;
+}
+```
+- The first value sets the `padding-top`, the second value sets the `padding-left` and `padding-right`, and the third value sets the `padding-bottom`.
+
+### 6.1.3 Two Values
+
+```css
+p.content-header {
+	padding: 5px 10px;
+}
+```
+- The first value sets the `padding-top` and `padding-bottom`, and the second value sets the `padding-left` and `padding-right`.
+
+### 6.1.4 One Values
+
+```css
+p.content-header {
+	padding: 5px;
+}
+```
+- Sets the specified value to all the paddings.
+- 
+# 7 Margin
+
+- The fourth and final component of the box model is <span style="color: ; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;"></em></strong></span>.
+
+Margin refers to the space directly outside of the box. The `margin` property is used to specify the size of this space.
 
 ```
-p.content-header {  padding: 6px 11px 4px 9px;}
+p {  border: 1px solid aquamarine;  margin: 20px;}
 ```
 
-In the example above, the four values `6px 11px 4px 9px` correspond to the amount of padding on each side, in a clockwise rotation. In order, it specifies the padding-top value (`6px`), the padding-right value (`11px`), the padding-bottom value (`4px`), and the padding-left value (`9px`) of the content.
+The code in the example above will place 20 pixels of space on the outside of the paragraph’s box on all four sides. This means that other HTML elements on the page cannot come within 20 pixels of the paragraph’s [border](https://www.codecademy.com/resources/docs/css/borders/border).
 
-###### 7.1.1.1.1.2 Values
+If you want to be even more specific about the amount of margin on each side of a box, you can use the following properties:
+
+- [`margin-top`](https://www.codecademy.com/resources/docs/css/margins/margin-top)
+- [`margin-right`](https://www.codecademy.com/resources/docs/css/margins/margin-right)
+- [`margin-bottom`](https://www.codecademy.com/resources/docs/css/margins/margin-bottom)
+- [`margin-left`](https://www.codecademy.com/resources/docs/css/margins/margin-left)
+
+Each property affects the margin on only one side of the box, providing more flexibility in customization.
 
 ```
-p.content-header {  padding: 5px 10px 20px;}
+p {  border: 3px solid DarkSlateGrey;  margin-right: 15px;}
 ```
 
-If the left and right sides of the content can be equal, the padding shorthand property allows for 3 values to be specified. The first value sets the padding-top value (`5px`), the second value sets the padding-left and padding-right values (`10px`), and the third value sets the padding-bottom value (`20px`).
-
-###### 7.1.1.1.1.3 Values
-
-```
-p.content-header {  padding: 5px 10px;}
-```
-
-And finally, if the top and bottom sides can be equal, and the left and right sides can be equal, you can specify 2 values. The first value sets the padding-top and padding-bottom values (`5px`), and the second value sets the padding-left and padding-right values (`10px`).
+In the example above, only the right side of the paragraph’s box will have a margin of 15 pixels. It’s common to see margin values used for a specific side of an element.
