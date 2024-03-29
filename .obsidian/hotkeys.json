@@ -24,5 +24,14 @@
       ],
       "key": "C"
     }
+  ],
+  "obsidian-linter:paste-as-plain-text": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "V"
+    }
   ]
 }

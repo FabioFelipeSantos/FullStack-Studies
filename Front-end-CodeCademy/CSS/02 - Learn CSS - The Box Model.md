@@ -425,9 +425,48 @@ h1 {
 }
 ```
 - Unfortunately, under the current box model, the border thickness and the padding will affect the dimensions of the box.
+- The 10 pixels of padding increases the height of the box to 220 pixels and the width to 320 pixels. Next, the 1-pixel thick border increases the height to 222 pixels and the width to 322 pixels.
+- Under this box model, *the border thickness and padding are added to the overall dimensions of the box*. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.
 
-The 10 pixels of padding increases the height of the box to 220 pixels and the width to 320 pixels. Next, the 1-pixel thick border increases the height to 222 pixels and the width to 322 pixels.
+## 2.2 Box Model: Content-Box
 
-Under this box model, the border thickness and padding are added to the overall dimensions of the box. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.
+- Many properties in CSS have a default value and don’t have to be explicitly set in the stylesheet.
+- For example, the default `font-weight` of text is `normal`, but this property-value pair is not typically specified in a stylesheet.
+- The same can be said about the box model that browsers assume. In CSS, the `box-sizing` property controls the type of box model the browser should use when interpreting a web page.
+- The default value of this property is `content-box`. This is the same box model that is affected by border thickness and padding.
+![[boxSizingContentBox.png||800]]
 
-In this brief lesson, you’ll learn how to use a different technique that avoids this problem altogether.
+## 2.3 Box Model: Border-Box
+
+- Fortunately, we can reset the entire box model and specify a new one: border-box.
+```css
+* {
+  box-sizing: border-box;
+}
+```
+- The code in the example above resets the box model to `border-box` for all HTML elements. This new box model avoids the dimensional issues that exist in the former box model you learned about.
+- In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change.
+
+````ad-example
+```html
+<h1>Hello World</h1>
+```
+
+<br>
+
+```css
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 1px dashed #4f768e;
+  height: 150px;
+  width: 200px;
+  padding: 20px;
+}
+```
+````
+- In the example above, the `height` of the box would remain at 150 pixels and the `width` would remain at 200 pixels. The border thickness and padding would remain entirely inside of the box.
+![[borderBoxForBoxSizing.png||850]]
+
