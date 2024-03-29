@@ -40,6 +40,10 @@ p {
 - Pixels allow you to set the exact size of an element’s box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices — an element that fills a laptop screen will <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">overflow</strong></span> a mobile screen.
 	- An *Overflow* defines how a block level element should handle content that goes beyond its boundaries. Often, the overflow will be set up to `scroll`. This value will create a scrollbar in the box of the content.
 
+```ad-important
+When you set the width and height properties of an element with CSS, you just set the width and height of the *content area*. To calculate the total width and height of an element, you must also include the padding and borders.
+```
+
 # 4 Borders
 
 - A <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Border</strong></span> is a line that surrounds an element, like a frame around a painting. **Borders** can be set with a specific `width`, `style`, and `color`:
@@ -62,6 +66,20 @@ p.content-header {
 }
 ```
 - In this example, the border style is set to `solid` and the color is set to `coral`. The width is not set, so it defaults to `medium`. `medium` is a computed value of `3px`.
+- The borders of an element will count for the final width of an HTML element when using the CSS box-sizing property. The `width` and `height` properties of an element <span style="color: deepskyblue; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">includes the padding, content, and border</em></strong></span>, <span style="color: firebrick; font-size: 1.2em;"><em style="color: inherit;">but not the margin</em></span>. The width is calculated based on the visible area of the box, which includes the border, padding, and content.
+````ad-example
+```css
+p {
+	width: 250px;
+	height: 145px;
+	margin: 12px;
+	padding: 5px 6px;
+	border: 2.5px dashed red;
+}
+```
+In this case, the total width of the HTML element in screen will be `250px + 2 * 5px + 2 * 2.5px = 265px`. For the height we will get `145px + 2 * 6px + 2 * 2.5px = 162px`. The content size is `250px x 145px`.
+````
+- One way to modify this behavior is by setting the `box-sizing` property. I will add information about this property in another section.
 
 # 5 Border Radius
 
