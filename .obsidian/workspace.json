@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -218,6 +217,8 @@
   },
   "active": "e8e05d246109c011",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/overflows.png",
+    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/Examples/OtherThings/overflowValues/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/overflowValues/index.html",
     "Front-end-CodeCademy/Examples/OtherThings/overflowValues/script.js",
@@ -228,10 +229,8 @@
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy",
     "Pasted image 20240328170202.png",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
-    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/Examples/OtherThings/collapseMargins/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/collapseMargins/index.html",
-    "Front-end-CodeCademy/Examples/OtherThings/collapseMargins/script.js",
     "Pasted image 20240328100426.png",
     "Front-end-CodeCademy/CSS/border-styles.png",
     "2024-03-26.md",

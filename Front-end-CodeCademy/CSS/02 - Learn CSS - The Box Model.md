@@ -1,4 +1,6 @@
-# 1 Introduction to the Box Model
+# 1 The Box Model
+
+## 1.1 Introduction to the Box Model
 
 - Browsers load HTML elements with default position values. This often leads to an unexpected and unwanted user experience while limiting the views you can create. In this lesson, you will learn about the _box model_, an important concept to understand how elements are positioned and displayed on a website.
 - If you have used HTML and CSS, you have unknowingly seen aspects of the <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Box Model</strong></span>. For example, if you have set the background color of an element, you may have noticed that the color was applied not only to the area directly behind the element but also to the area to the right of the element. Also, if you have aligned text, you know it is aligned relative to something. What is that something?
@@ -9,7 +11,7 @@
 	3. The paddings of an element’s box.
 	4. The margins of an element’s box.
 
-# 2 The Box Model
+## 1.2 The Box Model
 
 - The <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Box Model</strong></span> is a CSS layout mechanism that the web browser uses to render content organized by box-shaped elements. Each element is made of four specific areas:
 	- `width` and `height`: The width and height of the content area.
@@ -26,7 +28,7 @@
 - **Border Area**: This area is located between the margin and padding areas. Their thickness and style can be changed.
 - **Margin Area**: This is the outermost area in the Box Model. It borders with the margin areas of neighboring elements. It can be changed on the top, right, bottom and left sides.
 
-# 3 Height and Width
+## 1.3 Height and Width
 
 - An element’s content has two dimensions: a *Height* and a *Width*. By default, the dimensions of an HTML box are set to hold the raw contents (conteúdo bruto) of the box.
 - The CSS `height` and `width` properties can be used to modify these default dimensions.
@@ -44,7 +46,7 @@ p {
 When you set the width and height properties of an element with CSS, you just set the width and height of the *content area*. To calculate the total width and height of an element, you must also include the padding and borders.
 ```
 
-# 4 Borders
+## 1.4 Borders
 
 - A <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Border</strong></span> is a line that surrounds an element, like a frame around a painting. **Borders** can be set with a specific `width`, `style`, and `color`:
 	- `width` — The thickness of the border. A border’s thickness can be set in pixels or with one of the following keywords: `thin`, `medium`, or `thick`.
@@ -86,7 +88,7 @@ In this case, the total width of the HTML element in screen will be `250px + 2 *
 ````
 - One way to modify this behavior is by setting the `box-sizing` property. I will add information about this property in another section.
 
-# 5 Border Radius
+## 1.5 Border Radius
 
 - Ever since we revealed the borders of boxes, you may have noticed that the borders highlight the true shape of an element’s box: <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Square</em></strong></span>. Thanks to CSS, a border doesn’t have to be square.
 - You can modify the corners of an element’s border box with the `border-radius` property.
@@ -109,7 +111,7 @@ div.container {
 - The code in the example above creates a `<div>` that is a perfect circle.
 - If we want to create a "**pill**" shape on a rectangular HTML element, we can use a specific trick. We can provide a sufficiently <span style="color: tomato; font-size: 1.2em;"><em style="color: inherit;">huge absolute value</em></span> as a unit for the property. If this value exceeds half of the shortest side's length, the browser will use the minimum as its `border-radius` in both directions, producing a perfect pill shape on rectangular elements. One way to achieve this effect is by setting `border-radius: 9999px`. 😉
 
-# 6 Padding
+## 1.6 Padding
 
 - The space between the contents of a box and the borders of a box is known as <span style="color: aqua; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Padding</em></strong></span>. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the `padding` property.
 ```css
@@ -135,7 +137,7 @@ p.content-header {
 - In the example above, only the bottom side of the paragraph’s content will have a `padding` of 10 pixels.
 - Other specifics stylization for one side of the box is also achieved for the following properties: `border-width`, `border-style`, or `border-color`. We just need to add one of the words top, right, bottom, or left between the words border, width, or color. For example: `border-top-width: 25px`.
 
-## 6.1 Padding Shorthand
+### 1.6.1 Padding Shorthand
 
 - It's a way to specify all of the `padding` properties **by a single declaration**, known as a _shorthand property_.
 	- `padding-top`
@@ -157,7 +159,7 @@ padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-perce
 ````
 - You can specify these properties in a few different ways, with the property values ranging from one to four.
 
-### 6.1.1 Four Values
+#### 1.6.1.1 Four Values
 
 ```css
 p.content-header {
@@ -166,7 +168,7 @@ p.content-header {
 ```
 - The four values correspond to the amount of padding on each side, <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">in a clockwise rotation</em></strong></span>. In order, `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
 
-### 6.1.2 Three Values
+#### 1.6.1.2 Three Values
 
 ```css
 p.content-header {
@@ -175,7 +177,7 @@ p.content-header {
 ```
 - The first value sets the `padding-top`, the second value sets the `padding-left` and `padding-right`, and the third value sets the `padding-bottom`.
 
-### 6.1.3 Two Values
+#### 1.6.1.3 Two Values
 
 ```css
 p.content-header {
@@ -184,7 +186,7 @@ p.content-header {
 ```
 - The first value sets the `padding-top` and `padding-bottom`, and the second value sets the `padding-left` and `padding-right`.
 
-### 6.1.4 One Values
+#### 1.6.1.4 One Values
 
 ```css
 p.content-header {
@@ -193,7 +195,7 @@ p.content-header {
 ```
 - Sets the specified value to all the paddings.
 - 
-# 7 Margin
+## 1.7 Margin
 
 - The fourth and final component of the box model is <span style="color: palegoldenrod; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin</em></strong></span>.
 - Margin refers to the **space directly outside of the box**. The `margin` property is used to specify the size of this space.
@@ -213,7 +215,7 @@ p {
 ```
 - Only the right side of the paragraph’s box will have a margin of 15 pixels.
 
-## 7.1 Margin Shorthand
+### 1.7.1 Margin Shorthand
 
 - The shorthand syntax for margins is the same as padding.
 - <span style="color: cyan; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin Shorthand</em></strong></span> lets you specify all of the `margin` properties as values on a single line in this sequence: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`. We can adjust the `margin` property with a range from one to four values, like `padding`.
@@ -237,7 +239,7 @@ margin: 6px; /* Top = right = left = bottom */
 ```
 ````
 
-# 8 Auto
+## 1.8 Auto
 
 - The `margin` property also lets you center content. However, you must follow a few syntax requirements. 
 ```css
@@ -250,7 +252,7 @@ div.headline {
 - A `width` must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the `<body>`, for example.
 - It’s not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.
 
-# 9 Margin Collapse
+## 1.9 Margin Collapse
 
 - Top and bottom [margins](https://www.codecademy.com/resources/docs/css/margins), also called vertical margins, _collapse_, while top and bottom padding does not.
 - Horizontal margins (left and right), like `padding`, are *always displayed and added together*. For example, if two `div`s with ids `#div-one` and `#div-two`, are next to each other, they will be as far apart as the sum of their adjacent margins.
@@ -306,7 +308,7 @@ div.headline {
 
 ![[Pasted image 20240328170202.png||300]]
 
-# 10 Minimum and Maximum Height and Width
+## 1.10 Minimum and Maximum Height and Width
 
 - To avoid extreme changes in size by resize of web browsers, CSS offers two properties that can limit how narrow or how wide an element’s box can be sized to:
 	- `min-width` — this property ensures a minimum width of an element’s box.
@@ -329,7 +331,7 @@ p {
 ```
 - What will happen to the contents of an element’s box if the `max-height` property is set too low? It’s possible for the content to spill outside of the box, resulting in content that is not legible. You’ll learn how to work around this issue in the next exercise.
 
-# 11 Overflow
+## 1.11 Overflow
 
 - All the components of the box model comprise an element’s size. For example, if an image has 364 pixels for width and 244 pixels for height, how will it occupy the following box?
 	- 300 pixels wide
@@ -343,10 +345,13 @@ p {
 - In this element, the content area will have `300px - 2 * 10px - 2 * 2px = 276px` as width and `200px - 2 * 10px - 2 * 2px = 176px` as height, thus the image is bigger than the content area. 
 - How can we ensure that we can view all of an element that is larger than its parent’s containing area?
 - The `overflow` property controls what happens with the content when its dimensions surpass (or overflow) the size of its box. The most commonly used values are:
-	- `hidden` — when set to this value, any content that overflows will be hidden from view.
+	- `hidden` — when set to this value, any content that overflows will be hidden from view, although the content can be scrolled programmatically.
 	- `scroll` — when set to this value, a scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling.
 	- `visible` — when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.
+	- `clip` — the overflow is clipped, and the rest of the content will be invisible. Forbids scrolling, including programmatic scrolling.
 	- `auto` — Similar to `scroll`, but it adds scrollbars only when necessary.
+![[overflows.png||1200]]
+
 ```ad-note
 The `overflow` property only works for block elements with a specific height.
 ```
@@ -358,3 +363,71 @@ p {
 ```
 - In the example above, if any of the paragraph content overflows (perhaps a user resizes their browser window), a scrollbar will appear so that users can view the rest of the content.
 - The overflow property is set on a parent element to instruct a web browser on how to render child elements. For example, if a `div`'s overflow property is set to `scroll`, all children of this div will display overflowing content with a scroll bar.
+
+## 1.12 Resetting Defaults
+
+- All major web browsers have a _user agent_ that applies default styles in the absence of an external stylesheet.
+- Often the default are for `padding` and `margin`. This can make it difficult to style a web page.
+- There's a way to reset these default values by applying the global selector `*`.
+```css
+* {
+	margin: 0;
+	padding: 0;
+}
+```
+- It is often the first CSS rule in an external stylesheet.
+
+## 1.13 Visibility
+
+- Elements can be hidden from view with the `visibility` property.
+- The `visibility` property can be set to one of the following values:
+	- `hidden` — hides an element.
+	- `visible` — displays an element.
+	- `collapse` — collapses an element.
+```html
+<ul>
+	<li>Explore</li>
+	<li>Connect</li>
+	<li class="future">
+		Donate
+	</li>
+</ul>
+```
+
+```css
+.future {
+	visibility: hidden;
+}
+```
+- In the example above, the list item with a class of `future` will be hidden from view in the browser.
+- Even when an element is hidden, users can still view the contents of the element by viewing the source code in their browser. Furthermore, the web page will _only_ hide the contents of the element. It will still leave an empty space where the element is intended to display.
+
+```ad-attention
+There exist a difference between `display: none` and `visibility: hidden`. An element with `display: none` will be completely removed from the web page. An element with `visibility: hidden`, however, will not be visible on the web page, but the space reserved for it will.
+```
+
+# 2 Changing the Box Model
+
+## 2.1 Why Change the Box Model?
+
+- The last lesson focused on the most important aspects of the box model: <span style="color: hotpink; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">box dimensions, borders, padding, and margin</em></strong></span>.
+- The *box model*, however, has an awkward limitation regarding box dimensions. This limitation is best illustrated with an example.
+```html
+<h1>Hello World</h1>
+```
+
+```css
+h1 {
+	border: 1px solid black;
+	height: 200px;
+	width: 300px;
+	padding: 10px;
+}
+```
+- Unfortunately, under the current box model, the border thickness and the padding will affect the dimensions of the box.
+
+The 10 pixels of padding increases the height of the box to 220 pixels and the width to 320 pixels. Next, the 1-pixel thick border increases the height to 222 pixels and the width to 322 pixels.
+
+Under this box model, the border thickness and padding are added to the overall dimensions of the box. This makes it difficult to accurately size a box. Over time, this can also make all of a web page’s content difficult to position and manage.
+
+In this brief lesson, you’ll learn how to use a different technique that avoids this problem altogether.
