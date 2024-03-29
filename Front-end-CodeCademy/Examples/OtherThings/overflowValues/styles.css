@@ -1,0 +1,68 @@
+body {
+  margin: 40px;
+  padding: 0;
+  font-family: "Ysabeau Office", sans-serif;
+  letter-spacing: 1.8px;
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: rgba(123, 16, 166, 0.781);
+  margin-bottom: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr);
+  column-gap: 100px;
+  row-gap: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: bisque;
+  border: 2px dashed darkgreen;
+  padding: 25px;
+  width: 600px;
+  height: 120px;
+  &.ov-1 {
+    overflow: visible;
+  }
+  &.ov-2 {
+    overflow: hidden;
+  }
+  &.ov-3 {
+    overflow: clip;
+  }
+  &.ov-4 {
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+  &.ov-5 {
+    overflow: auto;
+  }
+}

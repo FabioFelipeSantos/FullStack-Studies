@@ -70,9 +70,14 @@ p.content-header {
 ````ad-example
 ```css
 p {
+	/* Content Area */
 	width: 250px;
 	height: 145px;
+	
+	/* Do not contribute to the total width or height */
 	margin: 12px;
+	
+	/* They will contribute to the total width or height */
 	padding: 5px 6px;
 	border: 2.5px dashed red;
 }
@@ -335,23 +340,21 @@ p {
 	- 2 pixels border on the top and bottom
 	- 20 pixels margin on the left and right
 	- 10 pixels margin on the top and bottom
-
-The total dimensions (364px by 244px) are calculated by adding all of the vertical dimensions together and all of the horizontal dimensions together. Sometimes, these components result in an element that is larger than the parent’s containing area.
-
-How can we ensure that we can view all of an element that is larger than its parent’s containing area?
-
-The `overflow` property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are:
-
-- `hidden`—when set to this value, any content that overflows will be hidden from view.
-- `scroll`—when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.
-- `visible`—when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.
-
-```
-p {  overflow: scroll; }
+- In this element, the content area will have `300px - 2 * 10px - 2 * 2px = 276px` as width and `200px - 2 * 10px - 2 * 2px = 176px` as height, thus the image is bigger than the content area. 
+- How can we ensure that we can view all of an element that is larger than its parent’s containing area?
+- The `overflow` property controls what happens with the content when its dimensions surpass (or overflow) the size of its box. The most commonly used values are:
+	- `hidden` — when set to this value, any content that overflows will be hidden from view.
+	- `scroll` — when set to this value, a scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling.
+	- `visible` — when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.
+	- `auto` — Similar to `scroll`, but it adds scrollbars only when necessary.
+```ad-note
+The `overflow` property only works for block elements with a specific height.
 ```
 
-In the example above, if any of the paragraph content overflows (perhaps a user resizes their browser window), a scrollbar will appear so that users can view the rest of the content.
-
-The overflow property is set on a parent element to instruct a web browser on how to render child elements. For example, if a div’s overflow property is set to `scroll`, all children of this div will display overflowing content with a scroll bar.
-
-For a more in-depth look at `overflow`, including additional properties like [`overflow-x`](https://www.codecademy.com/resources/docs/css/overflow/overflow-x) and [`overflow-y`](https://www.codecademy.com/resources/docs/css/overflow/overflow-y) that separate out the horizontal and vertical values, head over to the MDN [documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow).
+```css
+p {
+	overflow: scroll;
+}
+```
+- In the example above, if any of the paragraph content overflows (perhaps a user resizes their browser window), a scrollbar will appear so that users can view the rest of the content.
+- The overflow property is set on a parent element to instruct a web browser on how to render child elements. For example, if a `div`'s overflow property is set to `scroll`, all children of this div will display overflowing content with a scroll bar.
