@@ -194,8 +194,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -216,7 +215,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8e05d246109c011",
+  "active": "375fa7aab3bdd9c0",
   "lastOpenFiles": [
     "Front-end-CodeCademy/CSS/borderBoxForBoxSizing.png",
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
