@@ -43,7 +43,7 @@ selector {
 
 ### 1.1.3 Inline Styles
 
-- Add the style attribute directly to the opening tag. After you add the attribute, you can set it equal to the CSS style(s) you'd like applied to that element.
+- Add the style attribute directly to the opening tag. After you add the attribute, you can set it equal to the CSS style(s) you'd like applied to that element. ^3a3ca8
 
 ```html
 <p style="color:red;">I'm learning to code!</p>

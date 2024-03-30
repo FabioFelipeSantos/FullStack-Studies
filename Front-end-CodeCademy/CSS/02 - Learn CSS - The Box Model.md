@@ -74,6 +74,34 @@ p {
 When you set the width and height properties of an element with CSS, you just set the width and height of the *content area*. To calculate the total width and height of an element, you must also include the padding and borders.
 ```
 
+### 1.4.1 Formal Syntax
+
+````ad-important
+```css
+width | height = auto | <length-percentage [0,∞]> | min-content | max-content | fit-content( <length-percentage [0,∞]> )  
+
+<length-percentage> = <length> | <percentage>
+
+/* <length> values */
+width | height: 300px | 25em;
+
+/* <percentage> value */
+width | height: 75%;
+
+/* Keyword values */
+width | height: max-content | min-content | fit-content | fit-content(20em) | auto;
+
+/* Global values */
+width | height: inherit | initial | revert | revert-layer | unset;
+```
+````
+
+```ad-note
+`fit-content` - Use the available space, but not more than max-content, i.e `min(max-content, max(min-content, stretch))`.
+
+`fit-content(<length-percentage>)` - Uses the fit-content formula with the available space replaced by the specified argument, i.e. `min(max-content, max(min-content, <length-percentage>))`.
+```
+
 ## 1.5 Borders
 
 - A <span style="color: fuchsia"><strong style="color: inherit; font-size: 1.2em; text-decoration: underline; text-underline-offset: 25%">Border</strong></span> is a line that surrounds an element, like a frame around a painting. **Borders** can be set with a specific `width`, `style`, and `color`:
@@ -86,7 +114,8 @@ p {
 	border: 3px solid coral;
 }
 ```
-- In the example above, the border has a `border-width` property with the value of `3px`, a `border-style` of `solid`, and a `border-color` of `coral`. All three properties are set in one line of code. But, even the specification in one line, all these properties are shorthands also. For example, the `border-width` style is a shorthand that comprises the four widths of the border, the `border-top-width`, `border-left-width`, `border-bottom-width`, `border-right-width`.
+- In the example above, the border has a `border-width` property with the value of `3px`, a `border-style` with `solid`, and a `border-color` with `coral`. All three properties are set in one line of code.
+- But, even the specification in one line, all these properties are shorthands also. For example, the `border-width` style is a shorthand that comprises the four widths of the border, the `border-top-width`, `border-left-width`, `border-bottom-width`, `border-right-width`.
 - The default `border` is `medium none color`, where `color` is the current color of the element. If `width`, `style`, or `color` are not set in the CSS file, the web browser assigns the default value for that property.
 ```css
 p.content-header {
@@ -116,6 +145,54 @@ In this case, the total width of the HTML element in screen will be `250px + 2 *
 ````
 - One way to modify this behavior is by setting the `box-sizing` property. I will add information about this property in another section.
 
+### 1.5.1 Formal Syntax
+
+````ad-important
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.4.4 Double bar| Double Bar ( || )]]
+```css
+border = <line-width>  || <line-style>  || <color>; /* <'border-width'> || <'border-style'> || <'border-color'> */
+
+<line-width> = <length [0,∞]> | thin | medium | thick;
+
+<line-style> = none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset;
+
+/* style */
+border: solid;
+
+/* width | style */
+border: 2px dotted;
+
+/* style | color */
+border: outset #f33;
+
+/* width | style | color */
+border: medium dashed green;
+
+/* Global values */
+border: inherit | initial | revert | revert-layer | unset;
+```
+
+<span style="color: azure; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Border Style</em></strong></span>
+
+If set alone, it'll have the following syntax:
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.4 Curly braces (`{ }`)|Curly Braces ({ })]]
+```css
+border-style = <line-style>{1,4}
+
+/* 1 Value */
+border-style: dotted; /* <'border-top-style'> = <'border-right-style'> = <'border-bottom-style'> = <'border-left-style'> = dotted */
+
+/* 2 Values */
+border-style: dashed double; /* <'border-top-style'> = <'border-bottom-style'> = dashed, <'border-right-style'> = <'border-left-style'> = double */
+
+/* 3 Values */
+border-style: dotted dashed double; /* <'border-top-style'> = dotted, <'border-right-style'> = <'border-left-style'> = dashed, <'border-bottom-style'> = double */
+
+/* 4 Values */
+border-style: dotted dashed double groove; /* <'border-top-style'> = dotted, <'border-right-style'> = dashed, <'border-bottom-style'> = double, <'border-left-style'> = groove */
+```
+````
+
 ## 1.6 Border Radius
 
 - Ever since we revealed the borders of boxes, you may have noticed that the borders highlight the true shape of an element’s box: <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Square</em></strong></span>. Thanks to CSS, a border doesn’t have to be square.
@@ -139,7 +216,23 @@ div.container {
 - The code in the example above creates a `<div>` that is a perfect circle.
 - If we want to create a "**pill**" shape on a rectangular HTML element, we can use a specific trick. We can provide a sufficiently <span style="color: tomato; font-size: 1.2em;"><em style="color: inherit;">huge absolute value</em></span> as a unit for the property. If this value exceeds half of the shortest side's length, the browser will use the minimum as its `border-radius` in both directions, producing a perfect pill shape on rectangular elements. One way to achieve this effect is by setting `border-radius: 9999px`. 😉
 
-## 1.7 Padding
+### 1.6.1 Formal Syntax
+
+````ad-important
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.4 Curly braces (`{ }`)|Curly Braces ( { } )]], [[01 - Learn CSS - Selectors and Visual Rules#1.4.1.4.1 Brackets (" [" " ]")| Brackets ( [ ] )]], [[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.3 Question mark (`?`)|Question Mark ( ? )]]
+```css
+border-radius = <length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?
+
+<length-percentage> = <length> | <percentage>
+
+```
+````
+
+```ad-info
+
+```
+
+7 Padding
 
 - The space between the contents of a box and the borders of a box is known as <span style="color: aqua; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Padding</em></strong></span>. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the `padding` property.
 ```css
@@ -165,7 +258,7 @@ p.content-header {
 - In the example above, only the bottom side of the paragraph’s content will have a `padding` of 10 pixels.
 - Other specifics stylization for one side of the box is also achieved for the following properties: `border-width`, `border-style`, or `border-color`. We just need to add one of the words top, right, bottom, or left between the words border, width, or color. For example: `border-top-width: 25px`.
 
-### 1.7.1 Padding Shorthand
+### 1.6.2 Padding Shorthand
 
 - It's a way to specify all of the `padding` properties **by a single declaration**, known as a _shorthand property_.
 	- `padding-top`
@@ -187,7 +280,7 @@ padding: <length-percentage [0, ∞]> <length-percentage [0, ∞]> <length-perce
 ````
 - You can specify these properties in a few different ways, with the property values ranging from one to four.
 
-#### 1.7.1.1 Four Values
+#### 1.6.2.1 Four Values
 
 ```css
 p.content-header {
@@ -196,7 +289,7 @@ p.content-header {
 ```
 - The four values correspond to the amount of padding on each side, <span style="color: tomato; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">in a clockwise rotation</em></strong></span>. In order, `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
 
-#### 1.7.1.2 Three Values
+#### 1.6.2.2 Three Values
 
 ```css
 p.content-header {
@@ -205,7 +298,7 @@ p.content-header {
 ```
 - The first value sets the `padding-top`, the second value sets the `padding-left` and `padding-right`, and the third value sets the `padding-bottom`.
 
-#### 1.7.1.3 Two Values
+#### 1.6.2.3 Two Values
 
 ```css
 p.content-header {
@@ -214,7 +307,7 @@ p.content-header {
 ```
 - The first value sets the `padding-top` and `padding-bottom`, and the second value sets the `padding-left` and `padding-right`.
 
-#### 1.7.1.4 One Values
+#### 1.6.2.4 One Values
 
 ```css
 p.content-header {
@@ -223,7 +316,7 @@ p.content-header {
 ```
 - Sets the specified value to all the paddings.
 - 
-## 1.8 Margin
+## 1.7 Margin
 
 - The fourth and final component of the box model is <span style="color: palegoldenrod; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin</em></strong></span>.
 - Margin refers to the **space directly outside of the box**. The `margin` property is used to specify the size of this space.
@@ -243,7 +336,7 @@ p {
 ```
 - Only the right side of the paragraph’s box will have a margin of 15 pixels.
 
-### 1.8.1 Margin Shorthand
+### 1.7.1 Margin Shorthand
 
 - The shorthand syntax for margins is the same as padding.
 - <span style="color: cyan; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">Margin Shorthand</em></strong></span> lets you specify all of the `margin` properties as values on a single line in this sequence: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`. We can adjust the `margin` property with a range from one to four values, like `padding`.
@@ -267,7 +360,7 @@ margin: 6px; /* Top = right = left = bottom */
 ```
 ````
 
-## 1.9 Auto
+## 1.8 Auto
 
 - The `margin` property also lets you center content. However, you must follow a few syntax requirements. 
 ```css
@@ -280,7 +373,7 @@ div.headline {
 - A `width` must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the `<body>`, for example.
 - It’s not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.
 
-## 1.10 Margin Collapse
+## 1.9 Margin Collapse
 
 - Top and bottom [margins](https://www.codecademy.com/resources/docs/css/margins), also called vertical margins, _collapse_, while top and bottom padding does not.
 - Horizontal margins (left and right), like `padding`, are *always displayed and added together*. For example, if two `div`s with ids `#div-one` and `#div-two`, are next to each other, they will be as far apart as the sum of their adjacent margins.
@@ -336,7 +429,7 @@ div.headline {
 
 ![[Pasted image 20240328170202.png||300]]
 
-## 1.11 Minimum and Maximum Height and Width
+## 1.10 Minimum and Maximum Height and Width
 
 - To avoid extreme changes in size by resize of web browsers, CSS offers two properties that can limit how narrow or how wide an element’s box can be sized to:
 	- `min-width` — this property ensures a minimum width of an element’s box.
@@ -359,7 +452,7 @@ p {
 ```
 - What will happen to the contents of an element’s box if the `max-height` property is set too low? It’s possible for the content to spill outside of the box, resulting in content that is not legible. You’ll learn how to work around this issue in the next exercise.
 
-## 1.12 Overflow
+## 1.11 Overflow
 
 - All the components of the box model comprise an element’s size. For example, if an image has 364 pixels for width and 244 pixels for height, how will it occupy the following box?
 	- 300 pixels wide
@@ -392,7 +485,7 @@ p {
 - In the example above, if any of the paragraph content overflows (perhaps a user resizes their browser window), a scrollbar will appear so that users can view the rest of the content.
 - The overflow property is set on a parent element to instruct a web browser on how to render child elements. For example, if a `div`'s overflow property is set to `scroll`, all children of this div will display overflowing content with a scroll bar.
 
-## 1.13 Resetting Defaults
+## 1.12 Resetting Defaults
 
 - All major web browsers have a _user agent_ that applies default styles in the absence of an external stylesheet.
 - Often the default are for `padding` and `margin`. This can make it difficult to style a web page.
@@ -405,7 +498,7 @@ p {
 ```
 - It is often the first CSS rule in an external stylesheet.
 
-## 1.14 Visibility
+## 1.13 Visibility
 
 - Elements can be hidden from view with the `visibility` property.
 - The `visibility` property can be set to one of the following values:

@@ -39,6 +39,10 @@ body {
 	font-size: 1.5em;
 }
 
+a.internal-link {
+    text-underline-offset: 0.5em;
+}
+
 /* reading mode */
 .image-embed[alt]:after {
     content: attr(alt);
