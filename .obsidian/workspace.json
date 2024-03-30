@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -194,11 +195,12 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,7 +216,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8e05d246109c011",
+  "active": "c007e65959a8b1ec",
   "lastOpenFiles": [
     "Front-end-CodeCademy/CSS/borderBoxForBoxSizing.png",
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
