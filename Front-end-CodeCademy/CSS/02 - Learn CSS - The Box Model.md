@@ -427,7 +427,7 @@ div.headline {
 ```
 ````
 
-![[Pasted image 20240328170202.png||300]]
+![[margin-collapse-values.png||300]]
 
 ## 1.10 Minimum and Maximum Height and Width
 

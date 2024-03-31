@@ -1,10 +1,10 @@
-# Personal Studies
+# 1 Personal Studies
 
-## Intro 
+## 1.1 Intro 
 
 This is my personal diary in Web Development Studies. Here I will put my notes/summaries, and codes in the process of learning, and maybe some dates too, to remember when I started some points. I'm a very deep-learning person ( :walking: ), so please don't criticize me for my dates. I know that 2 months to learn CSS is too much time ( :eyes: :eyes: :eyes: ), but it's my personal time, and I think that each one has yours ( :clock7: ).
 
-## Resources
+## 1.2 Resources
 
 I'm following some Roadmaps and the Codecamy course.
 - Roadmaps
@@ -31,7 +31,7 @@ I'm following some Roadmaps and the Codecamy course.
   - [Código Fonte TV (PT-BR)](https://www.youtube.com/@codigofontetv)
   - [Filipe Deschamps (PT-BR)](https://www.youtube.com/@FilipeDeschamps)
 
-## Main Schedule
+## 1.3 Main Schedule
 
 Here I'm put the main thought that I had to start my journey:
 
@@ -44,9 +44,9 @@ Here I'm put the main thought that I had to start my journey:
 - In some way, create personal projects and enhance the skills that I aim to learn in the steps before
 - Certainly, I will see other skills that I have to learn. But I will keep this to the uncertain future
 
-## Start Dates
+## 1.4 Start Dates
 
 - 03/04/2024 -> CodeCademy Front-end Start
   - 03/04/2024 -> Web Foundations
  
-## It's all, folks. Please feel free to use my resources. AFAP, I'll try to maintain this README actualized, but I don't promise.
+## 1.5 It's all, folks. Please feel free to use my resources. AFAP, I'll try to maintain this README actualized, but I don't promise.

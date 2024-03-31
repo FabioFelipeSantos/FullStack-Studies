@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f6ee5e58e8979f6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md"
+                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md"
               }
             }
           },
@@ -198,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,8 +227,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8e05d246109c011",
+  "active": "f6ee5e58e8979f6f",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/inline-display.png",
+    "Pasted image 20240331175023.png",
+    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
+    "Front-end-CodeCademy/CSS/inline_layout.png",
+    "Front-end-CodeCademy/CSS/inline_layout.png.crdownload",
+    "Pasted image 20240331175046.png",
+    "Front-end-CodeCademy/CSS/z-index.png",
+    "Front-end-CodeCademy/CSS/position-sticky.gif",
+    "Front-end-CodeCademy/CSS/position-sticky.gif.crdownload",
+    "Pasted image 20240331170425.png",
+    "Front-end-CodeCademy/CSS/position-fixed.gif",
+    "CSS/Fixed.gif.crdownload",
+    "Front-end-CodeCademy/CSS/position-absolute.png",
+    "Front-end-CodeCademy/CSS/position-relative.png",
+    "README.md",
+    "Front-end-CodeCademy/CSS/margin-collapse-values.png",
+    "`color`.md",
+    "2024-03-26.md",
+    "2024-03-22.md",
+    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/script.js",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/index.html",
@@ -223,26 +256,7 @@
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/script.js",
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/index.html",
-    "Front-end-CodeCademy/Examples/OtherThings/borderValues copy",
-    "Pasted image 20240330155447.png",
-    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
-    "Front-end-CodeCademy/CSS/borderBoxForBoxSizing.png",
-    "Front-end-CodeCademy/CSS/boxSizingContentBox.png",
-    "Front-end-CodeCademy/CSS/overflows.png",
-    "Front-end-CodeCademy/Examples/OtherThings/overflowValues/styles.css",
-    "Front-end-CodeCademy/Examples/OtherThings/overflowValues/index.html",
-    "Front-end-CodeCademy/Examples/OtherThings/overflowValues/script.js",
-    "Pasted image 20240328170202.png",
-    "Pasted image 20240328100426.png",
-    "Front-end-CodeCademy/CSS/border-styles.png",
-    "2024-03-26.md",
-    "Front-end-CodeCademy/CSS/box-model.png",
-    "Front-end-CodeCademy/CSS/box-model.png",
-    "Pasted image 20240324130956.png",
-    "`color`.md",
-    "2024-03-22.md",
-    "README.md",
     "Untitled.canvas",
     "Front-end-CodeCademy/CSS/styles.css.md"
   ]
