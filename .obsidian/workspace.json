@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2a3664195a5afc91",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Front-end-CodeCademy/CSS/04 - Developing Websites Locally.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
+                "file": "Front-end-CodeCademy/CSS/04 - Developing Websites Locally.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
+                "file": "Front-end-CodeCademy/CSS/04 - Developing Websites Locally.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md"
+                "file": "Front-end-CodeCademy/CSS/04 - Developing Websites Locally.md"
               }
             }
           },
@@ -241,10 +253,11 @@
   },
   "active": "43ac3bb2aed85bc9",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/04 - Developing Websites Locally.md",
+    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
     "Front-end-CodeCademy/CSS/display-float.png",
     "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
-    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
     "Front-end-CodeCademy/CSS/math-functions-example.png",
     "Front-end-CodeCademy/CSS/position-example.png",
     "Front-end-CodeCademy/CSS/width-inheritance.png",
@@ -254,7 +267,6 @@
     "Front-end-CodeCademy/CSS/display-inline-block.png",
     "Front-end-CodeCademy/CSS/inline-display.png",
     "Pasted image 20240331175023.png",
-    "Front-end-CodeCademy/CSS/inline_layout.png",
     "Front-end-CodeCademy/CSS/inline_layout.png.crdownload",
     "Front-end-CodeCademy/CSS/position-sticky.gif.crdownload",
     "CSS/Fixed.gif.crdownload",
