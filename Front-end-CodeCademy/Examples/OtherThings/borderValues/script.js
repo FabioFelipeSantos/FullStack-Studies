@@ -1,6 +1,6 @@
-const div = document.querySelector('.container');
-const bdWidth = window.getComputedStyle(div).getPropertyValue('border-radius');
+const image = document.querySelector('.img-float');
+const sizesImage = image.getBoundingClientRect();
 
-console.log(bdWidth)
 
-const p1 = document.createElement('p');
+console.log(sizesImage.width / sizesImage.height);
+console.log(sizesImage.height)

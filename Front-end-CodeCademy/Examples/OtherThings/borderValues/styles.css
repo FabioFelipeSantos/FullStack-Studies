@@ -59,3 +59,25 @@ code {
     left: -2px;
   }
 }
+
+.text-float {
+  margin: 20px auto;
+  max-width: 850px;
+  color: red;
+  border: 5px solid black;
+}
+
+.text-float::first-letter {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: blueviolet;
+  font-size: 2.5em;
+  font-weight: 800;
+  float: left;
+  padding: 15px 15px 0 20px;
+}
+
+.img-float {
+  border-radius: 20% / 40%;
+  width: 20%;
+  float: right;
+}
