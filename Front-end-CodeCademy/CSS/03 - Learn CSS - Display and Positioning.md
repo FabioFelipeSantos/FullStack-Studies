@@ -220,3 +220,24 @@ However, moving elements left or right for layout purposes is better suited for 
 ![[display-float.png||850]]
 
 - Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.
+
+## 1.12 Clear
+
+- The float property can also be used to float multiple elements at once. However, when multiple floated elements have different heights, it can affect their layout on the page. Specifically, elements can “bump” (*bater*) into each other and not allow other elements to properly move to the left or right.
+- The `clear` property specifies <span style="color: chartreuse; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit; text-decoration: underline; text-underline-offset: 4px;">how elements should behave when they bump into each other</em></strong></span> on the page. It can take on one of the following values:
+	- `left` — the left side of the element will not touch any other element within the same containing element.
+	- `right` — the right side of the element will not touch any other element within the same containing element.
+	- `both` — neither side of the element will touch any other element within the same containing element.
+	- `none` — the element can touch either side.
+```css
+div {
+  width: 200px;
+  float: left;
+}
+
+div.special {
+  clear: left;
+}
+```
+- In the example above, all `<div>`s on the page are floated to the left side. The element with class `special` did not move all the way to the left because a taller `<div>` blocked its positioning. By setting its <code class="myCode">clear</code> property to <code class="myCode">left</code>, the special `<div>` will be moved all the way to the left side of the page.
+

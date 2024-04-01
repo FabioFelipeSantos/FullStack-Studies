@@ -65,6 +65,9 @@ code {
   max-width: 850px;
   color: red;
   border: 5px solid black;
+  text-align: justify;
+  padding: 0 35px 0;
+  font: 200 20px/1.5 "JetBrains Mono";
 }
 
 .text-float::first-letter {
@@ -77,7 +80,8 @@ code {
 }
 
 .img-float {
-  border-radius: 20% / 40%;
+  border-radius: 20% / 35.55555%;
   width: 20%;
   float: right;
+  padding: 10px 0 0 10px;
 }
