@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/04 - Developing Websites Locally.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md"
+                "file": "NLW_React/NLW React - Notes.md"
               }
             }
           },
@@ -251,8 +251,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6ee5e58e8979f6f",
+  "active": "2a3664195a5afc91",
   "lastOpenFiles": [
+    "NLW_React/NLW React - Notes.md",
+    "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "NLW_React",
     "Front-end-CodeCademy/CSS/Review_Notes/03 - Learn CSS - Display and Positioning.md",
     "Front-end-CodeCademy/CSS/Review_Notes",
@@ -270,7 +272,6 @@
     "Front-end-CodeCademy/CSS/images",
     "Front-end-CodeCademy/Examples/OtherThings/borderValues/styles.css",
     "Front-end-CodeCademy/CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
-    "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "Front-end-CodeCademy/CSS/inline_layout.png.crdownload",
     "Front-end-CodeCademy/CSS/position-sticky.gif.crdownload",
     "CSS/Fixed.gif.crdownload",
@@ -281,7 +282,6 @@
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/script.js",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/index.html",
-    "Front-end-CodeCademy/Examples/OtherThings/borderRadius",
     "Untitled.canvas",
     "Front-end-CodeCademy/CSS/styles.css.md"
   ]
