@@ -210,8 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,7 +226,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6ee5e58e8979f6f",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/CSS/inline-display.png",
     "Pasted image 20240331175023.png",
