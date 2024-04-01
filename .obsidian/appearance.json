@@ -7,5 +7,6 @@
   "enabledCssSnippets": [
     "snippet"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrains Mono"
 }

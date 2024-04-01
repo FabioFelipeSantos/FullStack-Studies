@@ -204,13 +204,26 @@
               "type": "code-execute-manage-executors",
               "state": {}
             }
+          },
+          {
+            "id": "7fd46bd100b6a9f2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
           }
         ],
         "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,28 +239,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "43ac3bb2aed85bc9",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/display-float.png",
+    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
+    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
+    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
+    "Front-end-CodeCademy/CSS/math-functions-example.png",
+    "Front-end-CodeCademy/CSS/position-example.png",
+    "Front-end-CodeCademy/CSS/width-inheritance.png",
+    "Front-end-CodeCademy/CSS/width-with-different-relative-values.png",
+    "Front-end-CodeCademy/CSS/relativeValues.png",
+    "Front-end-CodeCademy/CSS/css-ruleSet.png",
+    "Front-end-CodeCademy/CSS/display-inline-block.png",
     "Front-end-CodeCademy/CSS/inline-display.png",
     "Pasted image 20240331175023.png",
-    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md",
     "Front-end-CodeCademy/CSS/inline_layout.png",
     "Front-end-CodeCademy/CSS/inline_layout.png.crdownload",
-    "Pasted image 20240331175046.png",
-    "Front-end-CodeCademy/CSS/z-index.png",
-    "Front-end-CodeCademy/CSS/position-sticky.gif",
     "Front-end-CodeCademy/CSS/position-sticky.gif.crdownload",
-    "Pasted image 20240331170425.png",
-    "Front-end-CodeCademy/CSS/position-fixed.gif",
     "CSS/Fixed.gif.crdownload",
-    "Front-end-CodeCademy/CSS/position-absolute.png",
-    "Front-end-CodeCademy/CSS/position-relative.png",
     "README.md",
-    "Front-end-CodeCademy/CSS/margin-collapse-values.png",
     "`color`.md",
     "2024-03-26.md",
     "2024-03-22.md",
-    "Front-end-CodeCademy/CSS/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/script.js",
     "Front-end-CodeCademy/Examples/OtherThings/borderRadius/index.html",
@@ -255,7 +269,6 @@
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/styles.css",
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/script.js",
     "Front-end-CodeCademy/Examples/OtherThings/borderValues copy/index.html",
-    "Front-end-CodeCademy/CSS/01 - Learn CSS - Selectors and Visual Rules.md",
     "Untitled.canvas",
     "Front-end-CodeCademy/CSS/styles.css.md"
   ]

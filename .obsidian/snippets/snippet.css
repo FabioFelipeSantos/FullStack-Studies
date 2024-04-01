@@ -1,6 +1,6 @@
 body {
   --background-primary: rgb(17, 4, 10);
-  --line-height-normal: 2;
+  --line-height-normal: 1.7;
   --h1-color: rgb(216, 150, 255);
   --h2-color: rgb(216, 150, 255);
   --h3-color: rgb(216, 150, 255);
@@ -11,9 +11,24 @@ body {
   --italic-color: rgb(231, 231, 0);
   --bold-color: lightgreen;
   --code-background: rgb(11, 45, 98);
-  --code-size: 1.1em;
+  --code-property: darkorange;
   --code-normal: rgb(235, 235, 235);
-  --list-spacing: 8px;
+  --list-spacing: 12px;
+  --code-size:1em;
+}
+
+.token.unit {
+  color: rgb(255, 51, 255);
+}
+
+.cm-property {
+  color: darkorange;
+  font-style: italic;
+}
+
+.token.property {
+  font-family: "JetBrains Mono";
+  font-style: italic;
 }
 
 /* reading mode */
@@ -28,7 +43,7 @@ body {
 	text-align: justify;
 	text-justify: inter-word;	
 	letter-spacing: 2.3px;
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 .markdown-source-view.mod-cm6 .callout-title {

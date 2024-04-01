@@ -21,7 +21,7 @@ selector {
 <tag style="property: value"></tag>
 ```
 
-![alt text](image.png)
+![alt text](css-ruleSet.png)
 
 - Both methods contain common features in their _{++anatomy++}_. Notice how both syntaxes contain a declaration. Declarations are the core of CSS. They apply a style to the selected element.
 

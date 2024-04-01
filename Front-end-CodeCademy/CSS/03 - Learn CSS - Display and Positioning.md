@@ -1,3 +1,6 @@
+---
+cssclasses:
+---
 # 1 Display and Positioning
 
 ## 1.1 Flow of HTML
@@ -150,9 +153,70 @@ h1 {
 
 - Some elements are not displayed in the same line as the content around them. These are called <span style="color: deepskyblue; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit; text-transform: capitalize;">block-level elements</em></strong></span>. These elements fill the entire width of the page by default, but <span style="color: crimson; font-size: 1.2em;"><strong style="color: inherit;">their WIDTH property can also be set</strong></span>. Unless otherwise specified, they are the height necessary to accommodate their content.
 - Elements that are block-level by default include all levels of heading elements (`<h1>` through `<h6>`), `<p>`, `<div>` and `<footer>`.
-
+```css
 strong {
   display: block;
 }
+```
+- In the example above, all `<strong>` elements will be displayed on their own line, with no content directly on either side of them even though their contents may not fill the width of most computer screens.
 
-In the example above, all <strong> elements will be displayed on their own line, with no content directly on either side of them even though their contents may not fill the width of most computer screens.
+## 1.10 Display: Inline-Block
+
+- Inline-block display combines features of both inline and block elements. Inline-block elements <span style="color: aqua; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">can appear next to each other and we can specify their dimensions using the</em></strong></span> `width` and `height` <span style="color: aqua; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">properties</em></strong></span>. Images are the best example of default inline-block elements.
+- For example, the `<div>`s below will be displayed on the same line and with the specified dimensions:
+![[display-inline-block.png||550]]
+- Let’s take a look at the code:
+````ad-example
+```html
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+```
+
+<br>
+
+```css
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+```
+````
+- There are three rectangular `div`s that each contain a paragraph of text. The `.rectangle` `<div>` s will all appear inline with a width of 200 pixels and height of 300 pixels, even though the text inside of them may not require 200 pixels by 300 pixels of space.
+
+## 1.11 Float
+
+- So far, you’ve learned how to specify the exact position of an element using offset properties. If you’re simply interested in <span style="color: forestgreen; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">moving an element as far left or as far right as possible in the container</em></strong></span>, you can use the `float` property.
+- The `float` property is commonly used for <span style="color: firebrick; font-size: 1.2em;"><em style="color: inherit;">wrapping text around an image</em></span>.
+```ad-note
+However, moving elements left or right for layout purposes is better suited for tools like CSS grid and flexbox, which you’ll learn about later on.
+```
+- The float property is often set using one of the values below:
+	- `left` - moves, or floats, elements as far left as possible.
+	- `right` - moves elements as far right as possible.
+````ad-example
+```css
+.green-section {
+  width: 50%;
+  height: 150px;
+}
+
+.orange-section {
+  background-color: orange;
+  width: 50%;
+  float: right;
+}
+```
+````
+
+- In the example above, we float the `.orange-section` element to the right. This works for static and relative positioned elements. See the result of the code below:
+![[display-float.png||850]]
+
+- Floated elements must have a width specified, as in the example above. Otherwise, the element will assume the full width of its containing element, and changing the float value will not yield any visible results.
