@@ -240,4 +240,3 @@ div.special {
 }
 ```
 - In the example above, all `<div>`s on the page are floated to the left side. The element with class `special` did not move all the way to the left because a taller `<div>` blocked its positioning. By setting its <code class="myCode">clear</code> property to <code class="myCode">left</code>, the special `<div>` will be moved all the way to the left side of the page.
-
