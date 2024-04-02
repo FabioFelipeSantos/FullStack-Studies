@@ -12,12 +12,16 @@
     "2024/2/30": 846,
     "2024/2/31": 1808,
     "2024/3/1": 687,
-    "2024/3/2": 91
+    "2024/3/2": 356
   },
   "todaysWordCount": {
     "NLW_React/NLW React - Notes.md": {
       "initial": 0,
-      "current": 91
+      "current": 356
+    },
+    "NLW_React/RegraDeNegocio.md": {
+      "initial": 852,
+      "current": 852
     }
   }
 }
