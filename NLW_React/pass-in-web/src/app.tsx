@@ -1,17 +1,15 @@
-interface MeuBotaoProps {
-  texto: string;
-}
+import { AttendeeList } from "./components/attendee-list";
+import { Header } from "./components/header";
 
-function MeuBotao(props: MeuBotaoProps) {
-  return <button className="button">{props.texto}</button>;
-}
-
+/**
+ * The main App component.
+ * @returns The rendered App component.
+ */
 export function App() {
   return (
-    <div>
-      <MeuBotao texto="Clique Aqui" />
-      <MeuBotao texto="Botão 2" />
-      <MeuBotao texto="Fábio" />
+    <div className="flex gap-2">
+      <Header />
+      <AttendeeList />
     </div>
   );
 }
