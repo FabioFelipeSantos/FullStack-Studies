@@ -11,7 +11,7 @@ export function AttendeeList() {
             stroke={"lightgreen"}
           />
           <input
-            className="bg-transparent flex-1 outline-none"
+            className="bg-transparent flex-1 outline-none border-0 p-0 text-sm"
             placeholder="Buscar participante..."
             type="email"
             name=""
