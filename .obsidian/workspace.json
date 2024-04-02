@@ -54,19 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "af11d0452230293a",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.12"
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -244,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,8 +251,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "2a3664195a5afc91",
   "lastOpenFiles": [
+    "NLW_React/pass-in-web/vite.config.ts.timestamp-1712060451448-2f46a79af9742.mjs",
     "NLW_React/NLW React - Notes.md",
     "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "NLW_React",

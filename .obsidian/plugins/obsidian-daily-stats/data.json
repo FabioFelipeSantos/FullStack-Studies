@@ -11,12 +11,13 @@
     "2024/2/29": 947,
     "2024/2/30": 846,
     "2024/2/31": 1808,
-    "2024/3/1": 687
+    "2024/3/1": 687,
+    "2024/3/2": 91
   },
   "todaysWordCount": {
-    "Front-end-CodeCademy/CSS/03 - Learn CSS - Display and Positioning.md": {
-      "initial": 1805,
-      "current": 2492
+    "NLW_React/NLW React - Notes.md": {
+      "initial": 0,
+      "current": 91
     }
   }
 }
