@@ -1,5 +1,7 @@
 import { Search, MoreHorizontal, ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from "lucide-react";
 import { IconButton } from "./icon-button";
+import { Table } from "./table/table";
+import { TableHeader } from "./table/table-header";
 
 export function AttendeeList() {
   return (
@@ -21,89 +23,85 @@ export function AttendeeList() {
         </div>
       </div>
 
-      <div className="w-full border border-white/10 rounded-lg">
-        <table className="w-full">
-          <thead>
-            <tr className="border-b border-white/10">
-              <th
-                style={{ width: 48 }}
-                className="px-4 py-3 text-sm font-semibold text-left">
-                <input
-                  className="size-4 bg-black/20 rounded border border-white/10"
-                  type="checkbox"
-                />
-              </th>
-              <th className="px-4 py-3 text-sm font-semibold text-left">Código</th>
-              <th className="px-4 py-3 text-sm font-semibold text-left">Participantes</th>
-              <th className="px-4 py-3 text-sm font-semibold text-left">Data de Inscrição</th>
-              <th className="px-4 py-3 text-sm font-semibold text-left">Data do check-in</th>
-              <th
-                style={{ width: 64 }}
-                className="px-4 py-3 text-sm font-semibold text-left"></th>
-            </tr>
-          </thead>
-          <tbody>
-            {Array.from({ length: 8 }).map((_, i) => {
-              return (
-                <tr
-                  key={i}
-                  className="border-b border-white/10">
-                  <td className="px-4 py-3 text-sm text-zinc-300">
-                    <input
-                      className="size-4 bg-black/20 rounded border border-white/10"
-                      type="checkbox"
-                    />
-                  </td>
-                  <td className="px-4 py-3 text-sm text-zinc-300">1234</td>
-                  <td className="px-4 py-3 text-sm text-zinc-300">
-                    <div className="flex flex-col gap-1">
-                      <span className="font-semibold text-white">Fábio Felipe dos Santos</span>
-                      <span>fabiotrabmat@gmail.com</span>
-                    </div>
-                  </td>
-                  <td className="px-4 py-3 text-sm text-zinc-300">7 dias atrás</td>
-                  <td className="px-4 py-3 text-sm text-zinc-300">3 dias atrás</td>
-                  <td className="px-4 py-3 text-sm text-zinc-300">
-                    <IconButton transparent>
-                      <MoreHorizontal size={"16"} />
-                    </IconButton>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-          <tfoot>
-            <tr>
-              <td
-                className="px-4 py-3 text-sm text-zinc-300"
-                colSpan={3}>
-                Mostrando 10 de 228 itens
-              </td>
-              <td
-                className="px-4 py-3 text-sm text-zinc-300 text-right"
-                colSpan={3}>
-                <div className="inline-flex items-center gap-8">
-                  <span>Página 1 de 23</span>
-                  <div className="flex gap-1.5">
-                    <IconButton>
-                      <ChevronsLeft size={"16"} />
-                    </IconButton>
-                    <IconButton>
-                      <ChevronLeft size={"16"} />
-                    </IconButton>
-                    <IconButton>
-                      <ChevronRight size={"16"} />
-                    </IconButton>
-                    <IconButton>
-                      <ChevronsRight size={"16"} />
-                    </IconButton>
+      <Table>
+        <thead>
+          <tr className="border-b border-white/10">
+            <th
+              style={{ width: 48 }}
+              className="px-4 py-3 text-sm font-semibold text-left">
+              <input
+                className="size-4 bg-black/20 rounded border border-white/10"
+                type="checkbox"
+              />
+            </th>
+            <TableHeader>Código</TableHeader>
+            <TableHeader>Participantes</TableHeader>
+            <TableHeader>Data de Inscrição</TableHeader>
+            <th className="px-4 py-3 text-sm font-semibold text-left">Data do check-in</th>
+            <TableHeader width={64} />
+          </tr>
+        </thead>
+        <tbody>
+          {Array.from({ length: 8 }).map((_, i) => {
+            return (
+              <tr
+                key={i}
+                className="border-b border-white/10">
+                <td className="px-4 py-3 text-sm text-zinc-300">
+                  <input
+                    className="size-4 bg-black/20 rounded border border-white/10"
+                    type="checkbox"
+                  />
+                </td>
+                <td className="px-4 py-3 text-sm text-zinc-300">1234</td>
+                <td className="px-4 py-3 text-sm text-zinc-300">
+                  <div className="flex flex-col gap-1">
+                    <span className="font-semibold text-white">Fábio Felipe dos Santos</span>
+                    <span>fabiotrabmat@gmail.com</span>
                   </div>
+                </td>
+                <td className="px-4 py-3 text-sm text-zinc-300">7 dias atrás</td>
+                <td className="px-4 py-3 text-sm text-zinc-300">3 dias atrás</td>
+                <td className="px-4 py-3 text-sm text-zinc-300">
+                  <IconButton transparent>
+                    <MoreHorizontal size={"16"} />
+                  </IconButton>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td
+              className="px-4 py-3 text-sm text-zinc-300"
+              colSpan={3}>
+              Mostrando 10 de 228 itens
+            </td>
+            <td
+              className="px-4 py-3 text-sm text-zinc-300 text-right"
+              colSpan={3}>
+              <div className="inline-flex items-center gap-8">
+                <span>Página 1 de 23</span>
+                <div className="flex gap-1.5">
+                  <IconButton>
+                    <ChevronsLeft size={"16"} />
+                  </IconButton>
+                  <IconButton>
+                    <ChevronLeft size={"16"} />
+                  </IconButton>
+                  <IconButton>
+                    <ChevronRight size={"16"} />
+                  </IconButton>
+                  <IconButton>
+                    <ChevronsRight size={"16"} />
+                  </IconButton>
                 </div>
-              </td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </Table>
     </div>
   );
 }
