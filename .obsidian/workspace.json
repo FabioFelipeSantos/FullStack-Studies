@@ -265,6 +265,9 @@
   },
   "active": "4ad8e09fc3912ec5",
   "lastOpenFiles": [
+    "NLW_React/pass-in-web/src/components/table/table.tsx",
+    "NLW_React/pass-in-web/src/components/table",
+    "NLW_React/pass-in-web/src/components/icon-button.tsx",
     "NLW_React/RegraDeNegocio.md",
     "NLW_React/pass-in-web/src/components/nav-link.tsx",
     "NLW_React/NLW React - Notes.md",
@@ -275,8 +278,6 @@
     "NLW_React/pass-in-web/node_modules/lucide-react/dist/esm/icons/book-user.js.map",
     "NLW_React/pass-in-web/node_modules/lucide-react/dist/esm/icons/align-vertical-distribute-end.js.map",
     "NLW_React/pass-in-web/node_modules/lucide-react/dist/esm/icons/bookmark-x.js.map",
-    "NLW_React/pass-in-web/node_modules/lucide-react/dist/esm/icons/boom-box.js.map",
-    "NLW_React/pass-in-web/node_modules/lucide-react/dist/esm/icons/book-key.js.map",
     "NLW_React/pass-in-web/node_modules/mini-svg-data-uri/README.md",
     "NLW_React/pass-in-web/node_modules/lucide-react/README.md",
     "NLW_React/pass-in-web/src/assets/nlw-unite-icon.svg",

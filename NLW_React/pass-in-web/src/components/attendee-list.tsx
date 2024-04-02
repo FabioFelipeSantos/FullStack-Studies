@@ -1,4 +1,5 @@
 import { Search, MoreHorizontal, ChevronsLeft, ChevronLeft, ChevronRight, ChevronsRight } from "lucide-react";
+import { IconButton } from "./icon-button";
 
 export function AttendeeList() {
   return (
@@ -63,9 +64,9 @@ export function AttendeeList() {
                   <td className="px-4 py-3 text-sm text-zinc-300">7 dias atrás</td>
                   <td className="px-4 py-3 text-sm text-zinc-300">3 dias atrás</td>
                   <td className="px-4 py-3 text-sm text-zinc-300">
-                    <button className="bg-black/20 border border-white/10 rounded-md p-1.5">
+                    <IconButton transparent>
                       <MoreHorizontal size={"16"} />
-                    </button>
+                    </IconButton>
                   </td>
                 </tr>
               );
@@ -84,18 +85,18 @@ export function AttendeeList() {
                 <div className="inline-flex items-center gap-8">
                   <span>Página 1 de 23</span>
                   <div className="flex gap-1.5">
-                    <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                    <IconButton>
                       <ChevronsLeft size={"16"} />
-                    </button>
-                    <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                    </IconButton>
+                    <IconButton>
                       <ChevronLeft size={"16"} />
-                    </button>
-                    <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                    </IconButton>
+                    <IconButton>
                       <ChevronRight size={"16"} />
-                    </button>
-                    <button className="bg-white/10 border border-white/10 rounded-md p-1.5">
+                    </IconButton>
+                    <IconButton>
                       <ChevronsRight size={"16"} />
-                    </button>
+                    </IconButton>
                   </div>
                 </div>
               </td>
