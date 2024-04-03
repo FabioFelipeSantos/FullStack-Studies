@@ -186,22 +186,24 @@ export function UsandoEstadosNoReact() {
 # 5 Utilizando o useEffect() do React
 
 No React sempre que algum evento for disparado, toda a nossa aplicação deverá rodar novamente para fazer as atualizações e para que o React possa rodar seu algoritmo interno de renderização da página. Por exemplo:
-```ts title=useEffect note:19-21 attention:4
+```ts title=useEffect note:21-23 attention:4-6
 import { useState } from 'react';
 
 export function myComponent() {
-	const [value, setValue] = useState(0);
+	const [value1, setValue1] = useState(0);
+	const [value2, setValue2] = useState(0);
+	const [value3, setValue3] = useState('');
 
 	function add1() {
-		setValue(value + 1);
+		setValue1(value1 + 1);
 	}
 	
 	function subtract1() {
-		setValue(value - 1);
+		setValue2(value2 - 1);
 	}
 
 	function leavePage() {
-		alert('Estamos saindo dessa página!');
+		alert(`Estamos saindo dessa página! ${value3}$`);
 	}
 	return (
 		<div>
@@ -212,8 +214,15 @@ export function myComponent() {
 	)
 }
 ```
-- Nessa aplicação, são apresentados três `{html}<button>` na tela (linhas 19, 20 e 21). Se caso o usuário clicar em qualquer um dos três, o `{js}useState` (linha 4) será disparado e todo o código entre as linhas 5 e 17 será executado.
-- Porém, imagine 
+- Nessa aplicação, são apresentados três `{html}<button>` na tela (linhas 21 a 23). Se caso o usuário clicar em qualquer um dos três, os `{js}useState` (linhas 4 a 6) serão disparados e todo o código entre as linhas 7 e 18 será executado.
+- Porém, imagine que entre essas linhas haja algum tipo de código que demande um certo tempo de operação, ou que seja preciso ser disparado especificamente pelo terceiro botão. Neste caso, podemos fazer uso do método `{js}useEffect` do React. Sua sintaxe básica é
+```ts title=useEffect()
+useEffect( (props) => {} , [var1, var2, ...])
+/* useEffect( função, [ativador(es)]) */
+```
+- Usando esse método, a função dentro do `{js}useEffect` só será disparada se caso um dos `{js}var1, var2, ...` forem modificados pelo `{js}useState`.
+
+
 # 6 Outras Bibliotecas
 
 ## 6.1 Faker JS

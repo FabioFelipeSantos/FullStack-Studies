@@ -5,26 +5,47 @@ import { TableHeader } from "./table/table-header";
 import { TableCell } from "./table/table-cell";
 import { TableRow } from "./table/table-row";
 import { ChangeEvent, useEffect, useState } from "react";
-import { attendees } from "../data/attendees";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+import "dayjs/locale/pt-br";
+
+dayjs.extend(relativeTime);
+dayjs.locale("pt-br");
 
 /**
- * This is a dayjs implementation, it's not working
- * because in the end of the course we learn how to access our database.
-// import dayjs from "dayjs";
-// import relativeTime from "dayjs/plugin/relativeTime";
-// import "dayjs/locale/pt-br";
-
-// dayjs.extend(relativeTime);
-// dayjs.locale("pt-br");
-*/
+ * Não iremos importar attendees mais pelo faker. Agora será pelo banco de dados.
+ import { attendees } from "../data/attendees";
+ */
 
 export function AttendeeList() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
-  const totalPages = Math.ceil(attendees.length / 10);
+  const [total, setTotal] = useState(0);
+  const [attendees, setAttendees] = useState<Attendee[]>([]);
 
-  useEffect(() => {}, [page]);
+  const totalPages = Math.ceil(total / 10);
+
+  interface Attendee {
+    id: string;
+    name: string;
+    email: string;
+    createdAt: string;
+    checkedInAt: string | null;
+  }
+
+  useEffect(() => {
+    const url = new URL("http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees");
+
+    url.searchParams.set("pageIndex", String(page - 1));
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setAttendees(data.attendees);
+        setTotal(data.total);
+      });
+  }, [page]);
 
   function handleEmailChanged(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
@@ -81,7 +102,7 @@ export function AttendeeList() {
           </TableRow>
         </thead>
         <tbody>
-          {attendees.slice((page - 1) * 10, page * 10).map((attendee) => {
+          {attendees.map((attendee) => {
             return (
               <TableRow key={attendee.id}>
                 <TableCell>
@@ -98,7 +119,13 @@ export function AttendeeList() {
                   </div>
                 </TableCell>
                 <TableCell>{dayjs().to(attendee.createdAt)}</TableCell>
-                <TableCell>{dayjs().to(attendee.checkedInAt)}</TableCell>
+                <TableCell>
+                  {attendee.checkedInAt === null ? (
+                    <span className="text-zinc-400 italic">Não fez check-in</span>
+                  ) : (
+                    dayjs().to(attendee.checkedInAt)
+                  )}
+                </TableCell>
                 <TableCell>
                   <IconButton transparent>
                     <MoreHorizontal size={"16"} />
@@ -110,7 +137,9 @@ export function AttendeeList() {
         </tbody>
         <tfoot>
           <TableRow>
-            <TableCell colSpan={3}>Mostrando 10 de {attendees.length} itens</TableCell>
+            <TableCell colSpan={3}>
+              Mostrando {attendees.length} de {total} itens
+            </TableCell>
             <TableCell
               className="text-right"
               colSpan={3}>
