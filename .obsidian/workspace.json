@@ -265,6 +265,7 @@
   },
   "active": "4ad8e09fc3912ec5",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/CSS/styles.less",
     "NLW_React/pass-in-web/vite.config.ts.timestamp-1712153551238-c33219f5e643f.mjs",
     "NLW_React/pass-in-web/node_modules/dayjs/esm/locale/pl.js",
     "NLW_React/pass-in-web/node_modules/dayjs/plugin/localizedFormat.js",
@@ -275,7 +276,6 @@
     "NLW_React/pass-in-web/node_modules/dayjs/locale/zh-hk.js",
     "NLW_React/pass-in-web/node_modules/dayjs/locale/zh-cn.js",
     "NLW_React/pass-in-web/node_modules/dayjs/locale/yo.js",
-    "NLW_React/pass-in-web/node_modules/dayjs/locale/x-pseudo.js",
     "NLW_React/pass-in-web/node_modules/date-fns/docs/webpack.md",
     "NLW_React/pass-in-web/node_modules/date-fns/docs/unicodeTokens.md",
     "NLW_React/pass-in-web/node_modules/date-fns/docs/timeZones.md",

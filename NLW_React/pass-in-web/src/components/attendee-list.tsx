@@ -15,9 +15,27 @@ dayjs.locale("pt-br");
 
 export function AttendeeList() {
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState(1);
+
+  const totalPages = Math.ceil(attendees.length / 10);
 
   function handleEmailChanged(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
+  }
+
+  function goToFirstPage() {
+    setPage(1);
+  }
+  function goToLastPage() {
+    setPage(totalPages);
+  }
+
+  function goToPreviousPage() {
+    setPage(page - 1);
+  }
+
+  function goToNextPage() {
+    setPage(page + 1);
   }
 
   return (
@@ -56,7 +74,7 @@ export function AttendeeList() {
           </TableRow>
         </thead>
         <tbody>
-          {attendees.slice(0, 10).map((attendee) => {
+          {attendees.slice((page - 1) * 10, page * 10).map((attendee) => {
             return (
               <TableRow key={attendee.id}>
                 <TableCell>
@@ -85,23 +103,33 @@ export function AttendeeList() {
         </tbody>
         <tfoot>
           <TableRow>
-            <TableCell colSpan={3}>Mostrando 10 de 228 itens</TableCell>
+            <TableCell colSpan={3}>Mostrando 10 de {attendees.length} itens</TableCell>
             <TableCell
               className="text-right"
               colSpan={3}>
               <div className="inline-flex items-center gap-8">
-                <span>Página 1 de 23</span>
+                <span>
+                  Página {page} de {totalPages}
+                </span>
                 <div className="flex gap-1.5">
-                  <IconButton>
+                  <IconButton
+                    onClick={goToFirstPage}
+                    disabled={page === 1}>
                     <ChevronsLeft size={"16"} />
                   </IconButton>
-                  <IconButton>
+                  <IconButton
+                    onClick={goToPreviousPage}
+                    disabled={page === 1}>
                     <ChevronLeft size={"16"} />
                   </IconButton>
-                  <IconButton>
+                  <IconButton
+                    onClick={goToNextPage}
+                    disabled={page === totalPages}>
                     <ChevronRight size={"16"} />
                   </IconButton>
-                  <IconButton>
+                  <IconButton
+                    onClick={goToLastPage}
+                    disabled={page === totalPages}>
                     <ChevronsRight size={"16"} />
                   </IconButton>
                 </div>
