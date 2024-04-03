@@ -4,20 +4,27 @@ import { Table } from "./table/table";
 import { TableHeader } from "./table/table-header";
 import { TableCell } from "./table/table-cell";
 import { TableRow } from "./table/table-row";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { attendees } from "../data/attendees";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
-import "dayjs/locale/pt-br";
 
-dayjs.extend(relativeTime);
-dayjs.locale("pt-br");
+/**
+ * This is a dayjs implementation, it's not working
+ * because in the end of the course we learn how to access our database.
+// import dayjs from "dayjs";
+// import relativeTime from "dayjs/plugin/relativeTime";
+// import "dayjs/locale/pt-br";
+
+// dayjs.extend(relativeTime);
+// dayjs.locale("pt-br");
+*/
 
 export function AttendeeList() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
   const totalPages = Math.ceil(attendees.length / 10);
+
+  useEffect(() => {}, [page]);
 
   function handleEmailChanged(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);

@@ -183,9 +183,40 @@ export function UsandoEstadosNoReact() {
 - Logo, quando o usuário modificar o email será disparado o `{js} onChange` (linha 12) do `{html} <input>` que chamará a função `{js} changeFunctionName（event）`, e dentro dessa função teremos a função do método `{js}useState`, `{js} setSearch(event.target.value)` （linha 7）, que tomará o valor digitado pelo usuário com `{js}event.target.value` e atualizará a variável `{js}search`.
 - Agora, quando o usuário entrar com qualquer valor no `{html} <input>` esse valor será renderizado novamente na tela (linha 13).
 
-# 5 Outras Bibliotecas
+# 5 Utilizando o useEffect() do React
 
-## 5.1 Faker JS
+No React sempre que algum evento for disparado, toda a nossa aplicação deverá rodar novamente para fazer as atualizações e para que o React possa rodar seu algoritmo interno de renderização da página. Por exemplo:
+```ts title=useEffect note:19-21 attention:4
+import { useState } from 'react';
+
+export function myComponent() {
+	const [value, setValue] = useState(0);
+
+	function add1() {
+		setValue(value + 1);
+	}
+	
+	function subtract1() {
+		setValue(value - 1);
+	}
+
+	function leavePage() {
+		alert('Estamos saindo dessa página!');
+	}
+	return (
+		<div>
+			<button onClick={add1}>Aumentar 1</button>
+			<button onClick={subtract1}>Diminuir 1</button>
+			<button onClick={leavePage}>Sair</button>
+		</div>
+	)
+}
+```
+- Nessa aplicação, são apresentados três `{html}<button>` na tela (linhas 19, 20 e 21). Se caso o usuário clicar em qualquer um dos três, o `{js}useState` (linha 4) será disparado e todo o código entre as linhas 5 e 17 será executado.
+- Porém, imagine 
+# 6 Outras Bibliotecas
+
+## 6.1 Faker JS
 
 Para dados aleatórios utilizamos o [Faker JS](https://fakerjs.dev/). Veja um exemplo de código:
 ```ts title=utilizandoFakerJS.ts
@@ -203,7 +234,7 @@ export const attendees = Array.from({ length: 200 }).map(() => {
 ```
 - Com a saída desse arquivo sendo o array `{js} attendees`, basta utilizar essa variável na aplicação.
 
-## 5.2 Date FNS
+## 6.2 Date FNS
 
 Para formatar datas no JS, utilizamos a biblioteca [Date FNS](https://date-fns.org/). Exemplo do código:
 ```ts title=formatandoDatas.ts
@@ -220,7 +251,7 @@ export function formatandoDatas() {
 }
 ```
 
-## 5.3 Day JS
+## 6.3 Day JS
 
 Outra biblioteca para alterar o formato de datas é a [Day JS](https://day.js.org/en/).
 ```powershell title=Comando_CLI_de_Instalação
