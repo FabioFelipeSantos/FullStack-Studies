@@ -76,7 +76,7 @@ import { twMerge } from 'tailwind-merge';
 ```
 
 Suponha o seguinte código
-```JS nums
+```JS
 import { twMerge } from 'tailwind-merge';
 
 twMerge('px-2 py-1 bg-red hover:bg-dark-red', 'p-4 bg-[#B91C1C] border-2 border-red-500')
@@ -94,35 +94,151 @@ nesse exemplo, na linha 3 fazemos o merge com o comando `twMerge（）` importad
 Estados em React são variáveis que podem ser observadas e quando seu valor muda aquele componente será renderizado novamente.
 
 - Para entendermos este conceito, comecemos com o seguinte código
-```ts
-export function Name() {
-	return <input placeHolder="Digite seu email..." type="email"></input>;
+```ts title=usando-estados-no-react.tsx
+export function UsandoEstadosNoReact() {
+	return (
+		<div>
+			<input placeHolder="Digite seu email..." type="email"></input>;
+		</div>		
+	)
 }
 ```
-- Se trata de um elemento do tipo <code class="myCode">input</code> que pede para que o usuário digite um email. Nesse caso, temos que quando o usuário começar a digitar seu email, será disparados vários eventos para o input, de forma que podemos verificar quando e qual o valor o usuário está digitando. Logo, fazendo a seguinte modificação
-```ts
-function changeFunctionName() {
-	console.log('teste');
-}
-
-export function Name() {
-	return <input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+- Se trata de um elemento do tipo `{html}<input>` que pede para que o usuário digite um email. Nesse caso, temos que quando o usuário começar a digitar seu email, será disparados vários eventos para o input, de forma que podemos verificar quando e qual o valor o usuário está digitando. Logo, podemos fazer a seguinte modificação:
+```ts title=usando-estados-no-react.tsx
+export function UsandoEstadosNoReact() {
+	function changeFunctionName() {
+		console.log('teste');
+	}
+	
+	return (
+		<div>
+			<input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+		</div>		
+	)
 }
 ```
-- Nesse caso, criamos uma forma em JS de receber essa mudança e disparamos a chamada da função `changeFunctionName`, que irá mostrar no console a palavra <code class="myCode">teste</code> a cada caractere digitado pelo usuário.
+- Nesse caso, criamos uma forma em JS de receber essa mudança e disparamos a chamada da função `{js}changeFunctionName`, que irá mostrar no console a palavra `{js} "teste"` a cada caractere digitado pelo usuário.
 
 - Podemos então modificar novamente o código para
-```ts nums hl:4
-let valorDigitado = '';
+```ts title=usando-estados-no-react.tsx info:7 note:1
+import { ChangeEvent } from 'react';
 
-function changeFunctionName(event: ChangeEvent<HTMLInputElement>) {
-	valorDigitado = event.target.value;
-	console.log(valorDigitado);
-}
+export function UsandoEstadosNoReact() {
+	let valorDigitado = '';
 
-export function Name() {
-	return <input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+	function changeFunctionName(event: ChangeEvent<HTMLInputElement>) {
+		valorDigitado = event.target.value;
+		console.log(valorDigitado);
+	}
+
+	return (
+		<div>
+			<input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+		</div>		
+	)
 }
 ```
-- Agora, criamos uma variável `valorDigitado` como uma string vazia. Essa variável será a responsável por receber o valor digitado pelo usuário. Porém, para que possamos utilizar o valor digitado pelo usuário, devemos fornecer para a função `changeFunctionName` o evento que disparou sua chamada. Assim, fornecemos `event` como uma prop para a função, especificando que este evento é do tipo <code class="myCode">ChangeEvent</code>. Porém, este evento é genérico e qualquer elemento poderia disparar um evento com essa tipagem, assim, indicamos que o evento será disparado por um `HTMLInputElement`, ou seja, um elemento HTML do tipo `input`, finalmente a tipagem será `ChangeEvent<HTMLInputElement>`.
-- O valor digitado pelo usuário está armazenado na variável `evento` nas propriedade `target` com a sub-propriedade `value`, portanto, o valor recebido fica como na linha 4 do código acima.
+- Agora, criamos uma variável `{js} valorDigitado=''` como uma string vazia. Essa variável será a responsável por receber o valor digitado pelo usuário. Porém, para que possamos utilizar o valor digitado pelo usuário, devemos fornecer para a função `{js}changeFunctionName` o evento que disparou sua chamada. Assim, fornecemos `{js}event` como uma prop para a função, especificando que este evento é do tipo `{ts}ChangeEvent` do React, importado na linha 1. Porém, este evento é genérico e qualquer elemento poderia disparar um evento com essa tipagem, assim, indicamos que o evento será disparado por um `{ts}HTMLInputElement`, ou seja, um elemento HTML do tipo `{html}<input>`, finalmente a tipagem será `{ts} ChangeEvent<HTMLInputElement>`.
+- O valor digitado pelo usuário está armazenado na variável `evento` nas propriedade `target` com a sub-propriedade `value`, portanto, o valor recebido fica como na linha 7 do código acima.
+- Porém, observe agora o seguinte código:
+```ts title=usando-estados-no-react.tsx attention:11-14
+import { ChangeEvent } from 'react';
+
+export function UsandoEstadosNoReact() {
+	let valorDigitado = '';
+
+	function changeFunctionName(event: ChangeEvent<HTMLInputElement>) {
+		valorDigitado = event.target.value;
+	}
+	
+	return (
+		<div>
+			<input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+			{valorDigitado}
+		</div>		
+	)
+}
+```
+- Agora na linha 13 a variável com o valor fornecido pelo usuário não será atualizada na tela, isso porquê o React não reconhece que a mudança de estado do elemento aconteceu.
+- Para tanto precisamos utilizar o método `{ts} useState` do React para ativarmos a mudança de estado. Nesse caso, modificamos o código acima para:
+```ts title=usando-estados-no-react.tsx note:4,7 info:12 attention:13
+import { ChangeEvent, useState } from 'react'
+
+export function UsandoEstadosNoReact() {
+	const [search, setSearch] = useState('');
+	
+	function changeFunctionName(event: ChangeEvent<HTMLInputElement>) {
+		setSearch(event.target.value);
+	}
+	
+	return (
+		<div>
+			<input onChange={changeFunctionName} placeHolder="Digite seu email..." type="email"></input>;
+			{search}
+		</div>		
+	)
+}
+```
+- O método `{js}useState（''）` fornece duas saídas de variáveis. A primeira variável será o valor que será ajustado pelo evento, e a segunda variável será a função responsável por fazer a mudança e atualizar o valor da primeira variável. Nesse caso específico, a variável ajustada será `{js}search=''` e ela é inicializada como uma string vazia pelo método `{js}useState`, como podemos ver na linha 4, e a função responsável por fazer a modificação do valor dessa variável foi chamada de `{js} setSearch`.
+- Logo, quando o usuário modificar o email será disparado o `{js} onChange` (linha 12) do `{html} <input>` que chamará a função `{js} changeFunctionName（event）`, e dentro dessa função teremos a função do método `{js}useState`, `{js} setSearch(event.target.value)` （linha 7）, que tomará o valor digitado pelo usuário com `{js}event.target.value` e atualizará a variável `{js}search`.
+- Agora, quando o usuário entrar com qualquer valor no `{html} <input>` esse valor será renderizado novamente na tela (linha 13).
+
+# 5 Outras Bibliotecas
+
+## 5.1 Faker JS
+
+Para dados aleatórios utilizamos o [Faker JS](https://fakerjs.dev/). Veja um exemplo de código:
+```ts title=utilizandoFakerJS.ts
+import { fakerPT_BR } from "@faker-js/faker";  
+
+export const attendees = Array.from({ length: 200 }).map(() => {
+  return {
+    id: fakerPT_BR.number.int({ min: 10000, max: 20000 }),
+    name: fakerPT_BR.person.fullName(),
+    email: fakerPT_BR.internet.email().toLocaleLowerCase(),
+    createdAt: fakerPT_BR.date.recent({ days: 30 }),
+    checkedInAt: fakerPT_BR.date.recent({ days: 7 }),
+  };
+});
+```
+- Com a saída desse arquivo sendo o array `{js} attendees`, basta utilizar essa variável na aplicação.
+
+## 5.2 Date FNS
+
+Para formatar datas no JS, utilizamos a biblioteca [Date FNS](https://date-fns.org/). Exemplo do código:
+```ts title=formatandoDatas.ts
+import { formatRelative } from "date-fns";
+import { ptBR } from "date-fns/locale";
+
+export function formatandoDatas() {
+	return (
+		<div>
+			<div>{formatRelative(someDate.createdAt, new Date(), { locale: ptBR })}</div>
+		   <div>{formatRelative(someDate.checkedInAt, new Date(), { locale: ptBR })}</div>
+		</div>
+	)
+}
+```
+
+## 5.3 Day JS
+
+Outra biblioteca para alterar o formato de datas é a [Day JS](https://day.js.org/en/).
+```powershell title=Comando_CLI_de_Instalação
+npm install dayjs
+```
+
+Exemplo de utilização
+```ts title=Utilizando_DayJS
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+import "dayjs/locale/pt-br";
+
+dayjs.extend(relativeTime);
+dayjs.locale("pt-br");
+
+export function AttendeeList() {
+	return <div>{dayjs().to(someDate)}</div>
+	)
+}
+```
+
