@@ -1,17 +1,12 @@
-interface TableHeaderProps {
-  children?: string;
-  width?: number;
-}
+import { ComponentProps } from "react";
 
-export function TableHeader({ width, ...props }: TableHeaderProps) {
+interface TableHeaderProps extends ComponentProps<"th"> {}
+
+export function TableHeader(props: TableHeaderProps) {
   return (
     <th
       {...props}
-      className={
-        width
-          ? `px-4 py-3 text-sm font-semibold text-left w-[${width}]`
-          : "px-4 py-3 text-sm font-semibold text-left"
-      }
+      className="px-4 py-3 text-sm font-semibold text-left"
     />
   );
 }
