@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLW_Nodejs/README.md",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/README.md",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/README.md",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/README.md"
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
               }
             }
           },
@@ -253,21 +253,29 @@
   },
   "active": "2a3664195a5afc91",
   "lastOpenFiles": [
-    "NLW_Nodejs/node_modules/@types/node/timers/promises.d.ts",
-    "NLW_Nodejs/node_modules/@types/node/timers",
-    "NLW_Nodejs/package-lock.json",
-    "NLW_Nodejs/node_modules/esbuild/lib/main.js",
-    "NLW_Nodejs/node_modules/esbuild/lib/main.d.ts",
-    "NLW_Nodejs/node_modules/esbuild/lib",
+    "NLW_Nodejs/README.md",
+    "NLW_Nodejs/Anotações sobre as aulas.md",
+    "NLW_Nodejs/node_modules/undici-types/websocket.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/webidl.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/readable.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/proxy-agent.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/pool.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/pool-stats.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/patch.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/mock-pool.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/mock-interceptor.d.ts",
+    "NLW_Nodejs/node_modules/undici-types/mock-errors.d.ts",
+    "NLW_Nodejs/node_modules/typescript/SECURITY.md",
+    "NLW_Nodejs/node_modules/typescript/README.md",
+    "NLW_Nodejs/node_modules/tsx/README.md",
+    "NLW_Nodejs/node_modules/resolve-pkg-maps/README.md",
+    "NLW_Nodejs/node_modules/get-tsconfig/README.md",
+    "NLW_Nodejs/node_modules/esbuild/README.md",
+    "NLW_Nodejs/node_modules/@types/node/README.md",
+    "NLW_Nodejs/node_modules/@esbuild/win32-x64/README.md",
     "NLW_Nodejs/node_modules/esbuild/LICENSE.md",
-    "NLW_Nodejs/node_modules/tsx/dist/esm/index.mjs",
-    "NLW_Nodejs/node_modules/tsx/dist/cjs/index.cjs",
-    "NLW_Nodejs/node_modules/tsx/dist/esm/index.cjs",
-    "NLW_Nodejs/node_modules/tsx/dist/cjs/index.mjs",
-    "NLW_Nodejs/node_modules/tsx/dist/temporary-directory-2a027842.cjs",
     "NLW_Nodejs/node_modules/undici-types/README.md",
     "NLW_React/NLW React - Notes.md",
-    "NLW_Nodejs/README.md",
     "NLW_React/RegraDeNegocio.md",
     "NLW_React/Untitled.canvas",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Type-Providers.md",
@@ -283,14 +291,6 @@
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Plugins.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/LTS.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Middleware.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Guides/Serverless.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Logging.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Lifecycle.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Index.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/HTTP2.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Hooks.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Errors.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Encapsulation.md",
     "NLW_React/nlw-unite-nodejs/node_modules/pino/favicon-16x16.png",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/logo.svg",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/static/example/public/images/sample.jpg",

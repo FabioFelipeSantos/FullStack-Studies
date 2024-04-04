@@ -38,6 +38,10 @@ body {
   font-style: italic;
 }
 
+.cm-header-1 {
+  font-size: 1.6em;
+}
+
 /* reading mode */
 .markdown-preview-view p {
 	text-align: justify;
@@ -50,7 +54,7 @@ body {
 	text-align: justify;
 	text-justify: inter-word;	
 	letter-spacing: 2.3px;
-	font-size: 1em;
+
 }
 
 .markdown-source-view.mod-cm6 .callout-title {
