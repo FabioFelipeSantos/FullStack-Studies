@@ -1,7 +1,7 @@
 # 1 React
 
 - The main points about React are:
-	- Components: are ways to create an application in blocks (functions files or JSX files). Nós criamos blocos em duas situações:
+	- Components: are ways to create an application in blocks (functions files or JSX files). Nós criamos blocos em duas situações: ^33b207
 		- Quando percebemos um padrão de repetição. Ou seja, observamos que algo na tela repete várias vezes e conseguimos abstrair o código em um único arquivo, como se estivéssemos criando um novo elemento no HTML.
 		-  Quando conseguimos desconectar uma parte da interface de outra porque elas não conversam entre si. Como se elas pudessem existir separadamente.
 	- Componentes são funções que retornam HTML.
@@ -222,10 +222,16 @@ useEffect( (props) => {} , [var1, var2, ...])
 ```
 - Usando esse método, a função dentro do `{js}useEffect` só será disparada se caso um dos `{js}var1, var2, ...` forem modificados pelo `{js}useState`.
 
+# 6 URL State
 
-# 6 Outras Bibliotecas
+Podemos utilizar do conceito do URL State do Browser para armazenar informações a respeito dos estados das interações entre o usuário e o site.
 
-## 6.1 Faker JS
+
+
+
+# 7 Outras Bibliotecas
+
+## 7.1 Faker JS
 
 Para dados aleatórios utilizamos o [Faker JS](https://fakerjs.dev/). Veja um exemplo de código:
 ```ts title=utilizandoFakerJS.ts
@@ -243,7 +249,7 @@ export const attendees = Array.from({ length: 200 }).map(() => {
 ```
 - Com a saída desse arquivo sendo o array `{js} attendees`, basta utilizar essa variável na aplicação.
 
-## 6.2 Date FNS
+## 7.2 Date FNS
 
 Para formatar datas no JS, utilizamos a biblioteca [Date FNS](https://date-fns.org/). Exemplo do código:
 ```ts title=formatandoDatas.ts
@@ -260,7 +266,7 @@ export function formatandoDatas() {
 }
 ```
 
-## 6.3 Day JS
+## 7.3 Day JS
 
 Outra biblioteca para alterar o formato de datas é a [Day JS](https://day.js.org/en/).
 ```powershell title=Comando_CLI_de_Instalação

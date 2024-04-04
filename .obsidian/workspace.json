@@ -49,18 +49,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NLW_React/RegraDeNegocio.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ad8e09fc3912ec5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "NLW_React/NLW React - Notes.md",
                 "mode": "source",
                 "source": false
@@ -68,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -263,8 +251,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ad8e09fc3912ec5",
+  "active": "2a3664195a5afc91",
   "lastOpenFiles": [
+    "NLW_React/RegraDeNegocio.md",
+    "NLW_React/Untitled.canvas",
+    "NLW_React/NLW React - Notes.md",
     "NLW_React/nlw-unite-nodejs/prisma/dev.db-journal",
     "NLW_React/pass-in-web/vite.config.ts.timestamp-1712230376085-055e092ad1bdf.mjs",
     "NLW_React/pass-in-web/node_modules/dayjs/plugin/relativeTime.d.ts",
@@ -275,7 +266,6 @@
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/swagger-ui-vendor-extensions.test-d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/index.d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/http2-types.test-d.ts",
-    "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/imports.test-d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Type-Providers.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Warnings.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/resources/encapsulation_context.svg",
@@ -301,7 +291,6 @@
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/ContentTypeParser.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Guides/Recommendations.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Guides/Write-Type-Provider.md",
-    "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Guides/Write-Plugin.md",
     "NLW_React/nlw-unite-nodejs/node_modules/pino/favicon-16x16.png",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/logo.svg",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/static/example/public/images/sample.jpg",
