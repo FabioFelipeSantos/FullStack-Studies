@@ -246,8 +246,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,7 +262,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ad8e09fc3912ec5",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "NLW_React/pass-in-web/node_modules/dayjs/plugin/relativeTime.d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@esbuild/win32-x64/esbuild.exe",
