@@ -246,7 +246,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,8 +263,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "4ad8e09fc3912ec5",
   "lastOpenFiles": [
+    "NLW_React/nlw-unite-nodejs/prisma/dev.db-journal",
+    "NLW_React/pass-in-web/vite.config.ts.timestamp-1712230376085-055e092ad1bdf.mjs",
     "NLW_React/pass-in-web/node_modules/dayjs/plugin/relativeTime.d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@esbuild/win32-x64/esbuild.exe",
     "NLW_React/nlw-unite-nodejs/node_modules/dayjs/index.d.ts",
@@ -273,8 +276,6 @@
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/index.d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/http2-types.test-d.ts",
     "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types/imports.test-d.ts",
-    "NLW_React/nlw-unite-nodejs/node_modules/@fastify/swagger-ui/types",
-    "NLW_React/nlw-unite-nodejs/node_modules/openapi-types/package.json",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Type-Providers.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/Reference/Warnings.md",
     "NLW_React/nlw-unite-nodejs/node_modules/fastify/docs/resources/encapsulation_context.svg",

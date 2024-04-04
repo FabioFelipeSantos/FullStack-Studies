@@ -39,16 +39,21 @@ export function AttendeeList() {
 
     url.searchParams.set("pageIndex", String(page - 1));
 
+    if (search.length > 0) {
+      url.searchParams.set("query", search);
+    }
+
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setAttendees(data.attendees);
         setTotal(data.total);
       });
-  }, [page]);
+  }, [page, search]);
 
   function handleEmailChanged(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
+    setPage(1);
   }
 
   function goToFirstPage() {
@@ -77,12 +82,11 @@ export function AttendeeList() {
           />
           <input
             onChange={handleEmailChanged}
-            className="bg-transparent flex-1 outline-none border-0 p-0 text-sm"
+            className="bg-transparent flex-1 outline-none border-0 p-0 text-sm focus:ring-0"
             placeholder="Buscar participante..."
             type="email"
           />
         </div>
-        {search}
       </div>
 
       <Table>
