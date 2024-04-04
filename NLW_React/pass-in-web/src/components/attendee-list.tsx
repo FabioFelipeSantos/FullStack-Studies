@@ -32,7 +32,7 @@ export function AttendeeList() {
     const url = new URL(window.location.toString());
 
     if (url.searchParams.has("page")) {
-      return Number(url.searchParams.get("page")) ?? 1;
+      return Number(url.searchParams.get("page"));
     }
 
     return 1;
@@ -54,7 +54,7 @@ export function AttendeeList() {
   useEffect(() => {
     const url = new URL("http://localhost:3333/events/9e9bd979-9d10-4915-b339-3786b1634f33/attendees");
 
-    url.searchParams.set("page", String(page - 1));
+    url.searchParams.set("pageIndex", String(page - 1));
 
     if (search.length > 0) {
       url.searchParams.set("query", search);
@@ -119,6 +119,7 @@ export function AttendeeList() {
           />
           <input
             onChange={handleEmailChanged}
+            value={search}
             className="bg-transparent flex-1 outline-none border-0 p-0 text-sm focus:ring-0"
             placeholder="Buscar participante..."
             type="email"
