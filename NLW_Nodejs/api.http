@@ -2,17 +2,21 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para devs",
-  "maximumAttendees": 100
+  "title": "Novo Evento 2",
+  "details": null,
+  "maximumAttendees": 1
 }
 
 ###
 
-POST http://localhost:3333/events/5004aba9-ddcd-45a6-90fd-3b12b5230e7f/attendees
+POST http://localhost:3333/events/5b2661eb-1260-4e69-9ea1-45dd271f190f/attendees
 Content-Type: application/json
 
 {
   "name": "Fabio Felipe",
   "email": "fabiotrabmat@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/events/5b2661eb-1260-4e69-9ea1-45dd271f190f/

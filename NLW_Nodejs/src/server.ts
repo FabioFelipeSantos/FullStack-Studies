@@ -2,6 +2,7 @@ import fastify from "fastify";
 import { serializerCompiler, validatorCompiler } from "fastify-type-provider-zod";
 import { createEvent } from "./routes/create-event";
 import { registerForEvent } from "./routes/register-for-events";
+import { getEvent } from "./routes/get-event";
 
 // Cria o servidor com o Fastify
 export const app = fastify();
@@ -11,6 +12,7 @@ app.setSerializerCompiler(serializerCompiler);
 
 app.register(createEvent);
 app.register(registerForEvent);
+app.register(getEvent);
 
 // Quando o usuário visitar a homepage da aplicação (rota "/"), o servidor irá retornar a função que for passada como segundo argumento do método .get() do Fastify.
 // app.get("/", () => {
