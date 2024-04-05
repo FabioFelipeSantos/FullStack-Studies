@@ -20,3 +20,19 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3333/events/5b2661eb-1260-4e69-9ea1-45dd271f190f/
+
+###
+
+GET http://localhost:3333/attendees/4/badge
+
+###
+
+GET http://localhost:3333/attendees/4/check-in
+
+###
+
+GET http://localhost:3333/events/5b2661eb-1260-4e69-9ea1-45dd271f190f/attendees?query=Fabio
+
+###
+
+GET http://localhost:3333/events/434d05a4-f2ce-4614-9f7e-fb69f7a683e4/attendees
