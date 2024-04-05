@@ -330,67 +330,184 @@ Tokens de autenticação, como JWT (JSON Web Tokens), são frequentemente usados
 
 - **Exemplo de uso**: Autenticar usuários em uma API RESTful.
 
-Cada um desses componentes adicionais desempenha um papel importante na comunicação cliente-servidor através do protocolo HTTP. Ao desenvolver aplicações web, é fundamental entender como eles funcionam e como podem ser utilizados para alcançar os objetivos da aplicação.
+Sim, além dos componentes mencionados anteriormente, existem outros elementos que também desempenham papéis importantes em uma requisição HTTP. Aqui estão mais alguns:
+
+## 3.11 Method (Método)
+
+O método HTTP indica a ação a ser realizada no recurso identificado pela URL. Alguns dos métodos mais comuns são `GET`, `POST`, `PUT`, `DELETE`, `PATCH`, entre outros.
+
+- **Exemplo de uso**: O método `GET` é usado para solicitar dados de um recurso, enquanto o método `POST` é usado para enviar dados para serem processados pelo servidor.
+
+## 3.12 Protocol Version (Versão do Protocolo)
+
+A versão do protocolo HTTP utilizada na requisição é especificada no cabeçalho `HTTP/1.1`, por exemplo.
+
+- **Exemplo de uso**: HTTP/1.1 é a versão mais comum atualmente, mas também existem versões mais recentes como HTTP/2 e HTTP/3.
+
+## 3.13 Request URL (URL da Requisição)
+
+A URL completa da requisição, incluindo o protocolo, domínio, porta, caminho e parâmetros de busca.
+
+- **Exemplo de uso**: `https://www.exemplo.com:8080/api/recurso?parametro=valor`
+
+## 3.14 User-Agent
+
+O cabeçalho User-Agent identifica o software (navegador, aplicativo) que está fazendo a requisição. Pode ser usado para personalizar a resposta com base no cliente.
+
+- **Exemplo de uso**: O servidor pode enviar diferentes versões de uma página dependendo do navegador do usuário.
+
+## 3.15 Referer
+
+O cabeçalho Referer indica a URL da página da qual a requisição veio. É útil para rastrear a origem do tráfego.
+
+- **Exemplo de uso**: Um servidor de análise pode usar este cabeçalho para determinar de onde os visitantes estão vindo.
+
+## 3.16 Host
+
+O cabeçalho Host especifica o nome de domínio do recurso solicitado.
+
+- **Exemplo de uso**: Pode ser usado pelo servidor para rotear a requisição para o site correto em um servidor que hospeda vários sites.
+
+## 3.17 Content-Length
+
+Este cabeçalho indica o tamanho do corpo da requisição em bytes. É útil para o servidor saber quando a requisição está completa.
+
+- **Exemplo de uso**: Permite ao servidor ler o corpo da requisição corretamente, especialmente para requisições POST e PUT.
+
+Claro, aqui estão todos os componentes restantes que podem estar presentes em uma requisição HTTP:
+
+## 3.18 Accept
+
+O cabeçalho `Accept` especifica os tipos de conteúdo que o cliente está disposto a aceitar do servidor. Isso permite a negociação de conteúdo entre o cliente e o servidor.
+
+## 3.19 Accept-Encoding
+
+O cabeçalho `Accept-Encoding` especifica os tipos de codificação de conteúdo que o cliente suporta. Isso permite que o servidor comprima a resposta se necessário.
+
+## 3.20 Accept-Language
+
+O cabeçalho `Accept-Language` especifica os idiomas que o cliente prefere para a resposta. Isso permite ao servidor retornar conteúdo no idioma preferido do usuário.
+
+## 3.21 Cache-Control
+
+O cabeçalho `Cache-Control` controla o armazenamento em cache da resposta em caches intermediários. Ele define diretivas para controle de cache, como `max-age`, `no-cache`, `no-store`, entre outras.
+
+## 3.22 Connection
+
+O cabeçalho `Connection` especifica opções de conexão específicas do protocolo de transporte. Por exemplo, `Connection: keep-alive` solicita que a conexão TCP seja mantida aberta para requisições futuras.
+
+## 3.23 Content-Disposition
+
+O cabeçalho `Content-Disposition` é usado para sugerir ao cliente como lidar com o conteúdo recebido no corpo da resposta, como se deve ser exibido ou baixado.
+
+## 3.24 Content-Type
+
+O cabeçalho `Content-Type` indica o tipo de mídia do conteúdo no corpo da requisição ou resposta. Por exemplo, `Content-Type: application/json` indica que o corpo contém dados JSON.
+
+## 3.25 Date
+
+O cabeçalho `Date` fornece a data e hora atuais de quando a requisição foi feita.
+
+## 3.26 Expect
+
+O cabeçalho `Expect` indica requisitos específicos que o cliente espera que o servidor atenda antes que a requisição seja continuada.
+
+## 3.27 From
+
+O cabeçalho `From` fornece um endereço de e-mail para o usuário que fez a requisição. Pode ser usado para fins de rastreamento ou contato.
+
+## 3.28 If-Match
+
+O cabeçalho `If-Match` é usado em solicitações condicionais para garantir que a operação seja realizada apenas se uma condição especificada for verdadeira.
+
+## 3.29 If-None-Match
+
+O cabeçalho `If-None-Match` é usado em solicitações condicionais para garantir que a operação seja realizada apenas se uma condição especificada for falsa.
+
+## 3.30 If-Modified-Since
+
+O cabeçalho `If-Modified-Since` é usado em solicitações condicionais para garantir que a operação seja realizada apenas se o recurso foi modificado desde uma determinada data.
+
+## 3.31 If-Unmodified-Since
+
+O cabeçalho `If-Unmodified-Since` é usado em solicitações condicionais para garantir que a operação seja realizada apenas se o recurso não tiver sido modificado desde uma determinada data.
+
+## 3.32 Max-Forwards
+
+O cabeçalho `Max-Forwards` especifica o número máximo de servidores de proxy que a requisição pode passar antes de ser recusada.
+
+## 3.33 Proxy-Authorization
+
+O cabeçalho `Proxy-Authorization` contém credenciais de autenticação para autenticar-se com um servidor proxy.
+
+## 3.34 Range
+
+O cabeçalho `Range` solicita apenas parte de um recurso, especificando o intervalo de bytes desejado.
+
+## 3.35 TE
+
+O cabeçalho `TE` especifica as codificações de transferência aceitas pelo cliente.
+
+## 3.36 Upgrade
+
+O cabeçalho `Upgrade` é usado em solicitações para pedir ao servidor para trocar o protocolo de comunicação após a conexão ser estabelecida.
+
+## 3.37 Via
+
+O cabeçalho `Via` especifica os servidores intermediários pelos quais a requisição passou e protocolos usados.
+
+
+Cada um desses componentes adicionais desempenha um papel importante na comunicação cliente/servidor através do protocolo HTTP. Ao desenvolver aplicações web, é fundamental entender como eles funcionam e como podem ser utilizados para alcançar os objetivos da aplicação.
 
 
 
-
-## 3.11 Cabeçalhos: (Headers)
-
-Dados enviados pelo cliente para o servidor via cabeçalhos HTTP. Exemplo: Authorization, Content-Type, language, location, time zone, etc.
-
-## 3.12 Tipos de dados
+# 4 Tipos de dados
 
 Quando se trata de enviar dados para um banco de dados, especialmente durante uma operação de cadastro, diversos tipos de parâmetros podem ser utilizados. A escolha desses tipos depende tanto do esquema do banco de dados quanto das necessidades específicas da aplicação. Abaixo estão os tipos mais comuns de parâmetros que podem ser enviados para um banco de dados:
-
-### 3.12.1 String (Texto)
+## 4.1 String (Texto)
 - **Descrição**: Sequências de caracteres usadas para representar texto.
 - **Uso comum**: Nomes, endereços, descrições.
-
-### 3.12.2 Integer (Inteiro)
+## 4.2 Integer (Inteiro)
 - **Descrição**: Números inteiros, sem parte fracionária.
-- **Uso comum**: Idade, quantidade de itens, ano.
-### 3.12.3 Float / Double (Ponto flutuante)
+- **Uso comum**: Idade, quantidade de itens, ano
+## 4.3 Float / Double (Ponto flutuante)
 - **Descrição**: Números com parte fracionária, usados quando a precisão decimal é necessária.
-- **Uso comum**: Preços, medidas, coordenadas geográficas.
-### 3.12.4 Boolean (Booleano)
+- **Uso comum**: Preços, medidas, coordenadas geográficas
+## 4.4 Boolean (Booleano)
 - **Descrição**: Representa verdadeiro ou falso.
 - **Uso comum**: Status (ativo/inativo), condições (verdadeiro/falso).
-
-### 3.12.5 Date / Time (Data/Hora)
+## 4.5 Date / Time (Data/Hora)
 - **Descrição**: Representa datas, horas, ou ambos.
 - **Uso comum**: Data de nascimento, data de criação, prazos.
 
-### 3.12.6 Enum (Enumerado)
+## 4.6 Enum (Enumerado)
 - **Descrição**: Um tipo de dado que consiste em um conjunto de valores nomeados predefinidos.
 - **Uso comum**: Status de um pedido (pendente, enviado, entregue), tipos de contato (telefone, email).
 
-### 3.12.7 Binary / Blob (Binário)
+## 4.7 Binary / Blob (Binário)
 - **Descrição**: Dados binários, como arquivos ou imagens.
 - **Uso comum**: Armazenamento de arquivos, imagens de perfil.
 
-### 3.12.8 UUID (Identificador Único Universal)
+## 4.8 UUID (Identificador Único Universal)
 - **Descrição**: Um identificador único utilizado para garantir a unicidade global dos dados.
 - **Uso comum**: Chave primária para registros, identificação única de sessões ou transações.
 
-### 3.12.9 JSON (JavaScript Object Notation)
+## 4.9 JSON (JavaScript Object Notation)
 - **Descrição**: Um formato leve de troca de dados, útil para armazenar e transportar dados estruturados.
 - **Uso comum**: Configurações, armazenamento de objetos complexos, comunicação entre serviços.
 
-### 3.12.10 Array / List (Arranjo / Lista)
+## 4.10 Array / List (Arranjo / Lista)
 - **Descrição**: Uma coleção de elementos, possivelmente de vários tipos.
 - **Uso comum**: Lista de telefones, coleções de tags, histórico de ações.
 
-Cada tipo de parâmetro tem suas particularidades e melhores práticas de uso. A escolha correta do tipo de dado impacta não só na precisão da representação dos dados, mas também na performance e na otimização do banco de dados. É importante projetar o esquema do banco de dados considerando cuidadosamente os tipos de dados que melhor se adaptam às necessidades da aplicação, assim como às limitações e capacidades do sistema de gerenciamento de banco de dados (SGBD) escolhido.
-
-# 4 Framework para o Node.js - Fastify
+# 5 Framework para o Node.js - Fastify
 
 O Fastify é um framework web para Node.js que é focado em desempenho e baixo consumo de recursos. Ele é um dos frameworks web mais rápidos para Node.js.
 
 Para instalar o Fastify, basta rodar o comando `{cli}npm install fastify`. Para acessar a documentação do Fastify
 podemos ir ao [Site Oficial](https://www.fastify.io/).
 
-# 5 Query Builders
+# 6 Query Builders
 
 As tecnologias Query Builder são ferramentas ou bibliotecas que permitem aos desenvolvedores criar consultas SQL de maneira programática. Elas fornecem uma interface fluente e fácil de usar para construir consultas, em vez de concatenar strings manualmente para criar uma consulta SQL.
 
@@ -445,7 +562,7 @@ Substitua "pg" pelo driver apropriado para o seu banco de dados. Aqui estão os 
 
 Depois de instalar o Knex.js e o driver do banco de dados, você pode começar a usar o Knex. js para construir e executar consultas SQL em seu aplicativo Node.js.
 
-# 6 ORMs
+# 7 ORMs
 
 ORM (Object-Relational Mapping) é uma técnica de programação que permite aos desenvolvedores interagir com seu banco de dados como se fossem objetos JavaScript. Isso significa que você não precisa escrever consultas SQL complexas; em vez disso, você usa métodos e propriedades de objetos para manipular seus dados.
 
@@ -504,7 +621,7 @@ Using an ORM (Object-Relational Mapping) in JavaScript provides several advantag
 
 Remember, while ORMs can provide these advantages, they also come with some trade-offs, like potential performance overhead and less control over the SQL queries. The decision to use an ORM should be based on the specific needs and constraints of your project.
 
-# 7 Prisma
+# 8 Prisma
 
 [Prisma](https://www.prisma.io/) é um ORM (Object-Relational Mapping) moderno para JavaScript e TypeScript que facilita o trabalho com bancos de dados. Ele fornece uma maneira fácil de definir modelos de dados e realizar operações de banco de dados, como consultas, mutações e transações.
 
@@ -573,7 +690,7 @@ main()
 
 Este exemplo cria um novo usuário e um novo post no banco de dados usando o Prisma.
 
-# 8 Validação de Dados com o Zod
+# 9 Validação de Dados com o Zod
 
 [Zod](https://zod.dev/) é uma biblioteca de validação de dados e parsing para JavaScript e TypeScript. Ela permite que você construa esquemas de validação de dados de forma declarativa e segura.
 
@@ -610,25 +727,25 @@ if (result.success) {
 - Neste exemplo, `{js}UserSchema` é um esquema Zod que valida um objeto de usuário. Ele verifica se o objeto tem propriedades `{js}name`, `{js}email` e `{js}age`, se `{js}name` e `{js}email` são strings, se `{js}email` é um endereço de email válido e se `{js}age` é um número maior ou igual a 18. Se o objeto de usuário passar em todas essas verificações, `{js}UserSchema.safeParse(user)` retornará um objeto com `{js}success: true`. Caso contrário, ele retornará um objeto com `{js}success: false` e detalhes sobre o erro de validação.
 
 
-# 9 Code Errors
+# 10 Code Errors
 
 Os códigos de status de resposta HTTP são emitidos por um servidor em resposta a uma solicitação do cliente. Eles são parte do protocolo HTTP e indicam o que aconteceu com a solicitação. Esses códigos são agrupados em cinco classes, indicadas pelo primeiro dígito do código. Aqui está um resumo dessas classes, com exemplos e detalhes sobre os códigos de erro mais comuns dentro de cada uma:
 
-## 9.1 Respostas Informativas (100-199)
+## 10.1 Respostas Informativas (100-199)
 
 - **100 Continue**: Indica que o início da requisição foi recebido e o cliente deve continuar com o corpo da requisição.
 
-## 9.2 Respostas de Sucesso (200-299)
+## 10.2 Respostas de Sucesso (200-299)
 
 - **200 OK**: A requisição foi bem-sucedida. O significado do sucesso varia dependendo do método HTTP utilizado.
 - **201 Created**: A requisição foi bem-sucedida e um novo recurso foi criado como resultado.
 
-## 9.3 Redirecionamentos (300-399)
+## 10.3 Redirecionamentos (300-399)
 
 - **301 Moved Permanently**: O URL da requisição foi alterado permanentemente. O novo URL é dado pela resposta do cabeçalho Location.
 - **302 Found**: Indica que o recurso solicitado foi temporariamente movido para o URL fornecido pelo cabeçalho Location.
 
-## 9.4 Erros do Cliente (400-499)
+## 10.4 Erros do Cliente (400-499)
 
 Estes códigos indicam que houve um erro na solicitação, impedindo o servidor de processá-la. Por exemplo, quando o frontend faz uma requisição que não é permitida, como criar dois eventos com o mesmo `slug`. Os erros mais importantes são:
 
@@ -639,7 +756,7 @@ Estes códigos indicam que houve um erro na solicitação, impedindo o servidor 
 - **405 Method Not Allowed**: O método de solicitação é conhecido pelo servidor, mas foi desativado e não pode ser utilizado.
 - **429 Too Many Requests**: O usuário enviou muitas solicitações em um dado período de tempo ("rate limiting").
 
-## 9.5 Erros do Servidor (500-599)
+## 10.5 Erros do Servidor (500-599)
 
 Estes códigos indicam que o servidor falhou ao tentar processar uma solicitação válida.
 
@@ -649,27 +766,27 @@ Estes códigos indicam que o servidor falhou ao tentar processar uma solicitaç�
 - **503 Service Unavailable**: O servidor não está pronto para lidar com a requisição, geralmente devido a uma sobrecarga ou manutenção.
 
 
-# 10 Plugin <span style="color: inherit; text-decoration: underline; text-underline-offset: 8px;">fastify-type-provider-zod</span>
+# 11 Plugin <span style="color: inherit; text-decoration: underline; text-underline-offset: 8px;">fastify-type-provider-zod</span>
 
 O `fastify-type-provider-zod` é um plugin para o Fastify, um framework web rápido e de baixa sobrecarga para Node.js, que permite integrar a biblioteca de validação de esquemas Zod com o sistema de tipos do Fastify. Esse plugin é parte do ecossistema Fastify que visa proporcionar uma experiência de desenvolvimento mais segura e eficiente, tirando proveito dos recursos de tipagem estática do TypeScript juntamente com a validação de runtime proporcionada pelo Zod.
 <span style="color: ; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit; text-decoration: underline; text-underline-offset: 4px;"></em></strong></span>
 
-## 10.1 O que é Zod?
+## 11.1 O que é Zod?
 
 Zod é uma biblioteca de validação de esquemas para TypeScript e JavaScript. Ela permite definir esquemas de validação para verificar a estrutura e o formato dos dados em tempo de execução. Isso é particularmente útil para validar dados de entrada em APIs, garantindo que os dados que você opera estão no formato esperado e cumprindo com os critérios definidos.
 
-## 10.2 Como Funciona o `fastify-type-provider-zod`?
+## 11.2 Como Funciona o `fastify-type-provider-zod`?
 
 O `fastify-type-provider-zod` atua como um provedor de tipos para o Fastify, permitindo que você utilize esquemas Zod para validar as entradas de requisições (como o corpo da requisição, parâmetros de query e parâmetros de rota) e, ao mesmo tempo, aproveitar a inferência de tipos do TypeScript para essas entradas validadas. Isso significa que você obtém tanto a validação de runtime dos dados de entrada, assegurando que eles estejam corretos antes de sua aplicação operar sobre eles, quanto o suporte de tipagem do TypeScript, melhorando a segurança e a qualidade do código.
 
-## 10.3 Por Que Usar `fastify-type-provider-zod`?
+## 11.3 Por Que Usar `fastify-type-provider-zod`?
 
 1. **Validação e Tipagem**: Combina validação robusta de runtime fornecida pelo Zod com a segurança de tipagem do TypeScript, melhorando a confiabilidade e a manutenabilidade do código.
 2. **Desenvolvimento Eficiente**: Reduz a necessidade de duplicação de esforços ao definir tipos e esquemas de validação, pois o Zod permite que ambos sejam feitos simultaneamente.
 3. **Integração Suave com Fastify**: Projetado para integrar-se de forma transparente com o ecossistema Fastify, aproveitando sua arquitetura eficiente e seus recursos de tipagem.
 4. **Melhorias na Experiência de Desenvolvimento**: Oferece feedback imediato sobre erros de validação e tipos durante o desenvolvimento, contribuindo para um ciclo de desenvolvimento mais rápido e menos propenso a erros.
 
-## 10.4 Exemplo de Uso
+## 11.4 Exemplo de Uso
 
 Aqui está um exemplo básico de como você pode usar o `fastify-type-provider-zod` em uma aplicação Fastify:
 
