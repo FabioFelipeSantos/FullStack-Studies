@@ -861,3 +861,119 @@ npm install nanoid
 ```
 
 Isso instalará o NanoID e suas dependências no seu projeto Node.js, permitindo que você o utilize em seus scripts JavaScript ou TypeScript.
+
+# 13 Fastify Swagger
+
+Fastify-Swagger é um plugin para o framework Fastify que simplifica a geração automática de documentação para suas APIs. Ele integra o Swagger UI ao seu servidor Fastify, permitindo que você visualize e interaja com a documentação da API diretamente no navegador.
+
+Com o Fastify-Swagger, você pode gerar automaticamente documentação detalhada para suas rotas, incluindo informações sobre os parâmetros de rota, parâmetros de consulta, corpo da requisição, tipos de resposta, entre outros. Isso torna mais fácil para desenvolvedores e usuários entenderem como usar sua API e quais dados esperar em cada endpoint.
+
+Aqui estão os passos para instalar e usar o Fastify-Swagger em sua aplicação Fastify:
+
+## 13.1 Instalação
+
+Você pode instalar o Fastify-Swagger via npm usando o seguinte comando:
+
+```bash
+npm install fastify-swagger
+```
+
+## 13.2 Exemplo de Aplicação
+
+Aqui está um exemplo básico de como usar o Fastify-Swagger em uma aplicação Fastify:
+
+```javascript
+const fastify = require('fastify')();
+const fastifySwagger = require('fastify-swagger');
+
+fastify.register(fastifySwagger, {
+  routePrefix: '/documentation',
+  swagger: {
+    info: {
+      title: 'Minha API',
+      description: 'Documentação da Minha API',
+      version: '1.0.0'
+    },
+    externalDocs: {
+      url: 'https://swagger.io',
+      description: 'Encontre mais informações aqui'
+    },
+    host: 'localhost:3000',
+    schemes: ['http'],
+    consumes: ['application/json'],
+    produces: ['application/json']
+  },
+  exposeRoute: true
+});
+
+fastify.get('/hello', async (request, reply) => {
+  return { hello: 'world' };
+});
+
+fastify.listen(3000, err => {
+  if (err) throw err;
+  console.log('Servidor escutando na porta 3000');
+});
+```
+
+Neste exemplo, nós:
+
+1. Importamos o módulo `fastify-swagger`.
+2. Registramos o plugin Fastify-Swagger, especificando as opções de configuração, como informações sobre a API, o esquema de URL, tipos de conteúdo suportados, etc.
+3. Criamos uma rota de exemplo `/hello` que retorna um objeto JSON.
+4. Iniciamos o servidor Fastify na porta 3000.
+
+Após iniciar o servidor e acessar `http://localhost:3000/documentation`, você verá a documentação Swagger gerada automaticamente para sua API, onde poderá explorar e interagir com as rotas disponíveis.
+
+# 14 Fastify Cors
+
+O `fastify-cors` é um plugin para o framework Fastify que simplifica a configuração e o gerenciamento de políticas de controle de acesso (CORS - Cross-Origin Resource Sharing) em suas aplicações web.
+
+O CORS é um mecanismo de segurança utilizado pelos navegadores para restringir as solicitações feitas por scripts JavaScript em uma página da web para recursos de outros domínios. Isso é importante para proteger os usuários de ataques de segurança, como ataques de CSRF (Cross-Site Request Forgery).
+
+O `fastify-cors` permite configurar facilmente as políticas de CORS em seu servidor Fastify, definindo quais origens, métodos HTTP e cabeçalhos são permitidos em solicitações CORS.
+
+Aqui estão os passos para instalar e usar o `fastify-cors` em sua aplicação Fastify:
+
+## 14.1 Instalação
+
+Você pode instalar o `fastify-cors` via npm usando o seguinte comando:
+
+```bash
+npm install fastify-cors
+```
+
+## 14.2 Uso
+
+Aqui está um exemplo básico de como usar o `fastify-cors` em uma aplicação Fastify:
+
+```javascript
+const fastify = require('fastify')();
+const fastifyCors = require('fastify-cors');
+
+// Registrando o plugin fastify-cors
+fastify.register(fastifyCors, {
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+});
+
+// Definindo rotas
+fastify.get('/', async (request, reply) => {
+  return { message: 'Hello, World!' };
+});
+
+// Iniciando o servidor
+fastify.listen(3000, err => {
+  if (err) throw err;
+  console.log('Servidor escutando na porta 3000');
+});
+```
+
+Neste exemplo:
+1. Importamos o módulo `fastify-cors`.
+2. Registramos o plugin `fastify-cors` e configuramos suas opções, como `origin`, `methods` e `allowedHeaders`.
+3. Definimos rotas para nossa aplicação.
+4. Iniciamos o servidor Fastify na porta 3000.
+
+O plugin `fastify-cors` adiciona automaticamente os cabeçalhos CORS necessários às respostas do servidor de acordo com as configurações fornecidas, permitindo que seu servidor Fastify aceite solicitações CORS de origens específicas.
