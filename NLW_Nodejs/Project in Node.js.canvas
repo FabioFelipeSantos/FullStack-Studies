@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"9a6b5ca0a290b1e3","x":-180,"y":-945,"width":277,"height":60,"color":"2","type":"text","text":"**Inicia o projeto**"},
+		{"id":"0fbf778a9e753f6e","x":-880,"y":-1035,"width":540,"height":240,"type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^315d1c"},
+		{"id":"ed74c81df9ba5a9f","x":-880,"y":-760,"width":450,"height":220,"type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^2fa5e6"},
+		{"id":"3597bc7fe12f3b89","x":-186,"y":-680,"width":290,"height":60,"color":"1","type":"text","text":"**Importa o TypeScript**"},
+		{"id":"ab00aa7840f3375a","x":-1420,"y":-684,"width":360,"height":69,"color":"4","type":"text","text":"Configura o `tsconfig.json`"},
+		{"id":"88020cffd9d6eac7","x":-1698,"y":-1495,"width":557,"height":700,"type":"text","text":"```js\n{\n  \"$schema\": \"https://json.schemastore.org/tsconfig\",\n  \"_version\": \"20.1.0\",\n\n  \"compilerOptions\": {\n    \"lib\": [\"es2023\"],\n    \"module\": \"node16\",\n    \"target\": \"es2022\",\n\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"moduleResolution\": \"node16\"\n  },\n\n  \"include\": [\"src\"]\n}\n```\n"},
+		{"id":"fb562287c1b9e78e","x":-250,"y":-220,"width":417,"height":60,"color":"4","type":"text","text":"Cria um script no `package.json`"}
+	],
+	"edges":[
+		{"id":"1f73eb22082904d3","fromNode":"9a6b5ca0a290b1e3","fromSide":"left","toNode":"0fbf778a9e753f6e","toSide":"right"},
+		{"id":"88c3c42481e979a0","fromNode":"9a6b5ca0a290b1e3","fromSide":"bottom","toNode":"3597bc7fe12f3b89","toSide":"top"},
+		{"id":"d0e141d6beeb04e0","fromNode":"3597bc7fe12f3b89","fromSide":"left","toNode":"ed74c81df9ba5a9f","toSide":"right"},
+		{"id":"4998bec7d66f2369","fromNode":"ed74c81df9ba5a9f","fromSide":"left","toNode":"ab00aa7840f3375a","toSide":"right"},
+		{"id":"1d8b031c096ccd86","fromNode":"ab00aa7840f3375a","fromSide":"top","toNode":"88020cffd9d6eac7","toSide":"bottom"}
+	]
+}

@@ -12,6 +12,9 @@ mkdir meuProjetoNode
 cd meuProjetoNode
 npm init -y
 ```
+
+^315d1c
+
 Este comando cria um novo diretório para o seu projeto, entra nele e inicializa um novo projeto Node.js com um arquivo `package.json` padrão.
 
 ## 1.2 Configurando TypeScript
@@ -22,6 +25,8 @@ Instale o TypeScript globalmente (se ainda não tiver instalado) e como dependê
 npm install -g typescript
 npm install --save-dev typescript @types/node
 ```
+
+^2fa5e6
 
 Inicialize um arquivo de configuração TypeScript (`tsconfig.json`) executando:
 ```sh
@@ -977,3 +982,58 @@ Neste exemplo:
 4. Iniciamos o servidor Fastify na porta 3000.
 
 O plugin `fastify-cors` adiciona automaticamente os cabeçalhos CORS necessários às respostas do servidor de acordo com as configurações fornecidas, permitindo que seu servidor Fastify aceite solicitações CORS de origens específicas.
+
+# 15 TSUP Bundler
+
+TSUP é uma ferramenta de empacotamento (bundler) JavaScript/TypeScript que visa ser uma alternativa simples e rápida ao Webpack, Rollup e outros bundlers mais complexos. Ele é otimizado para projetos pequenos a médios, oferecendo um processo de empacotamento rápido e eficiente.
+
+Aqui está como você pode instalar e usar o TSUP em seu projeto:
+
+## 15.1 Instalação
+
+Você pode instalar o TSUP globalmente usando npm ou yarn:
+
+```bash
+npm install -g tsup
+```
+
+ou
+
+```bash
+yarn global add tsup
+```
+
+## 15.2 Uso
+
+Depois de instalar o TSUP, você pode usá-lo para empacotar seus arquivos TypeScript. Por exemplo, suponha que você tenha um arquivo `index.ts` em seu projeto que deseja empacotar:
+
+```bash
+tsup index.ts
+```
+
+Isso irá empacotar o arquivo `index.ts` e suas dependências em um único arquivo JavaScript na pasta `dist`, pronto para ser usado em um navegador ou em um ambiente Node.js.
+
+O TSUP é altamente configurável e suporta várias opções de linha de comando e opções de configuração em um arquivo `tsup.config.js`. Por exemplo, você pode definir opções como o formato de saída (CommonJS, ES module, UMD), minificação, arquivos de entrada e saída personalizados, entre outros.
+
+Aqui está um exemplo de arquivo de configuração `tsup.config.js`:
+
+```javascript
+module.exports = {
+  entryPoints: ['index.ts'],
+  format: 'cjs',
+  target: 'node14',
+  minify: true,
+  outDir: 'dist',
+};
+```
+
+Você pode então usar o TSUP com sua configuração personalizada:
+
+```bash
+tsup -d
+```
+
+Isso empacotará seus arquivos TypeScript de acordo com as opções definidas no arquivo de configuração.
+
+O TSUP é uma ferramenta simples e eficiente para empacotamento de projetos TypeScript, adequada para projetos menores que desejam uma solução de empacotamento rápida e fácil de usar.
+

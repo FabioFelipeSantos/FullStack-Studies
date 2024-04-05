@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "2a3664195a5afc91",
+            "id": "e887ab68c1e48d77",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,9 +54,24 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2a3664195a5afc91",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
+                "viewState": {
+                  "x": -464.08539423055163,
+                  "y": -601.9921049894873,
+                  "zoom": -0.3333333333333333
+                }
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -106,7 +121,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -122,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
+                "file": "NLW_Nodejs/Project in Node.js.canvas"
               }
             }
           },
@@ -253,17 +269,20 @@
   },
   "active": "2a3664195a5afc91",
   "lastOpenFiles": [
+    "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
+    "NLW_Nodejs/node_modules/@types/estree/README.md",
+    "NLW_Nodejs/node_modules/@types/estree/package.json",
+    "NLW_Nodejs/node_modules/@types/estree/LICENSE",
+    "NLW_Nodejs/node_modules/@types/estree/index.d.ts",
+    "NLW_Nodejs/node_modules/@types/estree",
+    "NLW_Nodejs/Anotações sobre as aulas.md",
+    "NLW_Nodejs/Project in Node.js.canvas",
+    "NLW_Nodejs/dist/server.js",
+    "NLW_Nodejs/dist",
+    "NLW_Nodejs/dist/server.mjs",
+    "NLW_Nodejs/dist/server.global.js",
     "NLW_Nodejs/dist/routes/_errors/bad-request.mjs",
     "NLW_Nodejs/dist/utils/generate-slug.mjs",
-    "NLW_Nodejs/dist/utils/error-handler.mjs",
-    "NLW_Nodejs/dist/routes/_errors",
-    "NLW_Nodejs/dist/routes/register-for-events.mjs",
-    "NLW_Nodejs/dist/routes/get-event.mjs",
-    "NLW_Nodejs/dist/routes/get-event-attendees.mjs",
-    "NLW_Nodejs/dist/routes/get-attendee-badge.mjs",
-    "NLW_Nodejs/dist/routes/create-event.mjs",
-    "NLW_Nodejs/dist/routes/check-in.mjs",
-    "NLW_Nodejs/dist/lib/prisma.mjs",
     "NLW_Nodejs/node_modules/any-promise/README.md",
     "NLW_Nodejs/node_modules/thenify/History.md",
     "NLW_Nodejs/node_modules/ignore/README.md",
@@ -287,8 +306,6 @@
     "NLW_Nodejs/node_modules/load-tsconfig/README.md",
     "NLW_Nodejs/node_modules/braces/README.md",
     "NLW_Nodejs/node_modules/braces/CHANGELOG.md",
-    "NLW_Nodejs/node_modules/glob-parent/README.md",
-    "NLW_Nodejs/node_modules/glob-parent/CHANGELOG.md",
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",
