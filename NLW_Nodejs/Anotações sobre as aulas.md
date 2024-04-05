@@ -1,6 +1,79 @@
-# 1 Algumas definições importantes
+# 1 Inicializando o projeto
 
-## 1.1 Métodos HTTP: GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD, TRACE, CONNECT, ...
+## 1.1 Instalar o Node.js e o npm
+
+Certifique-se de ter o Node.js e o npm instalados em seu sistema. Você pode fazer o download e instalar em https://nodejs.org.
+
+## 1.2 Criar um diretório para o seu projeto
+
+Abra o terminal e crie um diretório para o seu projeto. Use o comando `mkdir nome-do-seu-projeto` para criar o diretório.
+
+## 1.3 Inicializar um projeto Node.js com TypeScript
+
+Dentro do diretório do seu projeto, execute o comando `npm init -y` para inicializar um projeto Node.js padrão. Em seguida, instale o TypeScript e as definições de tipo para o Node.js e o Fastify utilizando os comandos:
+```bash
+npm install typescript @types/node @types/fastify
+```
+
+Passo 4: Configurar o TypeScript
+Crie um arquivo chamado `tsconfig.json` no seu diretório do projeto e adicione a seguinte configuração:
+```json
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "strict": true
+  }
+}
+```
+Neste arquivo de configuração, estamos indicando que o TypeScript deve transpilar o código para ES2018, usar o sistema de módulos CommonJS e colocar os arquivos transpilados na pasta `dist`.
+
+Passo 5: Instalar o Fastify
+Agora, instale o Fastify no seu projeto usando o comando:
+```bash
+npm install fastify
+```
+
+Passo 6: Criar o arquivo do servidor em TypeScript
+Crie um arquivo chamado `server.ts` no seu diretório do projeto e adicione o seguinte código:
+```typescript
+import fastify from 'fastify';
+
+const server = fastify();
+
+server.get('/', async (request, reply) => {
+  return { hello: 'world' };
+});
+
+const start = async () => {
+  try {
+    await server.listen(3000);
+    console.log('Servidor rodando em http://localhost:3000');
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+};
+
+start();
+```
+
+Passo 7: Transpilar o código TypeScript
+Para transpilar o código TypeScript em JavaScript, execute o comando:
+```bash
+tsc
+```
+Isso irá transpilar os arquivos TypeScript no diretório padrão de saída configurado no `tsconfig.json` (no caso, `./dist`).
+
+Passo 8: Rodar o servidor
+No terminal, execute o comando `node dist/server.js` para iniciar o servidor transpilado em JavaScript.
+
+Com isso, você terá iniciado um projeto em Node.js utilizando TypeScript e Fastify, transpilado o código TypeScript em JavaScript e iniciado o servidor HTTP. Sinta-se à vontade para expandir e personalizar este projeto conforme necessário. Se tiver mais dúvidas, estou aqui para ajudar!
+
+# 2 Algumas definições importantes
+
+## 2.1 Métodos HTTP: GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD, TRACE, CONNECT, ...
 
 - GET: Obter dados de um recurso (da URL).
 - POST: Enviar dados ou informações para serem processados por um recurso.
@@ -12,30 +85,30 @@
 - TRACE: Realiza um teste de loopback.
 - CONNECT: Estabelece um túnel para o servidor.
 
-## 1.2 Corpo de requisição: (Request Body) 
+## 2.2 Corpo de requisição: (Request Body) 
 
 Dados enviados pelo cliente para o servidor. Exemplo: JSON, XML, etc.
 
-## 1.3 Parâmetros de busca: (Search Params / Query Params)
+## 2.3 Parâmetros de busca: (Search Params / Query Params)
 
 Dados enviados pelo cliente para o servidor via URL. Exemplo: http://localhost:33333/users?nome=Fabio&idade=25
 
-## 1.4 Parâmetros de rota: (Route Params)
+## 2.4 Parâmetros de rota: (Route Params)
 
 Dados enviados pelo cliente para o servidor via URL. Exemplo: DELETE http://localhost:33333/users/1 (o usuário é especificado na URL via id normalmente, e não por um rótulo).
 
-## 1.5 Cabeçalhos: (Headers)
+## 2.5 Cabeçalhos: (Headers)
 
 Dados enviados pelo cliente para o servidor via cabeçalhos HTTP. Exemplo: Authorization, Content-Type, language, location, time zone, etc.
 
-# 2 Framework para o Node.js - Fastify
+# 3 Framework para o Node.js - Fastify
 
 O Fastify é um framework web para Node.js que é focado em desempenho e baixo consumo de recursos. Ele é um dos frameworks web mais rápidos para Node.js.
 
 Para instalar o Fastify, basta rodar o comando `{cli}npm install fastify`. Para acessar a documentação do Fastify
 podemos ir ao [Site Oficial](https://www.fastify.io/).
 
-# 3 Query Builders
+# 4 Query Builders
 
 As tecnologias Query Builder são ferramentas ou bibliotecas que permitem aos desenvolvedores criar consultas SQL de maneira programática. Elas fornecem uma interface fluente e fácil de usar para construir consultas, em vez de concatenar strings manualmente para criar uma consulta SQL.
 
@@ -90,7 +163,7 @@ Substitua "pg" pelo driver apropriado para o seu banco de dados. Aqui estão os 
 
 Depois de instalar o Knex.js e o driver do banco de dados, você pode começar a usar o Knex. js para construir e executar consultas SQL em seu aplicativo Node.js.
 
-# 4 ORMs
+# 5 ORMs
 
 ORM (Object-Relational Mapping) é uma técnica de programação que permite aos desenvolvedores interagir com seu banco de dados como se fossem objetos JavaScript. Isso significa que você não precisa escrever consultas SQL complexas; em vez disso, você usa métodos e propriedades de objetos para manipular seus dados.
 
@@ -149,7 +222,7 @@ Using an ORM (Object-Relational Mapping) in JavaScript provides several advantag
 
 Remember, while ORMs can provide these advantages, they also come with some trade-offs, like potential performance overhead and less control over the SQL queries. The decision to use an ORM should be based on the specific needs and constraints of your project.
 
-# 5 Prisma
+# 6 Prisma
 
 [Prisma](https://www.prisma.io/) é um ORM (Object-Relational Mapping) moderno para JavaScript e TypeScript que facilita o trabalho com bancos de dados. Ele fornece uma maneira fácil de definir modelos de dados e realizar operações de banco de dados, como consultas, mutações e transações.
 
@@ -218,7 +291,7 @@ main()
 
 Este exemplo cria um novo usuário e um novo post no banco de dados usando o Prisma.
 
-# 6 Validação de Dados com o Zod
+# 7 Validação de Dados com o Zod
 
 [Zod](https://zod.dev/) é uma biblioteca de validação de dados e parsing para JavaScript e TypeScript. Ela permite que você construa esquemas de validação de dados de forma declarativa e segura.
 
@@ -253,3 +326,4 @@ if (result.success) {
 }
 ```
 - Neste exemplo, `{js}UserSchema` é um esquema Zod que valida um objeto de usuário. Ele verifica se o objeto tem propriedades `{js}name`, `{js}email` e `{js}age`, se `{js}name` e `{js}email` são strings, se `{js}email` é um endereço de email válido e se `{js}age` é um número maior ou igual a 18. Se o objeto de usuário passar em todas essas verificações, `{js}UserSchema.safeParse(user)` retornará um objeto com `{js}success: true`. Caso contrário, ele retornará um objeto com `{js}success: false` e detalhes sobre o erro de validação.
+

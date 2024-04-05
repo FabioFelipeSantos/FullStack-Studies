@@ -234,7 +234,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -250,19 +251,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a3664195a5afc91",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
+    "NLW_Nodejs/src/utils/generate-slug.ts",
+    "NLW_Nodejs/src/utils",
+    "prisma/schema.prisma",
+    "prisma",
+    "NLW_Nodejs/prisma/dev.db-journal",
     "NLW_Nodejs/node_modules/zod/lib/__tests__/Mocker.d.ts",
     "NLW_Nodejs/node_modules/zod/lib/__tests__/Mocker.js",
     "NLW_Nodejs/node_modules/zod/lib/locales/en.js",
     "NLW_Nodejs/node_modules/zod/lib/locales/en.d.ts",
     "NLW_Nodejs/node_modules/zod/lib/helpers/util.js",
     "NLW_Nodejs/node_modules/zod/lib/helpers/util.d.ts",
-    "NLW_Nodejs/node_modules/zod/lib/helpers/typeAliases.js",
-    "NLW_Nodejs/node_modules/zod/lib/helpers/typeAliases.d.ts",
-    "NLW_Nodejs/node_modules/zod/lib/helpers/partialUtil.js",
-    "NLW_Nodejs/node_modules/zod/lib/helpers/partialUtil.d.ts",
-    "NLW_Nodejs/node_modules/zod/lib/helpers/parseUtil.js",
     "NLW_Nodejs/node_modules/zod/README.md",
     "NLW_Nodejs/node_modules/@prisma/client/README.md",
     "NLW_Nodejs/node_modules/prisma/build/public/assets/string.ea615a24.svg",

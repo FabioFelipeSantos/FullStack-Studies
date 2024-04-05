@@ -14,20 +14,13 @@
     "2024/3/1": 687,
     "2024/3/2": 356,
     "2024/3/3": 1372,
-    "2024/3/4": 1951
+    "2024/3/4": 1951,
+    "2024/3/5": 373
   },
   "todaysWordCount": {
-    "NLW_React/NLW React - Notes.md": {
-      "initial": 1728,
-      "current": 1755
-    },
-    "NLW_Nodejs/README.md": {
-      "initial": 181,
-      "current": 181
-    },
     "NLW_Nodejs/Anotações sobre as aulas.md": {
-      "initial": 0,
-      "current": 1924
+      "initial": 1924,
+      "current": 2297
     }
   }
 }
