@@ -15,12 +15,13 @@
     "2024/3/2": 356,
     "2024/3/3": 1372,
     "2024/3/4": 1951,
-    "2024/3/5": 5241
+    "2024/3/5": 5241,
+    "2024/3/6": 199
   },
   "todaysWordCount": {
     "NLW_Nodejs/Anotações sobre as aulas.md": {
-      "initial": 1924,
-      "current": 7165
+      "initial": 7466,
+      "current": 7665
     }
   }
 }

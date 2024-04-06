@@ -1037,3 +1037,15 @@ Isso empacotará seus arquivos TypeScript de acordo com as opções definidas no
 
 O TSUP é uma ferramenta simples e eficiente para empacotamento de projetos TypeScript, adequada para projetos menores que desejam uma solução de empacotamento rápida e fácil de usar.
 
+|                                                                                                                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TELEFONE CELULAR XIAOMI POCO X5 5G BLUE 6GB RAM 128GB ROM SN:45009/S3SN00243 IMEI:868767064183804 - TH 322 163 281 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO           |
+| TELEFONE CELULAR XIAOMI REDMI NOTE 12 PRO 5G SKY BLUE 8GB RAM 256GB ROM SN:44967/R3SB01013 IMEI:865848069081665 - TH3965///66787BR/O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO |
+| TELEFONE CELULAR APPLE IPHONE 14 PRO MAX 256GB SPACE BLACK SN:MY9FX2D3RG IMEI:352425465376914 - TH 478 659 352 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO               |
+| TELEFONE CELULAR XIAOMI REDMI NOTE 12 PRO 5G SKY BLUE 8GB RAM 256GB ROM SN:44956/R3TM01905 IMEI:866829066139267 - TH3965///66773BR/O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO |
+| TELEFONE CELULAR XIAOMI POCO X5 5G BLUE 8GB RAM 256GB ROM SN:43970/F3T503517 IMEI:869006069648234 - OV 748 594 660 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO           |
+| COPO STANLEY TRMICO 473ML AA 006 811 205 BR////                                                                                                                                                           |
+| GARRAFA TERMICA BEER PINTS KA-040 500ML////                                                                                                                                                               |
+| CONSOLE PARA VIDEOGAME AOKZOE AI 20V5.0A TH 512 451 363 BR////                                                                                                                                            |
+| TELEFONE CELULAR XIAOMI REDMI NOTE 12 6GB RAM 128GB ROM IMEI2 862157061715491 TH 535 556 061 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO                                 |
+| TELEFONE CELULAR XIAOMI REDMI NOTE 12 6GB RAM 128GB ROM IMEI2 861990063688154 TH 532 771 888 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO                                 |
