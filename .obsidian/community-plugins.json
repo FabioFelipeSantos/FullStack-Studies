@@ -31,5 +31,7 @@
   "obsidian-minimal-settings",
   "number-headings-obsidian",
   "typing-transformer-obsidian",
-  "code-styler"
+  "code-styler",
+  "obsidian-pandoc",
+  "obsidian-enhancing-export"
 ]

@@ -44,28 +44,16 @@
             }
           },
           {
-            "id": "e887ab68c1e48d77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a3664195a5afc91",
+            "id": "d9a28af8c9845971",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
                 "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "viewState": {
-                  "x": -595.7174880571104,
-                  "y": -71.72834315153443,
-                  "zoom": -0.6666666666666667
+                  "x": 447.5,
+                  "y": -251.5,
+                  "zoom": -1.7031139081337567
                 }
               }
             }
@@ -121,8 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -138,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
+                "file": "NLW_Nodejs/Project in Node.js.canvas"
               }
             }
           },
@@ -267,10 +254,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e887ab68c1e48d77",
+  "active": "d9a28af8c9845971",
   "lastOpenFiles": [
-    "NLW_Nodejs/Project in Node.js.canvas",
+    "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "NLW_Nodejs/Anotações sobre as aulas.md",
+    "NLW_Nodejs/Project in Node.js.canvas",
+    "NLW_React/NLW React - Notes.md",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
     "NLW_Nodejs/node_modules/@types/estree/package.json",
@@ -303,8 +292,6 @@
     "NLW_Nodejs/node_modules/tree-kill/README.md",
     "NLW_Nodejs/node_modules/anymatch/README.md",
     "NLW_Nodejs/node_modules/load-tsconfig/README.md",
-    "NLW_Nodejs/node_modules/braces/README.md",
-    "NLW_Nodejs/node_modules/braces/CHANGELOG.md",
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",

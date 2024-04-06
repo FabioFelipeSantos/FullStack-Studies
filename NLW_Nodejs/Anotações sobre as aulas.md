@@ -69,8 +69,6 @@ To add tsx to an `npm` project as a development dependency:
 npm install --save-dev tsx
 ```
 
-asd
-
 ^d5b1af
 
 You can reference it directly in the `package.json#scripts` object (you don't need `npx` here):
@@ -673,27 +671,7 @@ Quando se trata de enviar dados para um banco de dados, especialmente durante um
 - **Descrição**: Uma coleção de elementos, possivelmente de vários tipos.
 - **Uso comum**: Lista de telefones, coleções de tags, histórico de ações.
 
-# 5 Framework para o Node.js - Fastify
-
-[Fastify](https://www.fastify.io/) é um framework web para Node.js que se destaca pela sua velocidade e eficiência. Ele foi projetado para ser extremamente rápido e eficiente em termos de consumo de recursos, tornando-o uma escolha popular para desenvolvimento de APIs e serviços web de alta performance.
-
-Alguns dos principais recursos e características do Fastify incluem:
-
-1. **Alta Performance**: O Fastify é conhecido por sua velocidade excepcional. Ele foi construído com um foco na otimização de desempenho, utilizando técnicas como o uso eficiente de memória e a minimização do tempo de resposta.
-
-2. **Extensibilidade**: O Fastify é altamente extensível e oferece suporte para uma variedade de plugins que podem ser facilmente integrados para estender sua funcionalidade. Isso permite que os desenvolvedores personalizem o framework de acordo com as necessidades específicas de seus projetos.
-
-3. **Suporte para Async/Await**: O Fastify tem suporte nativo para funções assíncronas, o que simplifica o desenvolvimento de APIs baseadas em promessas e torna o código mais legível e fácil de manter.
-
-4. **Validação de Dados**: Ele oferece suporte integrado para validação de dados, permitindo que os desenvolvedores validem facilmente os dados de entrada de solicitação, ajudando a garantir a integridade e segurança dos dados.
-
-5. **Documentação Automática**: O Fastify pode gerar automaticamente documentação para suas APIs com base nas rotas e esquemas de dados definidos. Isso facilita a criação de documentação atualizada e precisa para suas APIs.
-
-6. **Ecossistema Ativo**: O Fastify possui uma comunidade ativa e um ecossistema crescente de plugins e ferramentas que podem ajudar os desenvolvedores a criar rapidamente uma variedade de aplicativos web e APIs.
-
-Devido à sua velocidade, eficiência e extensibilidade, o Fastify é uma escolha popular para o desenvolvimento de uma ampla gama de aplicativos web e APIs em Node.js. Ele é amplamente utilizado por desenvolvedores que valorizam o desempenho e a produtividade ao criar aplicativos web modernos e escaláveis.
-
-# 6 Query Builders
+# 5 Query Builders
 
 As tecnologias Query Builder são ferramentas ou bibliotecas que permitem aos desenvolvedores criar consultas SQL de maneira programática. Elas fornecem uma interface fluente e fácil de usar para construir consultas, em vez de concatenar strings manualmente para criar uma consulta SQL.
 
@@ -748,7 +726,7 @@ Substitua "pg" pelo driver apropriado para o seu banco de dados. Aqui estão os 
 
 Depois de instalar o Knex.js e o driver do banco de dados, você pode começar a usar o Knex. js para construir e executar consultas SQL em seu aplicativo Node.js.
 
-# 7 ORMs
+# 6 ORMs
 
 ORM (Object-Relational Mapping) é uma técnica de programação que permite aos desenvolvedores interagir com seu banco de dados como se fossem objetos JavaScript. Isso significa que você não precisa escrever consultas SQL complexas; em vez disso, você usa métodos e propriedades de objetos para manipular seus dados.
 
@@ -807,7 +785,7 @@ Using an ORM (Object-Relational Mapping) in JavaScript provides several advantag
 
 Remember, while ORMs can provide these advantages, they also come with some trade-offs, like potential performance overhead and less control over the SQL queries. The decision to use an ORM should be based on the specific needs and constraints of your project.
 
-# 8 Prisma
+# 7 Prisma
 
 [Prisma](https://www.prisma.io/) é um ORM (Object-Relational Mapping) moderno para JavaScript e TypeScript que facilita o trabalho com bancos de dados. Ele fornece uma maneira fácil de definir modelos de dados e realizar operações de banco de dados, como consultas, mutações e transações.
 
@@ -876,7 +854,7 @@ main()
 
 Este exemplo cria um novo usuário e um novo post no banco de dados usando o Prisma.
 
-# 9 Validação de Dados com o Zod
+# 8 Validação de Dados com o Zod
 
 [Zod](https://zod.dev/) é uma biblioteca de validação de dados e parsing para JavaScript e TypeScript. Ela permite que você construa esquemas de validação de dados de forma declarativa e segura.
 
@@ -913,25 +891,25 @@ if (result.success) {
 - Neste exemplo, `{js}UserSchema` é um esquema Zod que valida um objeto de usuário. Ele verifica se o objeto tem propriedades `{js}name`, `{js}email` e `{js}age`, se `{js}name` e `{js}email` são strings, se `{js}email` é um endereço de email válido e se `{js}age` é um número maior ou igual a 18. Se o objeto de usuário passar em todas essas verificações, `{js}UserSchema.safeParse(user)` retornará um objeto com `{js}success: true`. Caso contrário, ele retornará um objeto com `{js}success: false` e detalhes sobre o erro de validação.
 
 
-# 10 Code Errors
+# 9 Code Errors
 
 Os códigos de status de resposta HTTP são emitidos por um servidor em resposta a uma solicitação do cliente. Eles são parte do protocolo HTTP e indicam o que aconteceu com a solicitação. Esses códigos são agrupados em cinco classes, indicadas pelo primeiro dígito do código. Aqui está um resumo dessas classes, com exemplos e detalhes sobre os códigos de erro mais comuns dentro de cada uma:
 
-## 10.1 Respostas Informativas (100-199)
+## 9.1 Respostas Informativas (100-199)
 
 - **100 Continue**: Indica que o início da requisição foi recebido e o cliente deve continuar com o corpo da requisição.
 
-## 10.2 Respostas de Sucesso (200-299)
+## 9.2 Respostas de Sucesso (200-299)
 
 - **200 OK**: A requisição foi bem-sucedida. O significado do sucesso varia dependendo do método HTTP utilizado.
 - **201 Created**: A requisição foi bem-sucedida e um novo recurso foi criado como resultado.
 
-## 10.3 Redirecionamentos (300-399)
+## 9.3 Redirecionamentos (300-399)
 
 - **301 Moved Permanently**: O URL da requisição foi alterado permanentemente. O novo URL é dado pela resposta do cabeçalho Location.
 - **302 Found**: Indica que o recurso solicitado foi temporariamente movido para o URL fornecido pelo cabeçalho Location.
 
-## 10.4 Erros do Cliente (400-499)
+## 9.4 Erros do Cliente (400-499)
 
 Estes códigos indicam que houve um erro na solicitação, impedindo o servidor de processá-la. Por exemplo, quando o frontend faz uma requisição que não é permitida, como criar dois eventos com o mesmo `slug`. Os erros mais importantes são:
 
@@ -942,7 +920,7 @@ Estes códigos indicam que houve um erro na solicitação, impedindo o servidor 
 - **405 Method Not Allowed**: O método de solicitação é conhecido pelo servidor, mas foi desativado e não pode ser utilizado.
 - **429 Too Many Requests**: O usuário enviou muitas solicitações em um dado período de tempo ("rate limiting").
 
-## 10.5 Erros do Servidor (500-599)
+## 9.5 Erros do Servidor (500-599)
 
 Estes códigos indicam que o servidor falhou ao tentar processar uma solicitação válida.
 
@@ -952,27 +930,27 @@ Estes códigos indicam que o servidor falhou ao tentar processar uma solicitaç�
 - **503 Service Unavailable**: O servidor não está pronto para lidar com a requisição, geralmente devido a uma sobrecarga ou manutenção.
 
 
-# 11 Plugin <span style="color: inherit; text-decoration: underline; text-underline-offset: 8px;">fastify-type-provider-zod</span>
+# 10 Plugin <span style="color: inherit; text-decoration: underline; text-underline-offset: 8px;">fastify-type-provider-zod</span>
 
 O `fastify-type-provider-zod` é um plugin para o Fastify, um framework web rápido e de baixa sobrecarga para Node.js, que permite integrar a biblioteca de validação de esquemas Zod com o sistema de tipos do Fastify. Esse plugin é parte do ecossistema Fastify que visa proporcionar uma experiência de desenvolvimento mais segura e eficiente, tirando proveito dos recursos de tipagem estática do TypeScript juntamente com a validação de runtime proporcionada pelo Zod.
 <span style="color: ; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit; text-decoration: underline; text-underline-offset: 4px;"></em></strong></span>
 
-## 11.1 O que é Zod?
+## 10.1 O que é Zod?
 
 Zod é uma biblioteca de validação de esquemas para TypeScript e JavaScript. Ela permite definir esquemas de validação para verificar a estrutura e o formato dos dados em tempo de execução. Isso é particularmente útil para validar dados de entrada em APIs, garantindo que os dados que você opera estão no formato esperado e cumprindo com os critérios definidos.
 
-## 11.2 Como Funciona o `fastify-type-provider-zod`?
+## 10.2 Como Funciona o `fastify-type-provider-zod`?
 
 O `fastify-type-provider-zod` atua como um provedor de tipos para o Fastify, permitindo que você utilize esquemas Zod para validar as entradas de requisições (como o corpo da requisição, parâmetros de query e parâmetros de rota) e, ao mesmo tempo, aproveitar a inferência de tipos do TypeScript para essas entradas validadas. Isso significa que você obtém tanto a validação de runtime dos dados de entrada, assegurando que eles estejam corretos antes de sua aplicação operar sobre eles, quanto o suporte de tipagem do TypeScript, melhorando a segurança e a qualidade do código.
 
-## 11.3 Por Que Usar `fastify-type-provider-zod`?
+## 10.3 Por Que Usar `fastify-type-provider-zod`?
 
 1. **Validação e Tipagem**: Combina validação robusta de runtime fornecida pelo Zod com a segurança de tipagem do TypeScript, melhorando a confiabilidade e a manutenabilidade do código.
 2. **Desenvolvimento Eficiente**: Reduz a necessidade de duplicação de esforços ao definir tipos e esquemas de validação, pois o Zod permite que ambos sejam feitos simultaneamente.
 3. **Integração Suave com Fastify**: Projetado para integrar-se de forma transparente com o ecossistema Fastify, aproveitando sua arquitetura eficiente e seus recursos de tipagem.
 4. **Melhorias na Experiência de Desenvolvimento**: Oferece feedback imediato sobre erros de validação e tipos durante o desenvolvimento, contribuindo para um ciclo de desenvolvimento mais rápido e menos propenso a erros.
 
-## 11.4 Exemplo de Uso
+## 10.4 Exemplo de Uso
 
 Aqui está um exemplo básico de como você pode usar o `fastify-type-provider-zod` em uma aplicação Fastify:
 
@@ -1012,7 +990,7 @@ app.listen({ port: 3000 }, (err, address) => {
 Neste exemplo, definimos um esquema Zod para os parâmetros de rota de uma requisição GET. Usando o `fastify-type-provider-zod`, o Fastify pode validar automaticamente esses parâmetros contra o esquema Zod e, ao mesmo tempo, o TypeScript pode inferir seus tipos, proporcionando uma experiência de desenvolvimento coesa e segura.
 
 
-# 12 NANOID para Criação de IDs
+# 11 NANOID para Criação de IDs
 
 O NanoID é uma biblioteca JavaScript para geração de identificadores únicos e aleatórios (IDs) de forma rápida e eficiente. Ele é projetado para ser pequeno, rápido e seguro, adequado para uso em ambientes de produção.
 
@@ -1035,7 +1013,7 @@ npm install nanoid
 
 Isso instalará o NanoID e suas dependências no seu projeto Node.js, permitindo que você o utilize em seus scripts JavaScript ou TypeScript.
 
-# 13 Fastify Swagger
+# 12 Fastify Swagger
 
 Fastify-Swagger é um plugin para o framework Fastify que simplifica a geração automática de documentação para suas APIs. Ele integra o Swagger UI ao seu servidor Fastify, permitindo que você visualize e interaja com a documentação da API diretamente no navegador.
 
@@ -1043,7 +1021,7 @@ Com o Fastify-Swagger, você pode gerar automaticamente documentação detalhada
 
 Aqui estão os passos para instalar e usar o Fastify-Swagger em sua aplicação Fastify:
 
-## 13.1 Instalação
+## 12.1 Instalação
 
 Você pode instalar o Fastify-Swagger via npm usando o seguinte comando:
 
@@ -1051,7 +1029,7 @@ Você pode instalar o Fastify-Swagger via npm usando o seguinte comando:
 npm install fastify-swagger
 ```
 
-## 13.2 Exemplo de Aplicação
+## 12.2 Exemplo de Aplicação
 
 Aqui está um exemplo básico de como usar o Fastify-Swagger em uma aplicação Fastify:
 
@@ -1098,7 +1076,7 @@ Neste exemplo, nós:
 
 Após iniciar o servidor e acessar `http://localhost:3000/documentation`, você verá a documentação Swagger gerada automaticamente para sua API, onde poderá explorar e interagir com as rotas disponíveis.
 
-# 14 Fastify Cors
+# 13 Fastify Cors
 
 O `fastify-cors` é um plugin para o framework Fastify que simplifica a configuração e o gerenciamento de políticas de controle de acesso (CORS - Cross-Origin Resource Sharing) em suas aplicações web.
 
@@ -1108,7 +1086,7 @@ O `fastify-cors` permite configurar facilmente as políticas de CORS em seu serv
 
 Aqui estão os passos para instalar e usar o `fastify-cors` em sua aplicação Fastify:
 
-## 14.1 Instalação
+## 13.1 Instalação
 
 Você pode instalar o `fastify-cors` via npm usando o seguinte comando:
 
@@ -1116,7 +1094,7 @@ Você pode instalar o `fastify-cors` via npm usando o seguinte comando:
 npm install fastify-cors
 ```
 
-## 14.2 Uso
+## 13.2 Uso
 
 Aqui está um exemplo básico de como usar o `fastify-cors` em uma aplicação Fastify:
 
@@ -1151,27 +1129,21 @@ Neste exemplo:
 
 O plugin `fastify-cors` adiciona automaticamente os cabeçalhos CORS necessários às respostas do servidor de acordo com as configurações fornecidas, permitindo que seu servidor Fastify aceite solicitações CORS de origens específicas.
 
-# 15 TSUP Bundler
+# 14 TSUP Bundler
 
 TSUP é uma ferramenta de empacotamento (bundler) JavaScript/TypeScript que visa ser uma alternativa simples e rápida ao Webpack, Rollup e outros bundlers mais complexos. Ele é otimizado para projetos pequenos a médios, oferecendo um processo de empacotamento rápido e eficiente.
 
 Aqui está como você pode instalar e usar o TSUP em seu projeto:
 
-## 15.1 Instalação
+## 14.1 Instalação
 
 Você pode instalar o TSUP globalmente usando npm ou yarn:
 
 ```bash
-npm install -g tsup
+npm install -D tsup
 ```
 
-ou
-
-```bash
-yarn global add tsup
-```
-
-## 15.2 Uso
+## 14.2 Uso
 
 Depois de instalar o TSUP, você pode usá-lo para empacotar seus arquivos TypeScript. Por exemplo, suponha que você tenha um arquivo `index.ts` em seu projeto que deseja empacotar:
 
