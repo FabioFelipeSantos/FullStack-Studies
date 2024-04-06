@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f6ee5e58e8979f6f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -111,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "NLW_React/NLW React - Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md"
+                "file": "NLW_React/NLW React - Notes.md"
               }
             }
           },
@@ -217,9 +204,17 @@
                 "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "a35be4df318c77e6",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 11
       }
     ],
     "direction": "horizontal",
@@ -240,10 +235,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f6ee5e58e8979f6f",
+  "active": "a35be4df318c77e6",
   "lastOpenFiles": [
-    "NLW_Nodejs/Project in Node.js.canvas",
+    "NLW_React/RegraDeNegocio.md",
+    "NLW_React/Untitled.canvas",
+    "Front-end-CodeCademy/CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
     "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+    "NLW_Nodejs/Project in Node.js.canvas",
     "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_React/NLW React - Notes.md",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
@@ -276,8 +274,6 @@
     "NLW_Nodejs/node_modules/sucrase/README.md",
     "NLW_Nodejs/node_modules/postcss-load-config/README.md",
     "NLW_Nodejs/node_modules/tree-kill/README.md",
-    "NLW_Nodejs/node_modules/anymatch/README.md",
-    "NLW_Nodejs/node_modules/load-tsconfig/README.md",
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",
@@ -288,7 +284,6 @@
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/favicon-16x16.png",
     "NLW_Nodejs/node_modules/@fastify/static/test/static/shallow/sample.jpg",
     "NLW_Nodejs/node_modules/@fastify/static/example/public/images/sample.jpg",
-    "NLW_React/Untitled.canvas",
     "Untitled.canvas"
   ]
 }

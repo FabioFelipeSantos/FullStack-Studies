@@ -7,7 +7,6 @@
 	- Componentes são funções que retornam HTML.
 	- Props (properties):
 
-
 # 2 Estendendo a Tipagem
 
 Quando quisermos passar os atributos de um elemento HTML que se confunde com um TSX do React, podemos estender a tipagem das `props` dentro do React. Basicamente, fazemos o seguinte: suponha que um componente React é uma <code class="myCode">anchor</code>, ou seja, `<a>`. Seu código será dado por:
