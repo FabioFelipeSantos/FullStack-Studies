@@ -2,13 +2,13 @@
 	"nodes":[
 		{"id":"9a6b5ca0a290b1e3","type":"text","text":"**Inicia o projeto**","x":-180,"y":-945,"width":277,"height":60,"color":"2"},
 		{"id":"0fbf778a9e753f6e","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^315d1c","x":-960,"y":-1035,"width":620,"height":295},
-		{"id":"ed74c81df9ba5a9f","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^2fa5e6","x":-920,"y":-700,"width":580,"height":220},
+		{"id":"ed74c81df9ba5a9f","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^2fa5e6","x":-960,"y":-700,"width":620,"height":220},
 		{"id":"3597bc7fe12f3b89","type":"text","text":"**Importa o TypeScript**","x":-186,"y":-620,"width":290,"height":60,"color":"1"},
 		{"id":"6f07908a526fd60e","type":"text","text":"Instalando e configurando o TSX.\n- Necessário para compilar em tempo real o arquivo `.ts` no Node. js.","x":-1698,"y":-440,"width":557,"height":160,"color":"4"},
-		{"id":"5d0ed16e22dfa8ab","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^d5b1af","x":-2260,"y":-440,"width":380,"height":160},
-		{"id":"fd9052069bdbcc85","x":-2394,"y":-160,"width":648,"height":360,"type":"text","text":"Configura um script para o *tsx* no arquivo `package.json`\n```json\n{\n\t\"scripts\": {\n\t\t\"dev\": \"watch --env-file .env src/server.ts\"\n\t}\n}\n```"},
 		{"id":"88020cffd9d6eac7","type":"text","text":"`tsconfig.json`\n```js\n{\n  \"$schema\": \"https://json.schemastore.org/tsconfig\",\n  \"_version\": \"20.1.0\",\n\n  \"compilerOptions\": {\n    \"lib\": [\"es2023\"],\n    \"module\": \"node16\",\n    \"target\": \"es2022\",\n\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"moduleResolution\": \"node16\"\n  },\n\n  \"include\": [\"src\"]\n}\n```\n","x":-1697,"y":-1640,"width":557,"height":871},
-		{"id":"ab00aa7840f3375a","type":"text","text":"Configura o `tsconfig.json`","x":-1620,"y":-624,"width":401,"height":69,"color":"4"}
+		{"id":"ab00aa7840f3375a","type":"text","text":"Configura o `tsconfig.json`","x":-1620,"y":-624,"width":401,"height":69,"color":"4"},
+		{"id":"5d0ed16e22dfa8ab","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^d5b1af","x":-2340,"y":-450,"width":440,"height":180},
+		{"id":"fd9052069bdbcc85","x":-2477,"y":-140,"width":714,"height":400,"type":"text","text":"Configura um script para o *tsx* no arquivo `package.json`\n```json\n{\n\t\"scripts\": {\n\t\t\"dev\": \"watch --env-file .env src/server.ts\"\n\t}\n}\n```"}
 	],
 	"edges":[
 		{"id":"1f73eb22082904d3","fromNode":"9a6b5ca0a290b1e3","fromSide":"left","toNode":"0fbf778a9e753f6e","toSide":"right"},

@@ -69,6 +69,8 @@ To add tsx to an `npm` project as a development dependency:
 npm install --save-dev tsx
 ```
 
+asd
+
 ^d5b1af
 
 You can reference it directly in the `package.json#scripts` object (you don't need `npx` here):
@@ -144,9 +146,82 @@ tsx watch ./file.ts
 ```
 
 
-## 1.4 Configurando o Fastify
+## 1.4 Web Framework - Fastify
 
-Instale o Fastify no seu projeto:
+O Fastify é um framework web de alto desempenho para Node.js, focado na eficiência e velocidade. Projetado como uma alternativa mais leve e mais rápida a outros frameworks como Express e Koa, o Fastify oferece uma fundação robusta para construir aplicações web, APIs REST, e serviços HTTP com um overhead mínimo. Graças ao seu sistema de plugins, arquitetura altamente otimizada, e suporte a funcionalidades modernas do JavaScript, como async/await, ele permite que desenvolvedores criem aplicações escaláveis e de alto desempenho com relativa facilidade.
+
+### 1.4.1 Características Principais do Fastify
+
+- **Alto Desempenho**: Fastify é conhecido por sua eficiência e velocidade, superando muitos outros frameworks web em benchmarks de desempenho.
+- **Baixo Overhead**: Tem um overhead mínimo, o que significa que mais recursos do servidor podem ser dedicados à lógica da aplicação, melhorando o desempenho geral.
+- **Suporte a Async/Await**: Facilita a escrita de código assíncrono claro e conciso, melhorando a legibilidade e a manutenção do código.
+- **Sistema de Plugins**: Permite a extensão do framework de maneira flexível, facilitando a reutilização de código e a construção de ecossistemas robustos.
+- **Serialização Rápida**: Vem com um serializador JSON altamente otimizado, que pode melhorar o desempenho ao servir respostas JSON.
+- **Suporte para Schema**: Oferece suporte integrado para a validação de schema usando JSON Schema, permitindo a validação de entrada e saída de dados de forma eficiente e fácil.
+- **Logging Integrado**: Possui um sistema de logging poderoso e flexível, integrado ao framework, facilitando o diagnóstico e a depuração de aplicações.
+- **Segurança**: Vem com várias características de segurança incorporadas, como proteções contra ataques de injeção de SQL, XSS (Cross-Site Scripting), e CSRF (Cross-Site Request Forgery).
+
+### 1.4.2 Exemplo Básico
+
+Aqui está um exemplo simples de como iniciar um servidor HTTP com Fastify:
+
+```js title="Fastify Web Framework"
+const fastify = require('fastify')({ logger: true });
+
+fastify.get('/', async (request, reply) => {
+  return { hello: 'world' };
+});
+
+const start = async () => {
+  try {
+    await fastify.listen({ port: 3000 });
+    fastify.log.info(`server listening on ${fastify.server.address().port}`);
+  } catch (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+};
+start();
+
+```
+- Esse código cria um servidor HTTP que escuta na porta 3000 e responde com um objeto JSON `{ hello: 'world' }` quando a rota raiz (`/`) é acessada.
+
+### 1.4.3 3 Instalação e Uso Rápido
+
+Primeiro instale usando o `npm`
+
+```sh
+npm install fastify
+```
+
+Após, crie um arquivo `server.js` com o seguinte conteúdo:
+```js title="Criando um arquivo server.js para iniciar o Fastify"
+// Import the framework and instantiate it
+import Fastify from 'fastify'
+const fastify = Fastify({
+  logger: true
+})
+
+// Declare a route
+fastify.get('/', async function handler (request, reply) {
+  return { hello: 'world' }
+})
+
+// Run the server!
+try {
+  await fastify.listen({ port: 3000 })
+} catch (err) {
+  fastify.log.error(err)
+  process.exit(1)
+}
+```
+
+Após, inicie o server
+
+```sh
+node server
+```
+
 
 ```sh
 npm install fastify

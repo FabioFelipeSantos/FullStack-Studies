@@ -63,15 +63,15 @@
               "state": {
                 "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "viewState": {
-                  "x": -1208.1370690410247,
-                  "y": -517.7956699098029,
-                  "zoom": -0.3333333333333334
+                  "x": -595.7174880571104,
+                  "y": -71.72834315153443,
+                  "zoom": -0.6666666666666667
                 }
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas"
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
               }
             }
           },
@@ -267,10 +267,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a3664195a5afc91",
+  "active": "e887ab68c1e48d77",
   "lastOpenFiles": [
-    "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_Nodejs/Project in Node.js.canvas",
+    "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
     "NLW_Nodejs/node_modules/@types/estree/package.json",
