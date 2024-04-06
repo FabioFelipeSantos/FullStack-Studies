@@ -42,24 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d9a28af8c9845971",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas",
-                "viewState": {
-                  "x": 447.5,
-                  "y": -251.5,
-                  "zoom": -1.7031139081337567
-                }
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -125,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas",
+                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas",
+                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Project in Node.js.canvas"
+                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md"
               }
             }
           },
@@ -254,11 +240,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d9a28af8c9845971",
+  "active": "f6ee5e58e8979f6f",
   "lastOpenFiles": [
+    "NLW_Nodejs/Project in Node.js.canvas",
     "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "NLW_Nodejs/Anotações sobre as aulas.md",
-    "NLW_Nodejs/Project in Node.js.canvas",
     "NLW_React/NLW React - Notes.md",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
