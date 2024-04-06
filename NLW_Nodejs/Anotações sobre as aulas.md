@@ -51,7 +51,100 @@ Abra o `tsconfig.json` gerado e ajuste-o conforme necessário para o seu projeto
 }
 ```
 
-## 1.3 Configurando o Fastify
+## 1.3 Compilador TS para `Node.js` - TSX: TypeScript Execute
+
+[TypeScript Execute (tsx)](https://www.npmjs.com/package/tsx) é uma forma rápida e prática de rodar TypeScript com o Node.js. Suas principais características são
+- Muito rápido
+- TypeScript REPL (Read-Eval-Print Loop, trata-se de um ambiente interativo que permite escrever e executar código TypeScript diretamente no navegador ou em um ambiente de terminal, sem a necessidade de configuração prévia de um projeto ou transpilação explícita para JavaScript.)
+- Supports `tsconfig.json` [`paths`](https://www.typescriptlang.org/tsconfig#paths)
+- Works in both [CommonJS and ESM packages](https://nodejs.org/api/packages.html#type)
+
+### 1.3.1 Installation
+
+#### 1.3.1.1 Local installation
+
+To add tsx to an `npm` project as a development dependency:
+
+```shell
+npm install --save-dev tsx
+```
+
+^d5b1af
+
+You can reference it directly in the `package.json#scripts` object (you don't need `npx` here):
+
+```js
+{
+    "scripts": {
+        "dev": "tsx ./file.ts"
+    }
+}
+```
+
+To use the binary, you can call it with [`npx`](https://docs.npmjs.com/cli/v8/commands/npx) while in the project directory:
+
+```shell
+npx tsx ...
+```
+
+#### 1.3.1.2 Global installation
+
+If you want to use tsx anywhere on your computer without [`npx`](https://docs.npmjs.com/cli/v8/commands/npx), install it globally:
+
+```shell
+npm install --global tsx
+```
+
+Then, you can call `tsx` directly:
+
+```shell
+tsx file.ts
+```
+
+Now you can replace `node ...` with `tsx ...` in all your commands!
+
+### 1.3.2 Usage
+
+#### 1.3.2.1 Swap `node` out for `tsx`
+
+_tsx_ is an enhanced version of Node.js. If you have a `node ...` command, you can replace the `node` with `tsx` and it will just work.
+
+Because it's a drop-in replacement for `node`, it supports all [Node.js command-line flags](https://nodejs.org/docs/latest-v20.x/api/cli.html).
+
+```shell
+# Old command
+node --no-warnings --env-file=.env ./file.js
+
+# New command
+tsx --no-warnings --env-file=.env ./file.js
+```
+
+##### 1.3.2.1.1 Custom `tsconfig.json` path
+
+By default, `tsconfig.json` will be detected from the current working directory.
+
+To set a custom path, use the `--tsconfig` flag:
+
+```shell
+tsx --tsconfig ./path/to/tsconfig.custom.json ./file.ts
+```
+
+Alternatively, use the `TSX_TSCONFIG_PATH` environment variable:
+
+```shell
+TSX_TSCONFIG_PATH=./path/to/tsconfig.custom.json tsx ./file.ts
+```
+
+#### 1.3.2.2 Watch mode
+
+Run file and automatically rerun on changes:
+
+```shell
+tsx watch ./file.ts
+```
+
+
+## 1.4 Configurando o Fastify
 
 Instale o Fastify no seu projeto:
 
@@ -60,7 +153,7 @@ npm install fastify
 npm install --save-dev @types/fastify
 ```
 
-## 1.4 Configurando o Prisma
+## 1.5 Configurando o Prisma
 
 Instale o Prisma CLI como uma dependência de desenvolvimento e inicialize o Prisma no seu projeto:
 
@@ -71,7 +164,7 @@ npx prisma init
 
 Isso criará uma nova pasta chamada `prisma` com um arquivo `schema.prisma` dentro, onde você pode definir seus modelos de banco de dados, e um arquivo `.env` na raiz do seu projeto, onde você pode definir variáveis de ambiente (como a string de conexão do banco de dados).
 
-## 1.5 Configurando o Zod
+## 1.6 Configurando o Zod
 
 Instale o Zod para ajudar na validação de modelos de dados:
 
@@ -79,7 +172,7 @@ Instale o Zod para ajudar na validação de modelos de dados:
 npm install zod
 ```
 
-## 1.6 Estruturando o Projeto
+## 1.7 Estruturando o Projeto
 
 Crie uma estrutura básica de pastas para o seu projeto. No terminal, dentro do diretório do seu projeto, execute:
 
@@ -89,7 +182,7 @@ mkdir src && cd src && mkdir models routes services && cd ..
 
 Isso cria uma pasta `src` com subpastas para modelos (`models`), rotas (`routes`) e serviços (`services`).
 
-## 1.7 Escrevendo o Servidor Fastify
+## 1.8 Escrevendo o Servidor Fastify
 
 Dentro da pasta `src`, crie um arquivo `server.ts`:
 
@@ -117,7 +210,7 @@ start();
 
 Esse código inicializa um servidor Fastify que responde com `{ hello: 'world' }` ao acessar a rota raiz (`/`).
 
-## 1.8 Executando o Projeto
+## 1.9 Executando o Projeto
 
 Para compilar seu TypeScript em JavaScript, você pode adicionar um script no seu `package.json`:
 
@@ -130,7 +223,7 @@ Para compilar seu TypeScript em JavaScript, você pode adicionar um script no se
 
 Execute `npm run build` para compilar seu projeto e `npm run start` para iniciar seu servidor.
 
-## 1.9 Adicionando Mais Rotas ao Fastify
+## 1.10 Adicionando Mais Rotas ao Fastify
 
 Para organizar melhor as rotas, você pode criar arquivos específicos para elas dentro da pasta `src/routes`. Por exemplo, vamos criar um arquivo `userRoutes.ts` para lidar com rotas relacionadas a usuários.
 
@@ -190,11 +283,11 @@ const start = async () => {
 start();
 ```
 
-## 1.10 Definindo Modelos de Dados com Zod
+## 1.11 Definindo Modelos de Dados com Zod
 
 No exemplo `userRoutes.ts`, já definimos um esquema Zod simples para validação de dados de usuários. O Zod permite que você crie esquemas complexos e profundamente aninhados para garantir que os dados manipulados em suas aplicações estejam corretos.
 
-## 1.11 Configurando Acesso ao Banco de Dados com Prisma
+## 1.12 Configurando Acesso ao Banco de Dados com Prisma
 
 1. **Definir o modelo de dados no Prisma:**
 
@@ -1036,16 +1129,3 @@ tsup -d
 Isso empacotará seus arquivos TypeScript de acordo com as opções definidas no arquivo de configuração.
 
 O TSUP é uma ferramenta simples e eficiente para empacotamento de projetos TypeScript, adequada para projetos menores que desejam uma solução de empacotamento rápida e fácil de usar.
-
-|                                                                                                                                                                                                           |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TELEFONE CELULAR XIAOMI POCO X5 5G BLUE 6GB RAM 128GB ROM SN:45009/S3SN00243 IMEI:868767064183804 - TH 322 163 281 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO           |
-| TELEFONE CELULAR XIAOMI REDMI NOTE 12 PRO 5G SKY BLUE 8GB RAM 256GB ROM SN:44967/R3SB01013 IMEI:865848069081665 - TH3965///66787BR/O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO |
-| TELEFONE CELULAR APPLE IPHONE 14 PRO MAX 256GB SPACE BLACK SN:MY9FX2D3RG IMEI:352425465376914 - TH 478 659 352 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO               |
-| TELEFONE CELULAR XIAOMI REDMI NOTE 12 PRO 5G SKY BLUE 8GB RAM 256GB ROM SN:44956/R3TM01905 IMEI:866829066139267 - TH3965///66773BR/O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO |
-| TELEFONE CELULAR XIAOMI POCO X5 5G BLUE 8GB RAM 256GB ROM SN:43970/F3T503517 IMEI:869006069648234 - OV 748 594 660 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO           |
-| COPO STANLEY TRMICO 473ML AA 006 811 205 BR////                                                                                                                                                           |
-| GARRAFA TERMICA BEER PINTS KA-040 500ML////                                                                                                                                                               |
-| CONSOLE PARA VIDEOGAME AOKZOE AI 20V5.0A TH 512 451 363 BR////                                                                                                                                            |
-| TELEFONE CELULAR XIAOMI REDMI NOTE 12 6GB RAM 128GB ROM IMEI2 862157061715491 TH 535 556 061 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO                                 |
-| TELEFONE CELULAR XIAOMI REDMI NOTE 12 6GB RAM 128GB ROM IMEI2 861990063688154 TH 532 771 888 BR////O REFERIDO LOTE ENCONTRA-SE EM BOA VISTA/RR IMPEDIDA A COMERCIALIZAÇÃO                                 |

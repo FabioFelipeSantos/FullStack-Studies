@@ -63,15 +63,15 @@
               "state": {
                 "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "viewState": {
-                  "x": -818.123209251011,
-                  "y": -429.38292115388975,
-                  "zoom": -0.3333333333333333
+                  "x": -1208.1370690410247,
+                  "y": -517.7956699098029,
+                  "zoom": -0.3333333333333334
                 }
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "NLW_Nodejs/Project in Node.js.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
+                "file": "NLW_Nodejs/Project in Node.js.canvas"
               }
             }
           },
@@ -267,8 +267,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e887ab68c1e48d77",
+  "active": "2a3664195a5afc91",
   "lastOpenFiles": [
+    "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_Nodejs/Project in Node.js.canvas",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
@@ -276,7 +277,6 @@
     "NLW_Nodejs/node_modules/@types/estree/LICENSE",
     "NLW_Nodejs/node_modules/@types/estree/index.d.ts",
     "NLW_Nodejs/node_modules/@types/estree",
-    "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_Nodejs/dist/server.js",
     "NLW_Nodejs/dist",
     "NLW_Nodejs/dist/server.mjs",

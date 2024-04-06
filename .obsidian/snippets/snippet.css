@@ -21,6 +21,10 @@ body {
   color: rgb(255, 51, 255);
 }
 
+.markdown-rendered code {
+  font-size: 1.2em
+}
+
 .myCode {
   color: GhostWhite;
   background-color: #400080;

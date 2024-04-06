@@ -1,19 +1,23 @@
 {
 	"nodes":[
 		{"id":"9a6b5ca0a290b1e3","type":"text","text":"**Inicia o projeto**","x":-180,"y":-945,"width":277,"height":60,"color":"2"},
-		{"id":"0fbf778a9e753f6e","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^315d1c","x":-880,"y":-1035,"width":540,"height":240},
-		{"id":"88020cffd9d6eac7","type":"text","text":"```js\n{\n  \"$schema\": \"https://json.schemastore.org/tsconfig\",\n  \"_version\": \"20.1.0\",\n\n  \"compilerOptions\": {\n    \"lib\": [\"es2023\"],\n    \"module\": \"node16\",\n    \"target\": \"es2022\",\n\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"moduleResolution\": \"node16\"\n  },\n\n  \"include\": [\"src\"]\n}\n```\n","x":-1698,"y":-1495,"width":557,"height":700},
-		{"id":"fb562287c1b9e78e","type":"text","text":"Cria um script no `package.json`","x":-250,"y":-220,"width":417,"height":60,"color":"4"},
+		{"id":"0fbf778a9e753f6e","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^315d1c","x":-960,"y":-1035,"width":620,"height":295},
 		{"id":"ed74c81df9ba5a9f","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^2fa5e6","x":-920,"y":-700,"width":580,"height":220},
 		{"id":"3597bc7fe12f3b89","type":"text","text":"**Importa o TypeScript**","x":-186,"y":-620,"width":290,"height":60,"color":"1"},
-		{"id":"ab00aa7840f3375a","type":"text","text":"Configura o `tsconfig.json`","x":-1420,"y":-624,"width":360,"height":69,"color":"4"},
-		{"id":"6f07908a526fd60e","x":-1494,"y":-414,"width":250,"height":60,"color":"4","type":"text","text":"Instala o TSX"}
+		{"id":"6f07908a526fd60e","type":"text","text":"Instalando e configurando o TSX.\n- Necessário para compilar em tempo real o arquivo `.ts` no Node. js.","x":-1698,"y":-440,"width":557,"height":160,"color":"4"},
+		{"id":"5d0ed16e22dfa8ab","type":"file","file":"NLW_Nodejs/Anotações sobre as aulas.md","subpath":"#^d5b1af","x":-2260,"y":-440,"width":380,"height":160},
+		{"id":"fd9052069bdbcc85","x":-2394,"y":-160,"width":648,"height":360,"type":"text","text":"Configura um script para o *tsx* no arquivo `package.json`\n```json\n{\n\t\"scripts\": {\n\t\t\"dev\": \"watch --env-file .env src/server.ts\"\n\t}\n}\n```"},
+		{"id":"88020cffd9d6eac7","type":"text","text":"`tsconfig.json`\n```js\n{\n  \"$schema\": \"https://json.schemastore.org/tsconfig\",\n  \"_version\": \"20.1.0\",\n\n  \"compilerOptions\": {\n    \"lib\": [\"es2023\"],\n    \"module\": \"node16\",\n    \"target\": \"es2022\",\n\n    \"strict\": true,\n    \"esModuleInterop\": true,\n    \"skipLibCheck\": true,\n    \"moduleResolution\": \"node16\"\n  },\n\n  \"include\": [\"src\"]\n}\n```\n","x":-1697,"y":-1640,"width":557,"height":871},
+		{"id":"ab00aa7840f3375a","type":"text","text":"Configura o `tsconfig.json`","x":-1620,"y":-624,"width":401,"height":69,"color":"4"}
 	],
 	"edges":[
 		{"id":"1f73eb22082904d3","fromNode":"9a6b5ca0a290b1e3","fromSide":"left","toNode":"0fbf778a9e753f6e","toSide":"right"},
 		{"id":"88c3c42481e979a0","fromNode":"9a6b5ca0a290b1e3","fromSide":"bottom","toNode":"3597bc7fe12f3b89","toSide":"top"},
 		{"id":"d0e141d6beeb04e0","fromNode":"3597bc7fe12f3b89","fromSide":"left","toNode":"ed74c81df9ba5a9f","toSide":"right"},
 		{"id":"4998bec7d66f2369","fromNode":"ed74c81df9ba5a9f","fromSide":"left","toNode":"ab00aa7840f3375a","toSide":"right"},
-		{"id":"1d8b031c096ccd86","fromNode":"ab00aa7840f3375a","fromSide":"top","toNode":"88020cffd9d6eac7","toSide":"bottom","label":"1"}
+		{"id":"1d8b031c096ccd86","fromNode":"ab00aa7840f3375a","fromSide":"top","toNode":"88020cffd9d6eac7","toSide":"bottom","color":"2","label":"1"},
+		{"id":"35ec12904e49b94a","fromNode":"ab00aa7840f3375a","fromSide":"bottom","toNode":"6f07908a526fd60e","toSide":"top","color":"2","label":"2"},
+		{"id":"cb00d15a2a81296d","fromNode":"6f07908a526fd60e","fromSide":"left","toNode":"5d0ed16e22dfa8ab","toSide":"right","color":"3"},
+		{"id":"9d721d47a48c7fcd","fromNode":"5d0ed16e22dfa8ab","fromSide":"bottom","toNode":"fd9052069bdbcc85","toSide":"top","color":"3"}
 	]
 }
