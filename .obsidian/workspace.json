@@ -250,8 +250,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,7 +266,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a3664195a5afc91",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
