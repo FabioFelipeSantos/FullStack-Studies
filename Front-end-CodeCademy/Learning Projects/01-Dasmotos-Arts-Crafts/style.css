@@ -1,0 +1,81 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1210px;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 12px;
+}
+
+header {
+  margin: 40px 0 0;
+  background-image: url("./assets/pattern.jpeg");
+}
+
+main {
+  margin-top: 80px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  padding: 6px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: inherit;
+}
+
+img {
+  margin: 32px 0;
+}
+
+p {
+  margin-bottom: inherit;
+}
+
+span {
+  color: blue;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.brushes {
+  background-color: #00fa9aee;
+  color: white;
+}
+
+.frames {
+  background-color: lightcoral;
+  color: white;
+}
+
+.paint {
+  background-color: skyblue;
+  color: white;
+}
+
+.name-developer {
+  text-shadow: 3px 3px 10px rgb(176, 5, 179, 0.5), -3px -3px 10px rgb(4, 73, 2, 0.5);
+  font-style: italic;
+  color: rgb(7, 1, 1);
+}
