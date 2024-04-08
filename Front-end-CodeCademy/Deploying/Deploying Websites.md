@@ -18,3 +18,14 @@
 	-  <span style="color: coral; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit; text-decoration: underline; text-underline-offset: 5 px;">Digital Ocean</em></strong></span> -> It's a cloud provider that's easier to work with than Amazon or Google cloud providers, and isn't as complex as Heroku or other PasS. One positive point about Digital Ocean is that they have a lot of resources about how to begin. ([DigitalOcean | Cloud Infrastructure for Developers](https://www.digitalocean.com/))
 	- Other two options are ([Scale & Ship Faster with a Composable Web Architecture | Netlify](https://www.netlify.com/)) and ([Vercel: Build and deploy the best Web experiences with The Frontend Cloud – Vercel](https://vercel.com/))
 
+# 2 What is a Domain Name?
+
+- The computers talk and identify themselves with <span style="color: khaki; font-size: 1.2em;"><em style="color: inherit; text-transform: capitalize">numbers by IP adresses</em></span>. The domain name is used to translate these numbers in names that we can remember.
+- Domain names are registered and can be used for a website and / or an email account. These names are what users type into their browsers to find your website. So, often they are referred to as web addresses.
+	- www.codecademy.com
+	- www.google.com
+	- www.github.com
+- The DNS is used to translate the IP adresses in two numbers.
+- When I type a domain name in the browser, my computer will check the *cache* to see if it is possible to get the website. If not, it'll go to the **Resolver Server**, which is my personal internet provider service. After the Resolver analysis, the name will go to the **Root Server**. In the hierarchy of the path that the name has to follow, the Root Server is at the top of this hierarchy. There are 13 Root Servers strategically placed throughout the world, and they are operated by different companies. Each set has its own unique IP address.
+- The Root Server doesn't know the domain, but it knows where to send the domain to the Resolver to find it. So, the domain name comes back to the Resolver, and then it'll send to the **TLD Server**, the top level domain server. The TLD stores the information about the domain addresses of the top level and then sends this information back to the Resolver server, which sends this information to the **Name Server**.
+- The Name server is responsible for knowing everything about the domain, including the IP address. This server is the final point and the final ruler. The domain is sent back to the computer with the website, and my computer will store this information in the cache, so next time it won't have to pass through all these steps again.
