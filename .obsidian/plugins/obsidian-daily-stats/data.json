@@ -16,16 +16,13 @@
     "2024/3/3": 1372,
     "2024/3/4": 1951,
     "2024/3/5": 5241,
-    "2024/3/6": 218
+    "2024/3/6": 218,
+    "2024/3/8": 695
   },
   "todaysWordCount": {
-    "NLW_Nodejs/Anotações sobre as aulas.md": {
-      "initial": 7466,
-      "current": 7684
-    },
-    "NLW_React/NLW React - Notes.md": {
-      "initial": 1756,
-      "current": 1756
+    "Front-end-CodeCademy/Deploying/Deploying Websites.md": {
+      "initial": 0,
+      "current": 695
     }
   }
 }
