@@ -29,3 +29,73 @@
 - When I type a domain name in the browser, my computer will check the *cache* to see if it is possible to get the website. If not, it'll go to the **Resolver Server**, which is my personal internet provider service. After the Resolver analysis, the name will go to the **Root Server**. In the hierarchy of the path that the name has to follow, the Root Server is at the top of this hierarchy. There are 13 Root Servers strategically placed throughout the world, and they are operated by different companies. Each set has its own unique IP address.
 - The Root Server doesn't know the domain, but it knows where to send the domain to the Resolver to find it. So, the domain name comes back to the Resolver, and then it'll send to the **TLD Server**, the top level domain server. The TLD stores the information about the domain addresses of the top level and then sends this information back to the Resolver server, which sends this information to the **Name Server**.
 - The Name server is responsible for knowing everything about the domain, including the IP address. This server is the final point and the final ruler. The domain is sent back to the computer with the website, and my computer will store this information in the cache, so next time it won't have to pass through all these steps again.
+
+# 3 Deploying Vite App to GitHub Pages
+
+## 3.1 Step 1: Initialize Git Repository
+
+Run the following commands to initialize a git repository <span style="color: darkmagenta; font-size: 1.2em;"><strong style="color: inherit;"><em style="color: inherit;">in your Vite app</em></strong></span> and push your existing code to a remote repository on GitHub.
+
+```shell title="Git commands in a Vite project"
+$ git init  
+$ git add .  
+$ git commit -m "initial-commit"  
+$ git branch -M main  
+$ git remote add origin http://github.com/{username}/{repo-name}.git  
+$ git push -u origin main
+```
+
+## 3.2 Step 2: Update vite.config.js
+
+Add the base URL in this file by setting the **base** as **“/{repo-name}/”**. For example, if your repository’s name is **book-landing-page** then set the **base** like this:
+
+import { defineConfig } from 'vite'  
+import react from '@vitejs/plugin-react'  
+  
+// https://vitejs.dev/config/  
+export default defineConfig({  
+  plugins: [react()],  
+  base: "/book-landing-page/"  
+})
+
+# 4 Step 3: Install gh-pages
+
+Install **gh-pages** package as a dev dependency.
+
+npm install gh-pages --save-dev
+
+# 5 Step 4: Update package.json
+
+Update package.json with the following **predeploy** and **deploy** scripts.
+
+"scripts": {  
+    "predeploy" : "npm run build",  
+    "deploy" : "gh-pages -d dist",  
+    ...  
+}
+
+Add the complete website URL by setting **homepage** in package.json
+
+"homepage": "https://{username}.github.io/{repo-name}/"
+
+Thus, your updated package.json will look like this:
+
+{  
+  "name": "book-product",  
+  "private": true,  
+  "version": "0.0.0",  
+  "homepage": "https://aishwaryaparab.github.io/book-landing-page/",  
+  "type": "module",  
+  "scripts": {  
+    "predeploy" : "npm run build",  
+    "deploy" : "gh-pages -d dist",  
+    "dev": "vite",  
+    "build": "vite build",  
+    ...  
+}
+
+# 6 Step 5: Run Deploy
+
+If you’ve made it till here, you’re almost there. Run the final command:
+
+npm run deploy
