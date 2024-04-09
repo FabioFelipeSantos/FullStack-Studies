@@ -47,8 +47,9 @@ $ git push -u origin main
 
 ## 3.2 Step 2: Update vite.config.js
 
-Add the base URL in this file by setting the **base** as **“/{repo-name}/”**. For example, if your repository’s name is **book-landing-page** then set the **base** like this:
+Add the base URL in this file by setting the `base` as `/{repo-name}/`. For example, if your repository’s name is `book-landing-page` then set the `base` like this:
 
+```js title=vite.config.js
 import { defineConfig } from 'vite'  
 import react from '@vitejs/plugin-react'  
   
@@ -57,29 +58,40 @@ export default defineConfig({
   plugins: [react()],  
   base: "/book-landing-page/"  
 })
+```
 
-# 4 Step 3: Install gh-pages
+## 3.3 Step 3: Install gh-pages
 
 Install **gh-pages** package as a dev dependency.
 
+```shell
 npm install gh-pages --save-dev
+```
 
-# 5 Step 4: Update package.json
+## 3.4 Step 4: Update `package.json`
 
-Update package.json with the following **predeploy** and **deploy** scripts.
+Update `package.json` with the following `predeploy` and `deploy` scripts.
 
-"scripts": {  
-    "predeploy" : "npm run build",  
-    "deploy" : "gh-pages -d dist",  
-    ...  
+```json
+{
+"scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
+    ...
 }
+```
 
-Add the complete website URL by setting **homepage** in package.json
+Add the complete website URL by setting `homepage` in `package.json`
 
-"homepage": "https://{username}.github.io/{repo-name}/"
+```json
+{
+	"homepage": "https://{username}.github.io/{repo-name}/"
+}
+```
 
-Thus, your updated package.json will look like this:
+Thus, your updated `package.json` will look like this:
 
+```json
 {  
   "name": "book-product",  
   "private": true,  
@@ -93,9 +105,21 @@ Thus, your updated package.json will look like this:
     "build": "vite build",  
     ...  
 }
+```
 
-# 6 Step 5: Run Deploy
+## 3.5 Step 5: Run Deploy
 
 If you’ve made it till here, you’re almost there. Run the final command:
 
+```shell
 npm run deploy
+```
+
+## 3.6 Last step though!
+
+Navigate to your remote repository on GitHub -> Settings -> Pages (left sidebar). Select source as “Deploy from branch” and branch as “gh-pages”.
+![||750](https://miro.medium.com/v2/resize:fit:700/1*ybobpluBHeEmanhK7DmdNw.png)
+
+GitHub Pages also allows you to set up your own custom domain.
+
+Have some patience, wait for a few minutes and soon, your site will be live at [https://{username}.github.io/{repo-name}/](https://medium.com/@aishwaryaparab1/%7Busername%7D.github.io/%7Brepo-name%7D/)
