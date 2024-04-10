@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8fc01932c85feca6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0d6e0404f9e23341",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/Deploying/Deploying Websites.md",
+                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md"
+                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md"
               }
             }
           },
@@ -235,12 +223,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "0d6e0404f9e23341",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Front-end-CodeCademy/Deploying/Deploying Websites.md",
+    "Front-end-CodeCademy/Deploying & Command Line/notes/01 - Deploying Websites.md",
+    "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
+    "Front-end-CodeCademy/Deploying & Command Line/images/filesystem-tree.png",
+    "Front-end-CodeCademy/Deploying & Command Line/notes",
+    "Front-end-CodeCademy/Deploying & Command Line/images",
     "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
-    "Front-end-CodeCademy/Deploying",
+    "Untitled.md",
+    "Front-end-CodeCademy/Deploying & Command Line",
     "NLW_React/RegraDeNegocio.md",
     "NLW_React/Untitled.canvas",
     "Front-end-CodeCademy/CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
@@ -255,8 +247,6 @@
     "NLW_Nodejs/node_modules/@types/estree",
     "NLW_Nodejs/dist/server.js",
     "NLW_Nodejs/dist",
-    "NLW_Nodejs/dist/server.mjs",
-    "NLW_Nodejs/dist/server.global.js",
     "NLW_Nodejs/node_modules/any-promise/README.md",
     "NLW_Nodejs/node_modules/thenify/History.md",
     "NLW_Nodejs/node_modules/ignore/README.md",
@@ -273,8 +263,6 @@
     "NLW_Nodejs/node_modules/chokidar/README.md",
     "NLW_Nodejs/node_modules/readdirp/README.md",
     "NLW_Nodejs/node_modules/binary-extensions/readme.md",
-    "NLW_Nodejs/node_modules/sucrase/README.md",
-    "NLW_Nodejs/node_modules/postcss-load-config/README.md",
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",
@@ -284,7 +272,6 @@
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/favicon-32x32.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/favicon-16x16.png",
     "NLW_Nodejs/node_modules/@fastify/static/test/static/shallow/sample.jpg",
-    "NLW_Nodejs/node_modules/@fastify/static/example/public/images/sample.jpg",
     "Untitled.canvas"
   ]
 }
