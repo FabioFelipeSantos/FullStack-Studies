@@ -1,0 +1,23 @@
+.tabela {
+  border: 1px solid;
+  padding: 2px;
+}
+
+.containerCores {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 12px;
+  column-gap: 20px;
+}
+
+.corName {
+  font-size: 14px;
+  width: 155px;
+}
+
+.cor {
+  text-align: center;
+  width: 100px;
+  height: 20px;
+}
