@@ -184,3 +184,28 @@ img {
 
 /* bullet color */
 :root { --bullet-new-color: rgb(89,89,223);}
+
+
+.color-rec {
+	width: 100px;
+	height: 20px;
+	border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

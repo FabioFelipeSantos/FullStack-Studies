@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "fe9564670f20556f",
+        "id": "da2cb1c2cae8bae5",
         "type": "tabs",
         "children": [
           {
-            "id": "0d6e0404f9e23341",
+            "id": "6d3785d128294a52",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1292b0533000bd84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Colors.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
+                "file": "Colors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
+                "file": "Colors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md"
+                "file": "Colors.md"
               }
             }
           },
@@ -223,30 +236,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "1292b0533000bd84",
   "lastOpenFiles": [
-    "Front-end-CodeCademy/Deploying & Command Line/notes/01 - Deploying Websites.md",
-    "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
-    "Front-end-CodeCademy/Deploying & Command Line/images/filesystem-tree.png",
-    "Front-end-CodeCademy/Deploying & Command Line/notes",
-    "Front-end-CodeCademy/Deploying & Command Line/images",
-    "Front-end-CodeCademy/CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
+    "Colors.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
+    "Front-end-CodeCademy/03 - JavaScript",
+    "Front-end-CodeCademy/Deploying & Command Line/Untitled.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
+    "Front-end-CodeCademy/CSS/Untitled.md",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS",
+    "Front-end-CodeCademy/02 - CSS/01 - Fundamentals of CSS",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/images/filesystem-tree.png",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/notes",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/images",
+    "Front-end-CodeCademy/02 - CSS/01 - Fundamentals of CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "Untitled.md",
-    "Front-end-CodeCademy/Deploying & Command Line",
+    "Front-end-CodeCademy/04 - Deploying & Command Line",
     "NLW_React/RegraDeNegocio.md",
     "NLW_React/Untitled.canvas",
-    "Front-end-CodeCademy/CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
+    "Front-end-CodeCademy/02 - CSS/01 - Fundamentals of CSS/Review_Notes/02 - Learn CSS - The Box Model.md",
     "NLW_Nodejs/Project in Node.js.canvas",
     "NLW_Nodejs/Anotações sobre as aulas.md",
     "NLW_React/NLW React - Notes.md",
     "NLW_Nodejs/node_modules/@types/estree/flow.d.ts",
     "NLW_Nodejs/node_modules/@types/estree/README.md",
     "NLW_Nodejs/node_modules/@types/estree/package.json",
-    "NLW_Nodejs/node_modules/@types/estree/LICENSE",
-    "NLW_Nodejs/node_modules/@types/estree/index.d.ts",
-    "NLW_Nodejs/node_modules/@types/estree",
-    "NLW_Nodejs/dist/server.js",
-    "NLW_Nodejs/dist",
     "NLW_Nodejs/node_modules/any-promise/README.md",
     "NLW_Nodejs/node_modules/thenify/History.md",
     "NLW_Nodejs/node_modules/ignore/README.md",
@@ -259,10 +277,6 @@
     "NLW_Nodejs/node_modules/rollup/LICENSE.md",
     "NLW_Nodejs/node_modules/micromatch/README.md",
     "NLW_Nodejs/node_modules/fast-glob/README.md",
-    "NLW_Nodejs/node_modules/tsup/README.md",
-    "NLW_Nodejs/node_modules/chokidar/README.md",
-    "NLW_Nodejs/node_modules/readdirp/README.md",
-    "NLW_Nodejs/node_modules/binary-extensions/readme.md",
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",
