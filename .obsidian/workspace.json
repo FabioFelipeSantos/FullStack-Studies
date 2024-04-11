@@ -206,7 +206,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -222,7 +223,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0d6e0404f9e23341",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/Deploying & Command Line/notes/01 - Deploying Websites.md",
     "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md",
