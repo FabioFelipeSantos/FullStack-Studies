@@ -69,15 +69,62 @@ Each of the three values represents a color component, and each can have a decim
 
 In general, hex and RGB color representations are equivalent. Which you choose is a matter of personal taste. That said, it’s good to choose one and be consistent throughout your CSS, because it’s easier to compare hex to hex and RGB to RGB.
 
+# 5 Hex and RGB
 
+The hexadecimal and rgb color system can represent many more colors than the small set of CSS named colors. We can use this new set of colors to refine our web page’s style.
 
+In both hex and RGB, we have three values, one for each color. Each can be one of 256 values. Specifically, `256 * 256 * 256 = 16,777,216`. That is the amount of colors we can now represent. Compare that to the roughly 140 named CSS colors!
 
-Hi everyone. Lately, I was thinking about how to transform the hex value into an RGB color. So, I found out that the answer lies in mathematical counting, in particular, the fundamental counting theorem. I'll share with all of you my thoughts, and just to remember, this is a curious subject only; this knowledge is not necessary to learn how to use colors in CSS, but if you like to know why things are the way they are, I hope that you enjoy the remaining reading.
+Recall that we started with named colors, converted them to hex, and then converted some of the hex colors to rgb. Unless we made a mistake, all of the colors should still be the same, visually. Let’s use our broadened palette to make some more refined color choices.
 
-In a hex color value, we work with numbers written in hexadecimal base, or clearly, numbers from 0 to 9 (10 possibilities) and letters from A to F (6 possibilities), totaling 16 possible choices.
+# 6 Hue, Saturation, and Lightness
 
-Turning our attention to how we write a hex value, we have, after hash, three pairs of two hexadecimal numbers (# xx  xx  xx). Each one of these pairs will represent the colors red, green, and blue, respectively. By choosing only one pair, we have 16 options for any of the two hexadecimal numbers. So, by the fundamental counting theorem, we will have `16 * 16 = 256` possibilities to form a pair.
+The RGB color scheme is convenient because it’s very close to how computers represent colors internally. There’s another equally powerful system in CSS called the hue-saturation-lightness color scheme, abbreviated as _HSL_.
 
-When I want to translate this hex to a color, we can think that, if this color doesn't have a primary color on your base, we must translate the hex to 0, to represent the miss of that color. In the other way, if the hex pair must translate to a full color in your base, we will need to use a number that will have this information on it. However, I only have 256 available choices of hex pairs to transform, and one of these choices needs to be 0. Therefore, if I can choose to work just with positive integer numbers, the last possibility for the hex pair must be transformed into 255 because one pair has already been chosen. Thus, we have defined that all 256 hex pairs should be transformed into a positive number in a range from 0 to 255, and to ease our rule, we can set that `00` will be transformed into 0 and `FF` will be transformed into 255, with the idea of a crescent sequence for the remaining, always from 0 to F.
+The syntax for HSL is similar to the decimal form of RGB, though it differs in important ways. The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively. Here is an example:
 
-Now, we can look at only one pair of the triple hex. Here, I will explain the transformation with a specific number because I think that will be easier. Let's think about the `B7` pair. We need to find which position this hex pair will occupy on our interval. To do that, I can think that if a pair begins with A, he'll appear before any pair starting with B. So, from 0 to A, I have 11 possibilities for the first number in the pair, and from 0 to F we have 16 possibilities for the second number, totaling `11 * 16 = 176`. In other words, we will have 176 pairs of hexadecimal starting from `00` to `AF` and that will appear before any pair starting with B. Now, if we look for pairs starting with B, for the second place of the pair, we can think analogously to the previous one, and search for pairs that must appear before `B7`, so we can choose from `B0` to `B6`. This will result in other 7 options to choose. 
+```css
+color: hsl(120, 60%, 70%);
+```
+
+_Hue_ is the first number. It refers to an angle on a color wheel. Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then back to Red at 360. You can see an example of a color wheel below.
+![[colors.svg||600]]
+
+_Saturation_ refers to the intensity or purity of the color. The saturation increases towards 100% as the color becomes richer. The saturation decreases towards 0% as the color becomes grayer.
+
+_Lightness_ refers to how light or dark the color is. Halfway, or 50%, is normal lightness. Imagine a sliding dimmer on a light switch that starts halfway. Sliding the dimmer up towards 100% makes the color lighter, closer to white. Sliding the dimmer down towards 0% makes the color darker, closer to black.
+
+HSL is convenient for adjusting colors. In RGB, making the color a little darker may affect all three color components. In HSL, that’s as easy as changing the lightness value. HSL is also useful for making a set of colors that work well together by selecting various colors that have the same lightness and saturation but different hues.
+
+# 7 Opacity and Alpha
+
+All of the colors we’ve seen so far have been opaque, or non-transparent. When we overlap two opaque elements, nothing from the bottom element shows through the top element. In this exercise, we’ll change the _opacity_, or the amount of transparency, of some colors so that some or all of the bottom elements are visible through a covering element.
+
+To use opacity in the HSL color scheme, use `hsla` instead of `hsl`, and four values instead of three. For example:
+
+```css
+color: hsla(34, 100%, 50%, 0.1);
+```
+
+The first three values work the same as `hsl`. The fourth value (which we have not seen before) is the _alpha_. This last value is sometimes called opacity.
+
+Alpha is a decimal number from zero to one. If alpha is zero, the color will be completely transparent. If alpha is one, the color will be opaque. The value for half-transparent would be `0.5`.
+
+You can think of the alpha value as, “the amount of the background to mix with the foreground”. When a color’s alpha is below one, any color behind it will be blended in. The blending happens for each pixel; no blurring occurs.
+
+The RGB color scheme has a similar syntax for opacity, `rgba`. Again, the first three values work the same as `rgb` and the last value is the alpha. Here’s an example:
+
+```css
+color: rgba(234, 45, 98, 0.33);
+```
+
+A little unconventional, but still worth mentioning is how hex colors can also have an alpha value. By adding a two-digit hexadecimal value to the end of the six-digit representation (`#52BC8280`), or a one-digit hexadecimal value to the end of the three-digit representation (#F003), you can change the opacity of a hexadecimal color. Hex opacity ranges from `00` (transparent) to `FF` (opaque).
+
+Alpha can only be used with HSL, RGB, and hex colors; we cannot add the alpha value to name colors like `green`.
+
+There is, however, a named color keyword for zero opacity, `transparent`. It’s equivalent to `rgba(0, 0, 0, 0)`, and it’s used like any other color keyword:
+
+```css
+color: transparent;
+```
+

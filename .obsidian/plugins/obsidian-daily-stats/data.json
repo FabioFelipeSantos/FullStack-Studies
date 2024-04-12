@@ -20,28 +20,17 @@
     "2024/3/8": 1225,
     "2024/3/9": 383,
     "2024/3/10": 1415,
-    "2024/3/11": 1392
+    "2024/3/11": 1392,
+    "2024/3/12": 784
   },
   "todaysWordCount": {
-    "Front-end-CodeCademy/Deploying & Command Line/notes/02 - Command Line for Building Websites.md": {
-      "initial": 1413,
-      "current": 1413
-    },
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md": {
-      "initial": 0,
-      "current": 1392
-    },
-    "Colors - Keyname.md": {
-      "initial": 3099,
-      "current": 3089
-    },
-    "Untitled 1.md": {
-      "initial": 3089,
-      "current": 0
+      "initial": 838,
+      "current": 1618
     },
     "Colors.md": {
-      "initial": 293,
-      "current": 10
+      "initial": 5,
+      "current": 9
     }
   }
 }
