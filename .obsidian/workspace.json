@@ -233,7 +233,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,7 +250,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6d3785d128294a52",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Colors.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
