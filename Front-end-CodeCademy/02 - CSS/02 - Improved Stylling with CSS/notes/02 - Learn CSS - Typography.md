@@ -244,8 +244,10 @@ Let’s take a look at the example above, line by line:
 
 Once the `@font-face` at-rule is defined, you can use the font in your stylesheet!
 
-```
-p {  font-family: 'MyParagraphFont', sans-serif;}
+```css
+p {
+	font-family: 'MyParagraphFont', sans-serif;
+}
 ```
 
 Like using any other fonts, you can use the `font-family` property to set the font on any HTML element. The downloaded font can be referenced with the name you provided as the `font-family` property’s value in the `@font-face` ruleset—in this case, `'MyParagraphFont'`.
