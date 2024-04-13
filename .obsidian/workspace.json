@@ -232,8 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,7 +248,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f2ae6b3a8ebda079",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/Unconfirmed 221396.crdownload",
