@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e0435f1d60147a8e",
+        "id": "69b9a98e9598fc95",
         "type": "split",
         "children": [
           {
-            "id": "917dae1c5974e3bc",
+            "id": "e2c2de64ca0f8a3b",
             "type": "tabs",
-            "dimension": 59.691629955947135,
+            "dimension": 60.939794419970625,
             "children": [
               {
-                "id": "f2ae6b3a8ebda079",
+                "id": "79f6f711bf9f2d96",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
+                    "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
                     "mode": "source",
                     "source": false
                   }
@@ -27,9 +27,9 @@
             ]
           },
           {
-            "id": "e2c2de64ca0f8a3b",
+            "id": "41848f0e302ee839",
             "type": "tabs",
-            "dimension": 40.308370044052865,
+            "dimension": 39.06020558002937,
             "children": [
               {
                 "id": "1292b0533000bd84",
@@ -112,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +129,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +152,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md"
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md"
               }
             }
           },
@@ -232,7 +232,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -248,17 +249,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "79f6f711bf9f2d96",
   "lastOpenFiles": [
+    "Colors.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/Unconfirmed 221396.crdownload",
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
-    "Colors.md",
     "Pasted image 20240412162531.png",
     "Pasted image 20240412162511.png",
     "Pasted image 20240411155534.png",
     "Pasted image 20240411155430.png",
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/01 - Learn CSS - Colors.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.png",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.png.crdownload",
     "Front-end-CodeCademy/Examples/OtherThings/named-colors/style.css",
@@ -297,7 +298,6 @@
     "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/examples/static/example-logo.svg",
     "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/logo.svg",
-    "NLW_Nodejs/node_modules/@fastify/swagger-ui/static/favicon-32x32.png",
     "Untitled.canvas"
   ]
 }
