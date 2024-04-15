@@ -2,15 +2,12 @@ import Paragraph from "../components/Paragraph";
 
 export default function Chapter1() {
   return (
-    <section className="bg-slate-800/75 p-4 rounded-2xl mt-9">
-      <h2 className="text-4xl">Sobre mim e sobre esse projeto</h2>
+    <section className="bg-slate-800/75 p-8 rounded-2xl mt-9">
+      <h2 className="text-4xl mb-9">Sobre mim e sobre esse projeto</h2>
       <Paragraph>
         A ideia é simples: irei fazer um caderno de notas nessa página. Nada
         melhor do que criar uma página, para aprender como criar páginas (
-        <em className="underline underline-offset-4 text-orange-200">
-          pelo menos é o que eu acho!
-        </em>
-        )
+        <em className="text-orange-500">pelo menos é o que eu acho!</em>)
       </Paragraph>
       <Paragraph>
         Meu nome é Fábio e sou formado em Matemática e por muitos anos eu

@@ -22,12 +22,17 @@
     "2024/3/10": 1415,
     "2024/3/11": 1392,
     "2024/3/12": 784,
-    "2024/3/13": 1751
+    "2024/3/13": 1751,
+    "2024/3/15": 631
   },
   "todaysWordCount": {
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md": {
-      "initial": 394,
-      "current": 2145
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/LEARN LINKS AND BUTTONS.md": {
+      "initial": 231,
+      "current": 231
+    },
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md": {
+      "initial": 231,
+      "current": 862
     }
   }
 }
