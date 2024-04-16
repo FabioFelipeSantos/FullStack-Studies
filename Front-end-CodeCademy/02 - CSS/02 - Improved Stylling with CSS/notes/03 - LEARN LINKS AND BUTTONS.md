@@ -47,3 +47,23 @@ Mouse over the word “Codecademy” below to see this behavior in action!
 
 **NOTE**: The `title` attribute is HTML’s built-in way of creating tooltips, but is known to [cause a variety of accessibility issues](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title#accessibility_concerns). Developers have come up with a number of ways to create tooltips that are more accessible, but this generally requires using CSS and JavaScript, which fall out of the scope of this lesson. When creating tooltips in the wild, you should research ways to make them accessible for everyone.
 
+# 5 Hover States and Cursors
+
+- `:hove` - Used to style elements when user hovers over it.
+	- If other pseudo-classes like `:link`, `:visited` or `:active` be present, make sure you to put `:hover` after the `:link` and `:visited` but before the `:active` one. Follow the **LVHA** order (`:link` - `:visited` - `:hover` - `:active`).
+	- It isn't present on mobile devices, as mobile devices don't have on-screen cursors.
+- `cursor` - CSS property that control the behavior of mouse's pointer.
+```css
+/* Default color of <a> element */
+a {
+	color: blue;
+}
+
+a:hover {
+	/* Change color to orange when user hovers over <a> element */
+	color: orange;
+	
+	/* Change mouse's pointer */
+	cursor: pointer;
+}
+```

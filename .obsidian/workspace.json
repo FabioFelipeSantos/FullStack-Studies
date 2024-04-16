@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e0957c99c913b09b",
+        "id": "85d9bcc1f63af073",
         "type": "tabs",
         "children": [
           {
-            "id": "dd994fe8f53a66b2",
+            "id": "366fff2dda01a1b6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md"
+              }
             }
           },
           {
@@ -197,7 +206,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,7 +223,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c0c0c2290646ce3",
+  "active": "366fff2dda01a1b6",
   "lastOpenFiles": [
     "2024-04-15.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
