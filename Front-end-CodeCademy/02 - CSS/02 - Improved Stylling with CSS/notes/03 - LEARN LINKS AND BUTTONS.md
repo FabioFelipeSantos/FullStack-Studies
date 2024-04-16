@@ -183,3 +183,11 @@ button:active {
 
 ## 8.2 Buttons: Flat Design
 
+- Flat design buttons commonly appear as rectangles, rounded rectangles, or circles.
+- They should be visually distinct from other page elements.
+- In flat designs in particular, button text is very important for clarity.
+
+# 9 Buttons: Hover States
+
+- Buttons should make use of hover states and the `{css}cursor: pointer` declaration.
+
