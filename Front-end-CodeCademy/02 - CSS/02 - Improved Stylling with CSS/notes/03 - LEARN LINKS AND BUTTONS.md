@@ -52,7 +52,7 @@ Mouse over the word “Codecademy” below to see this behavior in action!
 - `:hove` - Used to style elements when user hovers over it.
 	- If other pseudo-classes like `:link`, `:visited` or `:active` be present, make sure you to put `:hover` after the `:link` and `:visited` but before the `:active` one. Follow the **LVHA** order (`:link` - `:visited` - `:hover` - `:active`).
 	- It isn't present on mobile devices, as mobile devices don't have on-screen cursors.
-- `cursor` - CSS property that control the behavior of mouse's pointer.
+- `cursor` - CSS property that control the behavior of mouse's pointer. [Types of cursors](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#keyword)
 ```css
 /* Default color of <a> element */
 a {
@@ -67,3 +67,119 @@ a:hover {
 	cursor: pointer;
 }
 ```
+
+## 5.1 Cursor Formal syntax
+
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.3 Question mark (?)|? Question Mark]] - optional, and must appear zero or one time
+[[01 - Learn CSS - Selectors and Visual Rules#1.4.1.5.5 Hash mark (` `)|"#" hash mark]] - may be repeated one or more times
+
+```css
+cursor: 
+  [ [ <url> | <url-set> ] [ <x> <y> ]? ]#? [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out ]  
+
+<url> = <url()> | <src()>
+
+<x> = x
+
+<y> = y
+
+<url()> = url( <string> <url-modifier>* ) | <url-token>
+
+<src()> = src( <string> <url-modifier>* )
+```
+
+```css
+/* Keyword value */
+cursor: auto;
+cursor: pointer;
+/* … */
+cursor: zoom-out;
+
+/* URL with mandatory keyword fallback */
+cursor: url(hand.cur), pointer;
+
+/* URL and coordinates, with mandatory keyword fallback */
+cursor:
+  url(cursor_1.png) 4 12,
+  auto;
+cursor:
+  url(cursor_2.png) 2 2,
+  pointer;
+
+/* URLs and fallback URLs (some with coordinates), with mandatory keyword fallback */
+cursor:
+  url(cursor_1.svg) 4 5,
+  url(cursor_2.svg),
+  /* …, */ url(cursor_n.cur) 5 5,
+  progress;
+
+/* Global values */
+cursor: inherit;
+cursor: initial;
+cursor: revert;
+cursor: revert-layer;
+cursor: unset;
+```
+
+# 6 Link States
+
+- `:link` (not clicked) -> represents an element that has not yet been visited;
+- `:visited` -> applies once the link has been visited by the user;
+- `:hover` -> used to style elements when user hovers over it;
+- `:active` (clicked) -> represents an element (such as a button) that is being activated by the user;
+
+# 7 Skeuomorphism and Flat Design
+
+- The concept of UI elements that **replicate or imitate real-life counterparts** is known as _skeuomorphism_ (Esqueumorfismo) (a derivative object that retains ornamental design cues (attributes) from structures that were necessary in the original. Skeuomorphs are typically used to make something new feel familiar in an effort to speed understanding and acclimation. They employ elements that, while essential to the original object, serve no pragmatic purpose in the new system).
+- If a **web button** appears similar to a real-life button on a physical interface, users can reliably figure out that the way to interact with the button is to press it.
+- **Flat design** uses simplicity and a lack of clutter (desordem, bagunça) for its UI elements.
+
+# 8 `{html}<button>`: The Button Element
+
+```html
+<button>Click me</button>
+```
+
+The `<button>` HTML element ([documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)) is an interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it then performs an action, such as submitting a [form](https://developer.mozilla.org/en-US/docs/Learn/Forms) or opening a dialog.
+
+It has several different [attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attributes) that can be used. Some of these are:
+- `disabled` -> This Boolean attribute prevents the user from interacting with the button: it cannot be pressed or focused.
+- `form` -> The `<form>` element to associate the button with (its form owner). The value of this attribute must be the id of a `<form>` in the same document. (If this attribute is not set, the `<button>` is associated with its ancestor `<form>` element, if any.)
+- We can apply the [Global Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) too, like:
+	- `onclick`
+	- `onkeydown`
+	- `onkeypress`
+	- `onkeyup`
+	- `hidden` -> the element is not yet, or is no longer, _relevant_. For example, it can be used to hide elements of the page that can't be used until the login process has been completed;
+	- `title` -> contains a text representing advisory information related to the element it belongs to. Such information can typically, but not necessarily, be presented to the user as a tooltip;
+
+For the layout stylization, a minimum interactive size of `44px ⨉ 44px` is recommended.
+
+## 8.1 Buttons: Skeuomorphic styling
+
+- Aims to imitate the appearance and interactivity of a real-life button.
+- The use of hover and/or active states is important in order to model interaction with a real button.
+```css
+button {
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-decoration: none;
+	box-shadow: 0px 5px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* While the user is clicking on the button */
+button:active {
+	margin-top: 5px;
+	color: black;
+	box-shadow: 0px 0px;
+}
+```
+
+
+## 8.2 Buttons: Flat Design
+
