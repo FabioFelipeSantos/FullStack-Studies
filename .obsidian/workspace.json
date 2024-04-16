@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e2c2de64ca0f8a3b",
+        "id": "e0957c99c913b09b",
         "type": "tabs",
         "children": [
           {
-            "id": "79f6f711bf9f2d96",
+            "id": "dd994fe8f53a66b2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -65,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md"
-              }
+              "state": {}
             }
           },
           {
@@ -206,8 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 413.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,11 +213,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79f6f711bf9f2d96",
+  "active": "1c0c0c2290646ce3",
   "lastOpenFiles": [
+    "2024-04-15.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier/package.json",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/package.json",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/20/solid/package.json",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/solid/index.js",
@@ -237,7 +228,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/20/solid/esm/XMarkIcon.d.ts",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/16/solid/XMarkIcon.d.ts",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/16/solid/esm/XMarkIcon.d.ts",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/24/solid/XCircleIcon.d.ts",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/@shopify/prettier-plugin-liquid/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-style-order/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-sort-imports/README.md",
