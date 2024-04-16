@@ -45,7 +45,7 @@ const Topicos = [
   },
 ];
 
-export default function Header(params) {
+export default function Header() {
   return (
     <header className="flex justify-around items-center bg-red-500/50 p-7">
       <div className="flex-1 ml-4">
