@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "85d9bcc1f63af073",
+        "id": "e23f11de3bb1174f",
         "type": "tabs",
         "children": [
           {
-            "id": "366fff2dda01a1b6",
+            "id": "a1d35b3f098232cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "47316bc04529156f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
+                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md"
               }
             }
           },
@@ -235,8 +222,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47316bc04529156f",
+  "active": "a1d35b3f098232cf",
   "lastOpenFiles": [
+    "NLW_Nodejs/Anotações sobre as aulas.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/vite.config.js.timestamp-1713349129026-dc01656799fd9.mjs",
@@ -271,8 +260,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/keyv/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-function-name/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-environment-visitor/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-validator-identifier/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/postcss-value-parser/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/public/vite.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
