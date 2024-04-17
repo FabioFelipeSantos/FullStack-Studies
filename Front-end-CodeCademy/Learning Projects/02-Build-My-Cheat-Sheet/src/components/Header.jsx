@@ -46,8 +46,30 @@ const Topicos = [
 ];
 
 export default function Header() {
-  const Fib = [];
+  const Fib = [1, 2];
+  let sumEvenFib = Fib[1];
 
+  console.log(sumEvenFib);
+
+  let i = 1;
+
+  function fib(a, b) {
+    return a + b;
+  }
+
+  while (Fib[i] <= 4e6) {
+    Fib.push(fib(Fib[i - 1], Fib[i]));
+
+    if (Fib[i + 1] % 2 === 0) {
+      console.log(Fib[i + 1]);
+      sumEvenFib += Fib[i + 1];
+      console.log(sumEvenFib);
+    }
+
+    i++;
+  }
+  console.log(4e6);
+  console.log(sumEvenFib);
   return (
     <>
       <header className="flex justify-around items-center bg-red-500/50 p-7">
@@ -113,7 +135,9 @@ export default function Header() {
           </Popover>
         </div>
       </header>
-      <div className="mt-9">asdasd</div>
+      <div>{}</div>
     </>
   );
 }
+
+//map((e) => {<span>{e}</span>;})
