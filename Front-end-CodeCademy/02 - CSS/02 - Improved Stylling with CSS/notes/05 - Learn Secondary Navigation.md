@@ -4,6 +4,8 @@
 - With it, users can get a quick feel for where they are on a site.
 - They also provide a way for a user to quickly jump backward in their navigation of the site.
 - Breadcrumbs are usually displayed as a horizontal list of pages and take up minimal space.
+- For consistency, the user hopes that the style of the breadcrumb to be the same across the available webpages.
+- A link in breadcrumb need to send the user to a specific page. This is achieved by setting a `{html}href` property to the appropriate page.
 
 ## 1.1 Tips on how to code
 
@@ -53,3 +55,92 @@
 	color: red;
 }
 ```
+
+## 1.2 Creating a more stylish breadcrumb with CSS
+
+1. Create a list element with the links:
+```html info=3-14
+...
+<ul class="breadcrumb">
+	<li>
+		<a href="">Link 1</a>
+	</li>
+	<li>
+		<a href="">Link 2</a>
+	</li>
+	<li>
+		<a href="">Link 3</a>
+	</li>
+	<li>
+		<a href="">Link 4</a>
+	</li>
+</ul>
+...
+```
+2. Add some styles to the `{html}<a>` element:
+```css
+...
+/* Stylization of the <a> element */
+.breadcrumb a {  
+  color: #fff;  
+  background: darkcyan;  
+  text-decoration: none;  
+  position: relative;  
+  height: 30px;  
+  line-height: 30px;  
+  text-align: center;  
+  margin-right: 15px;  
+  padding: 0 5px;
+}
+```
+3. Make the `{html}<li>` elements inside the `{css}.breadcrumb` container a left floating element:
+```css
+...
+/* Put a separator between the links */
+.breadcrumb li {  
+  float: left;  
+}
+```
+- With these steps we have created the "body" of the arrows.
+4. Use `{css}::before` and `{css}::after` pseudo-elements to create filled rectangles, without any content, before and after each list item:
+```css info=3,4,6-8 attention=5
+...
+/* Creating the pseudo-elements before and after the list item */
+.breadcrumb li a::before, .breadcrumb li a::after {  
+  content: "";  
+  position: absolute;  
+  border-color: darkcyan;  
+  border-style: solid;  
+  border-width: 15px 5px;  
+}
+```
+- The `{css}position: absolute` property will give the pseudo-elements the ability to move in the list elements.
+5. Because of the `{css}border-width` property, the total width of our pseudo-elements is `10px`. So, move these elements to a proper location:
+```css
+...
+/* Change the position of these new pseudo-elements */
+.breadcrumb a::before {
+  left: -10px;
+}
+
+.breadcrumb a::after {
+  left: 100%;
+}
+```
+6. Use the "trick" to turn these rectangles into arrows, using some portion of the `{css}border` as `transparent`.
+```css info=5,10-11
+...
+/* Creating the arrows from the rectangles. */
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+
+.breadcrumb a::after {  
+  left: 100%;  
+  border-color: transparent;  
+  border-left-color: darkcyan;  
+}
+```
+- This effect is possible because the borders are drawn from the center of the element.
+
