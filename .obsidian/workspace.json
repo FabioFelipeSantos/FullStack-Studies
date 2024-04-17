@@ -205,8 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5,
-    "collapsed": true
+    "width": 413.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,6 +223,7 @@
   },
   "active": "366fff2dda01a1b6",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/vite.config.js.timestamp-1713306646698-3e1947adb08b3.mjs",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "^.md",
@@ -259,7 +259,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-environment-visitor/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-validator-identifier/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/postcss-value-parser/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@rollup/rollup-win32-x64-msvc/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/public/vite.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
