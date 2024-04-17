@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "47316bc04529156f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5,
-    "collapsed": true
+    "width": 413.5
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md"
+                "file": "NLW_Nodejs/Anotações sobre as aulas.md"
               }
             }
           },
@@ -223,12 +235,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "47316bc04529156f",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
+    "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/vite.config.js.timestamp-1713349129026-dc01656799fd9.mjs",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/vite.config.js.timestamp-1713306646698-3e1947adb08b3.mjs",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "^.md",
     "Front-end-CodeCademy/02 - CSS/01 - Fundamentals of CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "2024-04-15.md",
@@ -241,7 +254,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/outline/index.js",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/outline",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/20/solid/esm/XMarkIcon.d.ts",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/16/solid/XMarkIcon.d.ts",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/@shopify/prettier-plugin-liquid/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-style-order/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-sort-imports/README.md",
