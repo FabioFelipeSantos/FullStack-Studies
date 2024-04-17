@@ -12,3 +12,11 @@ _Signifiers_ are aspects of an object that a designer uses to indicate potentia
 # 2 UX Patterns
 
 User experience (UX) patterns establish reusable solutions to common problems. Handles are ubiquitous—they are used on objects of all shapes, sizes, and purposes to indicate that users can initiate an action by grabbing the handle with their hand(s).
+
+# 3 Affordances and Signifiers in Web Design
+
+- The possible affordances of any computer are usually relatively limited;
+- So, using proper signifiers is especially important to direct users properly;
+- We could also use signifiers to demonstrate elements that afford interaction;
+- Signifiers signify critical information, even if the signifier itself is an accidental byproduct of the world;
+- Signifiers will often be useful, but of mixed reliability;
