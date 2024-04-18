@@ -25,16 +25,13 @@
     "2024/3/13": 1751,
     "2024/3/15": 631,
     "2024/3/16": 650,
-    "2024/3/17": 740
+    "2024/3/17": 740,
+    "2024/3/18": 114
   },
   "todaysWordCount": {
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md": {
-      "initial": 275,
-      "current": 339
-    },
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md": {
-      "initial": 0,
-      "current": 676
+      "initial": 676,
+      "current": 790
     }
   }
 }

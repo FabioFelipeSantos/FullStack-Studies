@@ -144,3 +144,10 @@
 ```
 - This effect is possible because the borders are drawn from the center of the element.
 
+# 2 Types of Breadcrumbs
+
+- **Location** based breadcrumbs are based on where you are with respect to the navigation structure of the website.
+- **Attribute** based breadcrumbs are based on the attributes of the page or product that you are browsing. Since the order of these attributes is not prescriptive, you’ll see some sites display these at the same level in the UI.
+- **Path** through the site. For example, if they landed on the home page, browsed to the about page and finally the registration page, their breadcrumb trail may look like: `Home > About > Register`.
+- Path-based breadcrumbs can be confusing, only use if needed.
+- Ensure breadcrumbs will add value before adding to a site.

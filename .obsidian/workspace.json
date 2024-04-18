@@ -206,7 +206,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,6 +225,14 @@
   },
   "active": "a1d35b3f098232cf",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/styles.css",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/index.html",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting/styles.css",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting/index.html",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/website-design-system-starting.zip",
+    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System",
+    "Front-end-CodeCademy/Learning Projects/website-design-system-starting.zip",
     "NLW_Nodejs/Anotações sobre as aulas.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
@@ -236,13 +245,6 @@
     "2024-04-15.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier/package.json",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/package.json",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/20/solid/package.json",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/solid/index.js",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/solid",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/outline/index.js",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/outline",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@heroicons/react/20/solid/esm/XMarkIcon.d.ts",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/@shopify/prettier-plugin-liquid/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-style-order/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-sort-imports/README.md",
@@ -259,7 +261,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/read-cache/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/keyv/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-function-name/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-environment-visitor/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/public/vite.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
