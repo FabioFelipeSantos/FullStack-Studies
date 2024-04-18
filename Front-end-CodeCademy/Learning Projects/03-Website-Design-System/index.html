@@ -21,75 +21,165 @@
             rel="stylesheet" />
     </head>
     <body>
-        <h1>My Website Style Guide</h1>
+        <h1 class="site-title">My Website Style Guide</h1>
         <main>
             <section class="colors-section">
-                <h2>Colors</h2>
-                <div class="container-colors">
+                <h2 class="colors-title">Colors</h2>
+                <div class="container-colors light">
                     <h3>Light</h3>
                     <div class="colors">
-                        <div class="box background">
+                        <div class="box background light">
                             <h4>Background</h4>
                             <h5>--background</h5>
                             <p>hsl(205, 76%, 98%)</p>
                         </div>
-                        <div class="box primary">
+                        <div class="box primary light">
                             <h4>Primary</h4>
-                            <h5>--primary-600</h5>
-                            <p>hsl(18, 100%, 60%)</p>
+                            <h5>--primary-500</h5>
+                            <p>hsl(18, 100%, 50%)</p>
                         </div>
-                        <div class="box secondary">
+                        <div class="box secondary light">
                             <h4>Secondary</h4>
-                            <h5>--secondary-800</h5>
-                            <p>hsl(153, 100%, 80%)</p>
+                            <h5>--secondary-200</h5>
+                            <p>hsl(153, 100%, 20%)</p>
                         </div>
-                        <div class="box accent">
+                        <div class="box accent light">
                             <h4>Accent</h4>
-                            <h5>--accent-700</h5>
-                            <p>hsl(271, 100%, 70%)</p>
+                            <h5>--accent-300</h5>
+                            <p>hsl(271, 100%, 30%)</p>
                         </div>
-                        <div class="box text">
+                        <div class="box text light">
                             <h4>Text</h4>
                             <h5>--text</h5>
                             <p>hsl(0, 0%, 0%)</p>
                         </div>
                     </div>
-                    <div class="examples light"><p>Examples Light</p></div>
                 </div>
-                <div class="container-colors">
+                <div class="container-colors dark">
                     <h3>Dark</h3>
                     <div class="colors">
-                        <div class="box background">
+                        <div class="box background dark">
                             <h4>Background</h4>
-                            <h5>--background-50</h5>
-                            <p>hsl(205, 76%, 5%)</p>
+                            <h5>--background</h5>
+                            <p>hsl(206, 74%, 6%)</p>
                         </div>
-                        <div class="box primary">
+                        <div class="box primary dark">
                             <h4>Primary</h4>
-                            <h5>--primary-600</h5>
-                            <p>hsl(18, 100%, 60%)</p>
+                            <h5>--primary-700</h5>
+                            <p>hsl(18, 100%, 70%)</p>
                         </div>
-                        <div class="box secondary">
+                        <div class="box secondary dark">
                             <h4>Secondary</h4>
                             <h5>--secondary-800</h5>
                             <p>hsl(153, 100%, 80%)</p>
                         </div>
-                        <div class="box accent">
+                        <div class="box accent dark">
                             <h4>Accent</h4>
                             <h5>--accent-700</h5>
                             <p>hsl(271, 100%, 70%)</p>
                         </div>
-                        <div class="box text">
+                        <div class="box text dark">
                             <h4>Text</h4>
-                            <h5>--text-950</h5>
-                            <p>hsl(0, 0%, 100%)</p>
+                            <h5>--text</h5>
+                            <p>hsl(0, 0%, 98%)</p>
                         </div>
                     </div>
-                    <div class="examples dark"><p>Examples Dark</p></div>
                 </div>
             </section>
-            <section></section>
-            <section></section>
+            <section class="fonts-section">
+                <h2>Fonts</h2>
+                <div class="fonts ysabeau">
+                    <h3>Ysabeau - The Sans-Serif Font for the Main Text</h3>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <em>The quick brown fox jumps over the lazy dog.</em>
+                    <strong>The quick brown fox jumps over the lazy dog.</strong>
+                </div>
+                <div class="fonts trirong">
+                    <h3>Trirong - The H1 font</h3>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <em>The quick brown fox jumps over the lazy dog.</em>
+                    <strong>The quick brown fox jumps over the lazy dog.</strong>
+                </div>
+                <div class="fonts spectral">
+                    <h3>Spectral - The Other Headings Fonts</h3>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <em>The quick brown fox jumps over the lazy dog.</em>
+                    <strong>The quick brown fox jumps over the lazy dog.</strong>
+                </div>
+                <div class="fonts sometype-mono">
+                    <h3>Sometype Mono - The Code Text Font</h3>
+                    <p>The quick brown fox jumps over the lazy dog.</p>
+                    <em>The quick brown fox jumps over the lazy dog.</em>
+                    <strong>The quick brown fox jumps over the lazy dog.</strong>
+                </div>
+            </section>
+            <section class="styles-section">
+                <h2>Text Styles</h2>
+                <div class="styles">
+                    <h1>H1: Main Page Heading</h1>
+                    <ul>
+                        <li>Font-weight: 850</li>
+                        <li>Font-size: 38px</li>
+                        <li>Font-family: Trirong</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <h2>H2: Subheading</h2>
+                    <ul>
+                        <li>Font-weight: 700</li>
+                        <li>Font-size: 36px</li>
+                        <li>Font-family: Spectral</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <h3>H3 heading</h3>
+                    <ul>
+                        <li>Font-weight: 600</li>
+                        <li>Font-size: 32px</li>
+                        <li>Font-family: Spectral</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <h4>H4 heading</h4>
+                    <ul>
+                        <li>Font-weight: 600</li>
+                        <li>Font-size: 28px</li>
+                        <li>Font-family: Spectral</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <h5>H5 heading</h5>
+                    <ul>
+                        <li>Font-weight: 600</li>
+                        <li>Font-size: 22px</li>
+                        <li>Font-family: Spectral</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <p>Paragraph Text</p>
+                    <ul>
+                        <li>Font-weight: 400</li>
+                        <li>Font-size: 18px</li>
+                        <li>Font-family: Ysabeau</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <em>Emphasized</em>
+                    <ul>
+                        <li>Font-weight: 400</li>
+                        <li>Font-size: 18px</li>
+                        <li>Font-family: Ysabeau</li>
+                    </ul>
+                </div>
+                <div class="styles">
+                    <strong>Bold</strong>
+                    <ul>
+                        <li>Font-weight: 400</li>
+                        <li>Font-size: 18px</li>
+                        <li>Font-family: Ysabeau</li>
+                    </ul>
+                </div>
+            </section>
         </main>
     </body>
 </html>

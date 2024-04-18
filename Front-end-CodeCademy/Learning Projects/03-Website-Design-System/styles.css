@@ -63,6 +63,7 @@
     --accent-950: hsl(272, 100%, 100%);
 }
 :root[data-theme="dark"] {
+    --text: hsl(0, 0%, 98%);
     --text-950: hsl(0, 0%, 100%);
     --text-900: hsl(0, 0%, 90%);
     --text-800: hsl(0, 0%, 80%);
@@ -75,7 +76,8 @@
     --text-100: hsl(0, 0%, 10%);
     --text-50: hsl(0, 0%, 5%);
 
-    --background-50: hsl(205, 76%, 5%);
+    --background: hsl(206, 74%, 6%);
+    --background-50: hsl(206, 73%, 5%);
     --background-100: hsl(206, 73%, 10%);
     --background-200: hsl(206, 75%, 20%);
     --background-300: hsl(206, 74%, 30%);
@@ -124,82 +126,110 @@
     --accent-50: hsl(270, 100%, 5%);
 }
 
+/* Stylization of Colors Section */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Ysabeau", sans-serif;
+}
+
+html {
     font-size: 62.5%;
 }
 
 body {
-    max-width: 160rem;
+    max-width: 170rem;
     margin: 0 auto;
     padding: 0 2.4rem;
-    border: 0.1rem solid red;
+    height: 500rem;
+    font-size: 2rem;
 }
 
-h1 {
-    margin-top: 1.6rem;
-    display: inline-block;
-    font-size: 3.6rem;
-    font-weight: 800;
+.site-title {
+    margin: 1.6rem auto 0;
+    width: fit-content;
     text-decoration: underline;
     text-underline-offset: 0.6rem;
     transition: all 0.3s ease-in-out;
     &:hover {
         color: hsl(271, 100%, 30%);
-        font-size: 3.8rem;
+        font-size: 4rem;
     }
 }
 
+h1 {
+    font-family: "Trirong", serif;
+    font-size: 3.8rem;
+    font-weight: 850;
+}
+
 h2 {
-    font-size: 3.2rem;
+    font-family: "Spectral", serif;
+    font-size: 3.6rem;
+    font-weight: 700;
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-family: "Spectral", serif;
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
 h4 {
-    font-size: 2.2rem;
+    font-family: "Spectral", serif;
+    font-size: 2.8rem;
+    font-weight: 600;
 }
 
 h5 {
-    font-size: 1.8rem;
+    font-family: "Spectral", serif;
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
-p {
-    font-size: 1.6rem;
+p,
+em,
+strong {
+    font-size: 2rem;
 }
 
 .colors-section {
     width: 100%;
     margin-top: 2rem;
-    padding: 1.4rem;
-    border: 3px solid hsl(200, 20%, 50%);
-}
+    padding: 3rem;
 
-.container-colors {
-    margin-top: 1rem;
-    padding: 1rem;
     display: grid;
-    /* grid-template-rows: 0.5fr 1.5fr; */
-    grid-template-columns: 1.75fr 1.25fr;
-    gap: 2rem;
-    border: 1px solid hsl(0, 20%, 23%);
-    align-items: center;
-    h3 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+
+    border: 3px solid hsl(200, 20%, 50%);
+
+    .colors-title {
         grid-row: 1 / 2;
         grid-column: 1 / 3;
     }
 }
 
+.container-colors {
+    margin-top: 2rem;
+    padding: 1rem 1rem 0;
+    border: 1px solid hsl(0, 20%, 23%);
+    align-items: center;
+    &.light {
+        padding: 2rem;
+    }
+    &.dark {
+        padding: 2rem;
+    }
+}
+
 .colors {
+    padding-bottom: 2rem;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.8rem;
+    gap: 4rem;
     justify-content: space-around;
     align-content: center;
 
@@ -218,24 +248,116 @@ p {
         font-family: "Sometype Mono", "JetBrains Mono", monospace;
     }
     &.background {
-        background-color: hsl(205, 76%, 98%);
+        &.light {
+            background-color: hsl(205, 76%, 98%);
+        }
+        &.dark {
+            background-color: hsl(206, 74%, 6%);
+            color: white;
+        }
     }
     &.primary {
-        background-color: hsl(18, 100%, 60%);
+        &.light {
+            background-color: hsl(18, 100%, 50%);
+        }
+        &.dark {
+            background-color: hsl(18, 100%, 70%);
+        }
     }
     &.secondary {
-        background-color: hsl(153, 100%, 80%);
+        &.light {
+            background-color: hsl(153, 100%, 20%);
+            color: white;
+        }
+        &.dark {
+            background-color: hsl(153, 100%, 80%);
+        }
     }
     &.accent {
-        background-color: hsl(271, 100%, 70%);
+        &.light {
+            background-color: hsl(271, 100%, 30%);
+            color: white;
+        }
+        &.dark {
+            background-color: hsl(271, 100%, 70%);
+        }
     }
     &.text {
-        background-color: hsl(0, 0%, 0%);
-        color: white;
+        &.light {
+            background-color: hsl(0, 0%, 0%);
+            color: white;
+        }
+        &.dark {
+            background-color: hsl(0, 0%, 98%);
+        }
     }
 }
 
-.examples {
-    height: 100%;
+/* Stylization of the Fonts Section */
+em {
+    display: block;
+}
+
+.fonts-section {
+    margin-top: 2rem;
+    padding: 3rem;
+    border: 3px solid hsl(200, 20%, 50%);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    h2 {
+        grid-column: 1 / 3;
+    }
+}
+
+.fonts {
+    padding: 1rem 2rem;
     border: 1px solid #000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &.ysabeau > h3 {
+        font-family: "Ysabeau", sans-serif;
+    }
+
+    &.trirong {
+        h3,
+        p,
+        em,
+        strong {
+            font-family: "Trirong", serif;
+        }
+    }
+
+    &.spectral {
+        h3,
+        p,
+        em,
+        strong {
+            font-family: "Spectral", serif;
+        }
+    }
+
+    &.sometype-mono {
+        gap: 2rem;
+        h3,
+        p,
+        em,
+        strong {
+            font-family: "Sometype-Mono", monospace;
+        }
+    }
+}
+
+/* Stylization of Text-Styles Section */
+.styles-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h2 {
+        grid-column: 1 / 4;
+    }
 }
