@@ -46,7 +46,47 @@ Here I'm put the main thought that I had to start my journey:
 
 ## 1.4 Start Dates
 
-- 03/04/2024 -> CodeCademy Front-end Start
-  - 03/04/2024 -> Web Foundations
+- 03/04/2024 -> CodeCademy Front-end Start 
+	- [x] Web Foundations 03/04/2024
+	- [x] Web Foundations ***04/18/2024***
+		- [x] Fundamentals of HTML
+		- [x] Fundamentals of CSS
+		- [x] Developing Websites Locally
+		- [x] Deploying Websites
+	- [ ] Improved Styling with CSS
+		- [x] Improved Styling with CSS ***04/18/2024***
+		- [ ] Fundamentals of Web Design
+		- [ ] Making a Website Responsive
+		- [ ] CSS Transitions and Animation
+	- [ ] Building Interactive Websites
+		- [ ] JavaScript Syntax, Part I
+		- [ ] JavaScript Syntax, Part II
+		- [ ] Building Interactive Websites
+		- [ ] Making A Website Accessible
+		- [ ] Git and GitHub, Part I
+		- [ ] Portfolio Project: Personal Portfolio Website
+		- [ ] Exams
+	- [ ] Front-End Development
+		- [ ] JavaScript Syntax, Part III
+		- [ ] JavaScript Testing
+		- [ ] Async JavaScript and HTTP Requests
+		- [ ] Web Apps
+		- [ ] React, Part I
+		- [ ] React, Part II
+		- [ ] Redux
+		- [ ] Git and GitHub, Part II
+		- [ ] Portfolio Project: Reddit Client
+		- [ ] Advanced Web Development
+		- [ ] Exams
+	- [ ] Interview Prep
+		- [ ] What To Expect in a Technical Interview
+		- [ ] Linear Data Structures
+		- [ ] Complex Data Structures
+		- [ ] Algorithms
+		- [ ] Search and Graph Search Algorithms
+		- [ ] Interview Skills
+		- [ ] Portfolio Project: Open-Ended Project
+		- [ ] Next Steps in Your Front-End Engineer Journey
+		- [ ] Exams
  
 ## 1.5 It's all, folks. Please feel free to use my resources. AFAP, I'll try to maintain this README actualized, but I don't promise.

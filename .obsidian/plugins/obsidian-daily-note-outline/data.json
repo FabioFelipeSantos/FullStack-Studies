@@ -1,5 +1,4 @@
 {
-  "initialSearchType": "backward",
   "offset": 7,
   "onset": "2020-03-30",
   "duration": {
@@ -13,7 +12,8 @@
     "heading": true,
     "link": true,
     "tag": true,
-    "listItems": true
+    "listItems": true,
+    "task": true
   },
   "headingLevel": [
     true,
@@ -60,7 +60,9 @@
     "listItems": "list",
     "note": "file",
     "task": "square",
-    "taskDone": "check-square"
+    "taskDone": "check-square",
+    "backlink": "links-coming-in",
+    "time": "clock"
   },
   "customIcon": {
     "heading": "hash",
@@ -69,7 +71,9 @@
     "listItems": "list",
     "note": "file",
     "task": "square",
-    "taskDone": "check-square"
+    "taskDone": "check-square",
+    "backlink": "links-coming-in",
+    "time": "clock"
   },
   "indent": {
     "heading": true,
@@ -83,7 +87,9 @@
     "tag": "",
     "listItems": "",
     "task": "",
-    "taskDone": ""
+    "taskDone": "",
+    "backlink": "",
+    "time": ""
   },
   "repeatHeadingPrefix": "none",
   "addCheckboxText": false,
@@ -202,5 +208,12 @@
     "width": 600,
     "height": 800
   },
-  "popoutAlwaysOnTop": false
+  "popoutAlwaysOnTop": false,
+  "showListCallouts": true,
+  "showTimeList": true,
+  "setBaseDateAsHome": false,
+  "checkUnresolvedLinksAtStartup": false,
+  "wrapLine": true,
+  "bootDelayTime": 300,
+  "initialSearchType": "backward"
 }

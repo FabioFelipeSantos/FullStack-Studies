@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e23f11de3bb1174f",
+        "id": "c2ea5bc93c1011e8",
         "type": "tabs",
         "children": [
           {
-            "id": "a1d35b3f098232cf",
+            "id": "1be1f3cf10b050f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5,
-    "collapsed": true
+    "width": 294.5
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md"
+                "file": "README.md"
               }
             }
           },
@@ -147,29 +146,10 @@
             }
           },
           {
-            "id": "aee730a724ecfc24",
-            "type": "leaf",
-            "state": {
-              "type": "daily-note-outline",
-              "state": {
-                "activeSet": 0,
-                "activeGranularity": 0
-              }
-            }
-          },
-          {
             "id": "eba5bc09e6c31894",
             "type": "leaf",
             "state": {
               "type": "mathpad-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "c88dd18ccda05ad3",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
               "state": {}
             }
           },
@@ -200,9 +180,20 @@
               "type": "copilot-chat-view",
               "state": {}
             }
+          },
+          {
+            "id": "0358904a7c17d950",
+            "type": "leaf",
+            "state": {
+              "type": "daily-note-outline",
+              "state": {
+                "activeSet": 0,
+                "activeGranularity": 0
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -211,7 +202,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "copilot:Copilot Chat": false,
       "obsidian-full-calendar:Open Full Calendar": false,
       "mathpad:Open Mathpad": false,
@@ -220,11 +210,19 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "a1d35b3f098232cf",
+  "active": "1be1f3cf10b050f2",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/Untitled.sheet",
+    "README.md",
+    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
+    "Pasted image 20240411155534.png",
+    "Pasted image 20240411155430.png",
+    "Colors.md",
+    "^.md",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/css/root.css",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/css",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/colors.txt",
@@ -235,14 +233,10 @@
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting/index.html",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/website-design-system-starting.zip",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System",
-    "Front-end-CodeCademy/Learning Projects/website-design-system-starting.zip",
     "NLW_Nodejs/Anotações sobre as aulas.md",
-    "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/03 - LEARN LINKS AND BUTTONS.md",
-    "^.md",
     "Front-end-CodeCademy/02 - CSS/01 - Fundamentals of CSS/Review_Notes/01 - Learn CSS - Selectors and Visual Rules.md",
     "2024-04-15.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
@@ -259,15 +253,11 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-convert/CHANGELOG.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/ansi-styles/readme.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-simple-access/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/read-cache/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/keyv/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/public/vite.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
     "Pasted image 20240412162531.png",
     "Pasted image 20240412162511.png",
-    "Pasted image 20240411155534.png",
-    "Pasted image 20240411155430.png",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.png",
     "Front-end-CodeCademy/04 - Deploying & Command Line/images/filesystem-tree.png",
     "NLW_React/Untitled.canvas",

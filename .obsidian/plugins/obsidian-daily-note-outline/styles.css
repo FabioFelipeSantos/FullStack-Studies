@@ -60,6 +60,12 @@
 
     display: inline-block;
     flex-shrink: 1;
+    align-items: normal;
+}
+
+/* wrap-lineクラスがついていたらwhite-space設定をnormalに */
+.workspace-leaf-content[data-type="daily-note-outline"] .nav-file-title-content.wrap-line {
+    white-space: normal;
 }
 
 /* icon */
@@ -90,8 +96,9 @@
 /*インラインプレビュー inline preview */
 /*アウトライン要素行の各項目を中央揃えで同じ高さに表示 align center*/
 .workspace-leaf-content[data-type="daily-note-outline"] .nav-file-title{
-    align-items: center;
+    align-items: normal;
 }
+
 /*インラインプレビューのフォント inline preview font*/
 .workspace-leaf-content[data-type="daily-note-outline"] .nav-file-title-preview{
     display: inline-block;
@@ -102,7 +109,8 @@
     padding-left: 16px;
     /*margin-left:auto;  右寄せ*/
     color: var(--color-base-50);
-    flex-shrink: 1000;
+    flex-shrink: 10000;
+    align-self: center;
 }
 
 /*ツールチッププレビュー*/

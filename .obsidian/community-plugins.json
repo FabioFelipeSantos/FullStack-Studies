@@ -2,7 +2,6 @@
   "obsidian-math-plus",
   "obsidian-admonition",
   "obsidian-advanced-codeblock",
-  "table-editor-obsidian",
   "obsidian-asciimath",
   "obsidian-auto-link-title",
   "calctex",
@@ -33,5 +32,7 @@
   "typing-transformer-obsidian",
   "code-styler",
   "obsidian-pandoc",
-  "obsidian-enhancing-export"
+  "obsidian-enhancing-export",
+  "sheets",
+  "spreadsheets"
 ]
