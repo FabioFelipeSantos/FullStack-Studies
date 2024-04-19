@@ -85,5 +85,4 @@ Analogous color schemes apply three or more colors that are adjacent to each oth
 - Triadic color schemes are useful in that they create a sense of equality, vibrancy, and security in your designs.
 
 # 10 Color Psychology
-
-![[color psychology.png]]
+![[color psychology.png||1000]]
