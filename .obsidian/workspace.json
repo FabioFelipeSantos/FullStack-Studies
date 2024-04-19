@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c2ea5bc93c1011e8",
+        "id": "dcb6a4597f56b797",
         "type": "tabs",
         "children": [
           {
-            "id": "1be1f3cf10b050f2",
+            "id": "b39d3fcae42bc6c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md"
               }
             }
           },
@@ -214,25 +214,29 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "1be1f3cf10b050f2",
+  "active": "b39d3fcae42bc6c3",
   "lastOpenFiles": [
-    "Front-end-CodeCademy/Untitled.sheet",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/01 Introduction - Fundamentals of Web Design.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/img/how-implement-our-wireframe.mp4",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/img/how-wireframes-should-like.png",
+    "Colors Names Files/Colors.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/img",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design",
+    "Untitled.md",
+    "Colors Names Files",
     "README.md",
+    "Front-end-CodeCademy/Untitled.sheet",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
-    "Pasted image 20240411155534.png",
-    "Pasted image 20240411155430.png",
-    "Colors.md",
+    "Colors Names Files/Pasted image 20240411155534.png",
+    "Colors Names Files/Pasted image 20240411155430.png",
     "^.md",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/css/root.css",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/css",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/colors.txt",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/README.md",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/styles.css",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/index.html",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting/styles.css",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting/index.html",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/starting",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/website-design-system-starting.zip",
     "NLW_Nodejs/Anotações sobre as aulas.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
@@ -251,8 +255,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-name/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-convert/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-convert/CHANGELOG.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/ansi-styles/readme.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@babel/helper-simple-access/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/public/vite.svg",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/images/colors.svg",
@@ -262,7 +264,6 @@
     "Front-end-CodeCademy/04 - Deploying & Command Line/images/filesystem-tree.png",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
-    "NLW_Nodejs/node_modules/@fastify/send/test/fixtures/images/node-js.png",
     "Untitled.canvas"
   ]
 }
