@@ -197,8 +197,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5,
-    "collapsed": true
+    "width": 413.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,7 +213,7 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "43ac3bb2aed85bc9",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color psychology.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/triadic.png",
