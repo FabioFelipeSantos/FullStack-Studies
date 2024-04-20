@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "dcb6a4597f56b797",
+        "id": "a083e4069c5212e1",
         "type": "tabs",
         "children": [
           {
-            "id": "b39d3fcae42bc6c3",
+            "id": "1c93c2d59419bbb1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md"
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md"
               }
             }
           },
@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,12 +214,13 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "1c93c2d59419bbb1",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color psychology.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/triadic.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/analogous.png",
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/complementary.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/monochromatic.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color schemes.png",
@@ -260,7 +262,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/supports-color/readme.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-name/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-convert/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/src/assets/react.svg",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
     "Untitled.canvas"
