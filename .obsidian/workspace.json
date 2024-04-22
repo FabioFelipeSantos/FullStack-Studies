@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,7 +214,7 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "1c93c2d59419bbb1",
+  "active": "eba5bc09e6c31894",
   "lastOpenFiles": [
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
