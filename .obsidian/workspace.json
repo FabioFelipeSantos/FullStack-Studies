@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a083e4069c5212e1",
+        "id": "652aa277ba31bb35",
         "type": "tabs",
         "children": [
           {
-            "id": "1c93c2d59419bbb1",
+            "id": "0b01732fb4b1afb4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 294.5,
+    "collapsed": true
   },
   "right": {
     "id": "884773fdbe0fa664",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md"
+                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md"
               }
             }
           },
@@ -214,8 +215,9 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "0b01732fb4b1afb4",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color psychology.png",
@@ -261,7 +263,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@headlessui/react/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/supports-color/readme.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-name/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/color-convert/README.md",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
     "Untitled.canvas"
