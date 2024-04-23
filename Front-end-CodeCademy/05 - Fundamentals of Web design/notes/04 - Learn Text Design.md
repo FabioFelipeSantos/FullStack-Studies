@@ -1,8 +1,13 @@
 # 1 Review
 
+- Use 2-3 well-paired fonts, but no more.
+- Adjust font style, size, weight, spacing, and color.
+- Whitespace plays a big part in readability. Make sure all of your text elements have enough whitespace.
+- Use columns when necessary to keep line length at around 50-75 characters.
 - In general, users may not spend a lot of time on websites, so we can utilize certain layout and spacing techniques to guide their experience. Studies have shown that the users read in an *“F” Pattern*, starting at the top and then scanning along the spine. Designers can take advantage of this behavior and craft their designs to mimic this practice.
 - The average internet paragraph is only 1-3 sentences.
 - People will notice and remember the first and last elements of a list or a page better than anything in the middle of the list/page. This is known as **Primacy and Recency** effects.
+- When people are figuring out where to go on your site, they are just skimming to find what they want.
 
 
 # 2 Differentiating Text: HTML Headers
