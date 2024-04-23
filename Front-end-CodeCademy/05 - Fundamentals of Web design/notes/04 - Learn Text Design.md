@@ -22,6 +22,7 @@
 # 3 Whitespace
 
 - Without proper spacing and balance, your text can be rendered virtually illegible.
-- A website is like a room, the user needs to be able to move through it easily. And just like a room, it is important to keep it tidy and free of clutter. This is the power of whitespace. Good whitespace allows you to increase the legibility of your text, helps prevent users from skimming over elements, and serves as an unintrusive boundary between different sections of the page, without actually being there.
+- Good whitespace allows you to increase the legibility of your text, helps prevent users from skimming over elements, and serves as an unintrusive boundary between different sections of the page, without actually being there.
+- You have to guarantee that the section title won't be crowded out by your sub-headers, and you won't want a paragraph to invade the personal space of a nearby image. 
 
-It’s just like standing in line at the store. You don’t want to be breathing down the neck of the person in front of you, it’s not comfortable for anyone! It’s the same with text, you don’t want your title crowded out by your subheaders, and you don’t want that paragraph invading the personal space of the nearby image.
+
