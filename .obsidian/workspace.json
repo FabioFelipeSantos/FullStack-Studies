@@ -214,10 +214,12 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "8513b858a48d1b68",
+  "active": "43ac3bb2aed85bc9",
   "lastOpenFiles": [
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/Untitled.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/rows info.png",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/grid layout.png",
     "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/Untitled.md",
     "Front-end-CodeCademy/06 - Making a Website Responsive",
     "README.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
@@ -232,7 +234,6 @@
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/triadic.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/analogous.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/complementary.png",
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/img/monochromatic.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/01 Introduction - Fundamentals of Web Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/how-implement-our-wireframe.mp4",
     "Colors Names Files/Colors.md",
@@ -261,7 +262,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-css-order/license.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/marko/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@headlessui/react/README.md",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
     "Untitled.canvas"
