@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "652aa277ba31bb35",
+        "id": "0b3462d4c442e0f3",
         "type": "tabs",
         "children": [
           {
-            "id": "0b01732fb4b1afb4",
+            "id": "8513b858a48d1b68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md"
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md"
               }
             }
           },
@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,14 +214,18 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "43ac3bb2aed85bc9",
+  "active": "8513b858a48d1b68",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/Untitled.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive",
+    "README.md",
+    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/kerning.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/tracking.png",
     "Pasted image 20240423140148.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/line spacing.png",
     "Pasted image 20240423135808.png",
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/04 - Learn Text Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/03 - Learn Color for UI.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/02 - Learn Color Theory.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color psychology.png",
@@ -228,7 +233,6 @@
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/analogous.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/complementary.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/monochromatic.png",
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color schemes.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/01 Introduction - Fundamentals of Web Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/how-implement-our-wireframe.mp4",
     "Colors Names Files/Colors.md",
@@ -237,7 +241,6 @@
     "Front-end-CodeCademy/05 - Fundamentals of Web design",
     "Untitled.md",
     "Colors Names Files",
-    "README.md",
     "Front-end-CodeCademy/Untitled.sheet",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/05 - Learn Secondary Navigation.md",
     "^.md",
@@ -245,7 +248,6 @@
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/css",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/colors.txt",
     "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/README.md",
-    "Front-end-CodeCademy/Learning Projects/03-Website-Design-System/styles.css",
     "NLW_Nodejs/Anotações sobre as aulas.md",
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/04 - Affordances, Signifiers, and Clickability.md",
     "Front-end-CodeCademy/04 - Deploying & Command Line/notes/01 - Deploying Websites.md",
@@ -260,7 +262,6 @@
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/marko/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/@headlessui/react/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/eslint/node_modules/supports-color/readme.md",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
     "Untitled.canvas"

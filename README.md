@@ -55,7 +55,7 @@ Here I'm put the main thought that I had to start my journey:
 		- [x] Deploying Websites
 	- [ ] Improved Styling with CSS
 		- [x] Improved Styling with CSS ***04/18/2024***
-		- [ ] Fundamentals of Web Design
+		- [x] Fundamentals of Web Design *04/23/2024*
 		- [ ] Making a Website Responsive
 		- [ ] CSS Transitions and Animation
 	- [ ] Building Interactive Websites
