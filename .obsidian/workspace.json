@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0b3462d4c442e0f3",
+        "id": "6b549b124d3c03ea",
         "type": "tabs",
         "children": [
           {
-            "id": "8513b858a48d1b68",
+            "id": "5fa1d3f658cfa471",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md"
+                "file": "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md"
               }
             }
           },
@@ -197,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 413.5
+    "width": 413.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -213,11 +214,16 @@
       "spreadsheets:New Spreadsheet": false
     }
   },
-  "active": "eba5bc09e6c31894",
+  "active": "5fa1d3f658cfa471",
   "lastOpenFiles": [
+    "Front-end-CodeCademy/06 - Making a Website Responsive/Untitled.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/05 - Learn CSS - Documentation and Debugging.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/04 - Learn Responsive Design.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/03 - Learn CSS GRID.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md",
+    "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
     "Front-end-CodeCademy/06 - Making a Website Responsive/rows info.png",
     "Front-end-CodeCademy/06 - Making a Website Responsive/grid layout.png",
-    "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/Untitled.md",
     "Front-end-CodeCademy/06 - Making a Website Responsive",
     "README.md",
@@ -232,7 +238,6 @@
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/color psychology.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/triadic.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/analogous.png",
-    "Front-end-CodeCademy/05 - Fundamentals of Web design/img/complementary.png",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/notes/01 Introduction - Fundamentals of Web Design.md",
     "Front-end-CodeCademy/05 - Fundamentals of Web design/img/how-implement-our-wireframe.mp4",
     "Colors Names Files/Colors.md",
@@ -257,10 +262,6 @@
     "Front-end-CodeCademy/02 - CSS/02 - Improved Stylling with CSS/notes/02 - Learn CSS - Typography.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/@shopify/prettier-plugin-liquid/README.md",
     "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-style-order/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-sort-imports/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/prettier-plugin-css-order/license.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/dist/licenses/marko/README.md",
-    "Front-end-CodeCademy/Learning Projects/02-Build-My-Cheat-Sheet/node_modules/prettier-plugin-tailwindcss/README.md",
     "NLW_React/Untitled.canvas",
     "NLW_Nodejs/Project in Node.js.canvas",
     "Untitled.canvas"

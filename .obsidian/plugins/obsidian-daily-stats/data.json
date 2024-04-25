@@ -31,16 +31,17 @@
     "2024/3/20": 1235,
     "2024/3/22": 325,
     "2024/3/23": 224,
-    "2024/3/24": 241
+    "2024/3/24": 241,
+    "2024/3/25": 907
   },
   "todaysWordCount": {
-    "README.md": {
-      "initial": 576,
-      "current": 579
-    },
     "Front-end-CodeCademy/06 - Making a Website Responsive/01 - Learn Responsive Design -- Grids and Spacing.md": {
-      "initial": 0,
-      "current": 238
+      "initial": 246,
+      "current": 437
+    },
+    "Front-end-CodeCademy/06 - Making a Website Responsive/02 - Layout with Flexbox.md": {
+      "initial": 1,
+      "current": 717
     }
   }
 }

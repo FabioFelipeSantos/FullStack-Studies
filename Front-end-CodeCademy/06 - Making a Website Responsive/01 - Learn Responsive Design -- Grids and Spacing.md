@@ -13,4 +13,9 @@
 - A row can be used to force content away from an area that has remaining columns not used.
 ![[rows info.png||700]]
 - In the first row, the logo, the gutter, and the navigation bar span the entirety of the first row. Therefore, the next element must go in the second row.
-- 
+- _Gutters_ make up the negative space between columns. There isn't a rule for the width of a gutter, but we have to make sure that he is big enough that two consecutive elements won't be confused and that he is smaller than the column width.
+- _Responsive design_ is a set of techniques that allow a website’s content to shift based on the device or screen size. It can require a different number of total columns based on screen size, in order to accommodate content and keep it from being squished.
+- _Whitespace_, or negative space, refers to the emptiness between elements, whether that’s in the gutter of the columns, or additional padding around a block of text.
+- Whitespace is broken up into *Passive* and *Active*:
+	- **Passive** - Used to improve the aesthetics of the layout without guiding the user through a specific reading, flow, or content order. Can be controlled by altering CSS properties such as `line-height` or `margin` when setting type.
+	- **Active** - Refers to enhancing the overall page structure through space to emphasize content or guide users from one point to the next.  It is mainly achieved by adding space between a site’s elements.
