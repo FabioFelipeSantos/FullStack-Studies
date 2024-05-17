@@ -1,0 +1,176 @@
+/* Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+    opacity: 0.9;
+    color: seashell;
+}
+
+/* Header Styles */
+.container-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    z-index: 100;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 100px;
+    text-align: left;
+    img {
+        height: 50px;
+    }
+}
+
+nav {
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+        margin-right: 25px;
+        color: seashell;
+        text-underline-offset: 4px;
+        &:visited {
+            color: bisque;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+nav > a:nth-child(3) {
+    margin-right: 100px;
+}
+
+figure > img {
+    height: 200px;
+}
+
+/* Main Section */
+/* Mission Section */
+main {
+    position: relative;
+    top: 69px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.title {
+    width: 1200px;
+    height: 700px;
+    background-image: url(./images/img-mission-background.jpg);
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+}
+
+.title-info {
+    padding: 10px 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Tea of the Month Section */
+.teas {
+    margin: 80px 0;
+    width: 1000px;
+    height: 620px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.6;
+}
+
+figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.figures-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.figures-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 69%;
+}
+
+figure > img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Locations Section */
+.locations {
+    width: 1200px;
+    height: 500px;
+    background-image: url(./images/img-locations-background.jpg);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.locations > h2 {
+    margin-top: 80px;
+}
+
+.box-location {
+    width: 300px;
+    padding: 28px 0;
+    margin: 15px 20px 0;
+    background-color: black;
+    display: inline-flex;
+    flex-flow: column wrap;
+    gap: 36px;
+    opacity: 1;
+}
+
+/* Footer Section */
+footer {
+    position: relative;
+    top: 120px;
+    margin-bottom: 40px;
+}
+
+.header-footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.copy {
+    margin: 60px 100px 40px;
+    text-align: left;
+}
